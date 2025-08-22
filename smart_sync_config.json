@@ -1,0 +1,5 @@
+{
+  "interval": 10,
+  "enabled": true,
+  "description": "Smart sync configuration - interval in minutes"
+} 

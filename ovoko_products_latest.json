@@ -1,0 +1,28 @@
+[
+  {
+    "id": 16746,
+    "part_id": 16746,
+    "sku": "13537314",
+    "external_id": "13537314",
+    "name": "Dywaniki gumowe BMW E61 OE",
+    "synced_at": "2025-08-22T01:44:02.572Z",
+    "baselinker_info": {
+      "sku": "13537314",
+      "product_name": "Dywaniki gumowe BMW E61 OE",
+      "last_checked": null
+    }
+  },
+  {
+    "id": 16745,
+    "part_id": 16745,
+    "sku": "13537387",
+    "external_id": "13537387",
+    "name": "Kierownica sport  M PAKIET kluczyk BMW E61",
+    "synced_at": "2025-08-22T01:34:51.838Z",
+    "baselinker_info": {
+      "sku": "13537387",
+      "product_name": "Kierownica sport  M PAKIET kluczyk BMW E61",
+      "last_checked": null
+    }
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "last_updated": "2025-08-22T02:22:26.922Z",
+  "synced_products": {
+    "13537387": {
+      "ovoko_part_id": 16745,
+      "synced_at": "2025-08-22T01:34:51.838Z",
+      "product_name": "Kierownica sport  M PAKIET kluczyk BMW E61"
+    }
+  },
+  "synced_orders": {
+    "0198c115-80f0-771a-9f56-6488f238f00a": {
+      "baselinker_order_id": 777015848,
+      "synced_at": "2025-08-20T09:53:01.126Z",
+      "order_data": {
+        "customer_name": "ss",
+        "total_value": "295.00",
+        "items_count": 1
+      }
+    },
+    "0198abf3-38c9-77bc-96c7-0eea3a6d97f7": {
+      "baselinker_order_id": 777379072,
+      "synced_at": "2025-08-22T02:21:51.873Z",
+      "order_data": {
+        "customer_name": "ss",
+        "total_value": "276.00",
+        "items_count": 1
+      }
+    },
+    "0198c107-662d-7044-b6dc-29079e906b52": {
+      "baselinker_order_id": 777379074,
+      "synced_at": "2025-08-22T02:21:53.210Z",
+      "order_data": {
+        "customer_name": "Piotr Serczyński soft synergy",
+        "total_value": "155.00",
+        "items_count": 1
+      }
+    }
+  }
+}

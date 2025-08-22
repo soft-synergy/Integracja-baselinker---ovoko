@@ -1,0 +1,280 @@
+w tym imporcie potrzeba id samochodu i zrób taki system 
+
+ze w nazwie splitujesz przed "bmw" np. w nazwie "Wyświetlacz HEAD UP BMW E61 EU" nazwa auta to  "BMW E61 EU" 
+
+sprawdz czy auto o takiej nazwie juz istnieje przez ten endpoint 
+
+Get cars https://api.rrr.lt/get/cars/{date_from}/{date_to}
+POST parameters
+Name	Type	Required	Data
+username	Text varchar(50)	YES	Username
+password	Text varchar(100)	YES	Password
+user_token	Text	YES	Token provided
+URI values
+Name	Type	Required	Data
+{date_from}	date (Y-m-d)	NO	Date from parts added (exp. 2019-02-14)
+{date_to}	date (Y-m-d)	NO	Date to parts added (exp. 2019-03-14)
+PHP Curl example code
+$post = [
+'username' => '',
+'password' => '',
+'user_token' => '',
+];
+
+$ch = curl_init('https://api.rrr.lt/get/cars/{date_from}/{date_to}');
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+$response = json_decode(curl_exec($ch));
+curl_close($ch);
+Output
+{
+    "list": [
+        {
+            "id": "237",
+            "car_color": "0",
+            "car_color_code": "",
+            "car_model": "6",
+            "car_model_category": "0",
+            "car_model_years": "0",
+            "car_body_number": "",
+            "car_engine_number": "",
+            "car_years": "1996",
+            "car_engine_cubic_capacity": "2000",
+            "car_engine_power": "110",
+            "car_engine_type": "",
+            "car_engine_code": "",
+            "car_gearbox_type": "0",
+            "car_gearbox_code": "",
+            "car_interior": "",
+            "car_fuel": "1",
+            "car_mileage": "223014",
+            "defectation_notes": "",
+            "car_wheel_type": "",
+            "car_wheel_drive": "0",
+            "car_body_type": "3",
+            "car_photo_gallery": []
+        },
+        {
+            "id": "238",
+            "car_color": "0",
+            "car_color_code": "",
+            "car_model": "6",
+            "car_model_category": "0",
+            "car_model_years": "0",
+            "car_body_number": "",
+            "car_engine_number": "",
+            "car_years": "1996",
+            "car_engine_cubic_capacity": "2000",
+            "car_engine_power": "110",
+            "car_engine_type": "",
+            "car_engine_code": "",
+            "car_gearbox_type": "0",
+            "car_gearbox_code": "",
+            "car_interior": "",
+            "car_fuel": "1",
+            "car_mileage": "223014",
+            "defectation_notes": "",
+            "car_wheel_type": "",
+            "car_wheel_drive": "0",
+            "car_body_type": "3",
+            "car_photo_gallery": []
+        },
+        {
+            "id": "239",
+            "car_color": "0",
+            "car_color_code": "",
+            "car_model": "6",
+            "car_model_category": "0",
+            "car_model_years": "0",
+            "car_body_number": "",
+            "car_engine_number": "",
+            "car_years": "1996",
+            "car_engine_cubic_capacity": "2000",
+            "car_engine_power": "110",
+            "car_engine_type": "",
+            "car_engine_code": "",
+            "car_gearbox_type": "0",
+            "car_gearbox_code": "",
+            "car_interior": "",
+            "car_fuel": "1",
+            "car_mileage": "223014",
+            "defectation_notes": "",
+            "car_wheel_type": "",
+            "car_wheel_drive": "0",
+            "car_body_type": "3",
+            "car_photo_gallery": []
+        },
+        {
+            "id": "240",
+            "car_color": "0",
+            "car_color_code": "",
+            "car_model": "6",
+            "car_model_category": "0",
+            "car_model_years": "0",
+            "car_body_number": "",
+            "car_engine_number": "",
+            "car_years": "1996",
+            "car_engine_cubic_capacity": "2000",
+            "car_engine_power": "110",
+            "car_engine_type": "",
+            "car_engine_code": "",
+            "car_gearbox_type": "0",
+            "car_gearbox_code": "",
+            "car_interior": "",
+            "car_fuel": "1",
+            "car_mileage": "223014",
+            "defectation_notes": "",
+            "car_wheel_type": "",
+            "car_wheel_drive": "0",
+            "car_body_type": "3",
+            "car_photo_gallery": []
+        },
+        {
+            "id": "241",
+            "car_color": "0",
+            "car_color_code": "",
+            "car_model": "6",
+            "car_model_category": "0",
+            "car_model_years": "0",
+            "car_body_number": "",
+            "car_engine_number": "",
+            "car_years": "1996",
+            "car_engine_cubic_capacity": "2000",
+            "car_engine_power": "110",
+            "car_engine_type": "",
+            "car_engine_code": "",
+            "car_gearbox_type": "0",
+            "car_gearbox_code": "",
+            "car_interior": "",
+            "car_fuel": "1",
+            "car_mileage": "223014",
+            "defectation_notes": "",
+            "car_wheel_type": "",
+            "car_wheel_drive": "0",
+            "car_body_type": "3",
+            "car_photo_gallery": []
+        },
+        {
+            "id": "242",
+            "car_color": "3",
+            "car_color_code": "asd123",
+            "car_model": "16",
+            "car_model_category": "0",
+            "car_model_years": "0",
+            "car_body_number": "sadfasdfasdf",
+            "car_engine_number": "465464564646",
+            "car_years": "2007",
+            "car_engine_cubic_capacity": "2200",
+            "car_engine_power": "103",
+            "car_engine_type": "2",
+            "car_engine_code": "enginecode456",
+            "car_gearbox_type": "1",
+            "car_gearbox_code": "555",
+            "car_interior": "2",
+            "car_fuel": "1",
+            "car_mileage": "223014",
+            "defectation_notes": "smarkiai daužtas",
+            "car_wheel_type": "0",
+            "car_wheel_drive": "1",
+            "car_body_type": "2",
+            "car_photo_gallery": [
+                "https://lauris.rrr.lt/home/dev/web/lauris.rrr.lt/public_html/uploads/car/docs/242/6-1996-101.jpg"
+            ]
+        }
+    ],
+    "msg": "OK",
+    "status_code": "R200"
+}
+
+uzyj daty z 2020 roku zeby wziac wszystkie auta 
+
+jeśli jest uyj id juz istniejącego pokrywającego się nazwą jeśli się nie pokrywa nazwą zaden  to dodaj, poniej zalaczam dokumentacje do dodawania samochodu  
+uwaga, wszystkie dane  oprocz nazwy mogą być przykladowe bo i tak będzie ktoś kto to potem zweryfikuje i popraewi recznie
+
+
+Import car https://api.rrr.lt/crm/importCar
+POST variables
+Name	Type	Required	Data
+username	Text varchar(50)	YES	Username
+password	Text varchar(100)	YES	Password
+user_token	Text	YES	Token provided
+car_model	Numeric (int 11)	YES	Car model id assigned to car
+car_years	Text (varchar 4)	YES	Car years
+status	Numeric (int 11)	YES	Status id assigned to car
+car_class	Numeric (int 11)	NO	Car class id assigned to car
+car_engine_cubic_capacity	Numeric (int 11)	NO	Car engine cubic capacity
+car_engine_power	Numeric (int 11)	NO	Car engine power (Kw)
+car_gearbox_type	Numeric (int 11)	NO	Car gearbox type id assigned to car
+car_fuel	Numeric (int 11)	NO	Car fuel id assigned to car
+car_mileage	Numeric (int 7)	NO	Car mileage
+car_body_type	Numeric (int 11)	NO	Car body type id assigned to car
+car_wheel_type	Numeric (int 1)	NO	Car steering wheel type
+car_wheel_drive	Numeric (int 1)	NO	Car wheel drive
+photo	Text	NO	Photo url
+photos[]	Text	NO	Photo url * e.g. photos[0] => 'photos.url1.jpg', photos[1] => 'photos.url2.jpg'
+id_bridge	Numeric (int 11)	NO	Local id *
+external_id	Text varchar(255)	NO	Local id * overrides id_bridge if value is provided
+place	Text varchar(255)	NO	Place where car is stored
+seller_id	Numeric (int 11)	NO	Seller id
+seller_name_surname	Text varchar(255)	NO	Seller name surname
+seller_address	Text varchar(255)	NO	Seller address
+purchase_date	Date (Y-m-d H:i:s)	NO	Purchase date
+car_color	Text varchar(10)	NO	Car color
+car_color_code	Text varchar(255)	NO	Car color code
+car_body_number	Text varchar(40)	NO	Car body number
+car_engine_number	Text varchar(255)	NO	Car engine number
+car_empty_weight	Numeric (int 10)	NO	Car empty weight
+car_engine_type	Text (varchar 32)	NO	Car engine type
+car_engine_code	Text (varchar 32)	NO	Car engine code
+car_gearbox_code	Text (varchar 32)	NO	Car gearbox code
+car_interior	Text (varchar 255)	NO	Car interior
+car_price	Numeric (float)	NO	Car price
+original_currency	Text	NO	Currency {EUR, PLN}. Default: EUR
+defectation_notes	Text	NO	Defectation notes
+prime_cost	Numeric (float)	NO	Prime cost
+demolition_costs	Numeric (float)	NO	Demolition costs
+selling_costs	Numeric (float)	NO	Selling costs
+secondary_raw_materials_costs	Numeric (float)	NO	Secondary raw materials costs
+other_costs	Numeric (int 11)	NO	Other costs
+registration_document_id	Text (varchar 20)	NO	Registration document id
+write_down_nr	Numeric (int 11)	NO	Write down nr
+voucher_nr	Numeric (int 11)	NO	Voucher nr
+car_service_id	Numeric (int 11)	NO	Car service id
+payment_method	Numeric (int 1)	NO	Payment method
+unregister	Numeric (int 1)	NO	Unregister
+car_docs_host	Numeric (int 1)	NO	Car docs host
+car_price_wiwat	Numeric (tinyint 1)	NO	Car price wiwat
+storages	Text (varchar 255)	NO	Storages
+PHP Curl example code
+$post = [
+'username' => '',
+'password' => '',
+'user_token' => '',
+'car_model' => '56',
+'car_years' => '2018',
+'car_class' => '2',
+'car_engine_cubic_capacity' => '2000',
+'car_engine_power' => '184',
+'car_gearbox_type' => '1',
+'car_fuel' => '1',
+'car_mileage' => '270000',
+'car_body_type' => '2',
+'status' => '1',
+'photo' => 'photos.url.jpg',
+'photos[0]' => 'photos.url1.jpg',
+'photos[1]' => 'photos.url2.jpg',
+'photos[2]' => 'photos.url3.jpg',
+];
+
+$ch = curl_init('https://api.rrr.lt/crm/importCar');
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+$response = json_decode(curl_exec($ch));
+curl_close($ch);
+Output
+{"car_id":292,"msg":"OK","status_code":"R200"}
+Attention
+Values of 'photos[]' fields must be filled in order to be shown in shop.
+
+Value of the 'photo' field must be first value of 'photos[]' field too, for correct main photo upload and thumbnail generation.
+

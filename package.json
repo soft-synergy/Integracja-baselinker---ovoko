@@ -1,0 +1,51 @@
+{
+  "name": "ovoko-baselinker-sync",
+  "version": "1.0.0",
+  "description": "Web GUI for synchronizing BaseLinker products with Ovoko",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "process-events": "node synch_orders_with_baselinker.js",
+    "check-changes": "node check_product_changes.js",
+    "update-versions": "node check_product_changes.js update-versions",
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development --watch"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "lucide-react": "^0.263.1",
+    "nodemailer": "^6.10.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.0",
+    "@babel/preset-env": "^7.22.0",
+    "@babel/preset-react": "^7.22.0",
+    "autoprefixer": "^10.4.14",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.8.1",
+    "nodemon": "^3.0.1",
+    "postcss": "^8.4.24",
+    "postcss-loader": "^8.1.1",
+    "style-loader": "^3.3.3",
+    "tailwindcss": "^3.3.2",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "keywords": [
+    "ovoko",
+    "baselinker",
+    "sync",
+    "api"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

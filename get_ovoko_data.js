@@ -3,8 +3,8 @@ const { URLSearchParams } = require('url');
 
 class OvokoAPIHelper {
     constructor() {
-        this.username = 'bmw@bavariaparts.pl';
-        this.password = 'Karawan1!';
+        this.username = 'bavarian';
+        this.password = '5J1iod3cY6zUCkid';
         this.baseUrl = 'https://api.rrr.lt/crm';
     }
 
@@ -13,6 +13,7 @@ class OvokoAPIHelper {
             const postData = new URLSearchParams();
             postData.append('username', this.username);
             postData.append('password', this.password);
+            postData.append('user_token', 'dcf1fb235513c6d36b7a700defdee8ab');
             
             // Add additional data
             Object.keys(data).forEach(key => {

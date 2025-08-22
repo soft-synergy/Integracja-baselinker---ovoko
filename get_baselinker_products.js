@@ -87,10 +87,13 @@ class BaseLinkerClient {
                 inventory_id: inventoryId
             };
             const response = await this.makeApiRequest('getInventoryProductsList', parameters);
-
+        
             if (response.products) {
                 if (typeof response.products === 'object' && !Array.isArray(response.products)) {
-                    return Object.values(response.products);
+                    return Object.entries(response.products).map(([id, product]) => ({
+                        ...product,
+                        id: product.id || Number(id)
+                    }));
                 } else if (Array.isArray(response.products)) {
                     return response.products;
                 }
@@ -155,57 +158,106 @@ class BaseLinkerClient {
             for (const [inventoryId, inventoryName] of Object.entries(inventories)) {
                 console.log(`\nFetching products from: ${inventoryName} (ID: ${inventoryId})`);
                 try {
-                    try {
-                        console.log('Trying direct getInventoryProductsData...');
-                        const productsResponse = await this.makeApiRequest('getInventoryProductsData', {
-                            inventory_id: inventoryId
-                        });
-
-                        if (productsResponse.products && Object.keys(productsResponse.products).length > 0) {
-                            const products = Object.values(productsResponse.products);
-                            products.forEach(product => {
-                                product.inventory_id = inventoryId;
-                                product.inventory_name = inventoryName;
-                            });
-                            allProducts.push(...products);
-                            console.log(`Direct method added ${products.length} products`);
-                            continue;
-                        }
-                    } catch (error) {
-                        console.log(`Direct method failed: ${error.message}`);
-                    }
-
-                    try {
-                        console.log('Trying list approach...');
-                        const productsList = await this.getInventoryProductsList(inventoryId);
-                        console.log(`ProductsList type:`, typeof productsList, `length:`, productsList ? productsList.length : 'null');
-
-                        if (productsList && productsList.length > 0) {
-                            const batchSize = 100;
-                            for (let i = 0; i < productsList.length; i += batchSize) {
-                                const batch = productsList.slice(i, i + batchSize);
-                                const productIds = batch.map(p => p.product_id || p.id).filter(Boolean);
+                    // Try paginated approach first
+                    let page = 1;
+                    let hasMoreProducts = true;
+                    const pageSize = 1000; // Baselinker default page size
+                    
+                    while (hasMoreProducts) {
+                        console.log(`Fetching page ${page}...`);
+                        try {
+                            const parameters = {
+                                inventory_id: inventoryId,
+                                page: page,
+                                get_products: 1
+                            };
+                            
+                            const response = await this.makeApiRequest('getInventoryProductsList', parameters);
+                            console.log(response)
+                            
+                   
+                            if (response.products && Object.keys(response.products).length > 0) {
+                                const products = Object.entries(response.products).map(([id, product]) => ({
+                                    ...product,
+                                    id: product.id || Number(id)
+                                }));
+                                console.log(`Page ${page}: Found ${products.length} products, fetching full data...`);
+                                
+                                // Get full product data including images
+                                const productIds = products.map(p => p.product_id || p.id).filter(Boolean);
                                 if (productIds.length > 0) {
-                                    console.log(`Fetching batch ${Math.floor(i/batchSize) + 1}/${Math.ceil(productsList.length/batchSize)} (${productIds.length} products)`);
                                     try {
-                                        const productsData = await this.getInventoryProductsData(productIds, inventoryId);
-                                        const products = Object.values(productsData);
+                                        const fullProductsData = await this.getInventoryProductsData(productIds, inventoryId);
+                                        // Preserve IDs from the response map and add baselinker_id for consistency
+                                        const fullProducts = Object.entries(fullProductsData).map(([idKey, prod]) => {
+                                            const baselinkerId = prod.product_id || prod.id || Number(idKey);
+                                            return {
+                                                ...prod,
+                                                id: prod.id || baselinkerId,
+                                                baselinker_id: prod.baselinker_id || baselinkerId
+                                            };
+                                        });
+                                        
+                                        fullProducts.forEach(product => {
+                                            product.inventory_id = inventoryId;
+                                            product.inventory_name = inventoryName;
+                                        });
+                                        
+                                        allProducts.push(...fullProducts);
+                                        console.log(`Page ${page}: Added ${fullProducts.length} products with full data`);
+                                    } catch (error) {
+                                        console.log(`Failed to get full data for page ${page}: ${error.message}`);
+                                        // Fallback to basic data
                                         products.forEach(product => {
                                             product.inventory_id = inventoryId;
                                             product.inventory_name = inventoryName;
                                         });
                                         allProducts.push(...products);
-                                        console.log(`Added ${products.length} products to collection`);
-                                    } catch (error) {
-                                        console.error(`Error fetching batch data:`, error.message);
+                                        console.log(`Page ${page}: Added ${products.length} products with basic data`);
                                     }
+                                }
+                                
+                                // Check if we have more products
+                                if (products.length < pageSize) {
+                                    hasMoreProducts = false;
+                                } else {
+                                    page++;
                                     await new Promise(resolve => setTimeout(resolve, this.requestDelay));
                                 }
+                            } else {
+                                hasMoreProducts = false;
                             }
+                        } catch (error) {
+                            console.log(`Page ${page} failed: ${error.message}`);
+                            hasMoreProducts = false;
                         }
-                    } catch (error) {
-                        console.log(`List approach failed: ${error.message}`);
                     }
+                    
+                    // If paginated approach didn't work, try direct method
+                    if (allProducts.filter(p => p.inventory_id === inventoryId).length === 0) {
+                        try {
+                            console.log('Trying direct getInventoryProductsData...');
+                            const productsResponse = await this.makeApiRequest('getInventoryProductsData', {
+                                inventory_id: inventoryId
+                            });
+
+                            if (productsResponse.products && Object.keys(productsResponse.products).length > 0) {
+                                const products = Object.entries(productsResponse.products).map(([id, product]) => ({
+                                    ...product,
+                                    id: product.id || Number(id)
+                                }));
+                                products.forEach(product => {
+                                    product.inventory_id = inventoryId;
+                                    product.inventory_name = inventoryName;
+                                });
+                                allProducts.push(...products);
+                                console.log(`Direct method added ${products.length} products`);
+                            }
+                        } catch (error) {
+                            console.log(`Direct method failed: ${error.message}`);
+                        }
+                    }
+                    
                 } catch (error) {
                     console.error(`Error processing inventory ${inventoryName}:`, error.message);
                 }
@@ -224,7 +276,10 @@ class BaseLinkerClient {
         try {
             const response = await this.makeApiRequest('getProductsList');
             if (response.products && typeof response.products === 'object' && !Array.isArray(response.products)) {
-                return Object.values(response.products);
+                return Object.entries(response.products).map(([id, product]) => ({
+                    ...product,
+                    id: product.id || Number(id)
+                }));
             }
             return response.products || [];
         } catch (error) {
@@ -270,7 +325,10 @@ class BaseLinkerClient {
                     if (Array.isArray(response.products)) {
                         products = response.products;
                     } else if (typeof response.products === 'object') {
-                        products = Object.values(response.products);
+                        products = Object.entries(response.products).map(([id, product]) => ({
+                            ...product,
+                            id: product.id || Number(id)
+                        }));
                     }
                     allProducts.push(...products);
                     console.log(`${method} found: ${products.length} products`);
@@ -297,8 +355,24 @@ class BaseLinkerClient {
             ) === index;
         });
 
-        console.log(`\nTotal unique products found: ${uniqueProducts.length}`);
-        return uniqueProducts;
+        // Add a unified Baselinker identifier to each product in the final output
+        const normalizedProducts = uniqueProducts.map(product => {
+            const baselinkerId = product.product_id || product.id || null;
+            if (!baselinkerId) {
+                return product;
+            }
+            const ensured = { ...product };
+            if (!ensured.baselinker_id) {
+                ensured.baselinker_id = baselinkerId;
+            }
+            if (!ensured.id) {
+                ensured.id = baselinkerId;
+            }
+            return ensured;
+        });
+
+        console.log(`\nTotal unique products found: ${normalizedProducts.length}`);
+        return normalizedProducts;
     }
 
     async saveProductsToFile(products, filename) {
@@ -308,10 +382,25 @@ class BaseLinkerClient {
         }
 
         try {
-            const jsonData = JSON.stringify(products, null, 2);
+            // Final safeguard: ensure every product carries BaseLinker ID fields
+            const productsToSave = products.map(product => {
+                const baselinkerId = product.product_id || product.id || null;
+                if (!baselinkerId) return product;
+                return {
+                    ...product,
+                    id: product.id || baselinkerId,
+                    baselinker_id: product.baselinker_id || baselinkerId
+                };
+            });
+
+            const jsonData = JSON.stringify(productsToSave, null, 2);
+            // Save to the specified filename
             await fs.writeFile(filename, jsonData, 'utf8');
+            // Also save to baselinker_products_latest.json
+            await fs.writeFile('baselinker_products_latest.json', jsonData, 'utf8');
             console.log(`\n✅ Products saved to: ${filename}`);
-            console.log(`📦 Products count: ${products.length}`);
+            console.log(`📦 Products count: ${productsToSave.length}`);
+            console.log(`📝 Also saved to: baselinker_products_latest.json`);
             return filename;
         } catch (error) {
             throw new Error(`Error saving file: ${error.message}`);

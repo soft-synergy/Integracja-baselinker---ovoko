@@ -1,69 +1,42 @@
 const fs = require('fs').promises;
 const https = require('https');
 const { URLSearchParams } = require('url');
+const readline = require('readline');
 
 /**
- * Enhanced test script to import one product from BaseLinker to Ovoko
- * This script will try different combinations until it works
+ * Interactive script to import specific BaseLinker product to Ovoko
+ * This script will ask for product ID and import only that product
  */
 
-// Ovoko API credentials - try different combinations
+// Ovoko API credentials - CORRECT ONES!
 const OVOKO_CREDENTIALS = {
-    username: 'bmw@bavariaparts.pl',
-    password: 'Karawan1!',
-    user_token: '', // We'll try to get this
+    username: 'bavarian',
+    password: '5J1iod3cY6zUCkid',
+    user_token: 'dcf1fb235513c6d36b7a700defdee8ab',
     apiUrl: 'https://api.rrr.lt/crm/importPart'
 };
 
-// Try different credential combinations
-const CREDENTIAL_COMBINATIONS = [
-    { username: 'bmw@bavariaparts.pl', password: 'Karawan1!' },
-    { username: 'bmw@bavariaparts.pl', password: 'Karawan1' },
-    { username: 'bmw@bavariaparts.pl', password: 'karawan1!' },
-    { username: 'bmw@bavariaparts.pl', password: 'karawan1' },
-    { username: 'bavariaparts', password: 'Karawan1!' },
-    { username: 'bavariaparts', password: 'Karawan1' }
-];
+// Working combination that we know works
+const WORKING_COMBINATION = {
+    category_id: 55,
+    car_id: 291,
+    quality: 1,
+    status: 0
+};
 
-// Different combinations to try - using more realistic values
-const TEST_COMBINATIONS = [
-    {
-        category_id: 55,
-        car_id: 291,
-        quality: 1,
-        status: 0
-    },
-    {
-        category_id: 1,
-        car_id: 1,
-        quality: 1,
-        status: 0
-    },
-    {
-        category_id: 10,
-        car_id: 10,
-        quality: 1,
-        status: 0
-    },
-    {
-        category_id: 100,
-        car_id: 100,
-        quality: 1,
-        status: 0
-    },
-    {
-        category_id: 500,
-        car_id: 500,
-        quality: 1,
-        status: 0
-    },
-    {
-        category_id: 1000,
-        car_id: 1000,
-        quality: 1,
-        status: 0
-    }
-];
+// Create readline interface for user input
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+function askQuestion(question) {
+    return new Promise((resolve) => {
+        rl.question(question, (answer) => {
+            resolve(answer);
+        });
+    });
+}
 
 async function makeOvokoRequest(endpoint, data) {
     return new Promise((resolve, reject) => {
@@ -87,7 +60,7 @@ async function makeOvokoRequest(endpoint, data) {
             }
         };
 
-        console.log(`🚀 Making request to: ${endpoint}`);
+        console.log('🚀 Making request to Ovoko API...');
         console.log('📝 Request data:', JSON.stringify(data, null, 2));
 
         const req = https.request(options, (res) => {
@@ -117,143 +90,7 @@ async function makeOvokoRequest(endpoint, data) {
     });
 }
 
-async function tryToGetToken() {
-    console.log('🔑 Attempting to get user token...');
-    
-    // Try different endpoints to get token
-    const tokenEndpoints = [
-        'getToken',
-        'login',
-        'authenticate',
-        'auth'
-    ];
-    
-    // Also try different token formats
-    const testTokens = [
-        'test123',
-        'bmw@bavariaparts.pl',
-        'Karawan1!',
-        'bmw_bavariaparts',
-        'bavariaparts',
-        '123456',
-        'token123'
-    ];
-    
-    for (const endpoint of tokenEndpoints) {
-        try {
-            console.log(`🔄 Trying endpoint: ${endpoint}`);
-            const result = await makeOvokoRequest(endpoint, {
-                username: OVOKO_CREDENTIALS.username,
-                password: OVOKO_CREDENTIALS.password
-            });
-            
-            if (result.token || result.user_token || result.access_token) {
-                console.log(`✅ Got token from ${endpoint}:`, result.token || result.user_token || result.access_token);
-                return result.token || result.user_token || result.access_token;
-            }
-        } catch (error) {
-            console.log(`❌ Failed to get token from ${endpoint}:`, error.message);
-        }
-    }
-    
-    // Try test tokens
-    for (const testToken of testTokens) {
-        try {
-            console.log(`🔄 Trying test token: ${testToken}`);
-            const result = await makeOvokoRequest('importPart', {
-                username: OVOKO_CREDENTIALS.username,
-                password: OVOKO_CREDENTIALS.password,
-                user_token: testToken,
-                category_id: 55,
-                car_id: 291,
-                quality: 1,
-                status: 0,
-                external_id: 'test123'
-            });
-            
-            if (result.status_code === 'R200') {
-                console.log(`✅ Test token ${testToken} worked!`);
-                return testToken;
-            } else if (result.status_code !== 'R009') {
-                console.log(`⚠️ Test token ${testToken} got different error:`, result.msg);
-            }
-        } catch (error) {
-            console.log(`❌ Test token ${testToken} failed:`, error.message);
-        }
-    }
-    
-    return null;
-}
-
-async function tryDifferentCredentials() {
-    console.log('🔐 Testing different credential combinations...');
-    
-    for (const creds of CREDENTIAL_COMBINATIONS) {
-        try {
-            console.log(`🔄 Trying: ${creds.username} / ${creds.password}`);
-            
-            const result = await makeOvokoRequest('importPart', {
-                username: creds.username,
-                password: creds.password,
-                user_token: 'test',
-                category_id: 55,
-                car_id: 291,
-                quality: 1,
-                status: 0,
-                'optional_codes[0]': 'TEST123',
-                photo: 'https://example.com/test.jpg',
-                price: 15,
-                storage_id: 1
-            });
-            
-            console.log(`📥 Response:`, result);
-            
-            if (result.status_code === 'R200') {
-                console.log(`✅ SUCCESS with credentials: ${creds.username} / ${creds.password}`);
-                return creds;
-            } else if (result.status_code !== 'R009' && result.status_code !== 2) {
-                console.log(`⚠️ Different error with ${creds.username}:`, result.msg);
-            }
-            
-        } catch (error) {
-            console.log(`❌ Failed with ${creds.username}:`, error.message);
-        }
-    }
-    
-    return null;
-}
-
-async function tryMinimalImport() {
-    console.log('🔬 Trying minimal import data...');
-    
-    const minimalData = {
-        username: OVOKO_CREDENTIALS.username,
-        password: OVOKO_CREDENTIALS.password,
-        user_token: 'test',
-        category_id: 1,
-        car_id: 1,
-        quality: 1,
-        status: 0
-    };
-    
-    try {
-        console.log('📝 Minimal data:', JSON.stringify(minimalData, null, 2));
-        const result = await makeOvokoRequest('importPart', minimalData);
-        
-        if (result.status_code === 'R200') {
-            console.log('✅ Minimal import successful!');
-            return true;
-        } else {
-            console.log('❌ Minimal import failed:', result.msg);
-            return false;
-        }
-    } catch (error) {
-        console.log('💥 Minimal import error:', error.message);
-        return false;
-    }
-}
-
-function prepareProductData(product, combination) {
+function prepareProductData(product) {
     // Extract price (using the first available price)
     const prices = Object.values(product.prices || {});
     const price = prices.length > 0 ? prices[0] : null;
@@ -265,17 +102,6 @@ function prepareProductData(product, combination) {
     // Extract manufacturer code from features
     const manufacturerCode = product.text_fields.features?.['Numer katalogowy części'] || '';
     
-    // Prepare notes
-    const features = product.text_fields.features || {};
-    const notes = [
-        features['Stan'] ? `Stan: ${features['Stan']}` : '',
-        features['Producent części'] ? `Producent: ${features['Producent części']}` : '',
-        features['Strona zabudowy'] ? `Strona zabudowy: ${features['Strona zabudowy']}` : '',
-        features['Kolor'] ? `Kolor: ${features['Kolor']}` : '',
-        `SKU: ${product.sku}`,
-        product.weight > 0 ? `Waga: ${product.weight}kg` : ''
-    ].filter(note => note).join('; ');
-
     // Prepare the data EXACTLY like in the PHP example from documentation
     const ovokoData = {
         // Required authentication
@@ -284,10 +110,10 @@ function prepareProductData(product, combination) {
         user_token: OVOKO_CREDENTIALS.user_token,
         
         // Required fields from documentation
-        category_id: combination.category_id,
-        car_id: combination.car_id,
-        quality: combination.quality,
-        status: combination.status,
+        category_id: WORKING_COMBINATION.category_id,
+        car_id: WORKING_COMBINATION.car_id,
+        quality: WORKING_COMBINATION.quality,
+        status: WORKING_COMBINATION.status,
         
         // Optional codes like in PHP example
         'optional_codes[0]': product.sku,
@@ -298,6 +124,9 @@ function prepareProductData(product, combination) {
         
         // Price
         price: price,
+        
+        // Currency - API requires PLN
+        original_currency: 'PLN',
         
         // Storage ID - this was in the PHP example!
         storage_id: 1
@@ -313,59 +142,92 @@ function prepareProductData(product, combination) {
     return ovokoData;
 }
 
-async function tryImportWithCombination(product, combination, attemptNumber) {
-    console.log(`\n🔄 Attempt ${attemptNumber}: Trying combination:`, combination);
+async function findProductById(products, searchId) {
+    // Try to find by SKU first
+    let product = products.find(p => p.sku === searchId);
+    if (product) {
+        return { product, foundBy: 'SKU' };
+    }
     
-    const ovokoData = prepareProductData(product, combination);
+    // Try to find by inventory_id
+    product = products.find(p => p.inventory_id === searchId);
+    if (product) {
+        return { product, foundBy: 'inventory_id' };
+    }
+    
+    // Try to find by partial name match
+    product = products.find(p => 
+        p.text_fields.name.toLowerCase().includes(searchId.toLowerCase())
+    );
+    if (product) {
+        return { product, foundBy: 'partial name' };
+    }
+    
+    return null;
+}
+
+async function showProductInfo(product) {
+    console.log('\n📋 Product Information:');
+    console.log(`🆔 SKU: ${product.sku}`);
+    console.log(`📦 Inventory ID: ${product.inventory_id}`);
+    console.log(`🏷️  Name: ${product.text_fields.name}`);
+    
+    const prices = Object.values(product.prices || {});
+    if (prices.length > 0) {
+        console.log(`💰 Price: ${prices[0]} EUR`);
+    }
+    
+    if (product.weight > 0) {
+        console.log(`⚖️  Weight: ${product.weight}kg`);
+    }
+    
+    const images = Object.values(product.images || {});
+    console.log(`🖼️  Images: ${images.length}`);
+    
+    const features = product.text_fields.features || {};
+    if (features['Stan']) {
+        console.log(`📊 Condition: ${features['Stan']}`);
+    }
+    if (features['Producent części']) {
+        console.log(`🏭 Manufacturer: ${features['Producent części']}`);
+    }
+    if (features['Kolor']) {
+        console.log(`🎨 Color: ${features['Kolor']}`);
+    }
+}
+
+async function importProduct(product) {
+    console.log('\n🚀 Starting import...');
     
     try {
+        const ovokoData = prepareProductData(product);
         const result = await makeOvokoRequest('importPart', ovokoData);
         
         if (result.status_code === 'R200') {
-            console.log(`\n✅ SUCCESS! Product imported successfully on attempt ${attemptNumber}`);
+            console.log('\n✅ SUCCESS! Product imported successfully!');
             console.log(`🆔 Ovoko Part ID: ${result.part_id}`);
             console.log(`📝 Message: ${result.msg}`);
-            return { success: true, result, combination };
+            if (result.shop_url) {
+                console.log(`🌐 Shop URL: ${result.shop_url}`);
+            }
+            return true;
         } else {
-            console.log(`\n❌ FAILED on attempt ${attemptNumber}`);
+            console.log('\n❌ FAILED! Import was not successful');
             console.log(`📝 Status: ${result.status_code}`);
             console.log(`📝 Message: ${result.msg}`);
-            return { success: false, result, combination };
+            return false;
         }
+        
     } catch (error) {
-        console.log(`\n💥 ERROR on attempt ${attemptNumber}:`, error.message);
-        return { success: false, error: error.message, combination };
+        console.error('\n💥 ERROR:', error.message);
+        return false;
     }
 }
 
 async function main() {
-    console.log('🔄 Starting Ovoko import test...\n');
+    console.log('🔄 Starting Ovoko Import Tool...\n');
     
     try {
-        // First try different credentials
-        const workingCreds = await tryDifferentCredentials();
-        if (workingCreds) {
-            OVOKO_CREDENTIALS.username = workingCreds.username;
-            OVOKO_CREDENTIALS.password = workingCreds.password;
-            console.log('✅ Found working credentials!');
-        }
-
-        // Try to get token
-        const token = await tryToGetToken();
-        if (token) {
-            OVOKO_CREDENTIALS.user_token = token;
-            console.log('✅ Successfully obtained user token');
-        } else {
-            console.log('⚠️ Could not get token automatically');
-        }
-
-        // Try minimal import first
-        console.log('\n🔬 Testing minimal import...');
-        const minimalSuccess = await tryMinimalImport();
-        if (minimalSuccess) {
-            console.log('🎉 Minimal import worked! Now trying with full data...');
-        }
-
         // Read BaseLinker products
         console.log('📖 Reading BaseLinker products...');
         const data = await fs.readFile('baselinker_products_2025-08-09T06-31-13-827Z.json', 'utf8');
@@ -376,52 +238,57 @@ async function main() {
             return;
         }
 
-        // Get first product
-        const firstProduct = products[0];
-        console.log(`✅ Found ${products.length} products`);
-        console.log(`🎯 Importing first product: ${firstProduct.text_fields.name}`);
-        console.log(`📦 SKU: ${firstProduct.sku}`);
-        console.log(`💰 Price: ${Object.values(firstProduct.prices || {})[0] || 'N/A'} EUR`);
-        console.log(`🖼️  Images: ${Object.keys(firstProduct.images || {}).length}\n`);
+        console.log(`✅ Found ${products.length} products in database\n`);
         
-        // Try each combination
-        let success = false;
-        let finalResult = null;
+        // Ask user for product ID
+        const searchId = await askQuestion('🔍 Enter BaseLinker product ID/SKU to import: ');
         
-        for (let i = 0; i < TEST_COMBINATIONS.length; i++) {
-            const combination = TEST_COMBINATIONS[i];
-            const result = await tryImportWithCombination(firstProduct, combination, i + 1);
-            
-            if (result.success) {
-                success = true;
-                finalResult = result;
-                break;
-            }
-            
-            // Wait a bit between attempts
-            if (i < TEST_COMBINATIONS.length - 1) {
-                console.log('⏳ Waiting 2 seconds before next attempt...');
-                await new Promise(resolve => setTimeout(resolve, 2000));
-            }
+        if (!searchId.trim()) {
+            console.log('❌ No ID provided');
+            return;
         }
         
-        if (success) {
-            console.log('\n🎉 FINAL SUCCESS!');
-            console.log(`✅ Product imported with combination:`, finalResult.combination);
-            console.log(`🆔 Part ID: ${finalResult.result.part_id}`);
+        // Find the product
+        console.log(`\n🔍 Searching for product: ${searchId}`);
+        const searchResult = await findProductById(products, searchId.trim());
+        
+        if (!searchResult) {
+            console.log(`❌ Product with ID/SKU "${searchId}" not found`);
+            console.log('\n💡 Tips:');
+            console.log('- Try using the SKU (e.g., 11481380)');
+            console.log('- Try using the inventory ID');
+            console.log('- Try using part of the product name');
+            return;
+        }
+        
+        const { product, foundBy } = searchResult;
+        console.log(`✅ Product found by: ${foundBy}`);
+        
+        // Show product info
+        await showProductInfo(product);
+        
+        // Ask for confirmation
+        const confirm = await askQuestion('\n❓ Do you want to import this product? (y/n): ');
+        
+        if (confirm.toLowerCase() === 'y' || confirm.toLowerCase() === 'yes') {
+            const success = await importProduct(product);
+            
+            if (success) {
+                console.log('\n🎉 Import completed successfully!');
+            } else {
+                console.log('\n💥 Import failed. Check the error messages above.');
+            }
         } else {
-            console.log('\n💥 ALL ATTEMPTS FAILED');
-            console.log('📋 Next steps:');
-            console.log('1. Check if credentials are correct');
-            console.log('2. Contact Ovoko support for correct category_id and car_id values');
-            console.log('3. Check if API is working properly');
+            console.log('\n❌ Import cancelled by user');
         }
         
     } catch (error) {
         console.error('\n💥 CRITICAL ERROR:', error.message);
+    } finally {
+        rl.close();
     }
     
-    console.log('\n🏁 Test completed');
+    console.log('\n🏁 Tool completed');
 }
 
 // Run the script

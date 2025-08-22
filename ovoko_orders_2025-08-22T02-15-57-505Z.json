@@ -1,0 +1,476 @@
+[
+  {
+    "order_id": "d9f55cc0-e09c-11ee-ab67-fd7176087423",
+    "order_source": "allegro",
+    "client_name": "Joanna Marta Garczyńska",
+    "client_address": "Pałacowa 12b/3, Dąbrówka, PL-62-070",
+    "client_address_street": "Pałacowa 12b/3",
+    "client_address_city": "Dąbrówka",
+    "client_address_country": "PL",
+    "client_address_zip_code": "62-070",
+    "client_phone": "+48515898888",
+    "client_email": "58vi45mfxk+573f3fa82@allegromail.pl",
+    "company_code": null,
+    "company_vat_code": null,
+    "company_title": null,
+    "company_phone": null,
+    "company_address": null,
+    "item_list": [
+      {
+        "id": "3492",
+        "id_bridge": "0",
+        "car_id": "3497",
+        "name": "Elektryczny podnośnik szyby drzwi",
+        "sell_price": {
+          "seller": {
+            "amount": "117.00",
+            "currency": "PLN"
+          },
+          "buyer": {
+            "amount": "117.00",
+            "currency": "PLN"
+          }
+        },
+        "external_id": null,
+        "delivery_type": "unknown",
+        "shipping_provider": null
+      }
+    ],
+    "part_total_price": {
+      "seller": {
+        "amount": "117.00",
+        "currency": "PLN"
+      },
+      "buyer": {
+        "amount": "117.00",
+        "currency": "PLN"
+      }
+    },
+    "order_date": "2024-03-12 20:18:33",
+    "payment_type": "RRR",
+    "seller": null,
+    "shipping_price": {
+      "seller": {
+        "amount": "4.99",
+        "currency": "PLN"
+      },
+      "buyer": {
+        "amount": "4.99",
+        "currency": "PLN"
+      }
+    },
+    "total_price": {
+      "seller": {
+        "amount": "121.99",
+        "currency": "PLN"
+      },
+      "buyer": {
+        "amount": "121.99",
+        "currency": "PLN"
+      }
+    },
+    "payment_method": null,
+    "order_status": "SENT",
+    "vat_amount": {
+      "amount": "23.00",
+      "type": "%"
+    },
+    "invoice_number": null,
+    "view_order": "https://bavarian.rrr.lt/order/view_order/d9f55cc0-e09c-11ee-ab67-fd7176087423"
+  },
+  {
+    "order_id": "5159107",
+    "order_source": "ovoko",
+    "client_name": "chris-autos",
+    "client_address": "425 route de lassalle, Pujols-sur-Ciron, FR-33210",
+    "client_address_street": "425 route de lassalle",
+    "client_address_city": "Pujols-sur-Ciron",
+    "client_address_country": "FR",
+    "client_address_zip_code": "33210",
+    "client_phone": "+33972852717",
+    "client_email": "chris-autos@outlook.fr",
+    "company_code": "81977075100025",
+    "company_vat_code": "FR81977075100025",
+    "company_title": "chris-autos",
+    "company_phone": "+33972852717",
+    "company_address": "425 route de lassalle",
+    "item_list": [
+      {
+        "id": "16566",
+        "id_bridge": "1250903965",
+        "car_id": "6055",
+        "name": "Skrzynia rozdzielcza / Reduktor",
+        "sell_price": {
+          "seller": {
+            "amount": "1299.99",
+            "currency": "PLN"
+          },
+          "buyer": {
+            "amount": "305.88",
+            "currency": "EUR"
+          }
+        },
+        "external_id": "1250903965",
+        "delivery_type": "courier",
+        "shipping_provider": "schenker"
+      }
+    ],
+    "part_total_price": {
+      "seller": {
+        "amount": "1299.99",
+        "currency": "PLN"
+      },
+      "buyer": {
+        "amount": "305.88",
+        "currency": "EUR"
+      }
+    },
+    "order_date": "2025-06-02 06:29:04",
+    "payment_type": "RRR",
+    "seller": null,
+    "shipping_price": {
+      "seller": {
+        "amount": "339.96",
+        "currency": "PLN"
+      },
+      "buyer": {
+        "amount": "79.99",
+        "currency": "EUR"
+      }
+    },
+    "total_price": {
+      "seller": {
+        "amount": "1639.95",
+        "currency": "PLN"
+      },
+      "buyer": {
+        "amount": "385.87",
+        "currency": "EUR"
+      }
+    },
+    "payment_method": "stripe",
+    "order_status": "CANCELLED",
+    "vat_amount": {
+      "amount": "23.00",
+      "type": "%"
+    },
+    "invoice_number": null,
+    "view_order": "https://bavarian.rrr.lt/order/view_order/5159107"
+  },
+  {
+    "order_id": "0198a2f2-ca82-7815-a15b-45ce25535e81",
+    "order_source": "offline",
+    "client_name": "ss",
+    "client_address": "Chmielna 69, 00-801 Warszawa, -, PL--",
+    "client_address_street": "Chmielna 69, 00-801 Warszawa",
+    "client_address_city": "-",
+    "client_address_country": "PL",
+    "client_address_zip_code": "-",
+    "client_phone": "213123123",
+    "client_email": "",
+    "company_code": "ss",
+    "company_vat_code": null,
+    "company_title": "ss",
+    "company_phone": "213123123",
+    "company_address": "Chmielna 69, 00-801 Warszawa",
+    "item_list": [
+      {
+        "id": "16721",
+        "id_bridge": "10914341",
+        "car_id": "291",
+        "name": "Czujnik prędkości obrotowej koła ABS",
+        "sell_price": {
+          "seller": {
+            "amount": "79.98",
+            "currency": "PLN"
+          },
+          "buyer": {
+            "amount": "79.98",
+            "currency": "PLN"
+          }
+        },
+        "external_id": "10914341",
+        "delivery_type": "unknown",
+        "shipping_provider": null
+      }
+    ],
+    "part_total_price": {
+      "seller": {
+        "amount": "79.98",
+        "currency": "PLN"
+      },
+      "buyer": {
+        "amount": "79.98",
+        "currency": "PLN"
+      }
+    },
+    "order_date": "2025-08-13 10:21:17",
+    "payment_type": "RRR",
+    "seller": null,
+    "shipping_price": {
+      "seller": {
+        "amount": "0.00",
+        "currency": "PLN"
+      },
+      "buyer": {
+        "amount": "0.00",
+        "currency": "PLN"
+      }
+    },
+    "total_price": {
+      "seller": {
+        "amount": "79.98",
+        "currency": "PLN"
+      },
+      "buyer": {
+        "amount": "79.98",
+        "currency": "PLN"
+      }
+    },
+    "payment_method": null,
+    "order_status": "SENT",
+    "vat_amount": {
+      "amount": "23.00",
+      "type": "%"
+    },
+    "invoice_number": null,
+    "view_order": "https://bavarian.rrr.lt/invoice/part_invoice//"
+  },
+  {
+    "order_id": "0198abf3-38c9-77bc-96c7-0eea3a6d97f7",
+    "order_source": "offline",
+    "client_name": "ss",
+    "client_address": "Chmielna 69, 00-801 Warszawa, -, PL--",
+    "client_address_street": "Chmielna 69, 00-801 Warszawa",
+    "client_address_city": "-",
+    "client_address_country": "PL",
+    "client_address_zip_code": "-",
+    "client_phone": "213123123",
+    "client_email": "",
+    "company_code": "ss",
+    "company_vat_code": null,
+    "company_title": "ss",
+    "company_phone": "213123123",
+    "company_address": "Chmielna 69, 00-801 Warszawa",
+    "item_list": [
+      {
+        "id": "16726",
+        "id_bridge": "11481779",
+        "car_id": "291",
+        "name": "Czujnik prędkości obrotowej koła ABS",
+        "sell_price": {
+          "seller": {
+            "amount": "276.00",
+            "currency": "PLN"
+          },
+          "buyer": {
+            "amount": "276.00",
+            "currency": "PLN"
+          }
+        },
+        "external_id": "11481779",
+        "delivery_type": "unknown",
+        "shipping_provider": null
+      }
+    ],
+    "part_total_price": {
+      "seller": {
+        "amount": "276.00",
+        "currency": "PLN"
+      },
+      "buyer": {
+        "amount": "276.00",
+        "currency": "PLN"
+      }
+    },
+    "order_date": "2025-08-15 04:18:20",
+    "payment_type": "RRR",
+    "seller": null,
+    "shipping_price": {
+      "seller": {
+        "amount": "0.00",
+        "currency": "PLN"
+      },
+      "buyer": {
+        "amount": "0.00",
+        "currency": "PLN"
+      }
+    },
+    "total_price": {
+      "seller": {
+        "amount": "276.00",
+        "currency": "PLN"
+      },
+      "buyer": {
+        "amount": "276.00",
+        "currency": "PLN"
+      }
+    },
+    "payment_method": null,
+    "order_status": "SENT",
+    "vat_amount": {
+      "amount": "23.00",
+      "type": "%"
+    },
+    "invoice_number": null,
+    "view_order": "https://bavarian.rrr.lt/invoice/part_invoice//"
+  },
+  {
+    "order_id": "0198c107-662d-7044-b6dc-29079e906b52",
+    "order_source": "offline",
+    "client_name": "Piotr Serczyński soft synergy",
+    "client_address": "Chmielna 69, 00-801 Warszawa, -, PL--",
+    "client_address_street": "Chmielna 69, 00-801 Warszawa",
+    "client_address_city": "-",
+    "client_address_country": "PL",
+    "client_address_zip_code": "-",
+    "client_phone": "213123123",
+    "client_email": "",
+    "company_code": "ss",
+    "company_vat_code": "123123123",
+    "company_title": "Piotr Serczyński soft synergy",
+    "company_phone": "213123123",
+    "company_address": "Chmielna 69, 00-801 Warszawa",
+    "item_list": [
+      {
+        "id": "16742",
+        "id_bridge": "13975642",
+        "car_id": "291",
+        "name": "Czujnik prędkości obrotowej koła ABS",
+        "sell_price": {
+          "seller": {
+            "amount": "155.00",
+            "currency": "PLN"
+          },
+          "buyer": {
+            "amount": "155.00",
+            "currency": "PLN"
+          }
+        },
+        "external_id": "13975642",
+        "delivery_type": "unknown",
+        "shipping_provider": null
+      }
+    ],
+    "part_total_price": {
+      "seller": {
+        "amount": "155.00",
+        "currency": "PLN"
+      },
+      "buyer": {
+        "amount": "155.00",
+        "currency": "PLN"
+      }
+    },
+    "order_date": "2025-08-19 06:32:24",
+    "payment_type": "RRR",
+    "seller": null,
+    "shipping_price": {
+      "seller": {
+        "amount": "0.00",
+        "currency": "PLN"
+      },
+      "buyer": {
+        "amount": "0.00",
+        "currency": "PLN"
+      }
+    },
+    "total_price": {
+      "seller": {
+        "amount": "155.00",
+        "currency": "PLN"
+      },
+      "buyer": {
+        "amount": "155.00",
+        "currency": "PLN"
+      }
+    },
+    "payment_method": null,
+    "order_status": "SENT",
+    "vat_amount": {
+      "amount": "23.00",
+      "type": "%"
+    },
+    "invoice_number": null,
+    "view_order": "https://bavarian.rrr.lt/invoice/part_invoice//"
+  },
+  {
+    "order_id": "0198c115-80f0-771a-9f56-6488f238f00a",
+    "order_source": "offline",
+    "client_name": "ss",
+    "client_address": "Chmielna 69, 00-801 Warszawa, -, PL--",
+    "client_address_street": "Chmielna 69, 00-801 Warszawa",
+    "client_address_city": "-",
+    "client_address_country": "PL",
+    "client_address_zip_code": "-",
+    "client_phone": "213123123",
+    "client_email": "",
+    "company_code": "ss",
+    "company_vat_code": "123123123",
+    "company_title": "ss",
+    "company_phone": "213123123",
+    "company_address": "Chmielna 69, 00-801 Warszawa",
+    "item_list": [
+      {
+        "id": "16743",
+        "id_bridge": "13537389",
+        "car_id": "291",
+        "name": "Czujnik prędkości obrotowej koła ABS",
+        "sell_price": {
+          "seller": {
+            "amount": "295.00",
+            "currency": "PLN"
+          },
+          "buyer": {
+            "amount": "295.00",
+            "currency": "PLN"
+          }
+        },
+        "external_id": "13537389",
+        "delivery_type": "unknown",
+        "shipping_provider": null
+      }
+    ],
+    "part_total_price": {
+      "seller": {
+        "amount": "295.00",
+        "currency": "PLN"
+      },
+      "buyer": {
+        "amount": "295.00",
+        "currency": "PLN"
+      }
+    },
+    "order_date": "2025-08-19 06:47:48",
+    "payment_type": "RRR",
+    "seller": null,
+    "shipping_price": {
+      "seller": {
+        "amount": "0.00",
+        "currency": "PLN"
+      },
+      "buyer": {
+        "amount": "0.00",
+        "currency": "PLN"
+      }
+    },
+    "total_price": {
+      "seller": {
+        "amount": "295.00",
+        "currency": "PLN"
+      },
+      "buyer": {
+        "amount": "295.00",
+        "currency": "PLN"
+      }
+    },
+    "payment_method": null,
+    "order_status": "SENT",
+    "vat_amount": {
+      "amount": "23.00",
+      "type": "%"
+    },
+    "invoice_number": null,
+    "view_order": "https://bavarian.rrr.lt/invoice/part_invoice//"
+  }
+]
