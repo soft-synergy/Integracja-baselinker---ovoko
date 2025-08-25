@@ -17,7 +17,7 @@ const { smartSyncScheduler } = require('./smart_sync_scheduler');
 const { ordersSyncScheduler } = require('./orders_sync_scheduler');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3002;
 
 // Middleware
 app.use(cors());
