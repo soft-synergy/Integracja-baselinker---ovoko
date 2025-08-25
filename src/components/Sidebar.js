@@ -7,7 +7,8 @@ import {
   RefreshCw, 
   Activity, 
   X,
-  Shield
+  Shield,
+  Clock
 } from 'lucide-react';
 
 const Sidebar = ({ isOpen, onClose, currentPath }) => {
@@ -18,6 +19,7 @@ const Sidebar = ({ isOpen, onClose, currentPath }) => {
     { name: 'Kolejki', href: '/dashboard/queues', icon: RefreshCw },
     { name: 'Dziennik zdarzeń', href: '/dashboard/activity-log', icon: Activity },
     { name: 'Raporty Smart Sync', href: '/dashboard/smart-sync-reports', icon: Activity },
+    { name: 'Auto-sync zamówień', href: '/dashboard/orders-sync', icon: Clock },
   ];
 
   return (

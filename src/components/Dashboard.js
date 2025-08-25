@@ -10,6 +10,7 @@ import Orders from './Orders';
 import Queues from './Queues';
 import ActivityLog from './ActivityLog';
 import SmartSyncReports from './SmartSyncReports';
+import OrdersSyncControl from './OrdersSyncControl';
 
 const Dashboard = () => {
   const { user, logout } = useAuth();
@@ -51,6 +52,7 @@ const Dashboard = () => {
             <Route path="/queues" element={<Queues />} />
             <Route path="/activity-log" element={<ActivityLog />} />
             <Route path="/smart-sync-reports" element={<SmartSyncReports />} />
+            <Route path="/orders-sync" element={<OrdersSyncControl />} />
           </Routes>
         </main>
       </div>

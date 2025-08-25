@@ -154,24 +154,23 @@ class OrdersSyncScheduler {
 
     async fetchOvokoOrdersV2(fromDate, toDate) {
         return new Promise((resolve, reject) => {
-            const postData = new URLSearchParams();
-            postData.append('username', this.ovokoCredentials.username);
-            postData.append('password', this.ovokoCredentials.password);
-            postData.append('user_token', this.ovokoCredentials.userToken);
-            postData.append('method', 'getOrders');
-            postData.append('from_date', fromDate);
-            postData.append('to_date', toDate);
-            postData.append('version', '2');
+                    const postData = new URLSearchParams();
+        
+        // Add authentication data
+        postData.append('username', this.ovokoCredentials.username);
+        postData.append('password', this.ovokoCredentials.password);
+        postData.append('user_token', this.ovokoCredentials.userToken);
 
-            const options = {
-                hostname: 'api.ovoko.pl',
-                path: '/api/orders',
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                    'Content-Length': Buffer.byteLength(postData.toString())
-                }
-            };
+                    const options = {
+            hostname: 'api.rrr.lt',
+            path: `/v2/get/orders/${fromDate}/${toDate}`,
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'Content-Length': Buffer.byteLength(postData.toString()),
+                'User-Agent': 'Ovoko-Orders-Exporter/2.0'
+            }
+        };
 
             const req = https.request(options, (res) => {
                 let data = '';

@@ -1,39 +1,62 @@
 {
-  "last_updated": "2025-08-22T02:22:26.922Z",
+  "last_updated": "2025-08-22T16:46:10.721Z",
   "synced_products": {
-    "13537387": {
-      "ovoko_part_id": 16745,
-      "synced_at": "2025-08-22T01:34:51.838Z",
-      "product_name": "Kierownica sport  M PAKIET kluczyk BMW E61"
+    "10910817": {
+      "ovoko_part_id": 16760,
+      "ovoko_car_id": "2001",
+      "bmw_model": "E60",
+      "synced_at": "2025-08-22T04:25:15.264Z",
+      "product_name": "PUSZKA KATALIZATORA BMW E60 N47"
+    },
+    "13537314": {
+      "ovoko_part_id": 16758,
+      "ovoko_car_id": "2",
+      "bmw_model": "E61",
+      "synced_at": "2025-08-22T04:08:16.462Z",
+      "product_name": "Dywaniki gumowe BMW E61 OE"
+    },
+    "13537316": {
+      "ovoko_part_id": 16753,
+      "ovoko_car_id": 6057,
+      "bmw_model": "E61",
+      "synced_at": "2025-08-22T03:48:43.991Z",
+      "product_name": "Przełącznik manetka pająk  BMW E61 6952.977"
+    },
+    "13537325": {
+      "ovoko_part_id": 16757,
+      "ovoko_car_id": "2",
+      "bmw_model": "E61",
+      "synced_at": "2025-08-22T04:03:39.663Z",
+      "product_name": "Gałka zmiany biegów automat BMW E61"
+    },
+    "13537354": {
+      "ovoko_part_id": 16754,
+      "ovoko_car_id": "2",
+      "bmw_model": "E61",
+      "synced_at": "2025-08-22T03:59:30.763Z",
+      "product_name": "Wyświetlacz  HEAD UP BMW E61 EU"
+    },
+    "13537365": {
+      "ovoko_part_id": 16756,
+      "ovoko_car_id": "2",
+      "bmw_model": "E61",
+      "synced_at": "2025-08-22T04:02:49.737Z",
+      "product_name": "Czujnik poziomowania świateł BMW E61 6776.605"
+    },
+    "13537366": {
+      "ovoko_part_id": 16755,
+      "ovoko_car_id": "2",
+      "bmw_model": "E60",
+      "synced_at": "2025-08-22T04:00:14.930Z",
+      "product_name": "Kluczyk kyless BMW E60 61 OE SKU 1353.7366"
+    },
+    "13975653": {
+      "ovoko_part_id": 16759,
+      "ovoko_car_id": "2",
+      "bmw_model": "E60",
+      "synced_at": "2025-08-22T04:08:49.205Z",
+      "product_name": "Amortyzatory przód komplet BMW E60 306D2 MONROE"
     }
   },
-  "synced_orders": {
-    "0198c115-80f0-771a-9f56-6488f238f00a": {
-      "baselinker_order_id": 777015848,
-      "synced_at": "2025-08-20T09:53:01.126Z",
-      "order_data": {
-        "customer_name": "ss",
-        "total_value": "295.00",
-        "items_count": 1
-      }
-    },
-    "0198abf3-38c9-77bc-96c7-0eea3a6d97f7": {
-      "baselinker_order_id": 777379072,
-      "synced_at": "2025-08-22T02:21:51.873Z",
-      "order_data": {
-        "customer_name": "ss",
-        "total_value": "276.00",
-        "items_count": 1
-      }
-    },
-    "0198c107-662d-7044-b6dc-29079e906b52": {
-      "baselinker_order_id": 777379074,
-      "synced_at": "2025-08-22T02:21:53.210Z",
-      "order_data": {
-        "customer_name": "Piotr Serczyński soft synergy",
-        "total_value": "155.00",
-        "items_count": 1
-      }
-    }
-  }
+  "synced_orders": {}
 }

@@ -63,9 +63,11 @@ class ProductsQueue {
             // Check for product changes and enqueue updates
             console.log('🔍 Checking for product changes...');
             try {
-                const changesFound = await checkProductChanges();
-                if (changesFound > 0) {
-                    console.log(`✅ Found ${changesFound} products with changes, events enqueued.`);
+                const result = await checkProductChanges();
+                if (result.error) {
+                    console.error('⚠️ Error checking product changes:', result.error);
+                } else if (result.changesFound > 0) {
+                    console.log(`✅ Found ${result.changesFound} products with changes, events enqueued.`);
                 } else {
                     console.log('✅ No product changes detected.');
                 }

@@ -362,13 +362,172 @@ app.post('/api/import-product', requireAuth, async (req, res) => {
         
         console.log(`🚀 Importing product: ${product.sku} - ${product.text_fields.name}`);
         
+        // Extract BMW model from product name
+        const bmwModelMatch = product.text_fields.name.match(/BMW\s+(E[0-9][0-9])/i);
+        if (!bmwModelMatch) {
+            return res.status(400).json({ error: 'Could not extract BMW model from product name' });
+        }
+        
+        const bmwModel = bmwModelMatch[1]; // e.g., "E61"
+        console.log(`🔍 Extracted BMW model: ${bmwModel}`);
+        
+        // Check existing cars in Ovoko (last 10 years)
+        const tenYearsAgo = new Date();
+        tenYearsAgo.setFullYear(tenYearsAgo.getFullYear() - 10);
+        const dateFrom = tenYearsAgo.toISOString().split('T')[0]; // YYYY-MM-DD
+        const dateTo = new Date().toISOString().split('T')[0];
+        
+        console.log(`🔍 Scanning existing cars from ${dateFrom} to ${dateTo}`);
+        
+        // Get cars from Ovoko API
+        const carsResponse = await new Promise((resolve, reject) => {
+            const postData = new URLSearchParams();
+            postData.append('username', OVOKO_CREDENTIALS.username);
+            postData.append('password', OVOKO_CREDENTIALS.password);
+            postData.append('user_token', OVOKO_CREDENTIALS.user_token);
+            
+            const options = {
+                hostname: 'api.rrr.lt',
+                path: `/get/cars/${dateFrom}/${dateTo}`,
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'Content-Length': Buffer.byteLength(postData.toString())
+                }
+            };
+            
+            const req = https.request(options, (res) => {
+                let responseData = '';
+                
+                res.on('data', (chunk) => {
+                    responseData += chunk;
+                });
+                
+                res.on('end', () => {
+                    try {
+                        const response = JSON.parse(responseData);
+                        resolve(response);
+                    } catch (error) {
+                        reject(new Error('Invalid response format from cars API'));
+                    }
+                });
+            });
+            
+            req.on('error', (error) => {
+                reject(error);
+            });
+            
+            req.write(postData.toString());
+            req.end();
+        });
+        
+        let carId = null;
+        
+        if (carsResponse.status_code === 'R200' && carsResponse.list && carsResponse.list.length > 0) {
+            console.log(`📋 Found ${carsResponse.list.length} existing cars`);
+            
+            // Function to calculate similarity between BMW model and car data
+            function calculateSimilarity(car, targetModel) {
+                let score = 0;
+                
+                console.log(`  🔍 Analyzing car ID: ${car.id}, external_id: "${car.external_id}"`);
+                
+                // Check all car properties for BMW model patterns
+                const carData = [
+                    car.external_id || '',
+                    car.car_body_number || '',
+                    car.car_engine_number || '',
+                    car.defectation_notes || '',
+                    (car.id || '').toString()
+                ].join(' ').toUpperCase();
+                
+                const targetUpper = targetModel.toUpperCase();
+                
+                // Perfect match - exact model found
+                if (carData.includes(targetUpper)) {
+                    score += 1000;
+                    console.log(`    ✅ Perfect match found: ${targetUpper} (score: +1000)`);
+                }
+                
+                // Extract all E-series models from car data
+                const carModels = carData.match(/E[0-9][0-9]/g) || [];
+                if (carModels.length > 0) {
+                    console.log(`    📋 Found models in car: ${carModels.join(', ')}`);
+                    
+                    for (const carModel of carModels) {
+                        if (carModel === targetUpper) {
+                            score += 500; // Exact match
+                            console.log(`    ⭐ Exact model match: ${carModel} (score: +500)`);
+                        } else {
+                            // Calculate numerical similarity
+                            const targetNum = parseInt(targetUpper.substring(1));
+                            const carNum = parseInt(carModel.substring(1));
+                            const diff = Math.abs(targetNum - carNum);
+                            
+                            if (diff <= 10) {
+                                const similarityPoints = Math.max(100 - diff * 10, 10);
+                                score += similarityPoints;
+                                console.log(`    🔗 Similar model: ${carModel}, diff: ${diff}, points: +${similarityPoints}`);
+                            }
+                        }
+                    }
+                }
+                
+                // Check for BMW brand
+                if (carData.includes('BMW')) {
+                    score += 50;
+                    console.log(`    🚗 BMW brand found (score: +50)`);
+                }
+                
+                // Bonus for newer/higher car IDs (assuming they're more recent)
+                const carId = parseInt(car.id || '0');
+                if (carId > 100) {
+                    score += Math.min(carId / 100, 20);
+                    console.log(`    📅 Car ID bonus: +${Math.min(carId / 100, 20).toFixed(1)}`);
+                }
+                
+                console.log(`    🎯 Total score for car ${car.id}: ${score}`);
+                return score;
+            }
+            
+            // Find the most similar car
+            let bestCar = null;
+            let bestScore = -1; // Start with -1 to ensure we always pick something
+            
+            for (const car of carsResponse.list) {
+                const score = calculateSimilarity(car, bmwModel);
+                if (score > bestScore) {
+                    bestScore = score;
+                    bestCar = car;
+                }
+            }
+            
+            // Always use the best car found (even if score is 0)
+            if (bestCar) {
+                carId = bestCar.id;
+                if (bestScore > 0) {
+                    console.log(`✅ Found similar car with ID: ${carId} (score: ${bestScore}, external_id: ${bestCar.external_id})`);
+                } else {
+                    console.log(`⚠️ No similar BMW ${bmwModel} found, using best available car ID: ${carId} (score: ${bestScore})`);
+                }
+                        } else {
+                // If no cars found, use default car_id 291 as fallback
+                carId = 291;
+                console.log(`⚠️ No cars found in API, using default car_id: ${carId}`);
+            }
+        } else {
+            // If no cars found, use default car_id 291 as fallback
+            carId = 291;
+            console.log(`⚠️ No cars found in API, using default car_id: ${carId}`);
+        }
+        
         // Prepare product data for Ovoko
         const postData = new URLSearchParams();
         postData.append('username', OVOKO_CREDENTIALS.username);
         postData.append('password', OVOKO_CREDENTIALS.password);
         postData.append('user_token', OVOKO_CREDENTIALS.user_token);
         postData.append('category_id', '55');
-        postData.append('car_id', '291');
+        postData.append('car_id', carId.toString());
         postData.append('quality', '1');
         postData.append('status', '0');
         postData.append('external_id', product.sku);
@@ -428,12 +587,14 @@ app.post('/api/import-product', requireAuth, async (req, res) => {
         });
         
         if (result.status_code === 'R200') {
-            console.log(`✅ Product imported successfully: ${result.part_id}`);
+            console.log(`✅ Product imported successfully: ${result.part_id} to car: ${carId}`);
             
             // Save sync status
             const syncStatus = await loadSyncStatus();
             syncStatus.synced_products[product.sku] = {
                 ovoko_part_id: result.part_id,
+                ovoko_car_id: carId,
+                bmw_model: bmwModel,
                 synced_at: new Date().toISOString(),
                 product_name: product.text_fields.name
             };
@@ -442,6 +603,8 @@ app.post('/api/import-product', requireAuth, async (req, res) => {
             res.json({ 
                 success: true, 
                 part_id: result.part_id,
+                car_id: carId,
+                bmw_model: bmwModel,
                 message: 'Product imported successfully'
             });
         } else {
@@ -579,13 +742,22 @@ app.post('/api/update-product', requireAuth, async (req, res) => {
 app.post('/api/check-product-changes', requireAuth, async (req, res) => {
     try {
         console.log('🔍 Manual product change check requested...');
-        const changesFound = await checkProductChanges();
+        const result = await checkProductChanges();
         
-        res.json({ 
-            success: true, 
-            changesFound,
-            message: `Found ${changesFound} products with changes`
-        });
+        if (result.error) {
+            res.status(500).json({ 
+                success: false, 
+                error: result.error 
+            });
+        } else {
+            res.json({ 
+                success: true, 
+                changesFound: result.changesFound,
+                totalProducts: result.totalProducts,
+                updatedCount: result.updatedCount,
+                message: result.message
+            });
+        }
         
     } catch (error) {
         console.error('💥 Error checking product changes:', error.message);
@@ -1595,6 +1767,52 @@ app.post('/api/smart-sync/control', requireAuth, async (req, res) => {
     }
 });
 
+// Orders sync scheduler status endpoint
+app.get('/api/orders-sync/status', requireAuth, (req, res) => {
+    try {
+        const status = ordersSyncScheduler.getStatus();
+        res.json(status);
+    } catch (error) {
+        console.error('Orders sync status endpoint error:', error);
+        res.status(500).json({ error: 'Failed to get orders sync status' });
+    }
+});
+
+// Orders sync scheduler control endpoint
+app.post('/api/orders-sync/control', requireAuth, async (req, res) => {
+    try {
+        const { action, config } = req.body;
+        
+        switch (action) {
+            case 'start':
+                ordersSyncScheduler.start();
+                res.json({ success: true, message: 'Orders sync scheduler started', status: ordersSyncScheduler.getStatus() });
+                break;
+            case 'stop':
+                ordersSyncScheduler.stop();
+                res.json({ success: true, message: 'Orders sync scheduler stopped', status: ordersSyncScheduler.getStatus() });
+                break;
+            case 'trigger':
+                const result = await ordersSyncScheduler.triggerSync();
+                res.json({ success: true, message: 'Orders sync triggered manually', result, status: ordersSyncScheduler.getStatus() });
+                break;
+            case 'update-config':
+                if (config) {
+                    const updatedStatus = ordersSyncScheduler.updateConfig(config);
+                    res.json({ success: true, message: 'Configuration updated', status: updatedStatus });
+                } else {
+                    res.status(400).json({ error: 'Configuration object required' });
+                }
+                break;
+            default:
+                res.status(400).json({ error: 'Invalid action. Use: start, stop, trigger, or update-config' });
+        }
+    } catch (error) {
+        console.error('Orders sync control endpoint error:', error);
+        res.status(500).json({ error: 'Failed to control orders sync scheduler' });
+    }
+});
+
 // Overview endpoint
 app.get('/api/overview', requireAuth, async (req, res) => {
     try {
@@ -1641,8 +1859,9 @@ app.get('/api/overview', requireAuth, async (req, res) => {
         const ordersQueueStatus = ordersQueue.getStatus();
         const productsQueueStatus = productsQueue.getStatus();
         const smartSyncStatus = smartSyncScheduler.getStatus();
+        const ordersSyncStatus = ordersSyncScheduler.getStatus();
         
-        if (ordersQueueStatus.isRunning || productsQueueStatus.isRunning || smartSyncStatus.isRunning) {
+        if (ordersQueueStatus.isRunning || productsQueueStatus.isRunning || smartSyncStatus.isRunning || ordersSyncStatus.isRunning) {
             stats.syncStatus = 'syncing';
         } else if (stats.errors > 0) {
             stats.syncStatus = 'error';
@@ -1658,6 +1877,17 @@ app.get('/api/overview', requireAuth, async (req, res) => {
             totalRuns: smartSyncStatus.totalRuns,
             intervalMinutes: smartSyncStatus.intervalMinutes,
             enabled: smartSyncStatus.enabled
+        };
+        
+        // Add orders sync information
+        stats.ordersSync = {
+            isRunning: ordersSyncStatus.isRunning,
+            lastRun: ordersSyncStatus.lastRun,
+            nextRun: ordersSyncStatus.nextRun,
+            totalRuns: ordersSyncStatus.totalRuns,
+            intervalMinutes: ordersSyncStatus.intervalMinutes,
+            enabled: ordersSyncStatus.enabled,
+            lastSyncDate: ordersSyncStatus.lastSyncDate
         };
         
         // Count pending changes (products with recent modifications)
@@ -1682,6 +1912,17 @@ app.get('/api/overview', requireAuth, async (req, res) => {
     }
 });
 
+// Catch-all route for SPA - must be last
+app.get('*', (req, res) => {
+    // Don't serve SPA for API routes
+    if (req.path.startsWith('/api/')) {
+        return res.status(404).json({ error: 'API endpoint not found' });
+    }
+    
+    // Serve the main HTML file for all other routes
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
 // Start server
 app.listen(PORT, () => {
     console.log(`🚀 Server running on http://localhost:${PORT}`);
@@ -1690,6 +1931,10 @@ app.listen(PORT, () => {
     // Start the smart sync scheduler automatically
     console.log('🔄 Starting smart sync scheduler...');
     smartSyncScheduler.start();
+    
+    // Start the orders sync scheduler automatically
+    console.log('🔄 Starting orders sync scheduler...');
+    ordersSyncScheduler.start();
     
     // Add initial log
     addActivityLog('Server started', 'info', { port: PORT });

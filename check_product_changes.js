@@ -1,5 +1,6 @@
 const fs = require('fs').promises;
 const { enqueueEvent } = require('./events_queue');
+const { fetchAllProducts } = require('./get_baselinker_products');
 
 // Configuration
 const SYNC_STATUS_FILE = 'sync_status.json';
@@ -80,24 +81,40 @@ function hasProductChanged(oldProduct, newProduct) {
     return false;
 }
 
-// Main function to check for product changes
+// Main function to check for product changes and update all products
 async function checkProductChanges() {
-    console.log('🔍 Checking for product changes...');
+    console.log('🔍 Checking for product changes and updating all products...');
     
     try {
+        // Step 1: Fetch all products from BaseLinker
+        console.log('📦 Fetching all products from BaseLinker...');
+        const BASELINKER_TOKEN = '11804-22135-DUWJWIYRACO1WDVKPLZROK7N2UWR1L0W1B7JMV3FRV1HMK70GVOHQRO7IFGWTO9F';
+        const fetchResult = await fetchAllProducts(BASELINKER_TOKEN, `baselinker_products_${new Date().toISOString().replace(/[:.]/g, '-')}.json`);
+        
+        if (!fetchResult.success) {
+            throw new Error(`Failed to fetch products from BaseLinker: ${fetchResult.error || fetchResult.message}`);
+        }
+        
+        console.log(`✅ Fetched ${fetchResult.productCount} products from BaseLinker`);
+        
+        // Step 2: Load sync status to see which products are synced to Ovoko
         const syncStatus = await loadSyncStatus();
         const products = await loadBaseLinkerProducts();
         
         let changesFound = 0;
+        let updatedCount = 0;
+        
+        console.log('🔄 Processing products for updates...');
         
         for (const product of products) {
             const savedStatus = syncStatus.synced_products[product.sku];
             
-            // Only check products that are already synced to Ovoko
+            // Only process products that are already synced to Ovoko
             if (savedStatus && savedStatus.ovoko_part_id) {
                 // Load the previous version from sync status
                 const previousProduct = savedStatus.previous_version;
                 
+                // Check if product has changed
                 if (hasProductChanged(previousProduct, product)) {
                     console.log(`🔄 Product ${product.sku} has changes, enqueueing update...`);
                     
@@ -125,22 +142,38 @@ async function checkProductChanges() {
                     } catch (error) {
                         console.error(`❌ Failed to enqueue update for ${product.sku}:`, error.message);
                     }
+                } else {
+                    // Even if no changes detected, update the previous version for future comparisons
+                    savedStatus.previous_version = product;
+                    savedStatus.last_checked = new Date().toISOString();
+                    updatedCount++;
                 }
             }
         }
         
-        if (changesFound > 0) {
-            console.log(`✅ Found ${changesFound} products with changes, events enqueued.`);
-            await saveSyncStatus(syncStatus);
-        } else {
-            console.log('✅ No product changes detected.');
-        }
+        // Save updated sync status
+        await saveSyncStatus(syncStatus);
         
-        return changesFound;
+        console.log(`✅ Processing complete:`);
+        console.log(`   📦 Total products fetched: ${fetchResult.productCount}`);
+        console.log(`   🔄 Products with changes: ${changesFound}`);
+        console.log(`   📝 Products updated (no changes): ${updatedCount}`);
+        
+        return {
+            changesFound,
+            totalProducts: fetchResult.productCount,
+            updatedCount,
+            message: `Fetched ${fetchResult.productCount} products, found ${changesFound} with changes`
+        };
         
     } catch (error) {
         console.error('💥 Error checking product changes:', error.message);
-        return 0;
+        return {
+            changesFound: 0,
+            totalProducts: 0,
+            updatedCount: 0,
+            error: error.message
+        };
     }
 }
 

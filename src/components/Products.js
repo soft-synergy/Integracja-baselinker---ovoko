@@ -141,7 +141,7 @@ const Products = () => {
   const handleCheckChanges = async () => {
     try {
       setCheckingChanges(true);
-      logInfo('Checking for product changes');
+      logInfo('Checking for product changes and fetching all products from BaseLinker');
 
       const response = await fetch('/api/check-product-changes', {
         method: 'POST',
@@ -151,16 +151,15 @@ const Products = () => {
       const result = await response.json();
 
       if (result.success) {
-        if (result.changesFound > 0) {
-          logSuccess('Product changes detected', { 
-            changesFound: result.changesFound,
-            message: result.message
-          });
-          // Refresh products to show updated data
-          await loadProducts(pagination.page);
-        } else {
-          logInfo('No product changes detected');
-        }
+        logSuccess('Product check completed', { 
+          totalProducts: result.totalProducts,
+          changesFound: result.changesFound,
+          updatedCount: result.updatedCount,
+          message: result.message
+        });
+        
+        // Refresh products to show updated data
+        await loadProducts(pagination.page);
       } else {
         throw new Error(result.error || 'Failed to check changes');
       }
@@ -348,7 +347,7 @@ const Products = () => {
               </div>
               <div className="ml-4">
                 <h3 className="text-lg font-semibold text-gray-900">Sprawdź zmiany</h3>
-                <p className="text-sm text-gray-600">Wykryj zmiany w produktach BaseLinker</p>
+                <p className="text-sm text-gray-600">Pobierz wszystkie produkty z BaseLinker i zaktualizuj w Olx</p>
               </div>
             </div>
             <button

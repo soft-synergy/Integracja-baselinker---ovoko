@@ -8523,5 +8523,344 @@
     "status": "pending",
     "attempts": 0,
     "created_at": "2025-08-22T00:56:58.294Z"
+  },
+  {
+    "id": "1755831903346-dksltk6u",
+    "type": "OVOKO_UPDATE_PRODUCT",
+    "payload": {
+      "source": "baselinker",
+      "sku": "13537354",
+      "ovoko_part_id": 16748,
+      "product": {
+        "is_bundle": false,
+        "ean": "",
+        "sku": "13537354",
+        "tags": [],
+        "tax_rate": 23,
+        "weight": 0,
+        "height": 0,
+        "width": 0,
+        "length": 0,
+        "star": 2,
+        "category_id": 2586292,
+        "manufacturer_id": 518480,
+        "text_fields": {
+          "name": "Wyświetlacz  HEAD UP BMW E61 EU",
+          "extra_field_4398": "Samochody osobowe",
+          "extra_field_4591": "Używany",
+          "extra_field_4418": "Q - oryginał z logo producenta części (OEM, OES)"
+        },
+        "stock": {
+          "bl_14765": 1
+        },
+        "prices": {
+          "2613": 249
+        },
+        "locations": {
+          "bl_14765": ""
+        },
+        "links": {},
+        "average_cost": 0,
+        "average_landed_cost": 0,
+        "images": {
+          "1": "https://upload.cdn.baselinker.com/products/22135/d3359eedbd39db6daa3a09108f52daf7.jpg",
+          "2": "https://upload.cdn.baselinker.com/products/22135/350814f907226c5f34427e82bb0dcbf2.jpg",
+          "3": "https://upload.cdn.baselinker.com/products/22135/e30b81d0aa87565f863a7ba25d534835.jpg",
+          "4": "https://upload.cdn.baselinker.com/products/22135/9d8048633fa23c95e43f11533b194956.jpg",
+          "5": "https://upload.cdn.baselinker.com/products/22135/9f51140eec241b8acd1eb22688db5f0d.jpg"
+        },
+        "id": 1151991869,
+        "baselinker_id": 1151991869,
+        "inventory_id": "11469",
+        "inventory_name": "synowie bavarii"
+      },
+      "changes": {
+        "price": true,
+        "images": true,
+        "name": true,
+        "features": false
+      }
+    },
+    "status": "pending",
+    "attempts": 0,
+    "created_at": "2025-08-22T03:05:03.346Z"
+  },
+  {
+    "id": "1755832479071-qqqaj7ka",
+    "type": "OVOKO_UPDATE_PRODUCT",
+    "payload": {
+      "source": "baselinker",
+      "sku": "13537354",
+      "ovoko_part_id": 16748,
+      "product": {
+        "is_bundle": false,
+        "ean": "",
+        "sku": "13537354",
+        "tags": [
+          "02. dpd, dhl, paczkom."
+        ],
+        "tax_rate": 23,
+        "weight": 0,
+        "height": 0,
+        "width": 0,
+        "length": 0,
+        "star": 1,
+        "category_id": 1730860,
+        "manufacturer_id": 518480,
+        "text_fields": {
+          "extra_field_4398": "Samochody osobowe",
+          "extra_field_6794": "E61",
+          "extra_field_4396": "Europejska",
+          "name": "WYŚWIETLACZ HEAD UP BMW E61 EU",
+          "extra_field_4390": "0",
+          "extra_field_4591": "Używany",
+          "extra_field_6795": "5",
+          "extra_field_4418": "Q - oryginał z logo producenta części (OEM, OES)",
+          "extra_field_8736": "brak"
+        },
+        "stock": {
+          "bl_4376": 1
+        },
+        "prices": {
+          "2613": 175,
+          "10474": 166.25,
+          "10475": 157.5,
+          "10765": 40.25
+        },
+        "locations": {
+          "bl_4376": ""
+        },
+        "links": {
+          "shop_30311": {
+            "product_id": "78715",
+            "variant_id": "0"
+          }
+        },
+        "average_cost": 0,
+        "average_landed_cost": 0,
+        "images": {
+          "1": "https://upload.cdn.baselinker.com/products/22135/f54a197e960f62bf27ce86480de0889e.jpg",
+          "2": "https://upload.cdn.baselinker.com/products/22135/52a802296f42cf481a412efd2968a1cf.jpg",
+          "3": "https://upload.cdn.baselinker.com/products/22135/8675266b21b12631e1d3c7d2080cb60f.jpg",
+          "4": "https://upload.cdn.baselinker.com/products/22135/bde1b087a86c45aeda125170832d97b6.jpg",
+          "5": "https://upload.cdn.baselinker.com/products/22135/dfbe53bed2d7a9a6d756f8d7e99c7ef6.jpg",
+          "7": "https://upload.cdn.baselinker.com/products/22135/91912dc153c1cfdf6f7022284b7253e3.jpg",
+          "8": "https://upload.cdn.baselinker.com/products/22135/f6d3a2abd4ff3109b201d17d24e21843.jpg"
+        },
+        "id": 1253658163,
+        "baselinker_id": 1253658163,
+        "inventory_id": "3387",
+        "inventory_name": "Bavaria Parts"
+      },
+      "changes": {
+        "price": true,
+        "images": true,
+        "name": true,
+        "features": false
+      }
+    },
+    "status": "pending",
+    "attempts": 0,
+    "created_at": "2025-08-22T03:14:39.071Z"
+  },
+  {
+    "id": "1755832479083-kqquq0ko",
+    "type": "OVOKO_UPDATE_PRODUCT",
+    "payload": {
+      "source": "baselinker",
+      "sku": "13537354",
+      "ovoko_part_id": 16748,
+      "product": {
+        "is_bundle": false,
+        "ean": "",
+        "sku": "13537354",
+        "tags": [],
+        "tax_rate": 23,
+        "weight": 0,
+        "height": 0,
+        "width": 0,
+        "length": 0,
+        "star": 2,
+        "category_id": 2586292,
+        "manufacturer_id": 518480,
+        "text_fields": {
+          "name": "Wyświetlacz  HEAD UP BMW E61 EU",
+          "extra_field_4398": "Samochody osobowe",
+          "extra_field_4591": "Używany",
+          "extra_field_4418": "Q - oryginał z logo producenta części (OEM, OES)"
+        },
+        "stock": {
+          "bl_14765": 1
+        },
+        "prices": {
+          "2613": 249
+        },
+        "locations": {
+          "bl_14765": ""
+        },
+        "links": {},
+        "average_cost": 0,
+        "average_landed_cost": 0,
+        "images": {
+          "1": "https://upload.cdn.baselinker.com/products/22135/d3359eedbd39db6daa3a09108f52daf7.jpg",
+          "2": "https://upload.cdn.baselinker.com/products/22135/350814f907226c5f34427e82bb0dcbf2.jpg",
+          "3": "https://upload.cdn.baselinker.com/products/22135/e30b81d0aa87565f863a7ba25d534835.jpg",
+          "4": "https://upload.cdn.baselinker.com/products/22135/9d8048633fa23c95e43f11533b194956.jpg",
+          "5": "https://upload.cdn.baselinker.com/products/22135/9f51140eec241b8acd1eb22688db5f0d.jpg"
+        },
+        "id": 1151991869,
+        "baselinker_id": 1151991869,
+        "inventory_id": "11469",
+        "inventory_name": "synowie bavarii"
+      },
+      "changes": {
+        "price": true,
+        "images": true,
+        "name": true,
+        "features": false
+      }
+    },
+    "status": "pending",
+    "attempts": 0,
+    "created_at": "2025-08-22T03:14:39.083Z"
+  },
+  {
+    "id": "1755833024022-eh6pdx7t",
+    "type": "OVOKO_UPDATE_PRODUCT",
+    "payload": {
+      "source": "baselinker",
+      "sku": "13537354",
+      "ovoko_part_id": 16748,
+      "product": {
+        "is_bundle": false,
+        "ean": "",
+        "sku": "13537354",
+        "tags": [
+          "02. dpd, dhl, paczkom."
+        ],
+        "tax_rate": 23,
+        "weight": 0,
+        "height": 0,
+        "width": 0,
+        "length": 0,
+        "star": 1,
+        "category_id": 1730860,
+        "manufacturer_id": 518480,
+        "text_fields": {
+          "extra_field_4398": "Samochody osobowe",
+          "extra_field_6794": "E61",
+          "extra_field_4396": "Europejska",
+          "name": "WYŚWIETLACZ HEAD UP BMW E61 EU",
+          "extra_field_4390": "0",
+          "extra_field_4591": "Używany",
+          "extra_field_6795": "5",
+          "extra_field_4418": "Q - oryginał z logo producenta części (OEM, OES)",
+          "extra_field_8736": "brak"
+        },
+        "stock": {
+          "bl_4376": 1
+        },
+        "prices": {
+          "2613": 175,
+          "10474": 166.25,
+          "10475": 157.5,
+          "10765": 40.25
+        },
+        "locations": {
+          "bl_4376": ""
+        },
+        "links": {
+          "shop_30311": {
+            "product_id": "78715",
+            "variant_id": "0"
+          }
+        },
+        "average_cost": 0,
+        "average_landed_cost": 0,
+        "images": {
+          "1": "https://upload.cdn.baselinker.com/products/22135/f54a197e960f62bf27ce86480de0889e.jpg",
+          "2": "https://upload.cdn.baselinker.com/products/22135/52a802296f42cf481a412efd2968a1cf.jpg",
+          "3": "https://upload.cdn.baselinker.com/products/22135/8675266b21b12631e1d3c7d2080cb60f.jpg",
+          "4": "https://upload.cdn.baselinker.com/products/22135/bde1b087a86c45aeda125170832d97b6.jpg",
+          "5": "https://upload.cdn.baselinker.com/products/22135/dfbe53bed2d7a9a6d756f8d7e99c7ef6.jpg",
+          "7": "https://upload.cdn.baselinker.com/products/22135/91912dc153c1cfdf6f7022284b7253e3.jpg",
+          "8": "https://upload.cdn.baselinker.com/products/22135/f6d3a2abd4ff3109b201d17d24e21843.jpg"
+        },
+        "id": 1253658163,
+        "baselinker_id": 1253658163,
+        "inventory_id": "3387",
+        "inventory_name": "Bavaria Parts"
+      },
+      "changes": {
+        "price": true,
+        "images": true,
+        "name": true,
+        "features": false
+      }
+    },
+    "status": "pending",
+    "attempts": 0,
+    "created_at": "2025-08-22T03:23:44.022Z"
+  },
+  {
+    "id": "1755833024028-4y182gml",
+    "type": "OVOKO_UPDATE_PRODUCT",
+    "payload": {
+      "source": "baselinker",
+      "sku": "13537354",
+      "ovoko_part_id": 16748,
+      "product": {
+        "is_bundle": false,
+        "ean": "",
+        "sku": "13537354",
+        "tags": [],
+        "tax_rate": 23,
+        "weight": 0,
+        "height": 0,
+        "width": 0,
+        "length": 0,
+        "star": 2,
+        "category_id": 2586292,
+        "manufacturer_id": 518480,
+        "text_fields": {
+          "name": "Wyświetlacz  HEAD UP BMW E61 EU",
+          "extra_field_4398": "Samochody osobowe",
+          "extra_field_4591": "Używany",
+          "extra_field_4418": "Q - oryginał z logo producenta części (OEM, OES)"
+        },
+        "stock": {
+          "bl_14765": 1
+        },
+        "prices": {
+          "2613": 249
+        },
+        "locations": {
+          "bl_14765": ""
+        },
+        "links": {},
+        "average_cost": 0,
+        "average_landed_cost": 0,
+        "images": {
+          "1": "https://upload.cdn.baselinker.com/products/22135/d3359eedbd39db6daa3a09108f52daf7.jpg",
+          "2": "https://upload.cdn.baselinker.com/products/22135/350814f907226c5f34427e82bb0dcbf2.jpg",
+          "3": "https://upload.cdn.baselinker.com/products/22135/e30b81d0aa87565f863a7ba25d534835.jpg",
+          "4": "https://upload.cdn.baselinker.com/products/22135/9d8048633fa23c95e43f11533b194956.jpg",
+          "5": "https://upload.cdn.baselinker.com/products/22135/9f51140eec241b8acd1eb22688db5f0d.jpg"
+        },
+        "id": 1151991869,
+        "baselinker_id": 1151991869,
+        "inventory_id": "11469",
+        "inventory_name": "synowie bavarii"
+      },
+      "changes": {
+        "price": true,
+        "images": true,
+        "name": true,
+        "features": false
+      }
+    },
+    "status": "pending",
+    "attempts": 0,
+    "created_at": "2025-08-22T03:23:44.028Z"
   }
 ]

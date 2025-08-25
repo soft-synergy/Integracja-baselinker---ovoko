@@ -169,7 +169,7 @@
                 <div class="section">
                     <h3>🔍 Product Change Detection</h3>
                     <div class="queue-controls">
-                        <button onclick="checkProductChanges()" class="btn btn-info">🔍 Check Product Changes</button>
+                        <button onclick="checkProductChanges()" class="btn btn-info">🔍 Pobierz produkty z BaseLinker i zaktualizuj w Olx</button>
                         <button onclick="updateProductVersions()" class="btn btn-info">📝 Update Product Versions</button>
                     </div>
                 </div>
@@ -417,7 +417,7 @@
                 const result = await response.json();
                 
                 if (result.success) {
-                    alert(`Found ${result.changesFound} products with changes. Check events queue for details.`);
+                    alert(`Pobrano ${result.totalProducts} produktów z BaseLinker.\nZnaleziono ${result.changesFound} produktów ze zmianami.\nZaktualizowano ${result.updatedCount} produktów.\n\nSprawdź kolejkę zdarzeń dla szczegółów.`);
                 } else {
                     alert(`Error: ${result.error}`);
                 }
