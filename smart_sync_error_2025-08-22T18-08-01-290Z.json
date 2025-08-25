@@ -1,5 +1,0 @@
-{
-  "timestamp": "2025-08-22T18:08:01.290Z",
-  "error": "Error fetching current inventory: Request Error: read ETIMEDOUT",
-  "stack": "Error: Error fetching current inventory: Request Error: read ETIMEDOUT\n    at SmartInventorySynchronizer.getCurrentBaselinkerInventory (/Users/antoni/Documents/ovoko/smart_inventory_sync.js:279:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async SmartInventorySynchronizer.runSmartSync (/Users/antoni/Documents/ovoko/smart_inventory_sync.js:659:38)\n    at async SmartSyncScheduler.runOnce (/Users/antoni/Documents/ovoko/smart_sync_scheduler.js:73:28)"
-}

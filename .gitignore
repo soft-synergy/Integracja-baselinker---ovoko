@@ -33,6 +33,7 @@ cookies.txt
 *.icloud
 
 # App-generated JSON snapshots and logs
+# These are data files that should not be committed
 baselinker_products_*.json
 ovoko_orders_*.json
 ovoko_orders_latest.json
@@ -47,8 +48,19 @@ sync_status_backup.json
 inventory_changes_log.json
 events_queue.json
 
-# Queues and temp
-*_queue.json
+# Generated images and assets
+logo-removebg-preview.png
+
+# Important: These scripts should NOT be ignored - they are source code
+# clean_ovoko_products.js
+# create_ovoko_products_from_sync_status.js
+# events_queue.js
+# export_ovoko_products.js
+# get_baselinker_products.js
+# get_ovoko_orders.js
+# get_ovoko_orders_correct.js
+# reset_ovoko_products.js
+# update_ovoko_products_from_sync_status.js
 
 # Misc
 =.* 
