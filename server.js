@@ -17,7 +17,7 @@ const { smartSyncScheduler } = require('./smart_sync_scheduler');
 const { ordersSyncScheduler } = require('./orders_sync_scheduler');
 
 const app = express();
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors());
@@ -1910,6 +1910,11 @@ app.get('/api/overview', requireAuth, async (req, res) => {
         console.error('Overview endpoint error:', error);
         res.status(500).json({ error: 'Failed to load overview data' });
     }
+});
+
+// Documentation route
+app.get('/docs', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'docs.html'));
 });
 
 // Catch-all route for SPA - must be last

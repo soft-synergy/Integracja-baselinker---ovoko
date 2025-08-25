@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentacja - System Synchronizacji BaseLinker-Ovoko | Soft Synergy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .sidebar {
+            scrollbar-width: thin;
+            scrollbar-color: #6b7280 #1f2937;
+        }
+        .sidebar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .sidebar::-webkit-scrollbar-track {
+            background: #1f2937;
+        }
+        .sidebar::-webkit-scrollbar-thumb {
+            background: #6b7280;
+            border-radius: 3px;
+        }
+        .content {
+            scrollbar-width: thin;
+            scrollbar-color: #6b7280 #f9fafb;
+        }
+        .content::-webkit-scrollbar {
+            width: 8px;
+        }
+        .content::-webkit-scrollbar-track {
+            background: #f9fafb;
+        }
+        .content::-webkit-scrollbar-thumb {
+            background: #6b7280;
+            border-radius: 4px;
+        }
+        .code-block {
+            background: #1f2937;
+            border-radius: 8px;
+            padding: 16px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+        .feature-card {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .feature-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <img src="/logo-removebg-preview.png" alt="Soft Synergy Logo" class="h-12 w-auto">
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-900">Dokumentacja Systemu</h1>
+                        <p class="text-sm text-gray-600">BaseLinker ↔ Ovoko Synchronization | Soft Synergy</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="/dashboard" class="text-blue-600 hover:text-blue-800 text-sm font-medium">
+                        <i class="fas fa-tachometer-alt mr-2"></i>Dashboard
+                    </a>
+                    <a href="/" class="text-gray-600 hover:text-gray-800 text-sm">
+                        <i class="fas fa-home mr-2"></i>Strona główna
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex h-screen bg-gray-50">
+        <!-- Sidebar -->
+        <nav class="w-64 bg-gray-800 text-white sidebar overflow-y-auto">
+            <div class="p-4">
+                <h2 class="text-lg font-semibold mb-4">Spis treści</h2>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="#overview" class="block py-2 px-3 rounded hover:bg-gray-700 transition-colors">
+                            <i class="fas fa-info-circle mr-2"></i>Przegląd systemu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#features" class="block py-2 px-3 rounded hover:bg-gray-700 transition-colors">
+                            <i class="fas fa-star mr-2"></i>Funkcje
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#architecture" class="block py-2 px-3 rounded hover:bg-gray-700 transition-colors">
+                            <i class="fas fa-sitemap mr-2"></i>Architektura
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#sync-processes" class="block py-2 px-3 rounded hover:bg-gray-700 transition-colors">
+                            <i class="fas fa-exchange-alt mr-2"></i>Procesy synchronizacji
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#dashboard" class="block py-2 px-3 rounded hover:bg-gray-700 transition-colors">
+                            <i class="fas fa-tachometer-alt mr-2"></i>Panel kontrolny
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#api-endpoints" class="block py-2 px-3 rounded hover:bg-gray-700 transition-colors">
+                            <i class="fas fa-code mr-2"></i>API Endpoints
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#technical-architecture" class="block py-2 px-3 rounded hover:bg-gray-700 transition-colors">
+                            <i class="fas fa-microchip mr-2"></i>Architektura techniczna
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#installation" class="block py-2 px-3 rounded hover:bg-gray-700 transition-colors">
+                            <i class="fas fa-download mr-2"></i>Instalacja i wdrożenie
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#monitoring" class="block py-2 px-3 rounded hover:bg-gray-700 transition-colors">
+                            <i class="fas fa-chart-line mr-2"></i>Monitorowanie i logi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#security" class="block py-2 px-3 rounded hover:bg-gray-700 transition-colors">
+                            <i class="fas fa-shield-alt mr-2"></i>Bezpieczeństwo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#troubleshooting" class="block py-2 px-3 rounded hover:bg-gray-700 transition-colors">
+                            <i class="fas fa-tools mr-2"></i>Rozwiązywanie problemów
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#faq" class="block py-2 px-3 rounded hover:bg-gray-700 transition-colors">
+                            <i class="fas fa-question-circle mr-2"></i>FAQ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="flex-1 content overflow-y-auto">
+            <div class="max-w-4xl mx-auto px-6 py-8">
+                
+                <!-- Overview Section -->
+                <section id="overview" class="mb-12">
+                    <div class="bg-white rounded-lg shadow-sm p-8">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">
+                            <i class="fas fa-info-circle text-blue-600 mr-3"></i>
+                            Przegląd systemu
+                        </h2>
+                        <div class="prose max-w-none">
+                            <p class="text-lg text-gray-700 mb-6">
+                                System synchronizacji BaseLinker-Ovoko to zaawansowane rozwiązanie do automatycznej synchronizacji produktów i zamówień między platformami e-commerce. 
+                                System zapewnia dwukierunkową komunikację, umożliwiając efektywne zarządzanie inwentarzem i zamówieniami.
+                            </p>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                                <div class="bg-blue-50 p-6 rounded-lg">
+                                    <h3 class="text-xl font-semibold text-blue-900 mb-3">
+                                        <i class="fas fa-arrow-right text-blue-600 mr-2"></i>
+                                        BaseLinker → Ovoko
+                                    </h3>
+                                    <ul class="text-blue-800 space-y-2">
+                                        <li>• Synchronizacja produktów</li>
+                                        <li>• Aktualizacja cen i stanów magazynowych</li>
+                                        <li>• Automatyczne mapowanie kategorii</li>
+                                        <li>• Obsługa zdjęć produktów</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="bg-green-50 p-6 rounded-lg">
+                                    <h3 class="text-xl font-semibold text-green-900 mb-3">
+                                        <i class="fas fa-arrow-left text-green-600 mr-2"></i>
+                                        Ovoko → BaseLinker
+                                    </h3>
+                                    <ul class="text-green-800 space-y-2">
+                                        <li>• Import zamówień</li>
+                                        <li>• Synchronizacja statusów</li>
+                                        <li>• Automatyczne tworzenie zamówień</li>
+                                        <li>• Mapowanie produktów</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Features Section -->
+                <section id="features" class="mb-12">
+                    <div class="bg-white rounded-lg shadow-sm p-8">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8">
+                            <i class="fas fa-star text-yellow-500 mr-3"></i>
+                            Funkcje systemu
+                        </h2>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="feature-card bg-white border border-gray-200 rounded-lg p-6">
+                                <div class="text-blue-600 text-3xl mb-4">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-3">Automatyczna synchronizacja</h3>
+                                <p class="text-gray-600">System automatycznie synchronizuje dane w tle, eliminując potrzebę ręcznej interwencji.</p>
+                            </div>
+                            
+                            <div class="feature-card bg-white border border-gray-200 rounded-lg p-6">
+                                <div class="text-green-600 text-3xl mb-4">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-3">Monitorowanie w czasie rzeczywistym</h3>
+                                <p class="text-gray-600">Panel kontrolny z aktualnymi statystykami i statusem synchronizacji.</p>
+                            </div>
+                            
+                            <div class="feature-card bg-white border border-gray-200 rounded-lg p-6">
+                                <div class="text-purple-600 text-3xl mb-4">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-3">Bezpieczeństwo danych</h3>
+                                <p class="text-gray-600">Szyfrowane połączenia i bezpieczne przechowywanie danych uwierzytelniających.</p>
+                            </div>
+                            
+                            <div class="feature-card bg-white border border-gray-200 rounded-lg p-6">
+                                <div class="text-red-600 text-3xl mb-4">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-3">Obsługa błędów</h3>
+                                <p class="text-gray-600">Automatyczne ponowne próby i szczegółowe logi błędów.</p>
+                            </div>
+                            
+                            <div class="feature-card bg-white border border-gray-200 rounded-lg p-6">
+                                <div class="text-indigo-600 text-3xl mb-4">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-3">Konfiguracja</h3>
+                                <p class="text-gray-600">Elastyczne ustawienia synchronizacji i harmonogramów.</p>
+                            </div>
+                            
+                            <div class="feature-card bg-white border border-gray-200 rounded-lg p-6">
+                                <div class="text-orange-600 text-3xl mb-4">
+                                    <i class="fas fa-history"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-3">Historia operacji</h3>
+                                <p class="text-gray-600">Szczegółowe logi wszystkich operacji synchronizacji.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Architecture Section -->
+                <section id="architecture" class="mb-12">
+                    <div class="bg-white rounded-lg shadow-sm p-8">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8">
+                            <i class="fas fa-sitemap text-gray-600 mr-3"></i>
+                            Architektura systemu
+                        </h2>
+                        
+                        <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                            <h3 class="text-xl font-semibold mb-4">Komponenty systemu</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start space-x-4">
+                                    <div class="bg-blue-100 p-2 rounded">
+                                        <i class="fas fa-server text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold">Serwer Express.js</h4>
+                                        <p class="text-gray-600">Główny serwer obsługujący API i interfejs webowy</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="bg-green-100 p-2 rounded">
+                                        <i class="fas fa-database text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold">System kolejek</h4>
+                                        <p class="text-gray-600">Kolejki produktów i zamówień do przetwarzania</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="bg-purple-100 p-2 rounded">
+                                        <i class="fas fa-clock text-purple-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold">Harmonogramy</h4>
+                                        <p class="text-gray-600">Automatyczne uruchamianie synchronizacji</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="bg-orange-100 p-2 rounded">
+                                        <i class="fas fa-file-alt text-orange-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold">System logów</h4>
+                                        <p class="text-gray-600">Rejestrowanie wszystkich operacji i błędów</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-4">Przepływ danych</h3>
+                            <div class="text-center">
+                                <div class="flex items-center justify-center space-x-4 mb-4">
+                                    <div class="bg-blue-600 text-white p-3 rounded-lg">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <div class="text-sm mt-1">BaseLinker</div>
+                                    </div>
+                                    <i class="fas fa-arrow-right text-gray-400 text-xl"></i>
+                                    <div class="bg-gray-200 p-3 rounded-lg">
+                                        <i class="fas fa-sync-alt"></i>
+                                        <div class="text-sm mt-1">System</div>
+                                    </div>
+                                    <i class="fas fa-arrow-right text-gray-400 text-xl"></i>
+                                    <div class="bg-green-600 text-white p-3 rounded-lg">
+                                        <i class="fas fa-car"></i>
+                                        <div class="text-sm mt-1">Ovoko</div>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600">Dwukierunkowa synchronizacja z automatycznym mapowaniem danych</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sync Processes Section -->
+                <section id="sync-processes" class="mb-12">
+                    <div class="bg-white rounded-lg shadow-sm p-8">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8">
+                            <i class="fas fa-exchange-alt text-blue-600 mr-3"></i>
+                            Procesy synchronizacji
+                        </h2>
+                        
+                        <div class="space-y-8">
+                            <div class="border-l-4 border-blue-500 pl-6">
+                                <h3 class="text-xl font-semibold mb-4">Synchronizacja produktów (BaseLinker → Ovoko)</h3>
+                                <div class="space-y-3 text-gray-700">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="bg-blue-100 p-2 rounded-full">
+                                            <i class="fas fa-download text-blue-600"></i>
+                                        </div>
+                                        <span>Pobieranie produktów z BaseLinker</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <div class="bg-yellow-100 p-2 rounded-full">
+                                            <i class="fas fa-search text-yellow-600"></i>
+                                        </div>
+                                        <span>Analiza zmian i aktualizacji</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <div class="bg-green-100 p-2 rounded-full">
+                                            <i class="fas fa-upload text-green-600"></i>
+                                        </div>
+                                        <span>Import do Ovoko z mapowaniem BMW</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <div class="bg-purple-100 p-2 rounded-full">
+                                            <i class="fas fa-save text-purple-600"></i>
+                                        </div>
+                                        <span>Zapisywanie statusu synchronizacji</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="border-l-4 border-green-500 pl-6">
+                                <h3 class="text-xl font-semibold mb-4">Synchronizacja zamówień (Ovoko → BaseLinker)</h3>
+                                <div class="space-y-3 text-gray-700">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="bg-green-100 p-2 rounded-full">
+                                            <i class="fas fa-download text-green-600"></i>
+                                        </div>
+                                        <span>Pobieranie zamówień z Ovoko API v2</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <div class="bg-blue-100 p-2 rounded-full">
+                                            <i class="fas fa-map text-blue-600"></i>
+                                        </div>
+                                        <span>Mapowanie produktów i danych klienta</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <div class="bg-orange-100 p-2 rounded-full">
+                                            <i class="fas fa-plus text-orange-600"></i>
+                                        </div>
+                                        <span>Tworzenie zamówień w BaseLinker</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <div class="bg-purple-100 p-2 rounded-full">
+                                            <i class="fas fa-save text-purple-600"></i>
+                                        </div>
+                                        <span>Rejestrowanie statusu synchronizacji</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Dashboard Section -->
+                <section id="dashboard" class="mb-12">
+                    <div class="bg-white rounded-lg shadow-sm p-8">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8">
+                            <i class="fas fa-tachometer-alt text-blue-600 mr-3"></i>
+                            Panel kontrolny
+                        </h2>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-4">Funkcje panelu</h3>
+                                <ul class="space-y-3 text-gray-700">
+                                    <li class="flex items-center space-x-3">
+                                        <i class="fas fa-chart-bar text-blue-600"></i>
+                                        <span>Przegląd statystyk synchronizacji</span>
+                                    </li>
+                                    <li class="flex items-center space-x-3">
+                                        <i class="fas fa-play text-green-600"></i>
+                                        <span>Kontrola procesów synchronizacji</span>
+                                    </li>
+                                    <li class="flex items-center space-x-3">
+                                        <i class="fas fa-list text-purple-600"></i>
+                                        <span>Przegląd produktów i zamówień</span>
+                                    </li>
+                                    <li class="flex items-center space-x-3">
+                                        <i class="fas fa-history text-orange-600"></i>
+                                        <span>Historia operacji i logi</span>
+                                    </li>
+                                    <li class="flex items-center space-x-3">
+                                        <i class="fas fa-cog text-gray-600"></i>
+                                        <span>Konfiguracja ustawień</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h3 class="text-xl font-semibold mb-4">Dostępne sekcje</h3>
+                                <div class="space-y-3">
+                                    <div class="bg-gray-50 p-4 rounded-lg">
+                                        <h4 class="font-semibold text-blue-600">Overview</h4>
+                                        <p class="text-sm text-gray-600">Ogólne statystyki i status systemu</p>
+                                    </div>
+                                    <div class="bg-gray-50 p-4 rounded-lg">
+                                        <h4 class="font-semibold text-green-600">Products</h4>
+                                        <p class="text-sm text-gray-600">Zarządzanie produktami i synchronizacją</p>
+                                    </div>
+                                    <div class="bg-gray-50 p-4 rounded-lg">
+                                        <h4 class="font-semibold text-purple-600">Orders</h4>
+                                        <p class="text-sm text-gray-600">Przegląd i synchronizacja zamówień</p>
+                                    </div>
+                                    <div class="bg-gray-50 p-4 rounded-lg">
+                                        <h4 class="font-semibold text-orange-600">Queues</h4>
+                                        <p class="text-sm text-gray-600">Status kolejek i procesów</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- API Endpoints Section -->
+                <section id="api-endpoints" class="mb-12">
+                    <div class="bg-white rounded-lg shadow-sm p-8">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8">
+                            <i class="fas fa-code text-gray-600 mr-3"></i>
+                            API Endpoints
+                        </h2>
+                        
+                        <div class="space-y-6">
+                            <div class="bg-gray-50 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold mb-4">Produkty</h3>
+                                <div class="space-y-3">
+                                    <div class="code-block text-sm">
+                                        <span class="text-green-400">GET</span> <span class="text-blue-400">/api/baselinker-products</span>
+                                        <div class="text-gray-400 mt-2">Pobiera listę produktów z BaseLinker</div>
+                                    </div>
+                                    <div class="code-block text-sm">
+                                        <span class="text-yellow-400">POST</span> <span class="text-blue-400">/api/import-product</span>
+                                        <div class="text-gray-400 mt-2">Importuje produkt do Ovoko</div>
+                                    </div>
+                                    <div class="code-block text-sm">
+                                        <span class="text-yellow-400">POST</span> <span class="text-blue-400">/api/update-product</span>
+                                        <div class="text-gray-400 mt-2">Aktualizuje produkt w Ovoko</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gray-50 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold mb-4">Zamówienia</h3>
+                                <div class="space-y-3">
+                                    <div class="code-block text-sm">
+                                        <span class="text-green-400">GET</span> <span class="text-blue-400">/api/ovoko-orders</span>
+                                        <div class="text-gray-400 mt-2">Pobiera zamówienia z Ovoko</div>
+                                    </div>
+                                    <div class="code-block text-sm">
+                                        <span class="text-yellow-400">POST</span> <span class="text-blue-400">/api/fetch-ovoko-orders-v2</span>
+                                        <div class="text-gray-400 mt-2">Pobiera zamówienia z API v2</div>
+                                    </div>
+                                    <div class="code-block text-sm">
+                                        <span class="text-yellow-400">POST</span> <span class="text-blue-400">/api/sync-order-to-baselinker</span>
+                                        <div class="text-gray-400 mt-2">Synchronizuje zamówienie do BaseLinker</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gray-50 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold mb-4">Kontrola systemu</h3>
+                                <div class="space-y-3">
+                                    <div class="code-block text-sm">
+                                        <span class="text-green-400">GET</span> <span class="text-blue-400">/api/queue-status</span>
+                                        <div class="text-gray-400 mt-2">Status kolejek</div>
+                                    </div>
+                                    <div class="code-block text-sm">
+                                        <span class="text-yellow-400">POST</span> <span class="text-blue-400">/api/queue-control</span>
+                                        <div class="text-gray-400 mt-2">Kontrola kolejek</div>
+                                    </div>
+                                    <div class="code-block text-sm">
+                                        <span class="text-green-400">GET</span> <span class="text-blue-400">/api/overview</span>
+                                        <div class="text-gray-400 mt-2">Przegląd systemu</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Technical Architecture Section -->
+                <section id="technical-architecture" class="mb-12">
+                    <div class="bg-white rounded-lg shadow-sm p-8">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8">
+                            <i class="fas fa-microchip text-purple-600 mr-3"></i>
+                            Architektura techniczna
+                        </h2>
+                        
+                        <div class="space-y-8">
+                            <div class="bg-gray-50 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold mb-4">Stack technologiczny</h3>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h4 class="font-semibold text-blue-600 mb-3">Backend</h4>
+                                        <ul class="space-y-2 text-gray-700">
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-server text-blue-600"></i>
+                                                <span><strong>Node.js</strong> - Runtime JavaScript</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-route text-green-600"></i>
+                                                <span><strong>Express.js</strong> - Framework webowy</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-database text-purple-600"></i>
+                                                <span><strong>JSON Files</strong> - Przechowywanie danych</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-lock text-red-600"></i>
+                                                <span><strong>bcryptjs</strong> - Szyfrowanie haseł</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-green-600 mb-3">Frontend</h4>
+                                        <ul class="space-y-2 text-gray-700">
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fab fa-react text-blue-600"></i>
+                                                <span><strong>React</strong> - Biblioteka UI</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-palette text-yellow-600"></i>
+                                                <span><strong>Tailwind CSS</strong> - Framework CSS</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-cogs text-gray-600"></i>
+                                                <span><strong>Webpack</strong> - Bundler</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fab fa-js text-yellow-500"></i>
+                                                <span><strong>Babel</strong> - Transpilator</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-blue-50 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold mb-4">Struktura projektu</h3>
+                                <div class="code-block text-sm">
+                                    <span class="text-gray-400">ovoko-baselinker-sync/</span><br>
+                                    <span class="text-blue-400">├──</span> <span class="text-green-400">server.js</span> <span class="text-gray-400"># Główny serwer Express</span><br>
+                                    <span class="text-blue-400">├──</span> <span class="text-green-400">package.json</span> <span class="text-gray-400"># Zależności i skrypty</span><br>
+                                    <span class="text-blue-400">├──</span> <span class="text-green-400">webpack.config.js</span> <span class="text-gray-400"># Konfiguracja bundlera</span><br>
+                                    <span class="text-blue-400">├──</span> <span class="text-green-400">public/</span> <span class="text-gray-400"># Pliki statyczne</span><br>
+                                    <span class="text-blue-400">│   ├──</span> <span class="text-green-400">index.html</span> <span class="text-gray-400"># Główna strona</span><br>
+                                    <span class="text-blue-400">│   ├──</span> <span class="text-green-400">dashboard.html</span> <span class="text-gray-400"># Panel kontrolny</span><br>
+                                    <span class="text-blue-400">│   ├──</span> <span class="text-green-400">docs.html</span> <span class="text-gray-400"># Dokumentacja</span><br>
+                                    <span class="text-blue-400">│   └──</span> <span class="text-green-400">dist/</span> <span class="text-gray-400"># Skompilowane pliki</span><br>
+                                    <span class="text-blue-400">├──</span> <span class="text-green-400">src/</span> <span class="text-gray-400"># Kod źródłowy React</span><br>
+                                    <span class="text-blue-400">│   ├──</span> <span class="text-green-400">App.js</span> <span class="text-gray-400"># Główny komponent</span><br>
+                                    <span class="text-blue-400">│   ├──</span> <text-green-400">components/</text-green-400> <span class="text-gray-400"># Komponenty UI</span><br>
+                                    <span class="text-blue-400">│   └──</span> <span class="text-green-400">contexts/</span> <span class="text-gray-400"># Konteksty React</span><br>
+                                    <span class="text-blue-400">├──</span> <span class="text-green-400">smart_sync_scheduler.js</span> <span class="text-gray-400"># Harmonogram synchronizacji</span><br>
+                                    <span class="text-blue-400">├──</span> <span class="text-green-400">orders_sync_scheduler.js</span> <span class="text-gray-400"># Harmonogram zamówień</span><br>
+                                    <span class="text-blue-400">├──</span> <span class="text-green-400">products_queue.js</span> <span class="text-gray-400"># Kolejka produktów</span><br>
+                                    <span class="text-blue-400">├──</span> <span class="text-green-400">orders_queue.js</span> <span class="text-gray-400"># Kolejka zamówień</span><br>
+                                    <span class="text-blue-400">└──</span> <span class="text-green-400">*.json</span> <span class="text-gray-400"># Pliki danych i konfiguracji</span>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-green-50 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold mb-4">Konfiguracja systemu</h3>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="font-semibold text-green-600 mb-2">Smart Sync Configuration</h4>
+                                        <div class="code-block text-sm">
+                                            <span class="text-purple-400">{</span><br>
+                                            <span class="text-blue-400">  "interval":</span> <span class="text-yellow-400">10</span><span class="text-gray-400">, // minuty</span><br>
+                                            <span class="text-blue-400">  "enabled":</span> <span class="text-green-400">true</span><span class="text-gray-400">,</span><br>
+                                            <span class="text-blue-400">  "description":</span> <span class="text-yellow-400">"Smart sync configuration"</span><br>
+                                            <span class="text-purple-400">}</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-blue-600 mb-2">Dane uwierzytelniające</h4>
+                                        <div class="code-block text-sm">
+                                            <span class="text-gray-400">// BaseLinker API</span><br>
+                                            <span class="text-blue-400">const</span> <span class="text-green-400">BASELINKER_TOKEN</span> = <span class="text-yellow-400">'11804-22135-...'</span><br><br>
+                                            <span class="text-gray-400">// Ovoko API</span><br>
+                                            <span class="text-blue-400">const</span> <span class="text-green-400">OVOKO_CREDENTIALS</span> = {<br>
+                                            <span class="text-blue-400">  username:</span> <span class="text-yellow-400">'bavarian'</span><span class="text-gray-400">,</span><br>
+                                            <span class="text-blue-400">  password:</span> <span class="text-yellow-400">'5J1iod3cY6zUCkid'</span><span class="text-gray-400">,</span><br>
+                                            <span class="text-blue-400">  user_token:</span> <span class="text-yellow-400">'dcf1fb235513c6d36b7a700defdee8ab'</span><br>
+                                            <span class="text-purple-400">}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Installation & Deployment Section -->
+                <section id="installation" class="mb-12">
+                    <div class="bg-white rounded-lg shadow-sm p-8">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8">
+                            <i class="fas fa-download text-green-600 mr-3"></i>
+                            Instalacja i wdrożenie
+                        </h2>
+                        
+                        <div class="space-y-8">
+                            <div class="bg-gray-50 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold mb-4">Wymagania systemowe</h3>
+                                <ul class="space-y-3 text-gray-700">
+                                    <li class="flex items-center space-x-3">
+                                        <i class="fas fa-check-circle text-green-600"></i>
+                                        <span><strong>Node.js</strong> wersja 16.0 lub nowsza</span>
+                                    </li>
+                                    <li class="flex items-center space-x-3">
+                                        <i class="fas fa-check-circle text-green-600"></i>
+                                        <span><strong>npm</strong> lub <strong>yarn</strong> do zarządzania pakietami</span>
+                                    </li>
+                                    <li class="flex items-center space-x-3">
+                                        <i class="fas fa-check-circle text-green-600"></i>
+                                        <span><strong>Dostęp do internetu</strong> dla API BaseLinker i Ovoko</span>
+                                    </li>
+                                    <li class="flex items-center space-x-3">
+                                        <i class="fas fa-check-circle text-green-600"></i>
+                                        <span><strong>Port 3000</strong> dostępny (konfigurowalny)</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bg-blue-50 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold mb-4">Instalacja krok po kroku</h3>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="font-semibold text-blue-600 mb-2">1. Klonowanie repozytorium</h4>
+                                        <div class="code-block text-sm">
+                                            <span class="text-green-400">git clone</span> <span class="text-yellow-400">[repository-url]</span><br>
+                                            <span class="text-green-400">cd</span> <span class="text-yellow-400">ovoko-baselinker-sync</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-blue-600 mb-2">2. Instalacja zależności</h4>
+                                        <div class="code-block text-sm">
+                                            <span class="text-green-400">npm install</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-blue-600 mb-2">3. Konfiguracja</h4>
+                                        <div class="code-block text-sm">
+                                            <span class="text-gray-400"># Edytuj dane uwierzytelniające w server.js</span><br>
+                                            <span class="text-gray-400"># lub utwórz plik .env</span><br>
+                                            <span class="text-green-400">cp</span> <span class="text-yellow-400">.env.example .env</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-blue-600 mb-2">4. Uruchomienie</h4>
+                                        <div class="code-block text-sm">
+                                            <span class="text-green-400">npm start</span><br>
+                                            <span class="text-gray-400"># lub dla development</span><br>
+                                            <span class="text-green-400">npm run dev</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-green-50 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold mb-4">Skrypty npm</h3>
+                                <div class="space-y-3">
+                                    <div class="flex justify-between items-center p-3 bg-white rounded border">
+                                        <span class="font-semibold">npm start</span>
+                                        <span class="text-gray-600">Uruchamia serwer produkcyjny</span>
+                                    </div>
+                                    <div class="flex justify-between items-center p-3 bg-white rounded border">
+                                        <span class="font-semibold">npm run dev</span>
+                                        <span class="text-gray-600">Uruchamia serwer deweloperski z hot reload</span>
+                                    </div>
+                                    <div class="flex justify-between items-center p-3 bg-white rounded border">
+                                        <span class="font-semibold">npm run build</span>
+                                        <span class="text-gray-600">Kompiluje frontend do produkcji</span>
+                                    </div>
+                                    <div class="flex justify-between items-center p-3 bg-white rounded border">
+                                        <span class="font-semibold">npm run check-changes</span>
+                                        <span class="text-gray-600">Sprawdza zmiany w produktach</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Troubleshooting Section -->
+                <section id="troubleshooting" class="mb-12">
+                    <div class="bg-white rounded-lg shadow-sm p-8">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8">
+                            <i class="fas fa-tools text-orange-600 mr-3"></i>
+                            Rozwiązywanie problemów
+                        </h2>
+                        
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-red-500 pl-6">
+                                <h3 class="text-xl font-semibold mb-3">Błędy synchronizacji</h3>
+                                <div class="space-y-3 text-gray-700">
+                                    <div class="bg-red-50 p-4 rounded-lg">
+                                        <h4 class="font-semibold text-red-800">Problem: Błąd uwierzytelniania</h4>
+                                        <p class="text-red-700 text-sm mt-2">Sprawdź poprawność tokenów API w konfiguracji</p>
+                                    </div>
+                                    <div class="bg-yellow-50 p-4 rounded-lg">
+                                        <h4 class="font-semibold text-yellow-800">Problem: Produkty nie synchronizują się</h4>
+                                        <p class="text-yellow-700 text-sm mt-2">Sprawdź logi błędów i status kolejek</p>
+                                    </div>
+                                    <div class="bg-blue-50 p-4 rounded-lg">
+                                        <h4 class="font-semibold text-blue-800">Problem: Zamówienia nie importują się</h4>
+                                        <p class="text-blue-700 text-sm mt-2">Zweryfikuj format danych z API Ovoko</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="border-l-4 border-green-500 pl-6">
+                                <h3 class="text-xl font-semibold mb-3">Rozwiązania</h3>
+                                <ul class="space-y-3 text-gray-700">
+                                    <li class="flex items-start space-x-3">
+                                        <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">Sprawdź logi:</span> Przejrzyj sekcję Activity Log w panelu
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start space-x-3">
+                                        <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">Restart kolejek:</span> Zatrzymaj i uruchom ponownie procesy
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start space-x-3">
+                                        <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">Weryfikacja API:</span> Sprawdź dostępność API BaseLinker i Ovoko
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start space-x-3">
+                                        <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">Konfiguracja:</span> Zweryfikuj ustawienia synchronizacji
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Monitoring & Logs Section -->
+                <section id="monitoring" class="mb-12">
+                    <div class="bg-white rounded-lg shadow-sm p-8">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8">
+                            <i class="fas fa-chart-line text-blue-600 mr-3"></i>
+                            Monitorowanie i logi
+                        </h2>
+                        
+                        <div class="space-y-8">
+                            <div class="bg-gray-50 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold mb-4">System logów</h3>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="font-semibold text-blue-600 mb-2">Activity Log</h4>
+                                        <p class="text-gray-700 mb-3">System automatycznie rejestruje wszystkie operacje:</p>
+                                        <ul class="space-y-2 text-gray-700">
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-info-circle text-blue-600"></i>
+                                                <span>Operacje synchronizacji produktów</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-shopping-cart text-green-600"></i>
+                                                <span>Import zamówień z Ovoko</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-exclamation-triangle text-yellow-600"></i>
+                                                <span>Błędy i ostrzeżenia</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-user text-purple-600"></i>
+                                                <span>Akcje użytkowników</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-green-600 mb-2">Smart Sync Reports</h4>
+                                        <p class="text-gray-700 mb-3">Szczegółowe raporty z automatycznej synchronizacji:</p>
+                                        <div class="code-block text-sm">
+                                            <span class="text-gray-400">smart_sync_report_YYYY-MM-DDTHH-MM-SS.json</span><br>
+                                            <span class="text-blue-400">{</span><br>
+                                            <span class="text-blue-400">  "timestamp":</span> <span class="text-yellow-400">"2025-08-25T10:30:00.000Z"</span><span class="text-gray-400">,</span><br>
+                                            <span class="text-blue-400">  "duration":</span> <span class="text-yellow-400">"2.5s"</span><span class="text-gray-400">,</span><br>
+                                            <span class="text-blue-400">  "summary":</span> {<br>
+                                            <span class="text-blue-400">    "products_checked":</span> <span class="text-yellow-400">150</span><span class="text-gray-400">,</span><br>
+                                            <span class="text-blue-400">    "products_updated":</span> <span class="text-yellow-400">5</span><span class="text-gray-400">,</span><br>
+                                            <span class="text-blue-400">    "errors":</span> <span class="text-yellow-400">0</span><br>
+                                            <span class="text-blue-400">  }</span><br>
+                                            <span class="text-purple-400">}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-blue-50 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold mb-4">Monitorowanie w czasie rzeczywistym</h3>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h4 class="font-semibold text-blue-600 mb-3">Status kolejek</h4>
+                                        <ul class="space-y-2 text-gray-700">
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-play text-green-600"></i>
+                                                <span>Products Queue - status przetwarzania</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-play text-green-600"></i>
+                                                <span>Orders Queue - status zamówień</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-clock text-blue-600"></i>
+                                                <span>Smart Sync Scheduler - harmonogram</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-green-600 mb-3">Metryki systemu</h4>
+                                        <ul class="space-y-2 text-gray-700">
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-chart-bar text-purple-600"></i>
+                                                <span>Liczba produktów w systemie</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-sync text-orange-600"></i>
+                                                <span>Status synchronizacji</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-exclamation-triangle text-red-600"></i>
+                                                <span>Liczba błędów</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-green-50 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold mb-4">API monitorowania</h3>
+                                <div class="space-y-3">
+                                    <div class="code-block text-sm">
+                                        <span class="text-green-400">GET</span> <span class="text-blue-400">/api/logs</span>
+                                        <div class="text-gray-400 mt-2">Pobiera logi aktywności z filtrowaniem</div>
+                                    </div>
+                                    <div class="code-block text-sm">
+                                        <span class="text-green-400">GET</span> <span class="text-blue-400">/api/overview</span>
+                                        <div class="text-gray-400 mt-2">Przegląd statystyk systemu</div>
+                                    </div>
+                                    <div class="code-block text-sm">
+                                        <span class="text-green-400">GET</span> <span class="text-blue-400">/api/smart-sync/status</span>
+                                        <div class="text-gray-400 mt-2">Status harmonogramu synchronizacji</div>
+                                    </div>
+                                    <div class="code-block text-sm">
+                                        <span class="text-green-400">GET</span> <span class="text-blue-400">/api/queue-status</span>
+                                        <div class="text-gray-400 mt-2">Status kolejek przetwarzania</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FAQ Section -->
+                <section id="faq" class="mb-12">
+                    <div class="bg-white rounded-lg shadow-sm p-8">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8">
+                            <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+                            Często zadawane pytania
+                        </h2>
+                        
+                        <div class="space-y-6">
+                            <div class="border border-gray-200 rounded-lg">
+                                <button class="w-full px-6 py-4 text-left focus:outline-none focus:bg-gray-50" onclick="toggleFAQ(this)">
+                                    <div class="flex justify-between items-center">
+                                        <span class="font-semibold">Jak często synchronizuje się system?</span>
+                                        <i class="fas fa-chevron-down text-gray-400"></i>
+                                    </div>
+                                </button>
+                                <div class="px-6 pb-4 hidden">
+                                    <p class="text-gray-600">System synchronizuje się automatycznie co 10 minut dla produktów i co 30 minut dla zamówień. Można to skonfigurować w ustawieniach.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="border border-gray-200 rounded-lg">
+                                <button class="w-full px-6 py-4 text-left focus:outline-none focus:bg-gray-50" onclick="toggleFAQ(this)">
+                                    <div class="flex justify-between items-center">
+                                        <span class="font-semibold">Czy mogę synchronizować ręcznie?</span>
+                                        <i class="fas fa-chevron-down text-gray-400"></i>
+                                    </div>
+                                </button>
+                                <div class="px-6 pb-4 hidden">
+                                    <p class="text-gray-600">Tak, w panelu kontrolnym można uruchomić synchronizację ręcznie dla produktów i zamówień.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="border border-gray-200 rounded-lg">
+                                <button class="w-full px-6 py-4 text-left focus:outline-none focus:bg-gray-50" onclick="toggleFAQ(this)">
+                                    <div class="flex justify-between items-center">
+                                        <span class="font-semibold">Jak sprawdzić status synchronizacji?</span>
+                                        <i class="fas fa-chevron-down text-gray-400"></i>
+                                    </div>
+                                </button>
+                                <div class="px-6 pb-4 hidden">
+                                    <p class="text-gray-600">Status można sprawdzić w sekcji Overview panelu kontrolnego oraz w logach aktywności.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="border border-gray-200 rounded-lg">
+                                <button class="w-full px-6 py-4 text-left focus:outline-none focus:bg-gray-50" onclick="toggleFAQ(this)">
+                                    <div class="flex justify-between items-center">
+                                        <span class="font-semibold">Co robić w przypadku błędów?</span>
+                                        <i class="fas fa-chevron-down text-gray-400"></i>
+                                    </div>
+                                </button>
+                                <div class="px-6 pb-4 hidden">
+                                    <p class="text-gray-600">Sprawdź sekcję Activity Log, zatrzymaj i uruchom ponownie kolejki, lub skontaktuj się z administratorem systemu.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Security & Best Practices Section -->
+                <section id="security" class="mb-12">
+                    <div class="bg-white rounded-lg shadow-sm p-8">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8">
+                            <i class="fas fa-shield-alt text-red-600 mr-3"></i>
+                            Bezpieczeństwo i najlepsze praktyki
+                        </h2>
+                        
+                        <div class="space-y-8">
+                            <div class="bg-red-50 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold mb-4">Bezpieczeństwo</h3>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="font-semibold text-red-600 mb-2">Uwierzytelnianie</h4>
+                                        <ul class="space-y-2 text-gray-700">
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-lock text-red-600"></i>
+                                                <span>Wszystkie endpointy API wymagają autoryzacji</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-key text-red-600"></i>
+                                                <span>Hasła są szyfrowane za pomocą bcryptjs</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-clock text-red-600"></i>
+                                                <span>Sesje wygasają po 24 godzinach</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-red-600 mb-2">Dane uwierzytelniające</h4>
+                                        <ul class="space-y-2 text-gray-700">
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-exclamation-triangle text-yellow-600"></i>
+                                                <span>Tokeny API są przechowywane w kodzie (zmień w produkcji)</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-file-alt text-blue-600"></i>
+                                                <span>Użyj zmiennych środowiskowych (.env) w produkcji</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-sync text-green-600"></i>
+                                                <span>Regularnie rotuj tokeny API</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-blue-50 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold mb-4">Najlepsze praktyki</h3>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h4 class="font-semibold text-blue-600 mb-3">Wdrożenie</h4>
+                                        <ul class="space-y-2 text-gray-700">
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-server text-blue-600"></i>
+                                                <span>Użyj PM2 lub systemd do zarządzania procesami</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-shield-alt text-green-600"></i>
+                                                <span>Włącz HTTPS w produkcji</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-database text-purple-600"></i>
+                                                <span>Rozważ migrację do bazy danych (PostgreSQL/MongoDB)</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-green-600 mb-3">Monitorowanie</h4>
+                                        <ul class="space-y-2 text-gray-700">
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-eye text-green-600"></i>
+                                                <span>Regularnie sprawdzaj logi błędów</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-chart-line text-blue-600"></i>
+                                                <span>Monitoruj wydajność API</span>
+                                            </li>
+                                            <li class="flex items-center space-x-2">
+                                                <i class="fas fa-backup text-purple-600"></i>
+                                                <span>Twórz kopie zapasowe plików konfiguracyjnych</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-green-50 p-6 rounded-lg">
+                                <h3 class="text-xl font-semibold mb-4">Konfiguracja produkcji</h3>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="font-semibold text-green-600 mb-2">Zmienne środowiskowe</h4>
+                                        <div class="code-block text-sm">
+                                            <span class="text-gray-400"># .env</span><br>
+                                            <span class="text-blue-400">PORT=</span><span class="text-yellow-400">3000</span><br>
+                                            <span class="text-blue-400">NODE_ENV=</span><span class="text-yellow-400">production</span><br>
+                                            <span class="text-blue-400">BASELINKER_TOKEN=</span><span class="text-yellow-400">your-token</span><br>
+                                            <span class="text-blue-400">OVOKO_USERNAME=</span><span class="text-yellow-400">your-username</span><br>
+                                            <span class="text-blue-400">OVOKO_PASSWORD=</span><span class="text-yellow-400">your-password</span><br>
+                                            <span class="text-blue-400">OVOKO_USER_TOKEN=</span><span class="text-yellow-400">your-token</span><br>
+                                            <span class="text-blue-400">SESSION_SECRET=</span><span class="text-yellow-400">your-secret</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-green-600 mb-2">PM2 Configuration</h4>
+                                        <div class="code-block text-sm">
+                                            <span class="text-purple-400">{</span><br>
+                                            <span class="text-blue-400">  "name":</span> <span class="text-yellow-400">"ovoko-sync"</span><span class="text-gray-400">,</span><br>
+                                            <span class="text-blue-400">  "script":</span> <span class="text-yellow-400">"server.js"</span><span class="text-gray-400">,</span><br>
+                                            <span class="text-blue-400">  "instances":</span> <span class="text-yellow-400">1</span><span class="text-gray-400">,</span><br>
+                                            <span class="text-blue-400">  "env":</span> {<br>
+                                            <span class="text-blue-400">    "NODE_ENV":</span> <span class="text-yellow-400">"production"</span><br>
+                                            <span class="text-blue-400">  }</span><br>
+                                            <span class="text-purple-400">}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Soft Synergy Section -->
+                <section class="mb-12">
+                    <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg shadow-sm p-8 text-white">
+                        <div class="flex items-center mb-6">
+                            <img src="/logo-removebg-preview.png" alt="Soft Synergy Logo" class="h-16 w-auto mr-4">
+                            <div>
+                                <h2 class="text-3xl font-bold">Soft Synergy</h2>
+                                <p class="text-xl opacity-90">Profesjonalne rozwiązania IT</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-4">O nas</h3>
+                                <p class="text-lg opacity-90 mb-4">
+                                    Soft Synergy to firma specjalizująca się w tworzeniu zaawansowanych rozwiązań informatycznych 
+                                    dla biznesu. Oferujemy kompleksowe usługi w zakresie integracji systemów, automatyzacji procesów 
+                                    i rozwoju aplikacji webowych. 
+                                    <a href="https://soft-synergy.com" target="_blank" class="underline hover:no-underline">
+                                        Odwiedź naszą stronę główną
+                                    </a>.
+                                </p>
+                                <ul class="space-y-2 opacity-90">
+                                    <li class="flex items-center space-x-2">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Integracja systemów e-commerce</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Automatyzacja procesów biznesowych</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Rozwój aplikacji webowych</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Wsparcie techniczne 24/7</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-4">Technologie</h3>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="bg-white bg-opacity-10 p-4 rounded-lg">
+                                        <h4 class="font-semibold mb-2">Backend</h4>
+                                        <ul class="text-sm opacity-90 space-y-1">
+                                            <li>• Node.js & Express</li>
+                                            <li>• Python & Django</li>
+                                            <li>• Java & Spring</li>
+                                            <li>• PHP & Laravel</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-white bg-opacity-10 p-4 rounded-lg">
+                                        <h4 class="font-semibold mb-2">Frontend</h4>
+                                        <ul class="text-sm opacity-90 space-y-1">
+                                            <li>• React & Vue.js</li>
+                                            <li>• Angular</li>
+                                            <li>• TypeScript</li>
+                                            <li>• Tailwind CSS</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-white bg-opacity-10 p-4 rounded-lg">
+                                        <h4 class="font-semibold mb-2">Bazy danych</h4>
+                                        <ul class="text-sm opacity-90 space-y-1">
+                                            <li>• PostgreSQL</li>
+                                            <li>• MongoDB</li>
+                                            <li>• MySQL</li>
+                                            <li>• Redis</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-white bg-opacity-10 p-4 rounded-lg">
+                                        <h4 class="font-semibold mb-2">DevOps</h4>
+                                        <ul class="text-sm opacity-90 space-y-1">
+                                            <li>• Docker & Kubernetes</li>
+                                            <li>• AWS & Azure</li>
+                                            <li>• CI/CD</li>
+                                            <li>• Monitoring</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-t border-white border-opacity-20 pt-6">
+                            <h3 class="text-xl font-semibold mb-4">Kontakt</h3>
+                            <div class="flex flex-wrap gap-6">
+                                <a href="/dashboard" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                                    <i class="fas fa-tachometer-alt mr-2"></i>
+                                    Przejdź do panelu
+                                </a>
+                                <a href="/" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                                    <i class="fas fa-home mr-2"></i>
+                                    Strona główna
+                                </a>
+                                <a href="https://soft-synergy.com" target="_blank" class="bg-white bg-opacity-10 px-6 py-3 rounded-lg hover:bg-opacity-20 transition-colors">
+                                    <div class="flex items-center space-x-2">
+                                        <i class="fas fa-globe"></i>
+                                        <span>soft-synergy.com</span>
+                                    </div>
+                                </a>
+                                <div class="bg-white bg-opacity-10 px-6 py-3 rounded-lg">
+                                    <div class="flex items-center space-x-2">
+                                        <i class="fas fa-envelope"></i>
+                                        <span>info@soft-synergy.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // FAQ toggle functionality
+        function toggleFAQ(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            }
+        }
+
+        // Highlight active section in sidebar
+        function highlightActiveSection() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('bg-gray-700');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('bg-gray-700');
+                }
+            });
+        }
+
+        // Add scroll event listener
+        window.addEventListener('scroll', highlightActiveSection);
+        
+        // Initial highlight
+        highlightActiveSection();
+    </script>
+</body>
+</html> 
