@@ -1,0 +1,5249 @@
+{
+  "mapping_description": "KOMPLETNE mapowanie WSZYSTKICH kategorii BaseLinker na top-tier kategorie Ovoko",
+  "created_at": "2025-08-28T03:19:22.362Z",
+  "version": "1.0",
+  "total_categories": 355,
+  "mapping_rules": {
+    "1": {
+      "name": "Brake system",
+      "pl": "Układ hamulcowy",
+      "keywords": [
+        "hamulcowy",
+        "hamulce",
+        "ABS",
+        "ESP",
+        "hamulec",
+        "postojowe"
+      ]
+    },
+    "98": {
+      "name": "Headlight/headlamp washing/cleaning system",
+      "pl": "Wycieraczki i spryskiwacze szyb i świateł",
+      "keywords": [
+        "mycia",
+        "mycie",
+        "spryskiwacze",
+        "wycieraczki",
+        "spryskiwacz",
+        "wycieraczka"
+      ]
+    },
+    "134": {
+      "name": "Lighting system",
+      "pl": "Oświetlenie",
+      "keywords": [
+        "oświetlenie",
+        "światła",
+        "reflektory",
+        "lampy",
+        "klaksony"
+      ]
+    },
+    "197": {
+      "name": "Air conditioning-heating system/radiators",
+      "pl": "Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe",
+      "keywords": [
+        "chłodzenia",
+        "chłodnica",
+        "chłodnice",
+        "wentylatory",
+        "pompy wody",
+        "zbiorniki wyrównawcze",
+        "przewody chłodnic",
+        "kierownice powietrza",
+        "intercoolery",
+        "chłodnice oleju",
+        "chłodnice wody"
+      ]
+    },
+    "250": {
+      "name": "Engine",
+      "pl": "Silnik i osprzęt",
+      "keywords": [
+        "silnik",
+        "silniki",
+        "blok",
+        "głowica",
+        "turbosprężarka",
+        "turbosprężarki",
+        "pompa",
+        "pompy",
+        "alternator",
+        "rozrusznik",
+        "moduł zapłonowy",
+        "cewki zapłonowe",
+        "kolektor",
+        "wały korbowe",
+        "zawory",
+        "przepływomierz",
+        "pasek osprzętu",
+        "koła pasowe",
+        "osłony silnika",
+        "zawieszenie silnika",
+        "poduszki silnika",
+        "recyrkulacja spalin",
+        "EGR",
+        "chłodnice spalin",
+        "czujniki poziomu oleju",
+        "pompy oleju",
+        "zawory podciśnienia",
+        "pompy podciśnieniowe"
+      ]
+    },
+    "281": {
+      "name": "Fuel mixture system",
+      "pl": "Układ paliwowy",
+      "keywords": [
+        "paliwowy",
+        "paliwo",
+        "wtryskiwacze",
+        "pompy paliwa",
+        "pompy wtryskowe",
+        "przewody wtryskowe",
+        "przewody paliwa",
+        "podgrzewacze",
+        "wtrysk"
+      ]
+    },
+    "330": {
+      "name": "Front axle",
+      "pl": "Oś przednia i inne elementy",
+      "keywords": [
+        "zawieszenia",
+        "zawieszenie",
+        "sprężyny",
+        "amortyzatory",
+        "hydrauliczne",
+        "pneumatyczne",
+        "sterowniki zawieszenia",
+        "poduszki zawieszenia"
+      ]
+    },
+    "382": {
+      "name": "Rear axle",
+      "pl": "Oś tylna i inne elementy",
+      "keywords": [
+        "tylna",
+        "tylny",
+        "tył",
+        "tyłem",
+        "most tylny"
+      ]
+    },
+    "416": {
+      "name": "Gearbox/clutch/transmission",
+      "pl": "Układ napędowy",
+      "keywords": [
+        "napędowy",
+        "napędowa",
+        "skrzynie biegów",
+        "skrzynia biegów",
+        "mosty",
+        "półosie",
+        "przeguby",
+        "wały napędowe",
+        "lewarki",
+        "wybieraki",
+        "smarowanie"
+      ]
+    },
+    "463": {
+      "name": "Wheels/tires/caps",
+      "pl": "Opony / Felgi / Kołpaki i inne elementy",
+      "keywords": [
+        "koła",
+        "opony",
+        "felgi",
+        "kołpaki",
+        "opona",
+        "felga"
+      ]
+    },
+    "498": {
+      "name": "Exterior front body parts",
+      "pl": "Elementy przedniej części nadwozia / karoserii",
+      "keywords": [
+        "maska",
+        "maski",
+        "błotniki",
+        "błotnik",
+        "przednia",
+        "przedni"
+      ]
+    },
+    "541": {
+      "name": "Exterior rear body parts",
+      "pl": "Elementy tylnej części nadwozia / karoserii",
+      "keywords": [
+        "tylna",
+        "tylny",
+        "tył",
+        "tyłem"
+      ]
+    },
+    "624": {
+      "name": "Body/body parts/hook",
+      "pl": "Części nadwozia i karoserii",
+      "keywords": [
+        "karoserii",
+        "karoseria",
+        "zderzaki",
+        "zderzak",
+        "drzwi",
+        "drzwi",
+        "listwy",
+        "nakładki",
+        "progi",
+        "progowe",
+        "nadwozia"
+      ]
+    },
+    "806": {
+      "name": "Cabin/interior",
+      "pl": "Wyposażenie wnętrza samochodu",
+      "keywords": [
+        "wnętrza",
+        "wnętrze",
+        "fotele",
+        "kanapy",
+        "zagłówki",
+        "nawigacje",
+        "GPS",
+        "wyposażenie wnętrza"
+      ]
+    },
+    "999": {
+      "name": "Devices/switches/electronic system",
+      "pl": "Wyposażenie elektryczne",
+      "keywords": [
+        "elektryczny",
+        "elektryczna",
+        "elektryczne",
+        "stacyjki",
+        "kluczyki",
+        "czujniki",
+        "sterowniki",
+        "przekaźniki",
+        "świece żarowe",
+        "moduły komfortu",
+        "moduły poduszek",
+        "silniczki",
+        "gniazda zapalniczki",
+        "klemy",
+        "kostki",
+        "złączki",
+        "instalacyjne",
+        "zapłon",
+        "zapłonowy",
+        "zapłonowe"
+      ]
+    },
+    "1168": {
+      "name": "Gas exhaust system",
+      "pl": "Układ wydechowy i inne elementy",
+      "keywords": [
+        "wydechowy",
+        "wydech",
+        "rury wydechowe",
+        "tłumiki",
+        "tłumik"
+      ]
+    },
+    "1189": {
+      "name": "Glass",
+      "pl": "Szyby / Okna i inne elementy",
+      "keywords": [
+        "szyby",
+        "szyba",
+        "okna",
+        "okno",
+        "przednia szyba",
+        "tylna szyba"
+      ]
+    },
+    "1249": {
+      "name": "Other parts",
+      "pl": "Inne części",
+      "keywords": [
+        "pozostałe",
+        "pozostały",
+        "akcesoria",
+        "akcesorium",
+        "inne",
+        "inny"
+      ]
+    }
+  },
+  "categories": {
+    "1021337": {
+      "baselinker": {
+        "category_id": 1021337,
+        "name": "Części BMW",
+        "parent_id": 1021337
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "default",
+        "matched_keyword": "brak dopasowania"
+      }
+    },
+    "1730798": {
+      "baselinker": {
+        "category_id": 1730798,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Błotniki/Listwy, nakładki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "498",
+        "ovoko_name": "Exterior front body parts",
+        "ovoko_pl": "Elementy przedniej części nadwozia / karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "błotniki"
+      }
+    },
+    "1730799": {
+      "baselinker": {
+        "category_id": 1730799,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Stacyjki i kluczyki/Kluczyki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1730800": {
+      "baselinker": {
+        "category_id": 1730800,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki parkowania",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1730801": {
+      "baselinker": {
+        "category_id": 1730801,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Alternatory/Alternatory kompletne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1730802": {
+      "baselinker": {
+        "category_id": 1730802,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Nawigacje GPS fabryczne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730803": {
+      "baselinker": {
+        "category_id": 1730803,
+        "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Podgrzewacze",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "281",
+        "ovoko_name": "Fuel mixture system",
+        "ovoko_pl": "Układ paliwowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "paliwowy"
+      }
+    },
+    "1730804": {
+      "baselinker": {
+        "category_id": 1730804,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Recyrkulacja spalin EGR/Zawory EGR",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1730805": {
+      "baselinker": {
+        "category_id": 1730805,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Sterowniki silnika",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1730806": {
+      "baselinker": {
+        "category_id": 1730806,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Rozruszniki/Rozruszniki kompletne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1730807": {
+      "baselinker": {
+        "category_id": 1730807,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Wentylatory chłodnicy/Wentylatory",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "197",
+        "ovoko_name": "Air conditioning-heating system/radiators",
+        "ovoko_pl": "Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe",
+        "confidence": "keyword_match",
+        "matched_keyword": "chłodzenia"
+      }
+    },
+    "1730808": {
+      "baselinker": {
+        "category_id": 1730808,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Moduły zapłonowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1730809": {
+      "baselinker": {
+        "category_id": 1730809,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Zderzaki/Zderzaki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730811": {
+      "baselinker": {
+        "category_id": 1730811,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Maski/Maski",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "498",
+        "ovoko_name": "Exterior front body parts",
+        "ovoko_pl": "Elementy przedniej części nadwozia / karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "maski"
+      }
+    },
+    "1730812": {
+      "baselinker": {
+        "category_id": 1730812,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Fotele, kanapy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730813": {
+      "baselinker": {
+        "category_id": 1730813,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Błotniki/Błotniki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "498",
+        "ovoko_name": "Exterior front body parts",
+        "ovoko_pl": "Elementy przedniej części nadwozia / karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "błotniki"
+      }
+    },
+    "1730814": {
+      "baselinker": {
+        "category_id": 1730814,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Progi/Listwy progowe, nakładki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730815": {
+      "baselinker": {
+        "category_id": 1730815,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Drzwi",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730816": {
+      "baselinker": {
+        "category_id": 1730816,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Zagłówki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730817": {
+      "baselinker": {
+        "category_id": 1730817,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprzęt audio fabryczny/Głośniki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730818": {
+      "baselinker": {
+        "category_id": 1730818,
+        "name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Sprężyny zawieszenia",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "330",
+        "ovoko_name": "Front axle",
+        "ovoko_pl": "Oś przednia i inne elementy",
+        "confidence": "keyword_match",
+        "matched_keyword": "zawieszenia"
+      }
+    },
+    "1730819": {
+      "baselinker": {
+        "category_id": 1730819,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Panele sterowania, przełączniki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730820": {
+      "baselinker": {
+        "category_id": 1730820,
+        "name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Amortyzatory i elementy/Amortyzatory",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "330",
+        "ovoko_name": "Front axle",
+        "ovoko_pl": "Oś przednia i inne elementy",
+        "confidence": "keyword_match",
+        "matched_keyword": "zawieszenia"
+      }
+    },
+    "1730821": {
+      "baselinker": {
+        "category_id": 1730821,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Lampy tylne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "134",
+        "ovoko_name": "Lighting system",
+        "ovoko_pl": "Oświetlenie",
+        "confidence": "keyword_match",
+        "matched_keyword": "oświetlenie"
+      }
+    },
+    "1730822": {
+      "baselinker": {
+        "category_id": 1730822,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Materiały instalacyjne/Klemy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1730823": {
+      "baselinker": {
+        "category_id": 1730823,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Klapy bagażnika",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730824": {
+      "baselinker": {
+        "category_id": 1730824,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Silniki kompletne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1730825": {
+      "baselinker": {
+        "category_id": 1730825,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Literatura motoryzacyjna/Samochody/Instrukcje obsługi",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "keyword_match",
+        "matched_keyword": "akcesoria"
+      }
+    },
+    "1730826": {
+      "baselinker": {
+        "category_id": 1730826,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Listwy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730827": {
+      "baselinker": {
+        "category_id": 1730827,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Dachy/Relingi dachowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730828": {
+      "baselinker": {
+        "category_id": 1730828,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Emblematy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "keyword_match",
+        "matched_keyword": "akcesoria"
+      }
+    },
+    "1730829": {
+      "baselinker": {
+        "category_id": 1730829,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Czujniki i kamery cofania/Czujniki cofania",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "czujniki"
+      }
+    },
+    "1730830": {
+      "baselinker": {
+        "category_id": 1730830,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Schowki, półki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730831": {
+      "baselinker": {
+        "category_id": 1730831,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Moduły komfortu",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1730832": {
+      "baselinker": {
+        "category_id": 1730832,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Osłony, zaślepki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730833": {
+      "baselinker": {
+        "category_id": 1730833,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Kratki nawiewu",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730834": {
+      "baselinker": {
+        "category_id": 1730834,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Osłony silnika/Dolne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1730835": {
+      "baselinker": {
+        "category_id": 1730835,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Mosty/Tylne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "416",
+        "ovoko_name": "Gearbox/clutch/transmission",
+        "ovoko_pl": "Układ napędowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "napędowy"
+      }
+    },
+    "1730840": {
+      "baselinker": {
+        "category_id": 1730840,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Rolety bagażnika",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730841": {
+      "baselinker": {
+        "category_id": 1730841,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Poduszki powietrzne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730842": {
+      "baselinker": {
+        "category_id": 1730842,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Zawiasy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730844": {
+      "baselinker": {
+        "category_id": 1730844,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Klapki wlewu paliwa/Zamki i siłowniki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730845": {
+      "baselinker": {
+        "category_id": 1730845,
+        "name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Spryskiwacze reflektorów",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "98",
+        "ovoko_name": "Headlight/headlamp washing/cleaning system",
+        "ovoko_pl": "Wycieraczki i spryskiwacze szyb i świateł",
+        "confidence": "keyword_match",
+        "matched_keyword": "spryskiwacze"
+      }
+    },
+    "1730846": {
+      "baselinker": {
+        "category_id": 1730846,
+        "name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Dysze spryskiwaczy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "98",
+        "ovoko_name": "Headlight/headlamp washing/cleaning system",
+        "ovoko_pl": "Wycieraczki i spryskiwacze szyb i świateł",
+        "confidence": "keyword_match",
+        "matched_keyword": "spryskiwacze"
+      }
+    },
+    "1730847": {
+      "baselinker": {
+        "category_id": 1730847,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Elektronika samochodowa/Car audio/Anteny",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "keyword_match",
+        "matched_keyword": "akcesoria"
+      }
+    },
+    "1730848": {
+      "baselinker": {
+        "category_id": 1730848,
+        "name": "Motoryzacja/Części samochodowe/Układ wentylacji/Dmuchawy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "default",
+        "matched_keyword": "brak dopasowania"
+      }
+    },
+    "1730849": {
+      "baselinker": {
+        "category_id": 1730849,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Przewody układów chłodzenia/Przewody chłodnic wody",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "197",
+        "ovoko_name": "Air conditioning-heating system/radiators",
+        "ovoko_pl": "Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe",
+        "confidence": "keyword_match",
+        "matched_keyword": "chłodzenia"
+      }
+    },
+    "1730850": {
+      "baselinker": {
+        "category_id": 1730850,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Pedały",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730851": {
+      "baselinker": {
+        "category_id": 1730851,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Spoilery",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730852": {
+      "baselinker": {
+        "category_id": 1730852,
+        "name": "Motoryzacja/Części samochodowe/Układ wydechowy/Sondy lambda",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1168",
+        "ovoko_name": "Gas exhaust system",
+        "ovoko_pl": "Układ wydechowy i inne elementy",
+        "confidence": "keyword_match",
+        "matched_keyword": "wydechowy"
+      }
+    },
+    "1730853": {
+      "baselinker": {
+        "category_id": 1730853,
+        "name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Pompki spryskiwaczy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "98",
+        "ovoko_name": "Headlight/headlamp washing/cleaning system",
+        "ovoko_pl": "Wycieraczki i spryskiwacze szyb i świateł",
+        "confidence": "keyword_match",
+        "matched_keyword": "spryskiwacze"
+      }
+    },
+    "1730854": {
+      "baselinker": {
+        "category_id": 1730854,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Zawieszenie silnika/Poduszki silnika",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1730855": {
+      "baselinker": {
+        "category_id": 1730855,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Uchwyty fabryczne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730856": {
+      "baselinker": {
+        "category_id": 1730856,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Lusterka zewnętrzne/Kompletne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730857": {
+      "baselinker": {
+        "category_id": 1730857,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Pasy przednie",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "498",
+        "ovoko_name": "Exterior front body parts",
+        "ovoko_pl": "Elementy przedniej części nadwozia / karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "przedni"
+      }
+    },
+    "1730858": {
+      "baselinker": {
+        "category_id": 1730858,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprzęt audio fabryczny/Wzmacniacze",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730859": {
+      "baselinker": {
+        "category_id": 1730859,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Zamki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730860": {
+      "baselinker": {
+        "category_id": 1730860,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Liczniki, zegary",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730861": {
+      "baselinker": {
+        "category_id": 1730861,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Przewody powietrza turbosprężarki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1730862": {
+      "baselinker": {
+        "category_id": 1730862,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Przewody powietrza",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1730863": {
+      "baselinker": {
+        "category_id": 1730863,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Siłowniki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730864": {
+      "baselinker": {
+        "category_id": 1730864,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1730865": {
+      "baselinker": {
+        "category_id": 1730865,
+        "name": "Motoryzacja/Części samochodowe/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "keyword_match",
+        "matched_keyword": "pozostałe"
+      }
+    },
+    "1730866": {
+      "baselinker": {
+        "category_id": 1730866,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Zderzaki/Atrapy, zaślepki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730867": {
+      "baselinker": {
+        "category_id": 1730867,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Półosie, przeguby, wały/Wały napędowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "416",
+        "ovoko_name": "Gearbox/clutch/transmission",
+        "ovoko_pl": "Układ napędowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "napędowy"
+      }
+    },
+    "1730868": {
+      "baselinker": {
+        "category_id": 1730868,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Kierownice",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730869": {
+      "baselinker": {
+        "category_id": 1730869,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1730870": {
+      "baselinker": {
+        "category_id": 1730870,
+        "name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Przekładnie kierownicze",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "default",
+        "matched_keyword": "brak dopasowania"
+      }
+    },
+    "1730871": {
+      "baselinker": {
+        "category_id": 1730871,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Zderzaki/Wzmocnienia zderzaków (belki)",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730872": {
+      "baselinker": {
+        "category_id": 1730872,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Pasy bezpieczeństwa",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730873": {
+      "baselinker": {
+        "category_id": 1730873,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Oświetlenie kabiny",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "134",
+        "ovoko_name": "Lighting system",
+        "ovoko_pl": "Oświetlenie",
+        "confidence": "keyword_match",
+        "matched_keyword": "oświetlenie"
+      }
+    },
+    "1730874": {
+      "baselinker": {
+        "category_id": 1730874,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Pompy podciśnieniowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1730875": {
+      "baselinker": {
+        "category_id": 1730875,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Dachy/Dachy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730876": {
+      "baselinker": {
+        "category_id": 1730876,
+        "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Wtryskiwacze",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "281",
+        "ovoko_name": "Fuel mixture system",
+        "ovoko_pl": "Układ paliwowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "paliwowy"
+      }
+    },
+    "1730877": {
+      "baselinker": {
+        "category_id": 1730877,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Kierownice powietrza",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "197",
+        "ovoko_name": "Air conditioning-heating system/radiators",
+        "ovoko_pl": "Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe",
+        "confidence": "keyword_match",
+        "matched_keyword": "chłodzenia"
+      }
+    },
+    "1730878": {
+      "baselinker": {
+        "category_id": 1730878,
+        "name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Pompy wspomagania",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "pompy"
+      }
+    },
+    "1730879": {
+      "baselinker": {
+        "category_id": 1730879,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Przekaźniki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1730880": {
+      "baselinker": {
+        "category_id": 1730880,
+        "name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Kompresory klimatyzacji/Kompresory klimatyzacji",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "default",
+        "matched_keyword": "brak dopasowania"
+      }
+    },
+    "1730881": {
+      "baselinker": {
+        "category_id": 1730881,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1730882": {
+      "baselinker": {
+        "category_id": 1730882,
+        "name": "Motoryzacja/Części samochodowe/Układ wentylacji/Kanały powietrza",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "default",
+        "matched_keyword": "brak dopasowania"
+      }
+    },
+    "1730883": {
+      "baselinker": {
+        "category_id": 1730883,
+        "name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1",
+        "ovoko_name": "Brake system",
+        "ovoko_pl": "Układ hamulcowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "hamulcowy"
+      }
+    },
+    "1730884": {
+      "baselinker": {
+        "category_id": 1730884,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Moduły poduszek powietrznych",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1730885": {
+      "baselinker": {
+        "category_id": 1730885,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Sterowniki świateł",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "134",
+        "ovoko_name": "Lighting system",
+        "ovoko_pl": "Oświetlenie",
+        "confidence": "keyword_match",
+        "matched_keyword": "oświetlenie"
+      }
+    },
+    "1730886": {
+      "baselinker": {
+        "category_id": 1730886,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Zderzaki/Elementy mocujące",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730887": {
+      "baselinker": {
+        "category_id": 1730887,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Sterowniki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1730888": {
+      "baselinker": {
+        "category_id": 1730888,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Klapki wlewu paliwa/Klapki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730889": {
+      "baselinker": {
+        "category_id": 1730889,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Szyby/Szyberdachy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730890": {
+      "baselinker": {
+        "category_id": 1730890,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy przednie i elementy/Lampy przednie",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "134",
+        "ovoko_name": "Lighting system",
+        "ovoko_pl": "Oświetlenie",
+        "confidence": "keyword_match",
+        "matched_keyword": "oświetlenie"
+      }
+    },
+    "1730891": {
+      "baselinker": {
+        "category_id": 1730891,
+        "name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Mechanizmy wycieraczek",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "98",
+        "ovoko_name": "Headlight/headlamp washing/cleaning system",
+        "ovoko_pl": "Wycieraczki i spryskiwacze szyb i świateł",
+        "confidence": "keyword_match",
+        "matched_keyword": "spryskiwacze"
+      }
+    },
+    "1730892": {
+      "baselinker": {
+        "category_id": 1730892,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Zamki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730893": {
+      "baselinker": {
+        "category_id": 1730893,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Klamki zewnętrzne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730894": {
+      "baselinker": {
+        "category_id": 1730894,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Przepływomierze",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1730897": {
+      "baselinker": {
+        "category_id": 1730897,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Poszycia słupków",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730898": {
+      "baselinker": {
+        "category_id": 1730898,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Popielniczki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730899": {
+      "baselinker": {
+        "category_id": 1730899,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Pompy wody/Pompy wody",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "197",
+        "ovoko_name": "Air conditioning-heating system/radiators",
+        "ovoko_pl": "Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe",
+        "confidence": "keyword_match",
+        "matched_keyword": "chłodzenia"
+      }
+    },
+    "1730900": {
+      "baselinker": {
+        "category_id": 1730900,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Kompletne turbosprężarki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1730901": {
+      "baselinker": {
+        "category_id": 1730901,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Głowice cylindrów/Głowice",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1730902": {
+      "baselinker": {
+        "category_id": 1730902,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Obudowy filtrów powietrza",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1730903": {
+      "baselinker": {
+        "category_id": 1730903,
+        "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Pompy paliwa",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "pompy"
+      }
+    },
+    "1730904": {
+      "baselinker": {
+        "category_id": 1730904,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprzęt audio fabryczny/Radioodtwarzacze",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730905": {
+      "baselinker": {
+        "category_id": 1730905,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Elektronika samochodowa/Car audio/Głośniki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "keyword_match",
+        "matched_keyword": "akcesoria"
+      }
+    },
+    "1730906": {
+      "baselinker": {
+        "category_id": 1730906,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Klaksony",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "134",
+        "ovoko_name": "Lighting system",
+        "ovoko_pl": "Oświetlenie",
+        "confidence": "keyword_match",
+        "matched_keyword": "klaksony"
+      }
+    },
+    "1730907": {
+      "baselinker": {
+        "category_id": 1730907,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Zbiorniki wyrównawcze",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "197",
+        "ovoko_name": "Air conditioning-heating system/radiators",
+        "ovoko_pl": "Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe",
+        "confidence": "keyword_match",
+        "matched_keyword": "chłodzenia"
+      }
+    },
+    "1730908": {
+      "baselinker": {
+        "category_id": 1730908,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Czujniki/Poziomowania",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "134",
+        "ovoko_name": "Lighting system",
+        "ovoko_pl": "Oświetlenie",
+        "confidence": "keyword_match",
+        "matched_keyword": "oświetlenie"
+      }
+    },
+    "1730909": {
+      "baselinker": {
+        "category_id": 1730909,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Podsufitki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730910": {
+      "baselinker": {
+        "category_id": 1730910,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Elementy mocujące",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730911": {
+      "baselinker": {
+        "category_id": 1730911,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Deski rozdzielcze, konsole",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730912": {
+      "baselinker": {
+        "category_id": 1730912,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Elementy napędu paska osprzętu/Koła pasowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1730913": {
+      "baselinker": {
+        "category_id": 1730913,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Materiały instalacyjne/Kostki, złączki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1730914": {
+      "baselinker": {
+        "category_id": 1730914,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Lusterka wewnętrzne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730915": {
+      "baselinker": {
+        "category_id": 1730915,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Wsporniki, mocowania, obudowy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "134",
+        "ovoko_name": "Lighting system",
+        "ovoko_pl": "Oświetlenie",
+        "confidence": "keyword_match",
+        "matched_keyword": "oświetlenie"
+      }
+    },
+    "1730916": {
+      "baselinker": {
+        "category_id": 1730916,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Lewarki i wybieraki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "416",
+        "ovoko_name": "Gearbox/clutch/transmission",
+        "ovoko_pl": "Układ napędowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "napędowy"
+      }
+    },
+    "1730918": {
+      "baselinker": {
+        "category_id": 1730918,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Świece/Żarowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1730919": {
+      "baselinker": {
+        "category_id": 1730919,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Kolektory ssące",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1730920": {
+      "baselinker": {
+        "category_id": 1730920,
+        "name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Przewody klimatyzacji",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "default",
+        "matched_keyword": "brak dopasowania"
+      }
+    },
+    "1730921": {
+      "baselinker": {
+        "category_id": 1730921,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "197",
+        "ovoko_name": "Air conditioning-heating system/radiators",
+        "ovoko_pl": "Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe",
+        "confidence": "keyword_match",
+        "matched_keyword": "chłodzenia"
+      }
+    },
+    "1730922": {
+      "baselinker": {
+        "category_id": 1730922,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "134",
+        "ovoko_name": "Lighting system",
+        "ovoko_pl": "Oświetlenie",
+        "confidence": "keyword_match",
+        "matched_keyword": "oświetlenie"
+      }
+    },
+    "1730923": {
+      "baselinker": {
+        "category_id": 1730923,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Wsporniki, mocowania",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730924": {
+      "baselinker": {
+        "category_id": 1730924,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Nadkola",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730926": {
+      "baselinker": {
+        "category_id": 1730926,
+        "name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "98",
+        "ovoko_name": "Headlight/headlamp washing/cleaning system",
+        "ovoko_pl": "Wycieraczki i spryskiwacze szyb i świateł",
+        "confidence": "keyword_match",
+        "matched_keyword": "spryskiwacze"
+      }
+    },
+    "1730927": {
+      "baselinker": {
+        "category_id": 1730927,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Maski/Wygłuszenie",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "498",
+        "ovoko_name": "Exterior front body parts",
+        "ovoko_pl": "Elementy przedniej części nadwozia / karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "maski"
+      }
+    },
+    "1730928": {
+      "baselinker": {
+        "category_id": 1730928,
+        "name": "Motoryzacja/Opony i felgi/Felgi/Do samochodów/Aluminiowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "463",
+        "ovoko_name": "Wheels/tires/caps",
+        "ovoko_pl": "Opony / Felgi / Kołpaki i inne elementy",
+        "confidence": "keyword_match",
+        "matched_keyword": "opony"
+      }
+    },
+    "1730950": {
+      "baselinker": {
+        "category_id": 1730950,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Osłony przeciwsłoneczne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730959": {
+      "baselinker": {
+        "category_id": 1730959,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Boczki bagażnika",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730963": {
+      "baselinker": {
+        "category_id": 1730963,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Wykładzina",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730966": {
+      "baselinker": {
+        "category_id": 1730966,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Stacyjki i kluczyki/Stacyjki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1730967": {
+      "baselinker": {
+        "category_id": 1730967,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Szyby/Listwy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730968": {
+      "baselinker": {
+        "category_id": 1730968,
+        "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Pompy wtryskowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "pompy"
+      }
+    },
+    "1730969": {
+      "baselinker": {
+        "category_id": 1730969,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Recyrkulacja spalin EGR/Chłodnice spalin",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "197",
+        "ovoko_name": "Air conditioning-heating system/radiators",
+        "ovoko_pl": "Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe",
+        "confidence": "keyword_match",
+        "matched_keyword": "chłodnice"
+      }
+    },
+    "1730970": {
+      "baselinker": {
+        "category_id": 1730970,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Półki tylne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730971": {
+      "baselinker": {
+        "category_id": 1730971,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Czujniki poziomu oleju",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1730972": {
+      "baselinker": {
+        "category_id": 1730972,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Kompletne skrzynie",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "416",
+        "ovoko_name": "Gearbox/clutch/transmission",
+        "ovoko_pl": "Układ napędowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "napędowy"
+      }
+    },
+    "1730973": {
+      "baselinker": {
+        "category_id": 1730973,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Progi/Progi",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730974": {
+      "baselinker": {
+        "category_id": 1730974,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Boczki drzwi",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "drzwi"
+      }
+    },
+    "1730975": {
+      "baselinker": {
+        "category_id": 1730975,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Dachy/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1730976": {
+      "baselinker": {
+        "category_id": 1730976,
+        "name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Czujniki kąta skrętu",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "czujniki"
+      }
+    },
+    "1730977": {
+      "baselinker": {
+        "category_id": 1730977,
+        "name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Zbiorniki płynu do spryskiwaczy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "98",
+        "ovoko_name": "Headlight/headlamp washing/cleaning system",
+        "ovoko_pl": "Wycieraczki i spryskiwacze szyb i świateł",
+        "confidence": "keyword_match",
+        "matched_keyword": "spryskiwacze"
+      }
+    },
+    "1730978": {
+      "baselinker": {
+        "category_id": 1730978,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Półosie, przeguby, wały/Półosie",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "416",
+        "ovoko_name": "Gearbox/clutch/transmission",
+        "ovoko_pl": "Układ napędowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "napędowy"
+      }
+    },
+    "1730979": {
+      "baselinker": {
+        "category_id": 1730979,
+        "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Przewody wtryskowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "281",
+        "ovoko_name": "Fuel mixture system",
+        "ovoko_pl": "Układ paliwowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "paliwowy"
+      }
+    },
+    "1730980": {
+      "baselinker": {
+        "category_id": 1730980,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Chłodnice/Chłodnice wody",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "197",
+        "ovoko_name": "Air conditioning-heating system/radiators",
+        "ovoko_pl": "Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe",
+        "confidence": "keyword_match",
+        "matched_keyword": "chłodzenia"
+      }
+    },
+    "1730981": {
+      "baselinker": {
+        "category_id": 1730981,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Przewody układów chłodzenia/Przewody chłodnic oleju",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "197",
+        "ovoko_name": "Air conditioning-heating system/radiators",
+        "ovoko_pl": "Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe",
+        "confidence": "keyword_match",
+        "matched_keyword": "chłodzenia"
+      }
+    },
+    "1730982": {
+      "baselinker": {
+        "category_id": 1730982,
+        "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Przewody paliwa",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "281",
+        "ovoko_name": "Fuel mixture system",
+        "ovoko_pl": "Układ paliwowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "paliwowy"
+      }
+    },
+    "1730983": {
+      "baselinker": {
+        "category_id": 1730983,
+        "name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Hamulce postojowe/Dźwignie hamulca ręcznego",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1",
+        "ovoko_name": "Brake system",
+        "ovoko_pl": "Układ hamulcowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "hamulcowy"
+      }
+    },
+    "1730984": {
+      "baselinker": {
+        "category_id": 1730984,
+        "name": "Motoryzacja/Części samochodowe/Układ wydechowy/Wieszaki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1168",
+        "ovoko_name": "Gas exhaust system",
+        "ovoko_pl": "Układ wydechowy i inne elementy",
+        "confidence": "keyword_match",
+        "matched_keyword": "wydechowy"
+      }
+    },
+    "1730985": {
+      "baselinker": {
+        "category_id": 1730985,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Wały korbowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1730986": {
+      "baselinker": {
+        "category_id": 1730986,
+        "name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "keyword_match",
+        "matched_keyword": "pozostałe"
+      }
+    },
+    "1730987": {
+      "baselinker": {
+        "category_id": 1730987,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730988": {
+      "baselinker": {
+        "category_id": 1730988,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Gałki i mieszki/Gałki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1730989": {
+      "baselinker": {
+        "category_id": 1730989,
+        "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "281",
+        "ovoko_name": "Fuel mixture system",
+        "ovoko_pl": "Układ paliwowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "paliwowy"
+      }
+    },
+    "1730990": {
+      "baselinker": {
+        "category_id": 1730990,
+        "name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Zawieszenie hydrauliczne i pneumatyczne/Sterowniki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "330",
+        "ovoko_name": "Front axle",
+        "ovoko_pl": "Oś przednia i inne elementy",
+        "confidence": "keyword_match",
+        "matched_keyword": "zawieszenia"
+      }
+    },
+    "1730991": {
+      "baselinker": {
+        "category_id": 1730991,
+        "name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Czujniki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "czujniki"
+      }
+    },
+    "1730992": {
+      "baselinker": {
+        "category_id": 1730992,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Światła stop",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "134",
+        "ovoko_name": "Lighting system",
+        "ovoko_pl": "Oświetlenie",
+        "confidence": "keyword_match",
+        "matched_keyword": "oświetlenie"
+      }
+    },
+    "1730993": {
+      "baselinker": {
+        "category_id": 1730993,
+        "name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "330",
+        "ovoko_name": "Front axle",
+        "ovoko_pl": "Oś przednia i inne elementy",
+        "confidence": "keyword_match",
+        "matched_keyword": "zawieszenia"
+      }
+    },
+    "1730995": {
+      "baselinker": {
+        "category_id": 1730995,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Osłony silnika/Górne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1730996": {
+      "baselinker": {
+        "category_id": 1730996,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Cewki zapłonowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1730997": {
+      "baselinker": {
+        "category_id": 1730997,
+        "name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Układ ABS i ESP/Sterowniki ABS",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1",
+        "ovoko_name": "Brake system",
+        "ovoko_pl": "Układ hamulcowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "hamulcowy"
+      }
+    },
+    "1730998": {
+      "baselinker": {
+        "category_id": 1730998,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Silniczki szyberdachu",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1730999": {
+      "baselinker": {
+        "category_id": 1730999,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Chłodnice/Chłodnice powietrza (intercoolery)",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "197",
+        "ovoko_name": "Air conditioning-heating system/radiators",
+        "ovoko_pl": "Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe",
+        "confidence": "keyword_match",
+        "matched_keyword": "chłodzenia"
+      }
+    },
+    "1731000": {
+      "baselinker": {
+        "category_id": 1731000,
+        "name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Chłodnice klimatyzacji (skraplacze)",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "197",
+        "ovoko_name": "Air conditioning-heating system/radiators",
+        "ovoko_pl": "Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe",
+        "confidence": "keyword_match",
+        "matched_keyword": "chłodnice"
+      }
+    },
+    "1731001": {
+      "baselinker": {
+        "category_id": 1731001,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Maski/Cięgna",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "498",
+        "ovoko_name": "Exterior front body parts",
+        "ovoko_pl": "Elementy przedniej części nadwozia / karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "maski"
+      }
+    },
+    "1731002": {
+      "baselinker": {
+        "category_id": 1731002,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy przednie i elementy/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "134",
+        "ovoko_name": "Lighting system",
+        "ovoko_pl": "Oświetlenie",
+        "confidence": "keyword_match",
+        "matched_keyword": "oświetlenie"
+      }
+    },
+    "1731003": {
+      "baselinker": {
+        "category_id": 1731003,
+        "name": "Motoryzacja/Opony i felgi/Osprzęt i akcesoria/Śruby",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "463",
+        "ovoko_name": "Wheels/tires/caps",
+        "ovoko_pl": "Opony / Felgi / Kołpaki i inne elementy",
+        "confidence": "keyword_match",
+        "matched_keyword": "opony"
+      }
+    },
+    "1731004": {
+      "baselinker": {
+        "category_id": 1731004,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki przyspieszenia",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1731005": {
+      "baselinker": {
+        "category_id": 1731005,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Pompy oleju",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731006": {
+      "baselinker": {
+        "category_id": 1731006,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprzęt audio fabryczny/Zmieniarki CD",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1731007": {
+      "baselinker": {
+        "category_id": 1731007,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Chłodnice/Chłodnice oleju",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "197",
+        "ovoko_name": "Air conditioning-heating system/radiators",
+        "ovoko_pl": "Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe",
+        "confidence": "keyword_match",
+        "matched_keyword": "chłodzenia"
+      }
+    },
+    "1731008": {
+      "baselinker": {
+        "category_id": 1731008,
+        "name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Czujniki deszczu",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "98",
+        "ovoko_name": "Headlight/headlamp washing/cleaning system",
+        "ovoko_pl": "Wycieraczki i spryskiwacze szyb i świateł",
+        "confidence": "keyword_match",
+        "matched_keyword": "spryskiwacze"
+      }
+    },
+    "1731009": {
+      "baselinker": {
+        "category_id": 1731009,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki prędkości",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1731010": {
+      "baselinker": {
+        "category_id": 1731010,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Gniazda zapalniczki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1731011": {
+      "baselinker": {
+        "category_id": 1731011,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Maski/Zawiasy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "498",
+        "ovoko_name": "Exterior front body parts",
+        "ovoko_pl": "Elementy przedniej części nadwozia / karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "maski"
+      }
+    },
+    "1731012": {
+      "baselinker": {
+        "category_id": 1731012,
+        "name": "Motoryzacja/Części samochodowe/Układ wydechowy/Kolektory wydechowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "kolektor"
+      }
+    },
+    "1731013": {
+      "baselinker": {
+        "category_id": 1731013,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Zawory podciśnienia",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731014": {
+      "baselinker": {
+        "category_id": 1731014,
+        "name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Zawieszenie hydrauliczne i pneumatyczne/Poduszki i miechy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "330",
+        "ovoko_name": "Front axle",
+        "ovoko_pl": "Oś przednia i inne elementy",
+        "confidence": "keyword_match",
+        "matched_keyword": "zawieszenia"
+      }
+    },
+    "1731015": {
+      "baselinker": {
+        "category_id": 1731015,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Smarowanie",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "416",
+        "ovoko_name": "Gearbox/clutch/transmission",
+        "ovoko_pl": "Układ napędowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "napędowy"
+      }
+    },
+    "1731016": {
+      "baselinker": {
+        "category_id": 1731016,
+        "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Listwy wtryskowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "281",
+        "ovoko_name": "Fuel mixture system",
+        "ovoko_pl": "Układ paliwowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "paliwowy"
+      }
+    },
+    "1731017": {
+      "baselinker": {
+        "category_id": 1731017,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Dyferencjały/Kompletne dyferencjały",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "416",
+        "ovoko_name": "Gearbox/clutch/transmission",
+        "ovoko_pl": "Układ napędowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "napędowy"
+      }
+    },
+    "1731019": {
+      "baselinker": {
+        "category_id": 1731019,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Klamki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731020": {
+      "baselinker": {
+        "category_id": 1731020,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Holowanie/Kompletne haki holownicze (belka + kula)",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "keyword_match",
+        "matched_keyword": "akcesoria"
+      }
+    },
+    "1731021": {
+      "baselinker": {
+        "category_id": 1731021,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Wałki rozrządu",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731022": {
+      "baselinker": {
+        "category_id": 1731022,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Sprzęgła/Koła dwumasowe i zamachowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "416",
+        "ovoko_name": "Gearbox/clutch/transmission",
+        "ovoko_pl": "Układ napędowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "napędowy"
+      }
+    },
+    "1731023": {
+      "baselinker": {
+        "category_id": 1731023,
+        "name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Ramiona wycieraczek",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "98",
+        "ovoko_name": "Headlight/headlamp washing/cleaning system",
+        "ovoko_pl": "Wycieraczki i spryskiwacze szyb i świateł",
+        "confidence": "keyword_match",
+        "matched_keyword": "spryskiwacze"
+      }
+    },
+    "1731024": {
+      "baselinker": {
+        "category_id": 1731024,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Zapalniczki samochodowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1731026": {
+      "baselinker": {
+        "category_id": 1731026,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Bloki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731027": {
+      "baselinker": {
+        "category_id": 1731027,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Półosie, przeguby, wały/Podpory wału",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "416",
+        "ovoko_name": "Gearbox/clutch/transmission",
+        "ovoko_pl": "Układ napędowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "napędowy"
+      }
+    },
+    "1731028": {
+      "baselinker": {
+        "category_id": 1731028,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Literatura motoryzacyjna/Samochody/Książki serwisowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "keyword_match",
+        "matched_keyword": "akcesoria"
+      }
+    },
+    "1731029": {
+      "baselinker": {
+        "category_id": 1731029,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprzęt audio fabryczny/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1731030": {
+      "baselinker": {
+        "category_id": 1731030,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Podłokietniki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1731031": {
+      "baselinker": {
+        "category_id": 1731031,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Głowice cylindrów/Pokrywy zaworów",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731032": {
+      "baselinker": {
+        "category_id": 1731032,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731033": {
+      "baselinker": {
+        "category_id": 1731033,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Tłoki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731034": {
+      "baselinker": {
+        "category_id": 1731034,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Bagnety",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731035": {
+      "baselinker": {
+        "category_id": 1731035,
+        "name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Pompy hamulcowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1",
+        "ovoko_name": "Brake system",
+        "ovoko_pl": "Układ hamulcowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "hamulcowy"
+      }
+    },
+    "1731036": {
+      "baselinker": {
+        "category_id": 1731036,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Miski olejowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731037": {
+      "baselinker": {
+        "category_id": 1731037,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Czujniki położenia wałka rozrządu",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731038": {
+      "baselinker": {
+        "category_id": 1731038,
+        "name": "Motoryzacja/Części samochodowe/Układ wydechowy/Czujniki temperatury spalin",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "czujniki"
+      }
+    },
+    "1731039": {
+      "baselinker": {
+        "category_id": 1731039,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Listwy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731041": {
+      "baselinker": {
+        "category_id": 1731041,
+        "name": "Motoryzacja/Części samochodowe/Układ wydechowy/Katalizatory",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1168",
+        "ovoko_name": "Gas exhaust system",
+        "ovoko_pl": "Układ wydechowy i inne elementy",
+        "confidence": "keyword_match",
+        "matched_keyword": "wydechowy"
+      }
+    },
+    "1731042": {
+      "baselinker": {
+        "category_id": 1731042,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Wentylatory chłodnicy/Obudowy wentylatorów",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "197",
+        "ovoko_name": "Air conditioning-heating system/radiators",
+        "ovoko_pl": "Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe",
+        "confidence": "keyword_match",
+        "matched_keyword": "chłodzenia"
+      }
+    },
+    "1731043": {
+      "baselinker": {
+        "category_id": 1731043,
+        "name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Wentylatory chłodnic klimatyzacji",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "197",
+        "ovoko_name": "Air conditioning-heating system/radiators",
+        "ovoko_pl": "Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe",
+        "confidence": "keyword_match",
+        "matched_keyword": "wentylatory"
+      }
+    },
+    "1731044": {
+      "baselinker": {
+        "category_id": 1731044,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Materiały instalacyjne/Wiązki przewodów",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1731045": {
+      "baselinker": {
+        "category_id": 1731045,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Uszczelki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731046": {
+      "baselinker": {
+        "category_id": 1731046,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Osłony na szyby/Rolety przeciwsłoneczne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1189",
+        "ovoko_name": "Glass",
+        "ovoko_pl": "Szyby / Okna i inne elementy",
+        "confidence": "keyword_match",
+        "matched_keyword": "szyby"
+      }
+    },
+    "1731047": {
+      "baselinker": {
+        "category_id": 1731047,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Atrapy chłodnicy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731051": {
+      "baselinker": {
+        "category_id": 1731051,
+        "name": "Motoryzacja/Części samochodowe/Układ wentylacji/Rezystory dmuchaw",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "default",
+        "matched_keyword": "brak dopasowania"
+      }
+    },
+    "1731052": {
+      "baselinker": {
+        "category_id": 1731052,
+        "name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Silniki wycieraczek",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "98",
+        "ovoko_name": "Headlight/headlamp washing/cleaning system",
+        "ovoko_pl": "Wycieraczki i spryskiwacze szyb i świateł",
+        "confidence": "keyword_match",
+        "matched_keyword": "spryskiwacze"
+      }
+    },
+    "1731053": {
+      "baselinker": {
+        "category_id": 1731053,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki zasysanego powietrza",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1731054": {
+      "baselinker": {
+        "category_id": 1731054,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Szyby/Karoseryjne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731055": {
+      "baselinker": {
+        "category_id": 1731055,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Sprzęgła/Pompy sprzęgła",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "pompy"
+      }
+    },
+    "1731056": {
+      "baselinker": {
+        "category_id": 1731056,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Podszybia",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731057": {
+      "baselinker": {
+        "category_id": 1731057,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Dywaniki/Maty do bagażnika",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "keyword_match",
+        "matched_keyword": "akcesoria"
+      }
+    },
+    "1731058": {
+      "baselinker": {
+        "category_id": 1731058,
+        "name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Kolumny kierownicze",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "default",
+        "matched_keyword": "brak dopasowania"
+      }
+    },
+    "1731059": {
+      "baselinker": {
+        "category_id": 1731059,
+        "name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Hamulce postojowe/Linki hamulca ręcznego",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1",
+        "ovoko_name": "Brake system",
+        "ovoko_pl": "Układ hamulcowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "hamulcowy"
+      }
+    },
+    "1731060": {
+      "baselinker": {
+        "category_id": 1731060,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprężyny gazowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "330",
+        "ovoko_name": "Front axle",
+        "ovoko_pl": "Oś przednia i inne elementy",
+        "confidence": "keyword_match",
+        "matched_keyword": "sprężyny"
+      }
+    },
+    "1731063": {
+      "baselinker": {
+        "category_id": 1731063,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Maski/Zamki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "498",
+        "ovoko_name": "Exterior front body parts",
+        "ovoko_pl": "Elementy przedniej części nadwozia / karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "maski"
+      }
+    },
+    "1731064": {
+      "baselinker": {
+        "category_id": 1731064,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Koła zębate",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731065": {
+      "baselinker": {
+        "category_id": 1731065,
+        "name": "Motoryzacja/Części samochodowe/Układ wentylacji/Nagrzewnice",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "default",
+        "matched_keyword": "brak dopasowania"
+      }
+    },
+    "1731066": {
+      "baselinker": {
+        "category_id": 1731066,
+        "name": "Motoryzacja/Części samochodowe/Układ wydechowy/Czujniki ciśnienia spalin",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "czujniki"
+      }
+    },
+    "1731067": {
+      "baselinker": {
+        "category_id": 1731067,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Tunele środkowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1731068": {
+      "baselinker": {
+        "category_id": 1731068,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Przewody układów chłodzenia/Przewody chłodnic powietrza",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "197",
+        "ovoko_name": "Air conditioning-heating system/radiators",
+        "ovoko_pl": "Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe",
+        "confidence": "keyword_match",
+        "matched_keyword": "chłodzenia"
+      }
+    },
+    "1731069": {
+      "baselinker": {
+        "category_id": 1731069,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Uszczelki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731070": {
+      "baselinker": {
+        "category_id": 1731070,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Elektronika samochodowa/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "keyword_match",
+        "matched_keyword": "pozostałe"
+      }
+    },
+    "1731071": {
+      "baselinker": {
+        "category_id": 1731071,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Zabudowy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731072": {
+      "baselinker": {
+        "category_id": 1731072,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Kierunkowskazy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "134",
+        "ovoko_name": "Lighting system",
+        "ovoko_pl": "Oświetlenie",
+        "confidence": "keyword_match",
+        "matched_keyword": "oświetlenie"
+      }
+    },
+    "1731073": {
+      "baselinker": {
+        "category_id": 1731073,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Gałki i mieszki/Mieszki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1731074": {
+      "baselinker": {
+        "category_id": 1731074,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Osłony przeciwbłotne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731075": {
+      "baselinker": {
+        "category_id": 1731075,
+        "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Sterowniki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "281",
+        "ovoko_name": "Fuel mixture system",
+        "ovoko_pl": "Układ paliwowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "paliwowy"
+      }
+    },
+    "1731076": {
+      "baselinker": {
+        "category_id": 1731076,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Maski/Uszczelki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "498",
+        "ovoko_name": "Exterior front body parts",
+        "ovoko_pl": "Elementy przedniej części nadwozia / karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "maski"
+      }
+    },
+    "1731077": {
+      "baselinker": {
+        "category_id": 1731077,
+        "name": "Motoryzacja/Części samochodowe/Układ wydechowy/Osłony",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1168",
+        "ovoko_name": "Gas exhaust system",
+        "ovoko_pl": "Układ wydechowy i inne elementy",
+        "confidence": "keyword_match",
+        "matched_keyword": "wydechowy"
+      }
+    },
+    "1731080": {
+      "baselinker": {
+        "category_id": 1731080,
+        "name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Układ ABS i ESP/Czujniki ESP",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1",
+        "ovoko_name": "Brake system",
+        "ovoko_pl": "Układ hamulcowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "hamulcowy"
+      }
+    },
+    "1731081": {
+      "baselinker": {
+        "category_id": 1731081,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Apteczki, gaśnice, kamizelki, trójkąty/Trójkąty",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "keyword_match",
+        "matched_keyword": "akcesoria"
+      }
+    },
+    "1731082": {
+      "baselinker": {
+        "category_id": 1731082,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Podnośniki szyb",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1731083": {
+      "baselinker": {
+        "category_id": 1731083,
+        "name": "Motoryzacja/Części samochodowe/Układ wydechowy/Obejmy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1168",
+        "ovoko_name": "Gas exhaust system",
+        "ovoko_pl": "Układ wydechowy i inne elementy",
+        "confidence": "keyword_match",
+        "matched_keyword": "wydechowy"
+      }
+    },
+    "1731084": {
+      "baselinker": {
+        "category_id": 1731084,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Zderzaki/Listwy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731085": {
+      "baselinker": {
+        "category_id": 1731085,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Recyrkulacja spalin EGR/Przewody EGR",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731086": {
+      "baselinker": {
+        "category_id": 1731086,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731091": {
+      "baselinker": {
+        "category_id": 1731091,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampki tablicy rejestracyjnej",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "134",
+        "ovoko_name": "Lighting system",
+        "ovoko_pl": "Oświetlenie",
+        "confidence": "keyword_match",
+        "matched_keyword": "oświetlenie"
+      }
+    },
+    "1731092": {
+      "baselinker": {
+        "category_id": 1731092,
+        "name": "Motoryzacja/Części samochodowe/Układ wentylacji/Obudowy filtrów kabinowych",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "default",
+        "matched_keyword": "brak dopasowania"
+      }
+    },
+    "1731093": {
+      "baselinker": {
+        "category_id": 1731093,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Skrzynki bezpieczników",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1731095": {
+      "baselinker": {
+        "category_id": 1731095,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Silniczki szyb",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1731096": {
+      "baselinker": {
+        "category_id": 1731096,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Zawory",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731097": {
+      "baselinker": {
+        "category_id": 1731097,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Moduły drzwi",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "drzwi"
+      }
+    },
+    "1731098": {
+      "baselinker": {
+        "category_id": 1731098,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Przewody zapłonowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731099": {
+      "baselinker": {
+        "category_id": 1731099,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Maski/Siłowniki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "498",
+        "ovoko_name": "Exterior front body parts",
+        "ovoko_pl": "Elementy przedniej części nadwozia / karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "maski"
+      }
+    },
+    "1731100": {
+      "baselinker": {
+        "category_id": 1731100,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Półosie, przeguby, wały/Przeguby",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "416",
+        "ovoko_name": "Gearbox/clutch/transmission",
+        "ovoko_pl": "Układ napędowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "napędowy"
+      }
+    },
+    "1731102": {
+      "baselinker": {
+        "category_id": 1731102,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Klamki wewnętrzne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1731105": {
+      "baselinker": {
+        "category_id": 1731105,
+        "name": "Motoryzacja/Części samochodowe/Układ paliwowy/AdBlue/Czujniki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "281",
+        "ovoko_name": "Fuel mixture system",
+        "ovoko_pl": "Układ paliwowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "paliwowy"
+      }
+    },
+    "1731106": {
+      "baselinker": {
+        "category_id": 1731106,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Lusterka zewnętrzne/Wkłady",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731107": {
+      "baselinker": {
+        "category_id": 1731107,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy przednie i elementy/Przetwornice",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "134",
+        "ovoko_name": "Lighting system",
+        "ovoko_pl": "Oświetlenie",
+        "confidence": "keyword_match",
+        "matched_keyword": "oświetlenie"
+      }
+    },
+    "1731108": {
+      "baselinker": {
+        "category_id": 1731108,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Osłony na szyby/Owiewki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1189",
+        "ovoko_name": "Glass",
+        "ovoko_pl": "Szyby / Okna i inne elementy",
+        "confidence": "keyword_match",
+        "matched_keyword": "szyby"
+      }
+    },
+    "1731109": {
+      "baselinker": {
+        "category_id": 1731109,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Dachy/Listwy, zaślepki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731110": {
+      "baselinker": {
+        "category_id": 1731110,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Odma",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731111": {
+      "baselinker": {
+        "category_id": 1731111,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1731112": {
+      "baselinker": {
+        "category_id": 1731112,
+        "name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Osłony przekładni kierowniczych",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "default",
+        "matched_keyword": "brak dopasowania"
+      }
+    },
+    "1731114": {
+      "baselinker": {
+        "category_id": 1731114,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Obudowy akumulatorów",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1731116": {
+      "baselinker": {
+        "category_id": 1731116,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Części montażowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "416",
+        "ovoko_name": "Gearbox/clutch/transmission",
+        "ovoko_pl": "Układ napędowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "napędowy"
+      }
+    },
+    "1731117": {
+      "baselinker": {
+        "category_id": 1731117,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "134",
+        "ovoko_name": "Lighting system",
+        "ovoko_pl": "Oświetlenie",
+        "confidence": "keyword_match",
+        "matched_keyword": "oświetlenie"
+      }
+    },
+    "1731120": {
+      "baselinker": {
+        "category_id": 1731120,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Przepustnice",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731122": {
+      "baselinker": {
+        "category_id": 1731122,
+        "name": "Motoryzacja/Części samochodowe/Układ wydechowy/Rury wydechowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1168",
+        "ovoko_name": "Gas exhaust system",
+        "ovoko_pl": "Układ wydechowy i inne elementy",
+        "confidence": "keyword_match",
+        "matched_keyword": "wydechowy"
+      }
+    },
+    "1731124": {
+      "baselinker": {
+        "category_id": 1731124,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Zawieszenie silnika/Wsporniki i łapy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731137": {
+      "baselinker": {
+        "category_id": 1731137,
+        "name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Belki zawieszenia/Belki przednie",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "330",
+        "ovoko_name": "Front axle",
+        "ovoko_pl": "Oś przednia i inne elementy",
+        "confidence": "keyword_match",
+        "matched_keyword": "zawieszenia"
+      }
+    },
+    "1731138": {
+      "baselinker": {
+        "category_id": 1731138,
+        "name": "Motoryzacja/Części samochodowe/Układ wentylacji/Silniki dmuchaw",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731139": {
+      "baselinker": {
+        "category_id": 1731139,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Zawory",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731141": {
+      "baselinker": {
+        "category_id": 1731141,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Tuning wizualny/Listwy ozdobne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "listwy"
+      }
+    },
+    "1731142": {
+      "baselinker": {
+        "category_id": 1731142,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "416",
+        "ovoko_name": "Gearbox/clutch/transmission",
+        "ovoko_pl": "Układ napędowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "napędowy"
+      }
+    },
+    "1731143": {
+      "baselinker": {
+        "category_id": 1731143,
+        "name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Zawory rozprężne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "zawory"
+      }
+    },
+    "1731144": {
+      "baselinker": {
+        "category_id": 1731144,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731145": {
+      "baselinker": {
+        "category_id": 1731145,
+        "name": "Motoryzacja/Części samochodowe/Filtry/Filtry paliwa",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "default",
+        "matched_keyword": "brak dopasowania"
+      }
+    },
+    "1731146": {
+      "baselinker": {
+        "category_id": 1731146,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Półosie, przeguby, wały/Tłumiki drgań",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "416",
+        "ovoko_name": "Gearbox/clutch/transmission",
+        "ovoko_pl": "Układ napędowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "napędowy"
+      }
+    },
+    "1731147": {
+      "baselinker": {
+        "category_id": 1731147,
+        "name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Zbiorniki płynu wspomagania",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "default",
+        "matched_keyword": "brak dopasowania"
+      }
+    },
+    "1731148": {
+      "baselinker": {
+        "category_id": 1731148,
+        "name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Zbiorniki płynu hamulcowego",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1",
+        "ovoko_name": "Brake system",
+        "ovoko_pl": "Układ hamulcowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "hamulcowy"
+      }
+    },
+    "1731149": {
+      "baselinker": {
+        "category_id": 1731149,
+        "name": "Motoryzacja/Części samochodowe/Filtry/Inne filtry",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "keyword_match",
+        "matched_keyword": "inne"
+      }
+    },
+    "1731151": {
+      "baselinker": {
+        "category_id": 1731151,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Półosie, przeguby, wały/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "416",
+        "ovoko_name": "Gearbox/clutch/transmission",
+        "ovoko_pl": "Układ napędowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "napędowy"
+      }
+    },
+    "1731153": {
+      "baselinker": {
+        "category_id": 1731153,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Chłodnice/Części montażowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "197",
+        "ovoko_name": "Air conditioning-heating system/radiators",
+        "ovoko_pl": "Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe",
+        "confidence": "keyword_match",
+        "matched_keyword": "chłodzenia"
+      }
+    },
+    "1731154": {
+      "baselinker": {
+        "category_id": 1731154,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Zderzaki/Absorbery",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1",
+        "ovoko_name": "Brake system",
+        "ovoko_pl": "Układ hamulcowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "ABS"
+      }
+    },
+    "1731155": {
+      "baselinker": {
+        "category_id": 1731155,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Czujniki spalania stukowego",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731156": {
+      "baselinker": {
+        "category_id": 1731156,
+        "name": "Motoryzacja/Części samochodowe/Układ wentylacji/Przewody nagrzewnic",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "default",
+        "matched_keyword": "brak dopasowania"
+      }
+    },
+    "1731157": {
+      "baselinker": {
+        "category_id": 1731157,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Czujniki ciśnienia w kolektorze (MAP)",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731160": {
+      "baselinker": {
+        "category_id": 1731160,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Zawieszenie silnika/Wózki i belki silnika",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731161": {
+      "baselinker": {
+        "category_id": 1731161,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki temperatury wewnętrznej",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1731163": {
+      "baselinker": {
+        "category_id": 1731163,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Szyby/Uszczelki szyb",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731165": {
+      "baselinker": {
+        "category_id": 1731165,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Silniczki regulacji fotela",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1731166": {
+      "baselinker": {
+        "category_id": 1731166,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy przednie i elementy/Lampy przeciwmgielne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "134",
+        "ovoko_name": "Lighting system",
+        "ovoko_pl": "Oświetlenie",
+        "confidence": "keyword_match",
+        "matched_keyword": "oświetlenie"
+      }
+    },
+    "1731167": {
+      "baselinker": {
+        "category_id": 1731167,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Progi/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731168": {
+      "baselinker": {
+        "category_id": 1731168,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki uderzenia",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1731170": {
+      "baselinker": {
+        "category_id": 1731170,
+        "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Regulatory ciśnienia paliwa",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "281",
+        "ovoko_name": "Fuel mixture system",
+        "ovoko_pl": "Układ paliwowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "paliwowy"
+      }
+    },
+    "1731171": {
+      "baselinker": {
+        "category_id": 1731171,
+        "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Zawory",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "zawory"
+      }
+    },
+    "1731174": {
+      "baselinker": {
+        "category_id": 1731174,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Termostaty/Obudowy termostatów",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "197",
+        "ovoko_name": "Air conditioning-heating system/radiators",
+        "ovoko_pl": "Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe",
+        "confidence": "keyword_match",
+        "matched_keyword": "chłodzenia"
+      }
+    },
+    "1731176": {
+      "baselinker": {
+        "category_id": 1731176,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Uchwyty, wieszaki/Na kubki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "keyword_match",
+        "matched_keyword": "akcesoria"
+      }
+    },
+    "1731178": {
+      "baselinker": {
+        "category_id": 1731178,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Pompy wody/Części montażowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "197",
+        "ovoko_name": "Air conditioning-heating system/radiators",
+        "ovoko_pl": "Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe",
+        "confidence": "keyword_match",
+        "matched_keyword": "chłodzenia"
+      }
+    },
+    "1731180": {
+      "baselinker": {
+        "category_id": 1731180,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Zestawy części blacharskich",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731183": {
+      "baselinker": {
+        "category_id": 1731183,
+        "name": "Motoryzacja/Części samochodowe/Filtry/Filtry kabinowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "default",
+        "matched_keyword": "brak dopasowania"
+      }
+    },
+    "1731184": {
+      "baselinker": {
+        "category_id": 1731184,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Szyby/Przednie",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "498",
+        "ovoko_name": "Exterior front body parts",
+        "ovoko_pl": "Elementy przedniej części nadwozia / karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "przedni"
+      }
+    },
+    "1731188": {
+      "baselinker": {
+        "category_id": 1731188,
+        "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Czujniki poziomu paliwa",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "281",
+        "ovoko_name": "Fuel mixture system",
+        "ovoko_pl": "Układ paliwowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "paliwowy"
+      }
+    },
+    "1731189": {
+      "baselinker": {
+        "category_id": 1731189,
+        "name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Przewody układu wspomagania",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "default",
+        "matched_keyword": "brak dopasowania"
+      }
+    },
+    "1731190": {
+      "baselinker": {
+        "category_id": 1731190,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Lusterka zewnętrzne/Obudowy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731191": {
+      "baselinker": {
+        "category_id": 1731191,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Obudowy filtrów oleju",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731192": {
+      "baselinker": {
+        "category_id": 1731192,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Smarowanie",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731193": {
+      "baselinker": {
+        "category_id": 1731193,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Reduktory",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "416",
+        "ovoko_name": "Gearbox/clutch/transmission",
+        "ovoko_pl": "Układ napędowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "napędowy"
+      }
+    },
+    "1731194": {
+      "baselinker": {
+        "category_id": 1731194,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Szyby/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731195": {
+      "baselinker": {
+        "category_id": 1731195,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Szyby/Tylne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731199": {
+      "baselinker": {
+        "category_id": 1731199,
+        "name": "Motoryzacja/Opony i felgi/Koła (felgi z oponami)/Do samochodów",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "463",
+        "ovoko_name": "Wheels/tires/caps",
+        "ovoko_pl": "Opony / Felgi / Kołpaki i inne elementy",
+        "confidence": "keyword_match",
+        "matched_keyword": "koła"
+      }
+    },
+    "1731200": {
+      "baselinker": {
+        "category_id": 1731200,
+        "name": "Motoryzacja/Opony i felgi/Koła (felgi z oponami)/Koła dojazdowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "463",
+        "ovoko_name": "Wheels/tires/caps",
+        "ovoko_pl": "Opony / Felgi / Kołpaki i inne elementy",
+        "confidence": "keyword_match",
+        "matched_keyword": "koła"
+      }
+    },
+    "1731201": {
+      "baselinker": {
+        "category_id": 1731201,
+        "name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Stabilizatory i elementy/Drążki stabilizatora",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "330",
+        "ovoko_name": "Front axle",
+        "ovoko_pl": "Oś przednia i inne elementy",
+        "confidence": "keyword_match",
+        "matched_keyword": "zawieszenia"
+      }
+    },
+    "1731202": {
+      "baselinker": {
+        "category_id": 1731202,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Szyby/Boczne (drzwi)",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731203": {
+      "baselinker": {
+        "category_id": 1731203,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Półosie, przeguby, wały/Podpory półosi",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "416",
+        "ovoko_name": "Gearbox/clutch/transmission",
+        "ovoko_pl": "Układ napędowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "napędowy"
+      }
+    },
+    "1731204": {
+      "baselinker": {
+        "category_id": 1731204,
+        "name": "Motoryzacja/Opony i felgi/Felgi/Do samochodów/Stalowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "463",
+        "ovoko_name": "Wheels/tires/caps",
+        "ovoko_pl": "Opony / Felgi / Kołpaki i inne elementy",
+        "confidence": "keyword_match",
+        "matched_keyword": "opony"
+      }
+    },
+    "1731207": {
+      "baselinker": {
+        "category_id": 1731207,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Smoki (ssaki oleju)",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731213": {
+      "baselinker": {
+        "category_id": 1731213,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731220": {
+      "baselinker": {
+        "category_id": 1731220,
+        "name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Belki zawieszenia/Belki tylne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "330",
+        "ovoko_name": "Front axle",
+        "ovoko_pl": "Oś przednia i inne elementy",
+        "confidence": "keyword_match",
+        "matched_keyword": "zawieszenia"
+      }
+    },
+    "1731223": {
+      "baselinker": {
+        "category_id": 1731223,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Dywaniki/Dywaniki gumowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "keyword_match",
+        "matched_keyword": "akcesoria"
+      }
+    },
+    "1731224": {
+      "baselinker": {
+        "category_id": 1731224,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731225": {
+      "baselinker": {
+        "category_id": 1731225,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "416",
+        "ovoko_name": "Gearbox/clutch/transmission",
+        "ovoko_pl": "Układ napędowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "napędowy"
+      }
+    },
+    "1731231": {
+      "baselinker": {
+        "category_id": 1731231,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Przewody",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "416",
+        "ovoko_name": "Gearbox/clutch/transmission",
+        "ovoko_pl": "Układ napędowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "napędowy"
+      }
+    },
+    "1731246": {
+      "baselinker": {
+        "category_id": 1731246,
+        "name": "Motoryzacja/Części samochodowe/Filtry/Filtry powietrza",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "default",
+        "matched_keyword": "brak dopasowania"
+      }
+    },
+    "1731262": {
+      "baselinker": {
+        "category_id": 1731262,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Króćce głowicy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "197",
+        "ovoko_name": "Air conditioning-heating system/radiators",
+        "ovoko_pl": "Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe",
+        "confidence": "keyword_match",
+        "matched_keyword": "chłodzenia"
+      }
+    },
+    "1731279": {
+      "baselinker": {
+        "category_id": 1731279,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Części montażowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "134",
+        "ovoko_name": "Lighting system",
+        "ovoko_pl": "Oświetlenie",
+        "confidence": "keyword_match",
+        "matched_keyword": "oświetlenie"
+      }
+    },
+    "1731281": {
+      "baselinker": {
+        "category_id": 1731281,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Błotniki/Wygłuszenie",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "498",
+        "ovoko_name": "Exterior front body parts",
+        "ovoko_pl": "Elementy przedniej części nadwozia / karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "błotniki"
+      }
+    },
+    "1731285": {
+      "baselinker": {
+        "category_id": 1731285,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731287": {
+      "baselinker": {
+        "category_id": 1731287,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Apteczki, gaśnice, kamizelki, trójkąty/Apteczki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "keyword_match",
+        "matched_keyword": "akcesoria"
+      }
+    },
+    "1731289": {
+      "baselinker": {
+        "category_id": 1731289,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Zderzaki/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731293": {
+      "baselinker": {
+        "category_id": 1731293,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Napinacze paska rozrządu",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731300": {
+      "baselinker": {
+        "category_id": 1731300,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Błotniki/Elementy mocujące",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "498",
+        "ovoko_name": "Exterior front body parts",
+        "ovoko_pl": "Elementy przedniej części nadwozia / karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "błotniki"
+      }
+    },
+    "1731307": {
+      "baselinker": {
+        "category_id": 1731307,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Obudowy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731312": {
+      "baselinker": {
+        "category_id": 1731312,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Kamery",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1731313": {
+      "baselinker": {
+        "category_id": 1731313,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Sprzęgła/Wysprzęgliki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "416",
+        "ovoko_name": "Gearbox/clutch/transmission",
+        "ovoko_pl": "Układ napędowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "napędowy"
+      }
+    },
+    "1731325": {
+      "baselinker": {
+        "category_id": 1731325,
+        "name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Przewody hamulcowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1",
+        "ovoko_name": "Brake system",
+        "ovoko_pl": "Układ hamulcowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "hamulcowy"
+      }
+    },
+    "1731339": {
+      "baselinker": {
+        "category_id": 1731339,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Części kabiny kierowcy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1731356": {
+      "baselinker": {
+        "category_id": 1731356,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Rygle",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731360": {
+      "baselinker": {
+        "category_id": 1731360,
+        "name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Sterowniki i elementy elektryczne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczne"
+      }
+    },
+    "1731371": {
+      "baselinker": {
+        "category_id": 1731371,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Głowice cylindrów/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731373": {
+      "baselinker": {
+        "category_id": 1731373,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Łapy, podpory",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "416",
+        "ovoko_name": "Gearbox/clutch/transmission",
+        "ovoko_pl": "Układ napędowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "napędowy"
+      }
+    },
+    "1731375": {
+      "baselinker": {
+        "category_id": 1731375,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Uszczelniacze wału",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731376": {
+      "baselinker": {
+        "category_id": 1731376,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731378": {
+      "baselinker": {
+        "category_id": 1731378,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Lampy przeciwmgielne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "134",
+        "ovoko_name": "Lighting system",
+        "ovoko_pl": "Oświetlenie",
+        "confidence": "keyword_match",
+        "matched_keyword": "oświetlenie"
+      }
+    },
+    "1731381": {
+      "baselinker": {
+        "category_id": 1731381,
+        "name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Zestawy montażowe i naprawcze",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1",
+        "ovoko_name": "Brake system",
+        "ovoko_pl": "Układ hamulcowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "hamulcowy"
+      }
+    },
+    "1731385": {
+      "baselinker": {
+        "category_id": 1731385,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Materiały instalacyjne/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1731386": {
+      "baselinker": {
+        "category_id": 1731386,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Elementy napędu paska osprzętu/Napinacze paska klinowego",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731390": {
+      "baselinker": {
+        "category_id": 1731390,
+        "name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Układ ABS i ESP/Czujniki ABS",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1",
+        "ovoko_name": "Brake system",
+        "ovoko_pl": "Układ hamulcowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "hamulcowy"
+      }
+    },
+    "1731391": {
+      "baselinker": {
+        "category_id": 1731391,
+        "name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "keyword_match",
+        "matched_keyword": "pozostałe"
+      }
+    },
+    "1731393": {
+      "baselinker": {
+        "category_id": 1731393,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Linki zmiany biegów",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "416",
+        "ovoko_name": "Gearbox/clutch/transmission",
+        "ovoko_pl": "Układ napędowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "napędowy"
+      }
+    },
+    "1731395": {
+      "baselinker": {
+        "category_id": 1731395,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki temperatury zewnętrznej",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "elektryczny"
+      }
+    },
+    "1731396": {
+      "baselinker": {
+        "category_id": 1731396,
+        "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Zbiorniki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "281",
+        "ovoko_name": "Fuel mixture system",
+        "ovoko_pl": "Układ paliwowy",
+        "confidence": "keyword_match",
+        "matched_keyword": "paliwowy"
+      }
+    },
+    "1731407": {
+      "baselinker": {
+        "category_id": 1731407,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Czujniki położenia wału korbowego",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731418": {
+      "baselinker": {
+        "category_id": 1731418,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Maski/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "498",
+        "ovoko_name": "Exterior front body parts",
+        "ovoko_pl": "Elementy przedniej części nadwozia / karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "maski"
+      }
+    },
+    "1731424": {
+      "baselinker": {
+        "category_id": 1731424,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Recyrkulacja spalin EGR/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "250",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik i osprzęt",
+        "confidence": "keyword_match",
+        "matched_keyword": "silnik"
+      }
+    },
+    "1731435": {
+      "baselinker": {
+        "category_id": 1731435,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Gałki i mieszki/Komplety",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "806",
+        "ovoko_name": "Cabin/interior",
+        "ovoko_pl": "Wyposażenie wnętrza samochodu",
+        "confidence": "keyword_match",
+        "matched_keyword": "wnętrza"
+      }
+    },
+    "1731483": {
+      "baselinker": {
+        "category_id": 1731483,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Wygłuszenie",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731491": {
+      "baselinker": {
+        "category_id": 1731491,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Rygle",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731494": {
+      "baselinker": {
+        "category_id": 1731494,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Uszczelki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "197",
+        "ovoko_name": "Air conditioning-heating system/radiators",
+        "ovoko_pl": "Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe",
+        "confidence": "keyword_match",
+        "matched_keyword": "chłodzenia"
+      }
+    },
+    "1731498": {
+      "baselinker": {
+        "category_id": 1731498,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Zabezpieczenia/Autoalarmy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1249",
+        "ovoko_name": "Other parts",
+        "ovoko_pl": "Inne części",
+        "confidence": "keyword_match",
+        "matched_keyword": "akcesoria"
+      }
+    },
+    "1731500": {
+      "baselinker": {
+        "category_id": 1731500,
+        "name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Wahacze i elementy/Wahacze",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "330",
+        "ovoko_name": "Front axle",
+        "ovoko_pl": "Oś przednia i inne elementy",
+        "confidence": "keyword_match",
+        "matched_keyword": "zawieszenia"
+      }
+    },
+    "1731501": {
+      "baselinker": {
+        "category_id": 1731501,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Wentylatory chłodnicy/Włączniki, sterowniki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "197",
+        "ovoko_name": "Air conditioning-heating system/radiators",
+        "ovoko_pl": "Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe",
+        "confidence": "keyword_match",
+        "matched_keyword": "chłodzenia"
+      }
+    },
+    "1731505": {
+      "baselinker": {
+        "category_id": 1731505,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Klapki wlewu paliwa/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "624",
+        "ovoko_name": "Body/body parts/hook",
+        "ovoko_pl": "Części nadwozia i karoserii",
+        "confidence": "keyword_match",
+        "matched_keyword": "karoserii"
+      }
+    },
+    "1731710": {
+      "baselinker": {
+        "category_id": 1731710,
+        "name": "Gniazda zapalniczki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "999",
+        "ovoko_name": "Devices/switches/electronic system",
+        "ovoko_pl": "Wyposażenie elektryczne",
+        "confidence": "keyword_match",
+        "matched_keyword": "gniazda zapalniczki"
+      }
+    },
+    "2386607": {
+      "baselinker": {
+        "category_id": 2386607,
+        "name": "Motoryzacja/Chemia/Mycie i pielęgnacja/Wnętrze/Zapachy samochodowe/Zawieszki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "98",
+        "ovoko_name": "Headlight/headlamp washing/cleaning system",
+        "ovoko_pl": "Wycieraczki i spryskiwacze szyb i świateł",
+        "confidence": "keyword_match",
+        "matched_keyword": "mycie"
+      }
+    }
+  }
+}

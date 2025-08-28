@@ -24,10 +24,17 @@ const Products = () => {
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [filterStatus, setFilterStatus] = useState('all');
+  const [filterWarehouse, setFilterWarehouse] = useState('all');
   const [importing, setImporting] = useState({});
   const [updating, setUpdating] = useState({});
   const [checkingChanges, setCheckingChanges] = useState(false);
   const [updatingVersions, setUpdatingVersions] = useState(false);
+  const [bulkImporting, setBulkImporting] = useState(false);
+  const [bulkImportProgress, setBulkImportProgress] = useState(0);
+  const [bulkImportTotal, setBulkImportTotal] = useState(0);
+  const [totalFilteredCount, setTotalFilteredCount] = useState(0);
+  const [totalToImportCount, setTotalToImportCount] = useState(0);
+  const [availableWarehouses, setAvailableWarehouses] = useState(['bl_14765', 'bl_4376']); // Domyślne magazyny
   const [pagination, setPagination] = useState({
     page: 1,
     limit: 150,
@@ -38,18 +45,270 @@ const Products = () => {
   });
   const { logInfo, logSuccess, logError } = useActivityLog();
 
+  // Funkcja do obliczania dokładnego stanu magazynowego
+  const getExactStock = (product) => {
+    if (!product || !product.stock) return 0;
+    
+    if (typeof product.stock === 'number') {
+      return product.stock;
+    }
+    
+    if (typeof product.stock === 'object') {
+      // Nowy format: stock: { "bl_14765": 1, "bl_4376": 2 }
+      return Object.values(product.stock).reduce((sum, val) => sum + (val || 0), 0);
+    }
+    
+    return 0;
+  };
+
+  // Funkcja do wyświetlania szczegółów stanu magazynowego
+  const getStockDetails = (product) => {
+    if (!product || !product.stock) return null;
+    
+    if (typeof product.stock === 'object') {
+      // Zwróć szczegóły dla każdego magazynu
+      return Object.entries(product.stock).map(([warehouse, stock]) => ({
+        warehouse: warehouse.replace('bl_', 'Magazyn '),
+        stock: stock || 0
+      }));
+    }
+    
+    return null;
+  };
+
+  // Funkcja do generowania listy dostępnych magazynów
+  const getAvailableWarehouses = () => {
+    const warehouses = new Set();
+    
+    products.forEach(product => {
+      if (product.stock && typeof product.stock === 'object') {
+        Object.keys(product.stock).forEach(warehouse => {
+          warehouses.add(warehouse);
+        });
+      }
+    });
+    
+    const warehouseList = Array.from(warehouses).sort();
+    if (warehouseList.length > 0) {
+      setAvailableWarehouses(warehouseList);
+    }
+    return warehouseList;
+  };
+
+  // Funkcja do pobierania wszystkich wyfiltrowanych produktów (bez paginacji)
+  const getAllFilteredProducts = async (customWarehouse = null) => {
+    try {
+      const warehouseToUse = customWarehouse || filterWarehouse;
+      
+      const params = new URLSearchParams({
+        page: '1',
+        limit: '9999', // Duża liczba aby pobrać wszystkie
+        search: searchTerm,
+        filterStatus: filterStatus,
+        filterWarehouse: warehouseToUse
+      });
+      
+      console.log(`🔍 Getting all filtered products with params:`, {
+        search: searchTerm,
+        filterStatus: filterStatus,
+        filterWarehouse: warehouseToUse,
+        url: `/api/baselinker-products?${params}`
+      });
+      
+      const response = await fetch(`/api/baselinker-products?${params}`);
+      if (response.ok) {
+        const data = await response.json();
+        console.log(`🔍 Got ${data.products.length} total filtered products`);
+        return data.products;
+      } else {
+        throw new Error('Failed to load all filtered products');
+      }
+    } catch (error) {
+      logError('Failed to load all filtered products', { error: error.message });
+      return [];
+    }
+  };
+
+  // Funkcja do aktualizacji liczników wszystkich wyfiltrowanych produktów
+  const updateTotalFilteredCounts = async () => {
+    try {
+      const allFilteredProducts = await getAllFilteredProducts(filterWarehouse);
+      const totalCount = allFilteredProducts.length;
+      const toImportCount = allFilteredProducts.filter(p => !p.isSynced).length;
+      
+      setTotalFilteredCount(totalCount);
+      setTotalToImportCount(toImportCount);
+      
+      console.log(`🔍 Updated counts: total=${totalCount}, toImport=${toImportCount}, warehouse=${filterWarehouse}`);
+    } catch (error) {
+      console.error('Failed to update total filtered counts:', error);
+      setTotalFilteredCount(0);
+      setTotalToImportCount(0);
+    }
+  };
+
+  // Funkcja do aktualizacji liczników z konkretnym magazynem
+  const updateTotalFilteredCountsWithWarehouse = async (warehouse) => {
+    try {
+      const allFilteredProducts = await getAllFilteredProducts(warehouse);
+      const totalCount = allFilteredProducts.length;
+      const toImportCount = allFilteredProducts.filter(p => !p.isSynced).length;
+      
+      setTotalFilteredCount(totalCount);
+      setTotalToImportCount(toImportCount);
+      
+      console.log(`🔍 Updated counts with warehouse ${warehouse}: total=${totalCount}, toImport=${toImportCount}`);
+    } catch (error) {
+      console.error('Failed to update total filtered counts with warehouse:', error);
+      setTotalFilteredCount(0);
+      setTotalToImportCount(0);
+    }
+  };
+
+  // Funkcja do masowego importu wszystkich wyfiltrowanych produktów
+  const handleBulkImport = async () => {
+    // Pobierz wszystkie wyfiltrowane produkty z aktualnym filtrem magazynu
+    const allFilteredProducts = await getAllFilteredProducts(filterWarehouse);
+    const productsToImport = allFilteredProducts.filter(p => !p.isSynced);
+    
+    if (productsToImport.length === 0) {
+      logInfo('Brak produktów do zaimportowania', { 
+        totalFiltered: allFilteredProducts.length,
+        alreadySynced: allFilteredProducts.filter(p => p.isSynced).length,
+        warehouse: filterWarehouse
+      });
+      return;
+    }
+
+    try {
+      setBulkImporting(true);
+      setBulkImportTotal(productsToImport.length);
+      setBulkImportProgress(0);
+      
+      logInfo('Rozpoczynam masowy import produktów', { 
+        count: productsToImport.length,
+        searchTerm,
+        filterStatus,
+        warehouse: filterWarehouse
+      });
+
+      let successCount = 0;
+      let errorCount = 0;
+      const errors = [];
+
+      for (let i = 0; i < productsToImport.length; i++) {
+        const product = productsToImport[i];
+        
+        try {
+          setBulkImportProgress(i + 1);
+          
+          const response = await fetch('/api/import-product', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ product })
+          });
+
+          const result = await response.json();
+
+          if (result.success) {
+            successCount++;
+            logSuccess('Produkt zaimportowany w masowym imporcie', { 
+              sku: product.sku, 
+              ovokoPartId: result.part_id,
+              progress: `${i + 1}/${productsToImport.length}`
+            });
+          } else {
+            errorCount++;
+            errors.push({
+              sku: product.sku,
+              error: result.error || 'Import failed'
+            });
+            logError('Błąd importu w masowym imporcie', { 
+              sku: product.sku, 
+              error: result.error,
+              progress: `${i + 1}/${productsToImport.length}`
+            });
+          }
+
+          // Krótka przerwa między importami aby nie przeciążyć API
+          if (i < productsToImport.length - 1) {
+            await new Promise(resolve => setTimeout(resolve, 100));
+          }
+        } catch (error) {
+          errorCount++;
+          errors.push({
+            sku: product.sku,
+            error: error.message
+          });
+          logError('Błąd sieci w masowym imporcie', { 
+            sku: product.sku, 
+            error: error.message,
+            progress: `${i + 1}/${productsToImport.length}`
+          });
+        }
+      }
+
+      // Podsumowanie masowego importu
+      if (successCount > 0) {
+        logSuccess('Masowy import zakończony', { 
+          total: productsToImport.length,
+          success: successCount,
+          errors: errorCount,
+          searchTerm,
+          filterStatus,
+          warehouse: filterWarehouse
+        });
+      }
+
+      if (errorCount > 0) {
+        logError('Masowy import zakończony z błędami', { 
+          total: productsToImport.length,
+          success: successCount,
+          errors: errorCount,
+          errorDetails: errors
+        });
+      }
+
+      // Odśwież listę produktów aby zaktualizować statusy
+      await loadProducts(pagination.page, searchTerm, filterStatus, filterWarehouse);
+      
+    } catch (error) {
+      logError('Błąd podczas masowego importu', { error: error.message });
+    } finally {
+      setBulkImporting(false);
+      setBulkImportProgress(0);
+      setBulkImportTotal(0);
+    }
+  };
+
   useEffect(() => {
-    loadProducts();
+    console.log(`🔍 Initial load with filters: status="${filterStatus}", warehouse="${filterWarehouse}"`);
+    loadProducts(1, searchTerm, filterStatus, filterWarehouse);
+    
+    // Aktualizuj liczniki po załadowaniu
+    setTimeout(() => {
+      console.log(`🔍 Initial update of counts for warehouse: ${filterWarehouse}`);
+      updateTotalFilteredCountsWithWarehouse(filterWarehouse);
+    }, 500);
   }, []);
 
-  const loadProducts = async (page = 1, search = searchTerm, filter = filterStatus) => {
+  const loadProducts = async (page = 1, search = searchTerm, filter = filterStatus, warehouse = filterWarehouse) => {
     try {
       setLoading(true);
       const params = new URLSearchParams({
         page: page.toString(),
         limit: '150',
         search: search,
-        filterStatus: filter
+        filterStatus: filter,
+        filterWarehouse: warehouse
+      });
+      
+      console.log(`🔍 Loading products with params:`, {
+        page,
+        search,
+        filter,
+        warehouse,
+        url: `/api/baselinker-products?${params}`
       });
       
       const response = await fetch(`/api/baselinker-products?${params}`);
@@ -62,6 +321,15 @@ const Products = () => {
           page: data.pagination.page,
           totalProducts: data.pagination.totalProducts
         });
+        
+        // Aktualizuj listę dostępnych magazynów
+        getAvailableWarehouses();
+        
+        // Aktualizuj liczniki wszystkich wyfiltrowanych produktów
+        setTimeout(() => {
+          console.log(`🔍 Updating counts after loading products for warehouse: ${warehouse}`);
+          updateTotalFilteredCountsWithWarehouse(warehouse);
+        }, 100);
       } else {
         throw new Error('Failed to load products');
       }
@@ -91,7 +359,7 @@ const Products = () => {
           ovokoPartId: result.part_id 
         });
         // Refresh products to update sync status
-        await loadProducts(pagination.page);
+        await loadProducts(pagination.page, searchTerm, filterStatus, filterWarehouse);
       } else {
         throw new Error(result.error || 'Import failed');
       }
@@ -124,7 +392,7 @@ const Products = () => {
           message: result.message
         });
         // Refresh products to update sync timestamp
-        await loadProducts(pagination.page);
+        await loadProducts(pagination.page, searchTerm, filterStatus, filterWarehouse);
       } else {
         throw new Error(result.error || 'Update failed');
       }
@@ -159,7 +427,7 @@ const Products = () => {
         });
         
         // Refresh products to show updated data
-        await loadProducts(pagination.page);
+        await loadProducts(pagination.page, searchTerm, filterStatus, filterWarehouse);
       } else {
         throw new Error(result.error || 'Failed to check changes');
       }
@@ -188,7 +456,7 @@ const Products = () => {
           message: result.message
         });
         // Refresh products to show updated data
-        await loadProducts(pagination.page);
+        await loadProducts(pagination.page, searchTerm, filterStatus, filterWarehouse);
       } else {
         throw new Error(result.error || 'Failed to update versions');
       }
@@ -212,16 +480,34 @@ const Products = () => {
   };
 
   const handleSearch = () => {
-    loadProducts(1, searchTerm, filterStatus);
+    loadProducts(1, searchTerm, filterStatus, filterWarehouse);
+    // Aktualizuj liczniki po wyszukiwaniu
+    setTimeout(() => updateTotalFilteredCountsWithWarehouse(filterWarehouse), 200);
   };
 
   const handleFilterChange = (newFilter) => {
     setFilterStatus(newFilter);
-    loadProducts(1, searchTerm, newFilter);
+    loadProducts(1, searchTerm, newFilter, filterWarehouse);
+    // Aktualizuj liczniki po zmianie filtra
+    setTimeout(() => updateTotalFilteredCountsWithWarehouse(filterWarehouse), 200);
+  };
+
+  const handleWarehouseFilterChange = (newWarehouse) => {
+    console.log(`🔍 Warehouse filter changed from "${filterWarehouse}" to "${newWarehouse}"`);
+    console.log(`🔍 Current filters: search="${searchTerm}", status="${filterStatus}"`);
+    
+    // Ustaw nowy filtr magazynu
+    setFilterWarehouse(newWarehouse);
+    
+    // Załaduj produkty z nowym filtrem magazynu (użyj newWarehouse zamiast filterWarehouse)
+    loadProducts(1, searchTerm, filterStatus, newWarehouse);
+    
+    // Aktualizuj liczniki po zmianie filtra z nowym magazynem
+    setTimeout(() => updateTotalFilteredCountsWithWarehouse(newWarehouse), 200);
   };
 
   const handlePageChange = (newPage) => {
-    loadProducts(newPage, searchTerm, filterStatus);
+    loadProducts(newPage, searchTerm, filterStatus, filterWarehouse);
   };
 
   const handleFirstPage = () => {
@@ -347,7 +633,7 @@ const Products = () => {
               </div>
               <div className="ml-4">
                 <h3 className="text-lg font-semibold text-gray-900">Sprawdź zmiany</h3>
-                <p className="text-sm text-gray-600">Pobierz wszystkie produkty z BaseLinker i zaktualizuj w Olx</p>
+                <p className="text-sm text-gray-600">Pobierz wszystkie produkty z BaseLinker i zaktualizuj w Ovoko</p>
               </div>
             </div>
             <button
@@ -484,6 +770,21 @@ const Products = () => {
             </select>
           </div>
           
+          <div className="sm:w-48">
+            <select
+              value={filterWarehouse}
+              onChange={(e) => handleWarehouseFilterChange(e.target.value)}
+              className="input-field"
+            >
+              <option value="all">Wszystkie magazyny</option>
+              {availableWarehouses.map(warehouse => (
+                <option key={warehouse} value={warehouse}>
+                  {warehouse.replace('bl_', 'Magazyn ')}
+                </option>
+              ))}
+            </select>
+          </div>
+          
           <button
             onClick={handleSearch}
             className="btn-primary flex items-center"
@@ -492,112 +793,223 @@ const Products = () => {
             Szukaj
           </button>
         </div>
-      </div>
-
-      {/* Products Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filteredProducts.map((product) => (
-          <div key={product.id || product.sku} className="card hover:shadow-medium transition-shadow duration-200">
-            {/* Product Image */}
-            <div className="aspect-w-16 aspect-h-9 mb-4 bg-gray-100 rounded-lg overflow-hidden">
-              {product.images && Object.keys(product.images).length > 0 ? (
-                <img
-                  src={Object.values(product.images)[0]}
-                  alt={getProductName(product)}
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.nextSibling.style.display = 'flex';
-                  }}
-                />
-              ) : (
-                <div className="w-full h-full items-center justify-center text-gray-400 flex">
-                  <Package className="h-12 w-12" />
-                </div>
+        
+        {/* Bulk Import Section */}
+        <div className="mt-4 pt-4 border-t border-gray-200">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="text-sm text-gray-600">
+              <span className="font-medium">Na tej stronie:</span> {filteredProducts.length} produktów
+              <br />
+              <span className="font-medium">Wszystkie wyfiltrowane:</span> 
+              <span className="ml-2 text-blue-600 font-medium">
+                {totalFilteredCount > 0 ? `${totalFilteredCount} produktów` : 'Ładowanie...'}
+              </span>
+              <span className="ml-2 text-gray-500">
+                {totalToImportCount > 0 ? `(${totalToImportCount} do zaimportowania)` : '(Ładowanie...)'}
+              </span>
+              {filterWarehouse !== 'all' && (
+                <>
+                  <br />
+                  <span className="text-xs text-gray-500">
+                    Magazyn: {filterWarehouse.replace('bl_', 'Magazyn ')}
+                  </span>
+                </>
               )}
             </div>
-
-            {/* Product Info */}
-            <div className="space-y-3">
-              <div>
-                <h3 className="font-semibold text-gray-900 line-clamp-2">
-                  {getProductName(product)}
-                </h3>
-                <p className="text-sm text-gray-500">SKU: {getProductSku(product)}</p>
-              </div>
-
-              <div className="flex justify-between items-center">
-                <span className="text-lg font-bold text-primary-600">
-                  {getPrice(product)}
-                </span>
-                {getStatusBadge(product)}
-              </div>
-
-              {/* Out of Stock Warning */}
-              {product.isOutOfStock && (
-                <div className="bg-red-50 border border-red-200 rounded-md p-2">
-                  <div className="flex items-center">
-                    <AlertTriangle className="h-4 w-4 text-red-500 mr-2" />
-                    <span className="text-sm font-medium text-red-800">
-                      Brak na stanie magazynowym
-                    </span>
-                  </div>
-                  <p className="text-xs text-red-600 mt-1">
-                    Stan: {product.currentStock || 0} sztuk
-                  </p>
-                </div>
+            
+            <button
+              onClick={handleBulkImport}
+              disabled={bulkImporting}
+              className="btn-primary flex items-center bg-green-600 hover:bg-green-700"
+            >
+              {bulkImporting ? (
+                <>
+                  <RefreshCw className="h-4 w-4 mr-2 animate-spin" />
+                  Importuję... ({bulkImportProgress}/{bulkImportTotal})
+                </>
+              ) : (
+                <>
+                  <Upload className="h-4 w-4 mr-2" />
+                  Wgraj wszystkie produkty z wyszukiwania do Ovoko
+                </>
               )}
+            </button>
+          </div>
+        </div>
+      </div>
 
-              {/* Sync Info */}
-              {product.isSynced && (
-                <div className="text-xs text-gray-500 space-y-1">
-                  <p>Ovoko ID: {product.ovokoPartId}</p>
-                  <p>Zsynchronizowano: {new Date(product.syncedAt).toLocaleDateString('pl-PL')}</p>
-                  <p className="text-blue-600 font-medium">
-                    Ostatnia aktualizacja: {getLastSyncInfo(product)}
-                  </p>
-                </div>
-              )}
-
-              {/* Actions */}
-              <div className="flex space-x-2">
-                {!product.isSynced ? (
-                  <button
-                    onClick={() => handleImport(product)}
-                    disabled={importing[product.sku]}
-                    className="btn-primary flex-1 flex items-center justify-center"
-                  >
-                    {importing[product.sku] ? (
-                      <>
-                        <RefreshCw className="h-4 w-4 mr-2 animate-spin" />
-                        Importuję...
-                      </>
-                    ) : (
-                      <>
-                        <Upload className="h-4 w-4 mr-2" />
-                        Importuj
-                      </>
-                    )}
-                  </button>
+      {/* Products List */}
+      <div className="space-y-4">
+        {filteredProducts.map((product) => (
+          <div key={product.id || product.sku} className="card hover:shadow-medium transition-shadow duration-200">
+            <div className="flex items-start space-x-4">
+              {/* Product Image */}
+              <div className="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-lg overflow-hidden">
+                {product.images && Object.keys(product.images).length > 0 ? (
+                  <img
+                    src={Object.values(product.images)[0]}
+                    alt={getProductName(product)}
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
                 ) : (
-                  <button
-                    onClick={() => handleUpdate(product)}
-                    disabled={updating[product.sku]}
-                    className="btn-primary flex-1 flex items-center justify-center"
-                  >
-                    {updating[product.sku] ? (
-                      <>
-                        <RefreshCw className="h-4 w-4 mr-2 animate-spin" />
-                        Aktualizuję...
-                      </>
-                    ) : (
-                      <>
-                        <UpdateIcon className="h-4 w-4 mr-2" />
-                        Aktualizuj
-                      </>
-                    )}
-                  </button>
+                  <div className="w-full h-full items-center justify-center text-gray-400 flex">
+                    <Package className="h-8 w-8" />
+                  </div>
                 )}
+              </div>
+
+              {/* Product Info */}
+              <div className="flex-1 min-w-0">
+                <div className="flex items-start justify-between">
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-semibold text-gray-900 text-lg leading-tight mb-2">
+                      {getProductName(product)}
+                    </h3>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-gray-600">
+                      <div>
+                        <span className="font-medium">SKU:</span> {getProductSku(product)}
+                      </div>
+                      <div>
+                        <span className="font-medium">Cena:</span> {getPrice(product)}
+                      </div>
+                      <div>
+                        <span className="font-medium">Status:</span> {getStatusBadge(product)}
+                      </div>
+                      <div>
+                        <span className="font-medium">Stan magazynowy:</span> 
+                        <span className={`ml-1 px-2 py-1 text-xs rounded-full font-medium ${
+                          getExactStock(product) > 0 
+                            ? 'bg-green-100 text-green-800' 
+                            : 'bg-red-100 text-red-800'
+                        }`}>
+                          {getExactStock(product)} sztuk
+                        </span>
+                      </div>
+                      {product.source && (
+                        <div>
+                          <span className="font-medium">Źródło:</span> 
+                          <span className="ml-1 px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">
+                            {product.source}
+                          </span>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                  
+                  {/* Actions */}
+                  <div className="flex-shrink-0 ml-4">
+                    {!product.isSynced ? (
+                      <button
+                        onClick={() => handleImport(product)}
+                        disabled={importing[product.sku]}
+                        className="btn-primary flex items-center justify-center whitespace-nowrap"
+                      >
+                        {importing[product.sku] ? (
+                          <>
+                            <RefreshCw className="h-4 w-4 mr-2 animate-spin" />
+                            Importuję...
+                          </>
+                        ) : (
+                          <>
+                            <Upload className="h-4 w-4 mr-2" />
+                            Importuj
+                          </>
+                        )}
+                      </button>
+                    ) : (
+                      <button
+                        onClick={() => handleUpdate(product)}
+                        disabled={updating[product.sku]}
+                        className="btn-primary flex items-center justify-center whitespace-nowrap"
+                      >
+                        {updating[product.sku] ? (
+                          <>
+                            <RefreshCw className="h-4 w-4 mr-2 animate-spin" />
+                            Aktualizuję...
+                          </>
+                        ) : (
+                          <>
+                            <UpdateIcon className="h-4 w-4 mr-2" />
+                            Aktualizuj
+                          </>
+                        )}
+                      </button>
+                    )}
+                  </div>
+                </div>
+
+                {/* Additional Info */}
+                <div className="mt-4 space-y-2">
+                  {/* Stock Information */}
+                  <div className={`border rounded-md p-3 ${
+                    getExactStock(product) > 0 
+                      ? 'bg-green-50 border-green-200' 
+                      : 'bg-red-50 border-red-200'
+                  }`}>
+                    <div className="flex items-center">
+                      {getExactStock(product) > 0 ? (
+                        <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                      ) : (
+                        <AlertTriangle className="h-4 w-4 text-red-500 mr-2" />
+                      )}
+                      <span className={`text-sm font-medium ${
+                        getExactStock(product) > 0 ? 'text-green-800' : 'text-red-800'
+                      }`}>
+                        {getExactStock(product) > 0 ? 'Dostępny na stanie magazynowym' : 'Brak na stanie magazynowym'}
+                      </span>
+                    </div>
+                    
+                    {/* Szczegóły stanu magazynowego */}
+                    <div className="mt-2 space-y-1">
+                      {getStockDetails(product) ? (
+                        // Szczegóły dla każdego magazynu
+                        getStockDetails(product).map((detail, index) => (
+                          <div key={index} className="flex justify-between items-center text-xs ml-6">
+                            <span className={getExactStock(product) > 0 ? 'text-green-700' : 'text-red-700'}>
+                              {detail.warehouse}:
+                            </span>
+                            <span className={`font-medium ${
+                              detail.stock > 0 ? 'text-green-700' : 'text-red-700'
+                            }`}>
+                              {detail.stock} sztuk
+                            </span>
+                          </div>
+                        ))
+                      ) : (
+                        // Prosty stan magazynowy
+                        <p className={`text-xs ml-6 ${
+                          getExactStock(product) > 0 ? 'text-green-700' : 'text-red-700'
+                        }`}>
+                          Stan: {getExactStock(product)} sztuk
+                        </p>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Sync Info */}
+                  {product.isSynced && (
+                    <div className="bg-green-50 border border-green-200 rounded-md p-3">
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                        <div>
+                          <span className="font-medium text-green-800">Ovoko ID:</span> 
+                          <span className="ml-2 text-green-700">{product.ovokoPartId}</span>
+                        </div>
+                        <div>
+                          <span className="font-medium text-green-800">Zsynchronizowano:</span> 
+                          <span className="ml-2 text-green-700">{new Date(product.syncedAt).toLocaleDateString('pl-PL')}</span>
+                        </div>
+                        <div>
+                          <span className="font-medium text-green-800">Ostatnia aktualizacja:</span> 
+                          <span className="ml-2 text-green-700">{getLastSyncInfo(product)}</span>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           </div>

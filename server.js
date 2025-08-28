@@ -11,10 +11,13 @@ const { URLSearchParams } = require('url');
 // Import orders queue
 const { ordersQueue } = require('./orders_queue');
 const { productsQueue } = require('./products_queue');
-const { checkProductChanges, updateProductVersions } = require('./check_product_changes');
+const { checkProductChanges, updateProductChanges } = require('./check_product_changes');
 const { enqueueEvent } = require('./events_queue');
 const { smartSyncScheduler } = require('./smart_sync_scheduler');
 const { ordersSyncScheduler } = require('./orders_sync_scheduler');
+
+// Import category mapping
+const { mapCategoryToOvoko } = require('./create_full_mapping');
 
 const app = express();
 const PORT = process.env.PORT || 3002;
@@ -103,6 +106,7 @@ app.get('/api/baselinker-products', requireAuth, async (req, res) => {
         const limit = parseInt(req.query.limit) || 150;
         const search = req.query.search || '';
         const filterStatus = req.query.filterStatus || 'all';
+        const filterWarehouse = req.query.filterWarehouse || 'all';
         
         let products = [];
         try {
@@ -146,22 +150,51 @@ app.get('/api/baselinker-products', requireAuth, async (req, res) => {
         // Apply filters
         let filteredProducts = productsWithSyncStatus;
         
+        console.log(`🔍 Initial products count: ${filteredProducts.length}`);
+        console.log(`🔍 Filters: search="${search}", status="${filterStatus}", warehouse="${filterWarehouse}"`);
+        
         // Search filter
         if (search) {
+            const beforeSearch = filteredProducts.length;
             filteredProducts = filteredProducts.filter(product => 
                 product.text_fields?.name?.toLowerCase().includes(search.toLowerCase()) ||
                 product.name?.toLowerCase().includes(search.toLowerCase()) ||
                 product.sku?.toLowerCase().includes(search.toLowerCase())
             );
+            console.log(`🔍 Search filter applied: "${search}", products after filter: ${filteredProducts.length} (was: ${beforeSearch})`);
         }
         
         // Status filter
         if (filterStatus !== 'all') {
+            const beforeStatus = filteredProducts.length;
             filteredProducts = filteredProducts.filter(product => {
                 if (filterStatus === 'synced') return product.isSynced;
                 if (filterStatus === 'unsynced') return !product.isSynced;
                 return true;
             });
+            console.log(`🔍 Status filter applied: "${filterStatus}", products after filter: ${filteredProducts.length} (was: ${beforeStatus})`);
+        }
+        
+        // Warehouse filter
+        if (filterWarehouse !== 'all') {
+            const beforeWarehouse = filteredProducts.length;
+            filteredProducts = filteredProducts.filter(product => {
+                if (product.stock && typeof product.stock === 'object') {
+                    // Check if product has stock in the specified warehouse AND stock > 0
+                    const warehouseStock = product.stock[filterWarehouse];
+                    const hasStock = warehouseStock !== undefined && warehouseStock > 0;
+                    
+                    // Debug log for first few products
+                    if (beforeWarehouse - filteredProducts.length < 5) {
+                        console.log(`  🔍 Product ${product.sku}: stock=${JSON.stringify(product.stock)}, warehouse ${filterWarehouse}=${warehouseStock}, hasStock=${hasStock}`);
+                    }
+                    
+                    return hasStock;
+                }
+                return false;
+            });
+            
+            console.log(`🔍 Warehouse filter applied: "${filterWarehouse}", products after filter: ${filteredProducts.length} (was: ${beforeWarehouse})`);
         }
         
         // Calculate pagination
@@ -351,205 +384,321 @@ app.get('/api/ovoko-orders', requireAuth, async (req, res) => {
     }
 });
 
-// Import product to Ovoko
 app.post('/api/import-product', requireAuth, async (req, res) => {
     try {
         const { product } = req.body;
-        
+
         if (!product) {
             return res.status(400).json({ error: 'Product data required' });
         }
-        
+
         console.log(`🚀 Importing product: ${product.sku} - ${product.text_fields.name}`);
-        
-        // Extract BMW model from product name
-        const bmwModelMatch = product.text_fields.name.match(/BMW\s+(E[0-9][0-9])/i);
-        if (!bmwModelMatch) {
-            return res.status(400).json({ error: 'Could not extract BMW model from product name' });
-        }
-        
-        const bmwModel = bmwModelMatch[1]; // e.g., "E61"
-        console.log(`🔍 Extracted BMW model: ${bmwModel}`);
-        
-        // Check existing cars in Ovoko (last 10 years)
-        const tenYearsAgo = new Date();
-        tenYearsAgo.setFullYear(tenYearsAgo.getFullYear() - 10);
-        const dateFrom = tenYearsAgo.toISOString().split('T')[0]; // YYYY-MM-DD
-        const dateTo = new Date().toISOString().split('T')[0];
-        
-        console.log(`🔍 Scanning existing cars from ${dateFrom} to ${dateTo}`);
-        
-        // Get cars from Ovoko API
-        const carsResponse = await new Promise((resolve, reject) => {
-            const postData = new URLSearchParams();
-            postData.append('username', OVOKO_CREDENTIALS.username);
-            postData.append('password', OVOKO_CREDENTIALS.password);
-            postData.append('user_token', OVOKO_CREDENTIALS.user_token);
-            
-            const options = {
-                hostname: 'api.rrr.lt',
-                path: `/get/cars/${dateFrom}/${dateTo}`,
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                    'Content-Length': Buffer.byteLength(postData.toString())
-                }
-            };
-            
-            const req = https.request(options, (res) => {
-                let responseData = '';
-                
-                res.on('data', (chunk) => {
-                    responseData += chunk;
-                });
-                
-                res.on('end', () => {
-                    try {
-                        const response = JSON.parse(responseData);
-                        resolve(response);
-                    } catch (error) {
-                        reject(new Error('Invalid response format from cars API'));
+
+        // 1. Get all car models for BMW (brand_id = 6)
+        const getCarModels = () => {
+            return new Promise((resolve, reject) => {
+                const postData = new URLSearchParams();
+                postData.append('username', OVOKO_CREDENTIALS.username);
+                postData.append('password', OVOKO_CREDENTIALS.password);
+                postData.append('user_token', OVOKO_CREDENTIALS.user_token);
+
+                const options = {
+                    hostname: 'api.rrr.lt',
+                    path: '/get/car_models/1', // 6 = BMW
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                        'Content-Length': Buffer.byteLength(postData.toString())
                     }
-                });
-            });
-            
-            req.on('error', (error) => {
-                reject(error);
-            });
-            
-            req.write(postData.toString());
-            req.end();
-        });
-        
-        let carId = null;
-        
-        if (carsResponse.status_code === 'R200' && carsResponse.list && carsResponse.list.length > 0) {
-            console.log(`📋 Found ${carsResponse.list.length} existing cars`);
-            
-            // Function to calculate similarity between BMW model and car data
-            function calculateSimilarity(car, targetModel) {
-                let score = 0;
-                
-                console.log(`  🔍 Analyzing car ID: ${car.id}, external_id: "${car.external_id}"`);
-                
-                // Check all car properties for BMW model patterns
-                const carData = [
-                    car.external_id || '',
-                    car.car_body_number || '',
-                    car.car_engine_number || '',
-                    car.defectation_notes || '',
-                    (car.id || '').toString()
-                ].join(' ').toUpperCase();
-                
-                const targetUpper = targetModel.toUpperCase();
-                
-                // Perfect match - exact model found
-                if (carData.includes(targetUpper)) {
-                    score += 1000;
-                    console.log(`    ✅ Perfect match found: ${targetUpper} (score: +1000)`);
-                }
-                
-                // Extract all E-series models from car data
-                const carModels = carData.match(/E[0-9][0-9]/g) || [];
-                if (carModels.length > 0) {
-                    console.log(`    📋 Found models in car: ${carModels.join(', ')}`);
-                    
-                    for (const carModel of carModels) {
-                        if (carModel === targetUpper) {
-                            score += 500; // Exact match
-                            console.log(`    ⭐ Exact model match: ${carModel} (score: +500)`);
-                        } else {
-                            // Calculate numerical similarity
-                            const targetNum = parseInt(targetUpper.substring(1));
-                            const carNum = parseInt(carModel.substring(1));
-                            const diff = Math.abs(targetNum - carNum);
-                            
-                            if (diff <= 10) {
-                                const similarityPoints = Math.max(100 - diff * 10, 10);
-                                score += similarityPoints;
-                                console.log(`    🔗 Similar model: ${carModel}, diff: ${diff}, points: +${similarityPoints}`);
-                            }
+                };
+
+                const req = https.request(options, (res) => {
+                    let responseData = '';
+                    res.on('data', (chunk) => {
+                        responseData += chunk;
+                    });
+                    res.on('end', () => {
+                        try {
+                            const response = JSON.parse(responseData);
+                            resolve(response);
+                        } catch (error) {
+                            reject(new Error('Invalid response format from car models API'));
                         }
+                    });
+                });
+
+                req.on('error', (error) => {
+                    reject(error);
+                });
+
+                req.write(postData.toString());
+                req.end();
+            });
+        };
+
+        // 2. Get all cars from last 10 years
+        const getCars = (dateFrom, dateTo) => {
+            return new Promise((resolve, reject) => {
+                const postData = new URLSearchParams();
+                postData.append('username', OVOKO_CREDENTIALS.username);
+                postData.append('password', OVOKO_CREDENTIALS.password);
+                postData.append('user_token', OVOKO_CREDENTIALS.user_token);
+
+                const options = {
+                    hostname: 'api.rrr.lt',
+                    path: `/get/cars/${dateFrom}/${dateTo}`,
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                        'Content-Length': Buffer.byteLength(postData.toString())
                     }
+                };
+
+                const req = https.request(options, (res) => {
+                    let responseData = '';
+                    res.on('data', (chunk) => {
+                        responseData += chunk;
+                    });
+                    res.on('end', () => {
+                        try {
+                            const response = JSON.parse(responseData);
+                            resolve(response);
+                        } catch (error) {
+                            reject(new Error('Invalid response format from cars API'));
+                        }
+                    });
+                });
+
+                req.on('error', (error) => {
+                    reject(error);
+                });
+
+                req.write(postData.toString());
+                req.end();
+            });
+        };
+
+        // 3. Import a new car if needed
+        // NIE DODAWAJ OBRAZKÓW jak dodajesz nowy samochód!
+        const importCar = (carModelId, carYear, product) => {
+            return new Promise((resolve, reject) => {
+                const postData = new URLSearchParams();
+                postData.append('username', OVOKO_CREDENTIALS.username);
+                postData.append('password', OVOKO_CREDENTIALS.password);
+                postData.append('user_token', OVOKO_CREDENTIALS.user_token);
+                postData.append('car_model', carModelId);
+                postData.append('car_years', carYear);
+                postData.append('status', '1'); // status id assigned to car, 1 = active/available?
+
+                // NIE DODAWAJ OBRAZKÓW!
+
+                // Optionally add external_id
+                if (product && product.sku) {
+                    postData.append('external_id', product.sku);
                 }
-                
-                // Check for BMW brand
-                if (carData.includes('BMW')) {
-                    score += 50;
-                    console.log(`    🚗 BMW brand found (score: +50)`);
+
+                // Optionally add car color if available
+                if (product && product.text_fields && product.text_fields.features && product.text_fields.features['Kolor']) {
+                    postData.append('car_color', product.text_fields.features['Kolor']);
                 }
-                
-                // Bonus for newer/higher car IDs (assuming they're more recent)
-                const carId = parseInt(car.id || '0');
-                if (carId > 100) {
-                    score += Math.min(carId / 100, 20);
-                    console.log(`    📅 Car ID bonus: +${Math.min(carId / 100, 20).toFixed(1)}`);
+
+                // Optionally add car_body_number if available
+                if (product && product.text_fields && product.text_fields.features && product.text_fields.features['VIN']) {
+                    postData.append('car_body_number', product.text_fields.features['VIN']);
                 }
-                
-                console.log(`    🎯 Total score for car ${car.id}: ${score}`);
-                return score;
+
+                const options = {
+                    hostname: 'api.rrr.lt',
+                    path: '/crm/importCar',
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                        'Content-Length': Buffer.byteLength(postData.toString())
+                    }
+                };
+
+                const req = https.request(options, (res) => {
+                    let responseData = '';
+                    res.on('data', (chunk) => {
+                        responseData += chunk;
+                    });
+                    res.on('end', () => {
+                        try {
+                            const response = JSON.parse(responseData);
+                            resolve(response);
+                        } catch (error) {
+                            reject(new Error('Invalid response format from importCar API'));
+                        }
+                    });
+                });
+
+                req.on('error', (error) => {
+                    reject(error);
+                });
+
+                req.write(postData.toString());
+                req.end();
+            });
+        };
+
+        // 4. Find the best model by matching after "BMW" using up to 2 segments
+        function extractBmwSegments(name) {
+            // Find "BMW" (case-insensitive), then take up to 2 words after
+            if (!name) return '';
+            const regex = /BMW\s+([^\s]+)(?:\s+([^\s]+))?/i;
+            const match = name.match(regex);
+            if (match) {
+                // Join the first and (optionally) second segment
+                return [match[1], match[2]].filter(Boolean).join(' ');
             }
-            
-            // Find the most similar car
-            let bestCar = null;
-            let bestScore = -1; // Start with -1 to ensure we always pick something
-            
-            for (const car of carsResponse.list) {
-                const score = calculateSimilarity(car, bmwModel);
+            return '';
+        }
+
+        // 5. Main logic
+        // Get car models for BMW
+        const carModelsResponse = await getCarModels();
+        if (!carModelsResponse || carModelsResponse.status_code !== 'R200' || !Array.isArray(carModelsResponse.list)) {
+            return res.status(500).json({ error: 'Could not fetch BMW car models' });
+        }
+
+        // Only consider models from last 10 years
+        const currentYear = new Date().getFullYear();
+        const tenYearsAgo = currentYear - 10;
+        const modelsLast10Years = carModelsResponse.list.filter(model => {
+            // If year_end is empty, treat as current
+            const yearStart = parseInt(model.year_start, 10) || 0;
+            const yearEnd = model.year_end ? parseInt(model.year_end, 10) : currentYear;
+            return yearEnd >= tenYearsAgo;
+        });
+
+        if (!modelsLast10Years.length) {
+            return res.status(500).json({ error: 'No BMW models from last 10 years found' });
+        }
+
+        // Find the best model by matching after "BMW" using up to 2 segments
+        const bmwSegments = extractBmwSegments(product.text_fields.name);
+        let bestModel = null;
+        let bestScore = -1;
+
+        if (bmwSegments) {
+            // Try to match models that contain all segments (case-insensitive, ignore order)
+            const segments = bmwSegments.split(/\s+/).map(s => s.toLowerCase());
+            for (const model of modelsLast10Years) {
+                const modelName = (model.name || '').toLowerCase();
+                // Score: number of segments found in model name
+                let score = 0;
+                for (const seg of segments) {
+                    if (modelName.includes(seg)) score++;
+                }
                 if (score > bestScore) {
                     bestScore = score;
-                    bestCar = car;
+                    bestModel = model;
                 }
             }
-            
-            // Always use the best car found (even if score is 0)
-            if (bestCar) {
-                carId = bestCar.id;
-                if (bestScore > 0) {
-                    console.log(`✅ Found similar car with ID: ${carId} (score: ${bestScore}, external_id: ${bestCar.external_id})`);
-                } else {
-                    console.log(`⚠️ No similar BMW ${bmwModel} found, using best available car ID: ${carId} (score: ${bestScore})`);
+        }
+
+        // Fallback: if no match, just pick the first model
+        if (!bestModel && modelsLast10Years.length > 0) {
+            bestModel = modelsLast10Years[0];
+        }
+
+        if (!bestModel) {
+            return res.status(400).json({ error: 'Could not match product to any BMW model' });
+        }
+
+        console.log(`🔍 Matched BMW model: ${bestModel.name} (id: ${bestModel.id}, score: ${bestScore})`);
+
+        // Get all cars from last 10 years
+        const dateFrom = new Date(currentYear - 10, 0, 1).toISOString().split('T')[0];
+        const dateTo = new Date().toISOString().split('T')[0];
+        const carsResponse = await getCars(dateFrom, dateTo);
+
+        let carId = null;
+        let importedCar = false;
+
+        if (carsResponse.status_code === 'R200' && Array.isArray(carsResponse.list) && carsResponse.list.length > 0) {
+            // Find first car with model == bestModel.id
+            const foundCar = carsResponse.list.find(car => {
+                // car.model may be string or number
+                return car.model && String(car.model) === String(bestModel.id);
+            });
+            if (foundCar) {
+                carId = foundCar.id;
+                console.log(`✅ Found car with model id ${bestModel.id}: car id = ${carId}`);
+            } else {
+                // No car with this model, so create/import a new car
+                console.log(`🚗 No car with model id ${bestModel.id}, importing new car...`);
+                // Try to get year from product, fallback to currentYear
+                let carYear = currentYear.toString();
+                if (product && product.text_fields && product.text_fields.features && product.text_fields.features['Rok produkcji']) {
+                    carYear = String(product.text_fields.features['Rok produkcji']).substring(0, 4);
                 }
-                        } else {
-                // If no cars found, use default car_id 291 as fallback
-                carId = 291;
-                console.log(`⚠️ No cars found in API, using default car_id: ${carId}`);
+                // NIE DODAWAJ OBRAZKÓW!
+                const importCarResp = await importCar(bestModel.id, carYear, product);
+                if (importCarResp && importCarResp.status_code === 'R200' && importCarResp.car_id) {
+                    carId = importCarResp.car_id;
+                    importedCar = true;
+                    console.log(`✅ Imported new car: car id = ${carId}`);
+                } else {
+                    // fallback: use first car
+                    carId = carsResponse.list[0].id;
+                    console.log(`⚠️ Could not import car, using first car id: ${carId}`);
+                }
             }
         } else {
-            // If no cars found, use default car_id 291 as fallback
-            carId = 291;
-            console.log(`⚠️ No cars found in API, using default car_id: ${carId}`);
+            // No cars found in API, so create/import a new car
+            console.log(`🚗 No cars found in API, importing new car...`);
+            // Try to get year from product, fallback to currentYear
+            let carYear = currentYear.toString();
+            if (product && product.text_fields && product.text_fields.features && product.text_fields.features['Rok produkcji']) {
+                carYear = String(product.text_fields.features['Rok produkcji']).substring(0, 4);
+            }
+            // NIE DODAWAJ OBRAZKÓW!
+            const importCarResp = await importCar(bestModel.id, carYear, product);
+            if (importCarResp && importCarResp.status_code === 'R200' && importCarResp.car_id) {
+                carId = importCarResp.car_id;
+                importedCar = true;
+                console.log(`✅ Imported new car: car id = ${carId}`);
+            } else {
+                // fallback: use default car_id 291
+                carId = 291;
+                console.log(`⚠️ Could not import car, using default car_id: ${carId}`);
+            }
         }
-        
+
+        // Get Ovoko category from BaseLinker category mapping
+        const ovokoCategory = getOvokoCategoryFromBaseLinker(product.category_id);
+        console.log(`🔍 Category mapping: BaseLinker ${product.category_id} → Ovoko ${ovokoCategory.ovoko_id} (${ovokoCategory.ovoko_pl}) - Confidence: ${ovokoCategory.confidence}`);
+
         // Prepare product data for Ovoko
         const postData = new URLSearchParams();
         postData.append('username', OVOKO_CREDENTIALS.username);
         postData.append('password', OVOKO_CREDENTIALS.password);
         postData.append('user_token', OVOKO_CREDENTIALS.user_token);
-        postData.append('category_id', '55');
+        postData.append('category_id', ovokoCategory.ovoko_id);
         postData.append('car_id', carId.toString());
         postData.append('quality', '1');
         postData.append('status', '0');
         postData.append('external_id', product.sku);
         postData.append('price', product.prices['2613'] || '0');
         postData.append('original_currency', 'PLN');
-        
+
         // Add photos if available
         if (product.images && Object.keys(product.images).length > 0) {
             const firstImage = Object.values(product.images)[0];
             postData.append('photo', firstImage);
-            
+
             // Add all images to photos array
             Object.values(product.images).forEach((image, index) => {
                 postData.append(`photos[${index}]`, image);
             });
         }
-        
+
         // Add optional codes
         if (product.text_fields.features && product.text_fields.features['Numer katalogowy części']) {
             postData.append('optional_codes[0]', product.text_fields.features['Numer katalogowy części']);
         }
-        
+
         const options = {
             hostname: 'api.rrr.lt',
             path: '/crm/importPart',
@@ -559,15 +708,15 @@ app.post('/api/import-product', requireAuth, async (req, res) => {
                 'Content-Length': Buffer.byteLength(postData.toString())
             }
         };
-        
+
         const result = await new Promise((resolve, reject) => {
             const req = https.request(options, (res) => {
                 let responseData = '';
-                
+
                 res.on('data', (chunk) => {
                     responseData += chunk;
                 });
-                
+
                 res.on('end', () => {
                     try {
                         const response = JSON.parse(responseData);
@@ -577,49 +726,70 @@ app.post('/api/import-product', requireAuth, async (req, res) => {
                     }
                 });
             });
-            
+
             req.on('error', (error) => {
                 reject(error);
             });
-            
+
             req.write(postData.toString());
             req.end();
         });
-        
+
         if (result.status_code === 'R200') {
             console.log(`✅ Product imported successfully: ${result.part_id} to car: ${carId}`);
-            
+
             // Save sync status
             const syncStatus = await loadSyncStatus();
             syncStatus.synced_products[product.sku] = {
                 ovoko_part_id: result.part_id,
                 ovoko_car_id: carId,
-                bmw_model: bmwModel,
+                ovoko_category_id: ovokoCategory.ovoko_id,
+                ovoko_category_name: ovokoCategory.ovoko_pl,
+                baselinker_category_id: product.category_id,
+                mapping_confidence: ovokoCategory.confidence,
+                bmw_model: bestModel.name,
                 synced_at: new Date().toISOString(),
                 product_name: product.text_fields.name
             };
             await saveSyncStatus(syncStatus);
-            
-            res.json({ 
-                success: true, 
+
+            res.json({
+                success: true,
                 part_id: result.part_id,
                 car_id: carId,
-                bmw_model: bmwModel,
-                message: 'Product imported successfully'
+                bmw_model: bestModel.name,
+                ovoko_category: {
+                    id: ovokoCategory.ovoko_id,
+                    name: ovokoCategory.ovoko_pl,
+                    confidence: ovokoCategory.confidence
+                },
+                message: importedCar
+                    ? 'Product imported successfully (new car created)'
+                    : 'Product imported successfully'
             });
         } else {
             console.log(`❌ Import failed: ${result.msg}`);
-            res.json({ 
-                success: false, 
+            res.json({
+                success: false,
                 error: result.msg || 'Import failed'
             });
         }
-        
+
     } catch (error) {
         console.error('💥 Import error:', error.message);
-        res.status(500).json({ 
-            success: false, 
-            error: error.message 
+        
+        // Log category mapping error if it's related to mapping
+        if (error.message.includes('category') || error.message.includes('mapping')) {
+            console.error('🔍 Category mapping error details:', {
+                product_sku: product?.sku,
+                baselinker_category_id: product?.category_id,
+                error: error.message
+            });
+        }
+        
+        res.status(500).json({
+            success: false,
+            error: error.message
         });
     }
 });
@@ -788,6 +958,41 @@ app.post('/api/update-product-versions', requireAuth, async (req, res) => {
         });
     }
 });
+
+// Helper function to map BaseLinker category to Ovoko category
+function getOvokoCategoryFromBaseLinker(baselinkerCategoryId) {
+    try {
+        // Load the full mapping
+        const fs = require('fs');
+        const mappingData = fs.readFileSync('ovoko_mapping_full.json', 'utf8');
+        const mapping = JSON.parse(mappingData);
+        
+        // Find the category mapping
+        const categoryMapping = mapping.categories[baselinkerCategoryId];
+        if (categoryMapping && categoryMapping.ovoko_mapping) {
+            return categoryMapping.ovoko_mapping;
+        }
+        
+        // Fallback to default category if not found
+        return {
+            ovoko_id: "1249",
+            ovoko_name: "Other parts",
+            ovoko_pl: "Inne części",
+            confidence: "fallback",
+            matched_keyword: "brak mapowania"
+        };
+    } catch (error) {
+        console.log('⚠️ Could not load category mapping, using default:', error.message);
+        // Fallback to default category
+        return {
+            ovoko_id: "1249",
+            ovoko_name: "Other parts",
+            ovoko_pl: "Inne części",
+            confidence: "error",
+            matched_keyword: "błąd ładowania mapowania"
+        };
+    }
+}
 
 // Helper function to load sync status
 async function loadSyncStatus() {
@@ -1224,6 +1429,65 @@ app.get('/api/order-sync-status/:orderId', requireAuth, async (req, res) => {
         
     } catch (error) {
         console.error('💥 Error checking order sync status:', error.message);
+        res.status(500).json({ 
+            success: false, 
+            error: error.message 
+        });
+    }
+});
+
+// New endpoint to check category mapping for a product
+app.get('/api/category-mapping/:categoryId', requireAuth, (req, res) => {
+    try {
+        const { categoryId } = req.params;
+        const ovokoCategory = getOvokoCategoryFromBaseLinker(categoryId);
+        
+        res.json({
+            baselinker_category_id: categoryId,
+            ovoko_mapping: ovokoCategory
+        });
+    } catch (error) {
+        console.error('💥 Error checking category mapping:', error.message);
+        res.status(500).json({ 
+            success: false, 
+            error: error.message 
+        });
+    }
+});
+
+// New endpoint to get all category mappings
+app.get('/api/category-mappings', requireAuth, async (req, res) => {
+    try {
+        const fs = require('fs');
+        const mappingData = fs.readFileSync('ovoko_mapping_full.json', 'utf8');
+        const mapping = JSON.parse(mappingData);
+        
+        // Get summary statistics
+        const stats = {
+            total_categories: mapping.total_categories,
+            mapping_rules: Object.keys(mapping.mapping_rules || {}).length,
+            created_at: mapping.created_at,
+            version: mapping.version
+        };
+        
+        // Get sample of mappings (first 10 for preview)
+        const sampleMappings = Object.entries(mapping.categories).slice(0, 10).map(([id, data]) => ({
+            baselinker_category_id: id,
+            baselinker_name: data.baselinker.name,
+            ovoko_category_id: data.ovoko_mapping.ovoko_id,
+            ovoko_category_name: data.ovoko_mapping.ovoko_pl,
+            confidence: data.ovoko_mapping.confidence
+        }));
+        
+        res.json({
+            success: true,
+            statistics: stats,
+            sample_mappings: sampleMappings,
+            message: `Loaded ${mapping.total_categories} category mappings`
+        });
+        
+    } catch (error) {
+        console.error('💥 Error loading category mappings:', error.message);
         res.status(500).json({ 
             success: false, 
             error: error.message 
@@ -1903,6 +2167,22 @@ app.get('/api/overview', requireAuth, async (req, res) => {
             }).length;
         } catch (error) {
             console.log('Could not calculate pending changes:', error.message);
+        }
+        
+        // Add category mapping statistics
+        try {
+            const mappingData = await fs.readFile('ovoko_mapping_full.json', 'utf8');
+            const mapping = JSON.parse(mappingData);
+            stats.categoryMapping = {
+                total_categories: mapping.total_categories || 0,
+                mapping_file: 'ovoko_mapping_full.json',
+                last_updated: mapping.created_at
+            };
+        } catch (error) {
+            console.log('Could not load category mapping stats:', error.message);
+            stats.categoryMapping = {
+                error: 'Could not load mapping statistics'
+            };
         }
         
         res.json(stats);

@@ -1,0 +1,222 @@
+{
+  "mapping_description": "Mapowanie kategorii BaseLinker na top-tier kategorie Ovoko - Część 1: Silnik i podstawowe układy",
+  "created_at": "2025-08-28T02:33:35.000Z",
+  "version": "1.0",
+  "part": 1,
+  "total_parts": 3,
+  "categories": {
+    "silnik_i_osprzet": {
+      "ovoko_top_category_id": "250",
+      "ovoko_top_category_name": "Engine",
+      "ovoko_top_category_pl": "Silnik i osprzęt",
+      "baselinker_categories": [
+        {
+          "category_id": 1730804,
+          "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Recyrkulacja spalin EGR/Zawory EGR",
+          "mapping_confidence": "high",
+          "notes": "EGR to część układu silnika"
+        },
+        {
+          "category_id": 145,
+          "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Silniki kompletne",
+          "mapping_confidence": "high",
+          "notes": "Bezpośrednie mapowanie na silniki"
+        },
+        {
+          "category_id": 1730816,
+          "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Osłony silnika/Dolne",
+          "mapping_confidence": "high",
+          "notes": "Osłony to część osprzętu silnika"
+        },
+        {
+          "category_id": 1730817,
+          "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Osłony silnika/Górne",
+          "mapping_confidence": "high",
+          "notes": "Osłony to część osprzętu silnika"
+        },
+        {
+          "category_id": 1730818,
+          "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Zawieszenie silnika/Poduszki silnika",
+          "mapping_confidence": "high",
+          "notes": "Zawieszenie silnika to część osprzętu"
+        },
+        {
+          "category_id": 1730819,
+          "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Przewody powietrza turbosprężarki",
+          "mapping_confidence": "high",
+          "notes": "Turbosprężarka to część osprzętu silnika"
+        },
+        {
+          "category_id": 1730820,
+          "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Kompletne turbosprężarki",
+          "mapping_confidence": "high",
+          "notes": "Turbosprężarka to część osprzętu silnika"
+        },
+        {
+          "category_id": 1730821,
+          "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Głowice cylindrów/Głowice",
+          "mapping_confidence": "high",
+          "notes": "Głowica to część silnika"
+        },
+        {
+          "category_id": 1730822,
+          "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Wały korbowe",
+          "mapping_confidence": "high",
+          "notes": "Blok silnika to główna część silnika"
+        },
+        {
+          "category_id": 1730823,
+          "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Pompy podciśnieniowe",
+          "mapping_confidence": "high",
+          "notes": "Pompa to część osprzętu silnika"
+        },
+        {
+          "category_id": 1730824,
+          "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Przepływomierze",
+          "mapping_confidence": "high",
+          "notes": "Czujnik przepływu to część osprzętu"
+        },
+        {
+          "category_id": 1730825,
+          "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Elementy napędu paska osprzętu/Koła pasowe",
+          "mapping_confidence": "high",
+          "notes": "Pasek osprzętu to część silnika"
+        },
+        {
+          "category_id": 1730826,
+          "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Kolektory ssące",
+          "mapping_confidence": "high",
+          "notes": "Kolektor to część silnika"
+        },
+        {
+          "category_id": 1730827,
+          "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Recyrkulacja spalin EGR/Chłodnice spalin",
+          "mapping_confidence": "high",
+          "notes": "EGR to część układu silnika"
+        },
+        {
+          "category_id": 1730828,
+          "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Czujniki poziomu oleju",
+          "mapping_confidence": "high",
+          "notes": "Smarowanie to część osprzętu silnika"
+        },
+        {
+          "category_id": 1730829,
+          "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Pompy oleju",
+          "mapping_confidence": "high",
+          "notes": "Pompa oleju to część osprzętu silnika"
+        },
+        {
+          "category_id": 1730830,
+          "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Zawory podciśnienia",
+          "mapping_confidence": "high",
+          "notes": "Zawory to część silnika"
+        }
+      ]
+    },
+    "uklad_paliwowy": {
+      "ovoko_top_category_id": "281",
+      "ovoko_top_category_name": "Fuel mixture system",
+      "ovoko_top_category_pl": "Układ paliwowy",
+      "baselinker_categories": [
+        {
+          "category_id": 1730803,
+          "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Podgrzewacze",
+          "mapping_confidence": "high",
+          "notes": "Bezpośrednie mapowanie na układ paliwowy"
+        },
+        {
+          "category_id": 1730831,
+          "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Wtryskiwacze",
+          "mapping_confidence": "high",
+          "notes": "Wtryskiwacze to część układu paliwowego"
+        },
+        {
+          "category_id": 1730832,
+          "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Pompy paliwa",
+          "mapping_confidence": "high",
+          "notes": "Pompa paliwa to część układu paliwowego"
+        },
+        {
+          "category_id": 1730833,
+          "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Pompy wtryskowe",
+          "mapping_confidence": "high",
+          "notes": "Pompa wtryskowa to część układu paliwowego"
+        },
+        {
+          "category_id": 1730834,
+          "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Przewody wtryskowe",
+          "mapping_confidence": "high",
+          "notes": "Przewody to część układu paliwowego"
+        },
+        {
+          "category_id": 1730835,
+          "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Przewody paliwa",
+          "mapping_confidence": "high",
+          "notes": "Przewody to część układu paliwowego"
+        }
+      ]
+    },
+    "uklad_chlodzenia": {
+      "ovoko_top_category_id": "197",
+      "ovoko_top_category_name": "Air conditioning-heating system/radiators",
+      "ovoko_top_category_pl": "Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe",
+      "baselinker_categories": [
+        {
+          "category_id": 1730807,
+          "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Wentylatory chłodnicy/Wentylatory",
+          "mapping_confidence": "high",
+          "notes": "Bezpośrednie mapowanie na układ chłodzenia"
+        },
+        {
+          "category_id": 1730836,
+          "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Przewody układów chłodzenia/Przewody chłodnic wody",
+          "mapping_confidence": "high",
+          "notes": "Przewody to część układu chłodzenia"
+        },
+        {
+          "category_id": 1730837,
+          "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Kierownice powietrza",
+          "mapping_confidence": "high",
+          "notes": "Kierownice to część układu chłodzenia"
+        },
+        {
+          "category_id": 1730838,
+          "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Pompy wody/Pompy wody",
+          "mapping_confidence": "high",
+          "notes": "Pompa wody to część układu chłodzenia"
+        },
+        {
+          "category_id": 1730839,
+          "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Zbiorniki wyrównawcze",
+          "mapping_confidence": "high",
+          "notes": "Zbiornik to część układu chłodzenia"
+        },
+        {
+          "category_id": 1730840,
+          "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Chłodnice/Chłodnice wody",
+          "mapping_confidence": "high",
+          "notes": "Chłodnica to część układu chłodzenia"
+        },
+        {
+          "category_id": 1730841,
+          "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Przewody układów chłodzenia/Przewody chłodnic oleju",
+          "mapping_confidence": "high",
+          "notes": "Przewody to część układu chłodzenia"
+        },
+        {
+          "category_id": 1730842,
+          "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Chłodnice/Chłodnice powietrza (intercoolery)",
+          "mapping_confidence": "high",
+          "notes": "Intercooler to część układu chłodzenia"
+        },
+        {
+          "category_id": 1730843,
+          "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Chłodnice/Chłodnice oleju",
+          "mapping_confidence": "high",
+          "notes": "Chłodnica oleju to część układu chłodzenia"
+        }
+      ]
+    }
+  }
+}
