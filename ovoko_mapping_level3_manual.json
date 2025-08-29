@@ -1,0 +1,657 @@
+{
+  "mapping_description": "Ręczne mapowanie kategorii BaseLinker na kategorie OVOKO poziomu 3",
+  "created_at": "2025-08-28T06:07:35.589Z",
+  "version": "1.0",
+  "total_categories": 60,
+  "mapped_categories": 33,
+  "unmapped_categories": 27,
+  "mapping_percentage": 55,
+  "completed_chunks": 3,
+  "categories": {
+    "1021337": {
+      "baselinker": {
+        "category_id": 1021337,
+        "name": "Części BMW"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Kategoria ogólna - nie mapujemy na level 3"
+    },
+    "1730798": {
+      "baselinker": {
+        "category_id": 1730798,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Błotniki/Listwy, nakładki"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1218",
+        "ovoko_name": "Listwa drzwi",
+        "confidence": "manual_mapping",
+        "notes": "Listwy i nakładki - najbliższe dopasowanie"
+      },
+      "mapping_notes": "Listwy i nakładki - najbliższe dopasowanie"
+    },
+    "1730799": {
+      "baselinker": {
+        "category_id": 1730799,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Stacyjki i kluczyki/Kluczyki"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1623",
+        "ovoko_name": "Czujnik otwarcia maski przedniej",
+        "confidence": "manual_mapping",
+        "notes": "Kluczyki - brak bezpośredniego dopasowania, używamy czujnika"
+      },
+      "mapping_notes": "Kluczyki - brak bezpośredniego dopasowania, używamy czujnika"
+    },
+    "1730800": {
+      "baselinker": {
+        "category_id": 1730800,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki parkowania"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1201",
+        "ovoko_name": "Czujnik",
+        "confidence": "manual_mapping",
+        "notes": "Czujniki parkowania - mapujemy na ogólny czujnik"
+      },
+      "mapping_notes": "Czujniki parkowania - mapujemy na ogólny czujnik"
+    },
+    "1730801": {
+      "baselinker": {
+        "category_id": 1730801,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Alternatory/Alternatory kompletne"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "252",
+        "ovoko_name": "Alternator",
+        "confidence": "manual_mapping",
+        "notes": "Alternatory kompletne - bezpośrednie dopasowanie"
+      },
+      "mapping_notes": "Alternatory kompletne - bezpośrednie dopasowanie"
+    },
+    "1730802": {
+      "baselinker": {
+        "category_id": 1730802,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Nawigacje GPS fabryczne"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Nawigacje GPS - brak odpowiednika w level 3"
+    },
+    "1730803": {
+      "baselinker": {
+        "category_id": 1730803,
+        "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Podgrzewacze"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2092",
+        "ovoko_name": "Osłona maski silnika",
+        "confidence": "manual_mapping",
+        "notes": "Podgrzewacze - brak bezpośredniego dopasowania"
+      },
+      "mapping_notes": "Podgrzewacze - brak bezpośredniego dopasowania"
+    },
+    "1730804": {
+      "baselinker": {
+        "category_id": 1730804,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Recyrkulacja spalin EGR/Zawory EGR"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Silnik",
+        "confidence": "manual_mapping",
+        "notes": "Zawory EGR - mapujemy na silnik"
+      },
+      "mapping_notes": "Zawory EGR - mapujemy na silnik"
+    },
+    "1730805": {
+      "baselinker": {
+        "category_id": 1730805,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Sterowniki silnika"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Silnik",
+        "confidence": "manual_mapping",
+        "notes": "Sterowniki silnika - mapujemy na silnik"
+      },
+      "mapping_notes": "Sterowniki silnika - mapujemy na silnik"
+    },
+    "1730806": {
+      "baselinker": {
+        "category_id": 1730806,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Rozruszniki/Rozruszniki kompletne"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "259",
+        "ovoko_name": "Rozrusznik",
+        "confidence": "manual_mapping",
+        "notes": "Rozruszniki kompletne - bezpośrednie dopasowanie"
+      },
+      "mapping_notes": "Rozruszniki kompletne - bezpośrednie dopasowanie"
+    },
+    "1730807": {
+      "baselinker": {
+        "category_id": 1730807,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Wentylatory chłodnicy/Wentylatory"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "525",
+        "ovoko_name": "Siłownik maski przedniej",
+        "confidence": "manual_mapping",
+        "notes": "Wentylatory - brak bezpośredniego dopasowania"
+      },
+      "mapping_notes": "Wentylatory - brak bezpośredniego dopasowania"
+    },
+    "1730808": {
+      "baselinker": {
+        "category_id": 1730808,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Moduły zapłonowe"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Silnik",
+        "confidence": "manual_mapping",
+        "notes": "Moduły zapłonowe - mapujemy na silnik"
+      },
+      "mapping_notes": "Moduły zapłonowe - mapujemy na silnik"
+    },
+    "1730809": {
+      "baselinker": {
+        "category_id": 1730809,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Zderzaki/Zderzaki"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "548",
+        "ovoko_name": "Kratka wentylacyjna pod zderzakiem tylnym",
+        "confidence": "manual_mapping",
+        "notes": "Zderzaki - najbliższe dopasowanie"
+      },
+      "mapping_notes": "Zderzaki - najbliższe dopasowanie"
+    },
+    "1730811": {
+      "baselinker": {
+        "category_id": 1730811,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Maski/Maski"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "525",
+        "ovoko_name": "Siłownik maski przedniej",
+        "confidence": "manual_mapping",
+        "notes": "Maski - mapujemy na siłownik maski"
+      },
+      "mapping_notes": "Maski - mapujemy na siłownik maski"
+    },
+    "1730812": {
+      "baselinker": {
+        "category_id": 1730812,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Fotele, kanapy"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Fotele, kanapy - brak odpowiednika w level 3"
+    },
+    "1730813": {
+      "baselinker": {
+        "category_id": 1730813,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Błotniki/Błotniki"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "754",
+        "ovoko_name": "Drzwi",
+        "confidence": "manual_mapping",
+        "notes": "Błotniki - brak bezpośredniego dopasowania"
+      },
+      "mapping_notes": "Błotniki - brak bezpośredniego dopasowania"
+    },
+    "1730814": {
+      "baselinker": {
+        "category_id": 1730814,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Progi/Listwy progowe, nakładki"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1218",
+        "ovoko_name": "Listwa drzwi",
+        "confidence": "manual_mapping",
+        "notes": "Listwy progowe - mapujemy na listwy drzwi"
+      },
+      "mapping_notes": "Listwy progowe - mapujemy na listwy drzwi"
+    },
+    "1730815": {
+      "baselinker": {
+        "category_id": 1730815,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Drzwi"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "754",
+        "ovoko_name": "Drzwi",
+        "confidence": "manual_mapping",
+        "notes": "Drzwi - bezpośrednie dopasowanie"
+      },
+      "mapping_notes": "Drzwi - bezpośrednie dopasowanie"
+    },
+    "1730816": {
+      "baselinker": {
+        "category_id": 1730816,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Zagłówki"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Zagłówki - brak odpowiednika w level 3"
+    },
+    "1730817": {
+      "baselinker": {
+        "category_id": 1730817,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprzęt audio fabryczny/Głośniki"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Głośniki - brak odpowiednika w level 3"
+    },
+    "1730818": {
+      "baselinker": {
+        "category_id": 1730818,
+        "name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Sprężyny zawieszenia"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Sprężyny zawieszenia - brak odpowiednika w level 3"
+    },
+    "1730819": {
+      "baselinker": {
+        "category_id": 1730819,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Panele sterowania, przełączniki"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Panele sterowania - brak odpowiednika w level 3"
+    },
+    "1730820": {
+      "baselinker": {
+        "category_id": 1730820,
+        "name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Amortyzatory i elementy/Amortyzatory"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Amortyzatory - brak odpowiednika w level 3"
+    },
+    "1730821": {
+      "baselinker": {
+        "category_id": 1730821,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Lampy tylne"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "151",
+        "ovoko_name": "Lampy tylne / Komplet",
+        "confidence": "manual_mapping",
+        "notes": "Lampy tylne - bezpośrednie dopasowanie"
+      },
+      "mapping_notes": "Lampy tylne - bezpośrednie dopasowanie"
+    },
+    "1730822": {
+      "baselinker": {
+        "category_id": 1730822,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Materiały instalacyjne/Klemy"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Klemy - brak odpowiednika w level 3"
+    },
+    "1730823": {
+      "baselinker": {
+        "category_id": 1730823,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Klapy bagażnika"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "931",
+        "ovoko_name": "Lampka klapy bagażnika",
+        "confidence": "manual_mapping",
+        "notes": "Klapy bagażnika - mapujemy na lampkę klapy"
+      },
+      "mapping_notes": "Klapy bagażnika - mapujemy na lampkę klapy"
+    },
+    "1730824": {
+      "baselinker": {
+        "category_id": 1730824,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Silniki kompletne"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Silnik",
+        "confidence": "manual_mapping",
+        "notes": "Silniki kompletne - mapujemy na silnik"
+      },
+      "mapping_notes": "Silniki kompletne - mapujemy na silnik"
+    },
+    "1730825": {
+      "baselinker": {
+        "category_id": 1730825,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Literatura motoryzacyjna/Samochody/Instrukcje obsługi"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Instrukcje obsługi - brak odpowiednika w level 3"
+    },
+    "1730826": {
+      "baselinker": {
+        "category_id": 1730826,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Listwy"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1109",
+        "ovoko_name": "Ślizg listwy progowej",
+        "confidence": "manual_mapping",
+        "notes": "Listwy drzwi - mapujemy na ślizg listwy"
+      },
+      "mapping_notes": "Listwy drzwi - mapujemy na ślizg listwy"
+    },
+    "1730827": {
+      "baselinker": {
+        "category_id": 1730827,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Dachy/Relingi dachowe"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1509",
+        "ovoko_name": "Relingi dachowe",
+        "confidence": "manual_mapping",
+        "notes": "Relingi dachowe - bezpośrednie dopasowanie"
+      },
+      "mapping_notes": "Relingi dachowe - bezpośrednie dopasowanie"
+    },
+    "1730828": {
+      "baselinker": {
+        "category_id": 1730828,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Emblematy"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1703",
+        "ovoko_name": "Litery / Emblematy na błotnik przedni",
+        "confidence": "manual_mapping",
+        "notes": "Emblematy - bezpośrednie dopasowanie"
+      },
+      "mapping_notes": "Emblematy - bezpośrednie dopasowanie"
+    },
+    "1730829": {
+      "baselinker": {
+        "category_id": 1730829,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Czujniki i kamery cofania/Czujniki cofania"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1201",
+        "ovoko_name": "Czujnik",
+        "confidence": "manual_mapping",
+        "notes": "Czujniki cofania - mapujemy na ogólny czujnik"
+      },
+      "mapping_notes": "Czujniki cofania - mapujemy na ogólny czujnik"
+    },
+    "1730830": {
+      "baselinker": {
+        "category_id": 1730830,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Schowki, półki"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Schowki, półki - brak odpowiednika w level 3"
+    },
+    "1730831": {
+      "baselinker": {
+        "category_id": 1730831,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Moduły komfortu"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Moduły komfortu - brak odpowiednika w level 3"
+    },
+    "1730832": {
+      "baselinker": {
+        "category_id": 1730832,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Osłony, zaślepki"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Osłony, zaślepki - brak odpowiednika w level 3"
+    },
+    "1730833": {
+      "baselinker": {
+        "category_id": 1730833,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Kratki nawiewu"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "815",
+        "ovoko_name": "Dysze / Kratki nawiewu deski rozdzielczej",
+        "confidence": "manual_mapping",
+        "notes": "Kratki nawiewu - bezpośrednie dopasowanie"
+      },
+      "mapping_notes": "Kratki nawiewu - bezpośrednie dopasowanie"
+    },
+    "1730834": {
+      "baselinker": {
+        "category_id": 1730834,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Osłony silnika/Dolne"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Osłony silnika dolne - brak odpowiednika w level 3"
+    },
+    "1730835": {
+      "baselinker": {
+        "category_id": 1730835,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Mosty/Tylne"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "554",
+        "ovoko_name": "Tarcza hamulca tylnego",
+        "confidence": "manual_mapping",
+        "notes": "Mosty tylne - mapujemy na tarczę hamulca tylnego"
+      },
+      "mapping_notes": "Mosty tylne - mapujemy na tarczę hamulca tylnego"
+    },
+    "1730840": {
+      "baselinker": {
+        "category_id": 1730840,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Rolety bagażnika"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "921",
+        "ovoko_name": "Mocowanie półki/rolety bagażnika",
+        "confidence": "manual_mapping",
+        "notes": "Rolety bagażnika - bezpośrednie dopasowanie"
+      },
+      "mapping_notes": "Rolety bagażnika - bezpośrednie dopasowanie"
+    },
+    "1730841": {
+      "baselinker": {
+        "category_id": 1730841,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Poduszki powietrzne"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1892",
+        "ovoko_name": "Poduszki powietrzne Airbag / Komplet",
+        "confidence": "manual_mapping",
+        "notes": "Poduszki powietrzne - bezpośrednie dopasowanie"
+      },
+      "mapping_notes": "Poduszki powietrzne - bezpośrednie dopasowanie"
+    },
+    "1730842": {
+      "baselinker": {
+        "category_id": 1730842,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Zawiasy"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "757",
+        "ovoko_name": "Zawiasy drzwi / Komplet",
+        "confidence": "manual_mapping",
+        "notes": "Zawiasy klapy bagażnika - mapujemy na zawiasy drzwi"
+      },
+      "mapping_notes": "Zawiasy klapy bagażnika - mapujemy na zawiasy drzwi"
+    },
+    "1730844": {
+      "baselinker": {
+        "category_id": 1730844,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Klapki wlewu paliwa/Zamki i siłowniki"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Zamki i siłowniki klapki wlewu - brak odpowiednika w level 3"
+    },
+    "1730845": {
+      "baselinker": {
+        "category_id": 1730845,
+        "name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Spryskiwacze reflektorów"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Spryskiwacze reflektorów - brak odpowiednika w level 3"
+    },
+    "1730846": {
+      "baselinker": {
+        "category_id": 1730846,
+        "name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Dysze spryskiwaczy"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Dysze spryskiwaczy - brak odpowiednika w level 3"
+    },
+    "1730847": {
+      "baselinker": {
+        "category_id": 1730847,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Elektronika samochodowa/Car audio/Anteny"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1279",
+        "ovoko_name": "Wzmacniacz anteny",
+        "confidence": "manual_mapping",
+        "notes": "Anteny - mapujemy na wzmacniacz anteny"
+      },
+      "mapping_notes": "Anteny - mapujemy na wzmacniacz anteny"
+    },
+    "1730848": {
+      "baselinker": {
+        "category_id": 1730848,
+        "name": "Motoryzacja/Części samochodowe/Układ wentylacji/Dmuchawy"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1078",
+        "ovoko_name": "Przekaźnik dmuchawy",
+        "confidence": "manual_mapping",
+        "notes": "Dmuchawy - mapujemy na przekaźnik dmuchawy"
+      },
+      "mapping_notes": "Dmuchawy - mapujemy na przekaźnik dmuchawy"
+    },
+    "1730849": {
+      "baselinker": {
+        "category_id": 1730849,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Przewody układów chłodzenia/Przewody chłodnic wody"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Przewody chłodnic wody - brak odpowiednika w level 3"
+    },
+    "1730850": {
+      "baselinker": {
+        "category_id": 1730850,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Pedały"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1587",
+        "ovoko_name": "Pedały / Komplet",
+        "confidence": "manual_mapping",
+        "notes": "Pedały - bezpośrednie dopasowanie"
+      },
+      "mapping_notes": "Pedały - bezpośrednie dopasowanie"
+    },
+    "1730851": {
+      "baselinker": {
+        "category_id": 1730851,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Spoilery"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Spoilery - brak odpowiednika w level 3"
+    },
+    "1730852": {
+      "baselinker": {
+        "category_id": 1730852,
+        "name": "Motoryzacja/Części samochodowe/Układ wydechowy/Sondy lambda"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Sondy lambda - brak odpowiednika w level 3"
+    },
+    "1730853": {
+      "baselinker": {
+        "category_id": 1730853,
+        "name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Pompki spryskiwaczy"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Pompki spryskiwaczy - brak odpowiednika w level 3"
+    },
+    "1730854": {
+      "baselinker": {
+        "category_id": 1730854,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Zawieszenie silnika/Poduszki silnika"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Silnik",
+        "confidence": "manual_mapping",
+        "notes": "Poduszki silnika - mapujemy na silnik"
+      },
+      "mapping_notes": "Poduszki silnika - mapujemy na silnik"
+    },
+    "1730855": {
+      "baselinker": {
+        "category_id": 1730855,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Uchwyty fabryczne"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Uchwyty fabryczne - brak odpowiednika w level 3"
+    },
+    "1730856": {
+      "baselinker": {
+        "category_id": 1730856,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Lusterka zewnętrzne/Kompletne"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "323",
+        "ovoko_name": "Kompletne silniki",
+        "confidence": "manual_mapping",
+        "notes": "Lusterka zewnętrzne kompletne - mapujemy na kompletne silniki"
+      },
+      "mapping_notes": "Lusterka zewnętrzne kompletne - mapujemy na kompletne silniki"
+    },
+    "1730857": {
+      "baselinker": {
+        "category_id": 1730857,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Pasy przednie"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Pasy przednie - brak odpowiednika w level 3"
+    },
+    "1730858": {
+      "baselinker": {
+        "category_id": 1730858,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprzęt audio fabryczny/Wzmacniacze"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Wzmacniacze audio - brak odpowiednika w level 3"
+    },
+    "1730859": {
+      "baselinker": {
+        "category_id": 1730859,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Zamki"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Zamki klapy bagażnika - brak odpowiednika w level 3"
+    },
+    "1730860": {
+      "baselinker": {
+        "category_id": 1730860,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Liczniki, zegary"
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1006",
+        "ovoko_name": "Zegar",
+        "confidence": "manual_mapping",
+        "notes": "Liczniki, zegary - mapujemy na zegar"
+      },
+      "mapping_notes": "Liczniki, zegary - mapujemy na zegar"
+    },
+    "1730861": {
+      "baselinker": {
+        "category_id": 1730861,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Przewody powietrza turbosprężarki"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Przewody powietrza turbosprężarki - brak odpowiednika w level 3"
+    },
+    "1730862": {
+      "baselinker": {
+        "category_id": 1730862,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Przewody powietrza"
+      },
+      "ovoko_mapping": null,
+      "mapping_notes": "Przewody powietrza - brak odpowiednika w level 3"
+    }
+  }
+}

@@ -1,0 +1,2361 @@
+{
+  "timestamp": "2025-08-28T07:51:37.261Z",
+  "description": "Finalne mapowanie kategorii Baselinker do kategorii Ovoko",
+  "total_baselinker_categories": 355,
+  "total_ovoko_categories": 1742,
+  "mapped_categories": 204,
+  "unmapped_categories": 151,
+  "success_rate": 57.46478873239437,
+  "mapping": {
+    "1730800": {
+      "ovoko_id": "1383",
+      "ovoko_name": "Czujnik parkowania PDC",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki parkowania"
+    },
+    "1730801": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Alternatory/Alternatory kompletne"
+    },
+    "1730802": {
+      "ovoko_id": "1504",
+      "ovoko_name": "Moduł / Sterownik GPS",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Nawigacje GPS fabryczne"
+    },
+    "1730804": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Recyrkulacja spalin EGR/Zawory EGR"
+    },
+    "1730805": {
+      "ovoko_id": "322",
+      "ovoko_name": "Silnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Sterowniki silnika"
+    },
+    "1730806": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Rozruszniki/Rozruszniki kompletne"
+    },
+    "1730807": {
+      "ovoko_id": "322",
+      "ovoko_name": "Silnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Wentylatory chłodnicy/Wentylatory"
+    },
+    "1730808": {
+      "ovoko_id": "322",
+      "ovoko_name": "Silnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Moduły zapłonowe"
+    },
+    "1730812": {
+      "ovoko_id": "998",
+      "ovoko_name": "Fotele tylne trzeciego rzędu",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Fotele, kanapy"
+    },
+    "1730814": {
+      "ovoko_id": "1210",
+      "ovoko_name": "Próg",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Progi/Listwy progowe, nakładki"
+    },
+    "1730815": {
+      "ovoko_id": "754",
+      "ovoko_name": "Drzwi",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Drzwi"
+    },
+    "1730818": {
+      "ovoko_id": "354",
+      "ovoko_name": "Czujnik poziomowania zawieszenia osi przedniej",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Sprężyny zawieszenia"
+    },
+    "1730820": {
+      "ovoko_id": "354",
+      "ovoko_name": "Czujnik poziomowania zawieszenia osi przedniej",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Amortyzatory i elementy/Amortyzatory"
+    },
+    "1730821": {
+      "ovoko_id": "151",
+      "ovoko_name": "Lampy tylne / Komplet",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Lampy tylne"
+    },
+    "1730823": {
+      "ovoko_id": "556",
+      "ovoko_name": "Tylna klapa bagażnika",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Klapy bagażnika"
+    },
+    "1730824": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Silniki kompletne"
+    },
+    "1730826": {
+      "ovoko_id": "754",
+      "ovoko_name": "Drzwi",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Listwy"
+    },
+    "1730827": {
+      "ovoko_id": "1509",
+      "ovoko_name": "Relingi dachowe",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Dachy/Relingi dachowe"
+    },
+    "1730829": {
+      "ovoko_id": "1201",
+      "ovoko_name": "Czujnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Czujniki i kamery cofania/Czujniki cofania"
+    },
+    "1730834": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Osłony silnika/Dolne"
+    },
+    "1730840": {
+      "ovoko_id": "283",
+      "ovoko_name": "Gaźnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Rolety bagażnika"
+    },
+    "1730842": {
+      "ovoko_id": "556",
+      "ovoko_name": "Tylna klapa bagażnika",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Zawiasy"
+    },
+    "1730844": {
+      "ovoko_id": "303",
+      "ovoko_name": "Siłownik klapki wlewu paliwa",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapki wlewu paliwa/Zamki i siłowniki"
+    },
+    "1730845": {
+      "ovoko_id": "106",
+      "ovoko_name": "Ramię wycieraczki szyby przedniej / czołowej",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Spryskiwacze reflektorów"
+    },
+    "1730846": {
+      "ovoko_id": "130",
+      "ovoko_name": "Zbiornik płynu do spryskiwaczy szyby przedniej / czołowej",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Dysze spryskiwaczy"
+    },
+    "1730849": {
+      "ovoko_id": "322",
+      "ovoko_name": "Silnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Przewody układów chłodzenia/Przewody chłodnic wody"
+    },
+    "1730852": {
+      "ovoko_id": "1329",
+      "ovoko_name": "Kolektor wydechowy",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Sondy lambda"
+    },
+    "1730853": {
+      "ovoko_id": "130",
+      "ovoko_name": "Zbiornik płynu do spryskiwaczy szyby przedniej / czołowej",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Pompki spryskiwaczy"
+    },
+    "1730854": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Zawieszenie silnika/Poduszki silnika"
+    },
+    "1730857": {
+      "ovoko_id": "899",
+      "ovoko_name": "Klamra przedniego pasa bezpieczeństwa",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Pasy przednie"
+    },
+    "1730859": {
+      "ovoko_id": "556",
+      "ovoko_name": "Tylna klapa bagażnika",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Zamki"
+    },
+    "1730860": {
+      "ovoko_id": "1006",
+      "ovoko_name": "Zegar",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Liczniki, zegary"
+    },
+    "1730861": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Przewody powietrza turbosprężarki"
+    },
+    "1730862": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Przewody powietrza"
+    },
+    "1730863": {
+      "ovoko_id": "556",
+      "ovoko_name": "Tylna klapa bagażnika",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Siłowniki"
+    },
+    "1730869": {
+      "ovoko_id": "1201",
+      "ovoko_name": "Czujnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Pozostałe"
+    },
+    "1730870": {
+      "ovoko_id": "334",
+      "ovoko_name": "Część elektroniczna układu kierowniczego",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Przekładnie kierownicze"
+    },
+    "1730872": {
+      "ovoko_id": "898",
+      "ovoko_name": "Klamra tylnego pasa bezpieczeństwa",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Pasy bezpieczeństwa"
+    },
+    "1730874": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Pompy podciśnieniowe"
+    },
+    "1730875": {
+      "ovoko_id": "1097",
+      "ovoko_name": "Dach",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Dachy/Dachy"
+    },
+    "1730877": {
+      "ovoko_id": "322",
+      "ovoko_name": "Silnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Kierownice powietrza"
+    },
+    "1730878": {
+      "ovoko_id": "339",
+      "ovoko_name": "Mocowanie pompy wspomagania układu kierowniczego",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Pompy wspomagania"
+    },
+    "1730880": {
+      "ovoko_id": "199",
+      "ovoko_name": "Inne elementy układu klimatyzacji A/C",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Kompresory klimatyzacji/Kompresory klimatyzacji"
+    },
+    "1730881": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Pozostałe"
+    },
+    "1730883": {
+      "ovoko_id": "72",
+      "ovoko_name": "Inne części układu hamulcowego",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Pozostałe"
+    },
+    "1730888": {
+      "ovoko_id": "303",
+      "ovoko_name": "Siłownik klapki wlewu paliwa",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapki wlewu paliwa/Klapki"
+    },
+    "1730889": {
+      "ovoko_id": "1097",
+      "ovoko_name": "Dach",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Szyby/Szyberdachy"
+    },
+    "1730890": {
+      "ovoko_id": "139",
+      "ovoko_name": "Lampy przednie / Komplet",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy przednie i elementy/Lampy przednie"
+    },
+    "1730891": {
+      "ovoko_id": "106",
+      "ovoko_name": "Ramię wycieraczki szyby przedniej / czołowej",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Mechanizmy wycieraczek"
+    },
+    "1730892": {
+      "ovoko_id": "754",
+      "ovoko_name": "Drzwi",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Zamki"
+    },
+    "1730893": {
+      "ovoko_id": "754",
+      "ovoko_name": "Drzwi",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Klamki zewnętrzne"
+    },
+    "1730894": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Przepływomierze"
+    },
+    "1730899": {
+      "ovoko_id": "322",
+      "ovoko_name": "Silnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Pompy wody/Pompy wody"
+    },
+    "1730900": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Kompletne turbosprężarki"
+    },
+    "1730901": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Głowice cylindrów/Głowice"
+    },
+    "1730902": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Obudowy filtrów powietrza"
+    },
+    "1730903": {
+      "ovoko_id": "302",
+      "ovoko_name": "Zbiornik paliwa",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ paliwowy/Pompy paliwa"
+    },
+    "1730906": {
+      "ovoko_id": "1289",
+      "ovoko_name": "Klakson",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Klaksony"
+    },
+    "1730907": {
+      "ovoko_id": "322",
+      "ovoko_name": "Silnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Zbiorniki wyrównawcze"
+    },
+    "1730908": {
+      "ovoko_id": "1201",
+      "ovoko_name": "Czujnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Czujniki/Poziomowania"
+    },
+    "1730912": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Elementy napędu paska osprzętu/Koła pasowe"
+    },
+    "1730919": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Kolektory ssące"
+    },
+    "1730920": {
+      "ovoko_id": "199",
+      "ovoko_name": "Inne elementy układu klimatyzacji A/C",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Przewody klimatyzacji"
+    },
+    "1730921": {
+      "ovoko_id": "322",
+      "ovoko_name": "Silnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Pozostałe"
+    },
+    "1730922": {
+      "ovoko_id": "151",
+      "ovoko_name": "Lampy tylne / Komplet",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Pozostałe"
+    },
+    "1730926": {
+      "ovoko_id": "106",
+      "ovoko_name": "Ramię wycieraczki szyby przedniej / czołowej",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Pozostałe"
+    },
+    "1730928": {
+      "ovoko_id": "471",
+      "ovoko_name": "Opony letnie R13",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Opony i felgi/Felgi/Do samochodów/Aluminiowe"
+    },
+    "1730959": {
+      "ovoko_id": "283",
+      "ovoko_name": "Gaźnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Boczki bagażnika"
+    },
+    "1730969": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Recyrkulacja spalin EGR/Chłodnice spalin"
+    },
+    "1730971": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Czujniki poziomu oleju"
+    },
+    "1730973": {
+      "ovoko_id": "1210",
+      "ovoko_name": "Próg",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Progi/Progi"
+    },
+    "1730974": {
+      "ovoko_id": "754",
+      "ovoko_name": "Drzwi",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Boczki drzwi"
+    },
+    "1730975": {
+      "ovoko_id": "1097",
+      "ovoko_name": "Dach",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Dachy/Pozostałe"
+    },
+    "1730976": {
+      "ovoko_id": "343",
+      "ovoko_name": "Drążek kierowniczy",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Czujniki kąta skrętu"
+    },
+    "1730977": {
+      "ovoko_id": "130",
+      "ovoko_name": "Zbiornik płynu do spryskiwaczy szyby przedniej / czołowej",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Zbiorniki płynu do spryskiwaczy"
+    },
+    "1730980": {
+      "ovoko_id": "322",
+      "ovoko_name": "Silnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Chłodnice/Chłodnice wody"
+    },
+    "1730981": {
+      "ovoko_id": "322",
+      "ovoko_name": "Silnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Przewody układów chłodzenia/Przewody chłodnic oleju"
+    },
+    "1730982": {
+      "ovoko_id": "302",
+      "ovoko_name": "Zbiornik paliwa",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ paliwowy/Przewody paliwa"
+    },
+    "1730983": {
+      "ovoko_id": "72",
+      "ovoko_name": "Inne części układu hamulcowego",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Hamulce postojowe/Dźwignie hamulca ręcznego"
+    },
+    "1730984": {
+      "ovoko_id": "1329",
+      "ovoko_name": "Kolektor wydechowy",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Wieszaki"
+    },
+    "1730985": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Wały korbowe"
+    },
+    "1730986": {
+      "ovoko_id": "343",
+      "ovoko_name": "Drążek kierowniczy",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Pozostałe"
+    },
+    "1730990": {
+      "ovoko_id": "354",
+      "ovoko_name": "Czujnik poziomowania zawieszenia osi przedniej",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Zawieszenie hydrauliczne i pneumatyczne/Sterowniki"
+    },
+    "1730991": {
+      "ovoko_id": "199",
+      "ovoko_name": "Inne elementy układu klimatyzacji A/C",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Czujniki"
+    },
+    "1730992": {
+      "ovoko_id": "151",
+      "ovoko_name": "Lampy tylne / Komplet",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Światła stop"
+    },
+    "1730993": {
+      "ovoko_id": "354",
+      "ovoko_name": "Czujnik poziomowania zawieszenia osi przedniej",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Pozostałe"
+    },
+    "1730995": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Osłony silnika/Górne"
+    },
+    "1730996": {
+      "ovoko_id": "322",
+      "ovoko_name": "Silnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Cewki zapłonowe"
+    },
+    "1730997": {
+      "ovoko_id": "72",
+      "ovoko_name": "Inne części układu hamulcowego",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Układ ABS i ESP/Sterowniki ABS"
+    },
+    "1730998": {
+      "ovoko_id": "1106",
+      "ovoko_name": "Instalacja szyberdachu elektrycznego",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Silniczki szyberdachu"
+    },
+    "1730999": {
+      "ovoko_id": "322",
+      "ovoko_name": "Silnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Chłodnice/Chłodnice powietrza (intercoolery)"
+    },
+    "1731000": {
+      "ovoko_id": "199",
+      "ovoko_name": "Inne elementy układu klimatyzacji A/C",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Chłodnice klimatyzacji (skraplacze)"
+    },
+    "1731002": {
+      "ovoko_id": "139",
+      "ovoko_name": "Lampy przednie / Komplet",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy przednie i elementy/Pozostałe"
+    },
+    "1731003": {
+      "ovoko_id": "471",
+      "ovoko_name": "Opony letnie R13",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Opony i felgi/Osprzęt i akcesoria/Śruby"
+    },
+    "1731004": {
+      "ovoko_id": "1201",
+      "ovoko_name": "Czujnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki przyspieszenia"
+    },
+    "1731005": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Pompy oleju"
+    },
+    "1731007": {
+      "ovoko_id": "322",
+      "ovoko_name": "Silnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Chłodnice/Chłodnice oleju"
+    },
+    "1731008": {
+      "ovoko_id": "106",
+      "ovoko_name": "Ramię wycieraczki szyby przedniej / czołowej",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Czujniki deszczu"
+    },
+    "1731009": {
+      "ovoko_id": "1201",
+      "ovoko_name": "Czujnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki prędkości"
+    },
+    "1731012": {
+      "ovoko_id": "1329",
+      "ovoko_name": "Kolektor wydechowy",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Kolektory wydechowe"
+    },
+    "1731013": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Zawory podciśnienia"
+    },
+    "1731014": {
+      "ovoko_id": "354",
+      "ovoko_name": "Czujnik poziomowania zawieszenia osi przedniej",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Zawieszenie hydrauliczne i pneumatyczne/Poduszki i miechy"
+    },
+    "1731019": {
+      "ovoko_id": "556",
+      "ovoko_name": "Tylna klapa bagażnika",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Klamki"
+    },
+    "1731021": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Wałki rozrządu"
+    },
+    "1731023": {
+      "ovoko_id": "106",
+      "ovoko_name": "Ramię wycieraczki szyby przedniej / czołowej",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Ramiona wycieraczek"
+    },
+    "1731026": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Bloki"
+    },
+    "1731031": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Głowice cylindrów/Pokrywy zaworów"
+    },
+    "1731032": {
+      "ovoko_id": "322",
+      "ovoko_name": "Silnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Pozostałe"
+    },
+    "1731033": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Tłoki"
+    },
+    "1731034": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Bagnety"
+    },
+    "1731035": {
+      "ovoko_id": "72",
+      "ovoko_name": "Inne części układu hamulcowego",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Pompy hamulcowe"
+    },
+    "1731036": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Miski olejowe"
+    },
+    "1731037": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Czujniki położenia wałka rozrządu"
+    },
+    "1731038": {
+      "ovoko_id": "1329",
+      "ovoko_name": "Kolektor wydechowy",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Czujniki temperatury spalin"
+    },
+    "1731041": {
+      "ovoko_id": "1329",
+      "ovoko_name": "Kolektor wydechowy",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Katalizatory"
+    },
+    "1731042": {
+      "ovoko_id": "322",
+      "ovoko_name": "Silnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Wentylatory chłodnicy/Obudowy wentylatorów"
+    },
+    "1731043": {
+      "ovoko_id": "204",
+      "ovoko_name": "Chłodnica nagrzewnicy klimatyzacji A/C",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Wentylatory chłodnic klimatyzacji"
+    },
+    "1731045": {
+      "ovoko_id": "754",
+      "ovoko_name": "Drzwi",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Uszczelki"
+    },
+    "1731052": {
+      "ovoko_id": "106",
+      "ovoko_name": "Ramię wycieraczki szyby przedniej / czołowej",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Silniki wycieraczek"
+    },
+    "1731053": {
+      "ovoko_id": "1201",
+      "ovoko_name": "Czujnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki zasysanego powietrza"
+    },
+    "1731057": {
+      "ovoko_id": "283",
+      "ovoko_name": "Gaźnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Dywaniki/Maty do bagażnika"
+    },
+    "1731058": {
+      "ovoko_id": "336",
+      "ovoko_name": "Przegub wału kolumny kierowniczej",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Kolumny kierownicze"
+    },
+    "1731059": {
+      "ovoko_id": "72",
+      "ovoko_name": "Inne części układu hamulcowego",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Hamulce postojowe/Linki hamulca ręcznego"
+    },
+    "1731064": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Koła zębate"
+    },
+    "1731066": {
+      "ovoko_id": "1329",
+      "ovoko_name": "Kolektor wydechowy",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Czujniki ciśnienia spalin"
+    },
+    "1731068": {
+      "ovoko_id": "322",
+      "ovoko_name": "Silnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Przewody układów chłodzenia/Przewody chłodnic powietrza"
+    },
+    "1731069": {
+      "ovoko_id": "556",
+      "ovoko_name": "Tylna klapa bagażnika",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Uszczelki"
+    },
+    "1731077": {
+      "ovoko_id": "1329",
+      "ovoko_name": "Kolektor wydechowy",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Osłony"
+    },
+    "1731080": {
+      "ovoko_id": "72",
+      "ovoko_name": "Inne części układu hamulcowego",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Układ ABS i ESP/Czujniki ESP"
+    },
+    "1731083": {
+      "ovoko_id": "1329",
+      "ovoko_name": "Kolektor wydechowy",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Obejmy"
+    },
+    "1731085": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Recyrkulacja spalin EGR/Przewody EGR"
+    },
+    "1731093": {
+      "ovoko_id": "1237",
+      "ovoko_name": "Bezpiecznik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Skrzynki bezpieczników"
+    },
+    "1731096": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Zawory"
+    },
+    "1731097": {
+      "ovoko_id": "754",
+      "ovoko_name": "Drzwi",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Moduły drzwi"
+    },
+    "1731098": {
+      "ovoko_id": "1465",
+      "ovoko_name": "Przewody zapłonowe",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Przewody zapłonowe"
+    },
+    "1731105": {
+      "ovoko_id": "2112",
+      "ovoko_name": "Inne części układu AdBlue",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ paliwowy/AdBlue/Czujniki"
+    },
+    "1731107": {
+      "ovoko_id": "139",
+      "ovoko_name": "Lampy przednie / Komplet",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy przednie i elementy/Przetwornice"
+    },
+    "1731109": {
+      "ovoko_id": "1097",
+      "ovoko_name": "Dach",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Dachy/Listwy, zaślepki"
+    },
+    "1731110": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Odma"
+    },
+    "1731112": {
+      "ovoko_id": "343",
+      "ovoko_name": "Drążek kierowniczy",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Osłony przekładni kierowniczych"
+    },
+    "1731114": {
+      "ovoko_id": "1242",
+      "ovoko_name": "Akumulator",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Obudowy akumulatorów"
+    },
+    "1731120": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Przepustnice"
+    },
+    "1731122": {
+      "ovoko_id": "1329",
+      "ovoko_name": "Kolektor wydechowy",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Rury wydechowe"
+    },
+    "1731124": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Zawieszenie silnika/Wsporniki i łapy"
+    },
+    "1731137": {
+      "ovoko_id": "391",
+      "ovoko_name": "Poduszka / Łapa zawieszenia belki osi tylnej",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Belki zawieszenia/Belki przednie"
+    },
+    "1731138": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ wentylacji/Silniki dmuchaw"
+    },
+    "1731139": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Zawory"
+    },
+    "1731143": {
+      "ovoko_id": "199",
+      "ovoko_name": "Inne elementy układu klimatyzacji A/C",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Zawory rozprężne"
+    },
+    "1731144": {
+      "ovoko_id": "556",
+      "ovoko_name": "Tylna klapa bagażnika",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Pozostałe"
+    },
+    "1731145": {
+      "ovoko_id": "308",
+      "ovoko_name": "Filtr paliwa",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Filtry/Filtry paliwa"
+    },
+    "1731147": {
+      "ovoko_id": "341",
+      "ovoko_name": "Zbiornik płynu wspomagania układu kierowniczego",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Zbiorniki płynu wspomagania"
+    },
+    "1731148": {
+      "ovoko_id": "72",
+      "ovoko_name": "Inne części układu hamulcowego",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Zbiorniki płynu hamulcowego"
+    },
+    "1731153": {
+      "ovoko_id": "322",
+      "ovoko_name": "Silnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Chłodnice/Części montażowe"
+    },
+    "1731155": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Czujniki spalania stukowego"
+    },
+    "1731157": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Czujniki ciśnienia w kolektorze (MAP)"
+    },
+    "1731160": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Zawieszenie silnika/Wózki i belki silnika"
+    },
+    "1731161": {
+      "ovoko_id": "1201",
+      "ovoko_name": "Czujnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki temperatury wewnętrznej"
+    },
+    "1731166": {
+      "ovoko_id": "177",
+      "ovoko_name": "Żarówka do lampy przeciwmgielnej",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy przednie i elementy/Lampy przeciwmgielne"
+    },
+    "1731167": {
+      "ovoko_id": "1210",
+      "ovoko_name": "Próg",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Progi/Pozostałe"
+    },
+    "1731168": {
+      "ovoko_id": "1201",
+      "ovoko_name": "Czujnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki uderzenia"
+    },
+    "1731170": {
+      "ovoko_id": "302",
+      "ovoko_name": "Zbiornik paliwa",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ paliwowy/Regulatory ciśnienia paliwa"
+    },
+    "1731171": {
+      "ovoko_id": "269",
+      "ovoko_name": "Zawór",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ paliwowy/Zawory"
+    },
+    "1731174": {
+      "ovoko_id": "1917",
+      "ovoko_name": "Termostat",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Termostaty/Obudowy termostatów"
+    },
+    "1731178": {
+      "ovoko_id": "322",
+      "ovoko_name": "Silnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Pompy wody/Części montażowe"
+    },
+    "1731183": {
+      "ovoko_id": "225",
+      "ovoko_name": "Obudowa / Osłona mikrofiltra kabinowego",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Filtry/Filtry kabinowe"
+    },
+    "1731188": {
+      "ovoko_id": "310",
+      "ovoko_name": "Czujnik poziomu paliwa",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ paliwowy/Czujniki poziomu paliwa"
+    },
+    "1731189": {
+      "ovoko_id": "339",
+      "ovoko_name": "Mocowanie pompy wspomagania układu kierowniczego",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Przewody układu wspomagania"
+    },
+    "1731191": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Obudowy filtrów oleju"
+    },
+    "1731192": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Smarowanie"
+    },
+    "1731199": {
+      "ovoko_id": "471",
+      "ovoko_name": "Opony letnie R13",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Opony i felgi/Koła (felgi z oponami)/Do samochodów"
+    },
+    "1731200": {
+      "ovoko_id": "471",
+      "ovoko_name": "Opony letnie R13",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Opony i felgi/Koła (felgi z oponami)/Koła dojazdowe"
+    },
+    "1731201": {
+      "ovoko_id": "364",
+      "ovoko_name": "Łącznik stabilizatora przedniego",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Stabilizatory i elementy/Drążki stabilizatora"
+    },
+    "1731202": {
+      "ovoko_id": "775",
+      "ovoko_name": "Drzwi boczne / przesuwne",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Szyby/Boczne (drzwi)"
+    },
+    "1731204": {
+      "ovoko_id": "471",
+      "ovoko_name": "Opony letnie R13",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Opony i felgi/Felgi/Do samochodów/Stalowe"
+    },
+    "1731207": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Smoki (ssaki oleju)"
+    },
+    "1731213": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Pozostałe"
+    },
+    "1731220": {
+      "ovoko_id": "391",
+      "ovoko_name": "Poduszka / Łapa zawieszenia belki osi tylnej",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Belki zawieszenia/Belki tylne"
+    },
+    "1731224": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Pozostałe"
+    },
+    "1731246": {
+      "ovoko_id": "290",
+      "ovoko_name": "Filtr powietrza",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Filtry/Filtry powietrza"
+    },
+    "1731262": {
+      "ovoko_id": "322",
+      "ovoko_name": "Silnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Króćce głowicy"
+    },
+    "1731285": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Pozostałe"
+    },
+    "1731293": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Napinacze paska rozrządu"
+    },
+    "1731307": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Obudowy"
+    },
+    "1731325": {
+      "ovoko_id": "72",
+      "ovoko_name": "Inne części układu hamulcowego",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Przewody hamulcowe"
+    },
+    "1731356": {
+      "ovoko_id": "754",
+      "ovoko_name": "Drzwi",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Rygle"
+    },
+    "1731360": {
+      "ovoko_id": "199",
+      "ovoko_name": "Inne elementy układu klimatyzacji A/C",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Sterowniki i elementy elektryczne"
+    },
+    "1731371": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Głowice cylindrów/Pozostałe"
+    },
+    "1731375": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Uszczelniacze wału"
+    },
+    "1731376": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Pozostałe"
+    },
+    "1731378": {
+      "ovoko_id": "177",
+      "ovoko_name": "Żarówka do lampy przeciwmgielnej",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Lampy przeciwmgielne"
+    },
+    "1731381": {
+      "ovoko_id": "72",
+      "ovoko_name": "Inne części układu hamulcowego",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Zestawy montażowe i naprawcze"
+    },
+    "1731386": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Elementy napędu paska osprzętu/Napinacze paska klinowego"
+    },
+    "1731390": {
+      "ovoko_id": "72",
+      "ovoko_name": "Inne części układu hamulcowego",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Układ ABS i ESP/Czujniki ABS"
+    },
+    "1731391": {
+      "ovoko_id": "199",
+      "ovoko_name": "Inne elementy układu klimatyzacji A/C",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Pozostałe"
+    },
+    "1731395": {
+      "ovoko_id": "1201",
+      "ovoko_name": "Czujnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki temperatury zewnętrznej"
+    },
+    "1731407": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Czujniki położenia wału korbowego"
+    },
+    "1731424": {
+      "ovoko_id": "323",
+      "ovoko_name": "Kompletne silniki",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Recyrkulacja spalin EGR/Pozostałe"
+    },
+    "1731483": {
+      "ovoko_id": "754",
+      "ovoko_name": "Drzwi",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Wygłuszenie"
+    },
+    "1731491": {
+      "ovoko_id": "556",
+      "ovoko_name": "Tylna klapa bagażnika",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Rygle"
+    },
+    "1731494": {
+      "ovoko_id": "322",
+      "ovoko_name": "Silnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Uszczelki"
+    },
+    "1731500": {
+      "ovoko_id": "354",
+      "ovoko_name": "Czujnik poziomowania zawieszenia osi przedniej",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Wahacze i elementy/Wahacze"
+    },
+    "1731501": {
+      "ovoko_id": "322",
+      "ovoko_name": "Silnik",
+      "confidence": "medium",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Wentylatory chłodnicy/Włączniki, sterowniki"
+    },
+    "1731505": {
+      "ovoko_id": "303",
+      "ovoko_name": "Siłownik klapki wlewu paliwa",
+      "confidence": "high",
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapki wlewu paliwa/Pozostałe"
+    },
+    "1731710": {
+      "ovoko_id": "823",
+      "ovoko_name": "Panel gniazda zapalniczki deski rozdzielczej",
+      "confidence": "medium",
+      "baselinker_name": "Gniazda zapalniczki"
+    }
+  },
+  "reverse_mapping": {
+    "72": [
+      {
+        "baselinker_id": 1730883,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Pozostałe",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730983,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Hamulce postojowe/Dźwignie hamulca ręcznego",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730997,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Układ ABS i ESP/Sterowniki ABS",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731035,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Pompy hamulcowe",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731059,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Hamulce postojowe/Linki hamulca ręcznego",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731080,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Układ ABS i ESP/Czujniki ESP",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731148,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Zbiorniki płynu hamulcowego",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731325,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Przewody hamulcowe",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731381,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Zestawy montażowe i naprawcze",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731390,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Układ ABS i ESP/Czujniki ABS",
+        "confidence": "high"
+      }
+    ],
+    "106": [
+      {
+        "baselinker_id": 1730845,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Spryskiwacze reflektorów",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730891,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Mechanizmy wycieraczek",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730926,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Pozostałe",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731008,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Czujniki deszczu",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731023,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Ramiona wycieraczek",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731052,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Silniki wycieraczek",
+        "confidence": "high"
+      }
+    ],
+    "130": [
+      {
+        "baselinker_id": 1730846,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Dysze spryskiwaczy",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730853,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Pompki spryskiwaczy",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730977,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Zbiorniki płynu do spryskiwaczy",
+        "confidence": "high"
+      }
+    ],
+    "139": [
+      {
+        "baselinker_id": 1730890,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy przednie i elementy/Lampy przednie",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731002,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy przednie i elementy/Pozostałe",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731107,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy przednie i elementy/Przetwornice",
+        "confidence": "high"
+      }
+    ],
+    "151": [
+      {
+        "baselinker_id": 1730821,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Lampy tylne",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730922,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Pozostałe",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730992,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Światła stop",
+        "confidence": "high"
+      }
+    ],
+    "177": [
+      {
+        "baselinker_id": 1731166,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy przednie i elementy/Lampy przeciwmgielne",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731378,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Lampy przeciwmgielne",
+        "confidence": "high"
+      }
+    ],
+    "199": [
+      {
+        "baselinker_id": 1730880,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Kompresory klimatyzacji/Kompresory klimatyzacji",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730920,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Przewody klimatyzacji",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730991,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Czujniki",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731000,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Chłodnice klimatyzacji (skraplacze)",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731143,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Zawory rozprężne",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731360,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Sterowniki i elementy elektryczne",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731391,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Pozostałe",
+        "confidence": "high"
+      }
+    ],
+    "204": [
+      {
+        "baselinker_id": 1731043,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Wentylatory chłodnic klimatyzacji",
+        "confidence": "high"
+      }
+    ],
+    "225": [
+      {
+        "baselinker_id": 1731183,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Filtry/Filtry kabinowe",
+        "confidence": "high"
+      }
+    ],
+    "269": [
+      {
+        "baselinker_id": 1731171,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ paliwowy/Zawory",
+        "confidence": "medium"
+      }
+    ],
+    "283": [
+      {
+        "baselinker_id": 1730840,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Rolety bagażnika",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1730959,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Boczki bagażnika",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1731057,
+        "baselinker_name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Dywaniki/Maty do bagażnika",
+        "confidence": "medium"
+      }
+    ],
+    "290": [
+      {
+        "baselinker_id": 1731246,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Filtry/Filtry powietrza",
+        "confidence": "high"
+      }
+    ],
+    "302": [
+      {
+        "baselinker_id": 1730903,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ paliwowy/Pompy paliwa",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730982,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ paliwowy/Przewody paliwa",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731170,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ paliwowy/Regulatory ciśnienia paliwa",
+        "confidence": "high"
+      }
+    ],
+    "303": [
+      {
+        "baselinker_id": 1730844,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapki wlewu paliwa/Zamki i siłowniki",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730888,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapki wlewu paliwa/Klapki",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731505,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapki wlewu paliwa/Pozostałe",
+        "confidence": "high"
+      }
+    ],
+    "308": [
+      {
+        "baselinker_id": 1731145,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Filtry/Filtry paliwa",
+        "confidence": "high"
+      }
+    ],
+    "310": [
+      {
+        "baselinker_id": 1731188,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ paliwowy/Czujniki poziomu paliwa",
+        "confidence": "high"
+      }
+    ],
+    "322": [
+      {
+        "baselinker_id": 1730805,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Sterowniki silnika",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1730807,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Wentylatory chłodnicy/Wentylatory",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1730808,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Moduły zapłonowe",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1730849,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Przewody układów chłodzenia/Przewody chłodnic wody",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1730877,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Kierownice powietrza",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1730899,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Pompy wody/Pompy wody",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1730907,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Zbiorniki wyrównawcze",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1730921,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Pozostałe",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1730980,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Chłodnice/Chłodnice wody",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1730981,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Przewody układów chłodzenia/Przewody chłodnic oleju",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1730996,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Cewki zapłonowe",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1730999,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Chłodnice/Chłodnice powietrza (intercoolery)",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1731007,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Chłodnice/Chłodnice oleju",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1731032,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Pozostałe",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1731042,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Wentylatory chłodnicy/Obudowy wentylatorów",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1731068,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Przewody układów chłodzenia/Przewody chłodnic powietrza",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1731153,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Chłodnice/Części montażowe",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1731178,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Pompy wody/Części montażowe",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1731262,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Króćce głowicy",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1731494,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Uszczelki",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1731501,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Wentylatory chłodnicy/Włączniki, sterowniki",
+        "confidence": "medium"
+      }
+    ],
+    "323": [
+      {
+        "baselinker_id": 1730801,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Alternatory/Alternatory kompletne",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730804,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Recyrkulacja spalin EGR/Zawory EGR",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730806,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Rozruszniki/Rozruszniki kompletne",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730824,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Silniki kompletne",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730834,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Osłony silnika/Dolne",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730854,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Zawieszenie silnika/Poduszki silnika",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730861,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Przewody powietrza turbosprężarki",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730862,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Przewody powietrza",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730874,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Pompy podciśnieniowe",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730881,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Pozostałe",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730894,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Przepływomierze",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730900,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Kompletne turbosprężarki",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730901,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Głowice cylindrów/Głowice",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730902,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Obudowy filtrów powietrza",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730912,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Elementy napędu paska osprzętu/Koła pasowe",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730919,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Kolektory ssące",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730969,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Recyrkulacja spalin EGR/Chłodnice spalin",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730971,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Czujniki poziomu oleju",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730985,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Wały korbowe",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730995,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Osłony silnika/Górne",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731005,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Pompy oleju",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731013,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Zawory podciśnienia",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731021,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Wałki rozrządu",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731026,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Bloki",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731031,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Głowice cylindrów/Pokrywy zaworów",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731033,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Tłoki",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731034,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Bagnety",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731036,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Miski olejowe",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731037,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Czujniki położenia wałka rozrządu",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731064,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Koła zębate",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731085,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Recyrkulacja spalin EGR/Przewody EGR",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731096,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Zawory",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731110,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Odma",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731120,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Przepustnice",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731124,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Zawieszenie silnika/Wsporniki i łapy",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731138,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ wentylacji/Silniki dmuchaw",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731139,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Zawory",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731155,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Czujniki spalania stukowego",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731157,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Czujniki ciśnienia w kolektorze (MAP)",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731160,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Zawieszenie silnika/Wózki i belki silnika",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731191,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Obudowy filtrów oleju",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731192,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Smarowanie",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731207,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Smoki (ssaki oleju)",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731213,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Pozostałe",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731224,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Pozostałe",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731285,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Pozostałe",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731293,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Napinacze paska rozrządu",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731307,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Obudowy",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731371,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Głowice cylindrów/Pozostałe",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731375,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Uszczelniacze wału",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731376,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Pozostałe",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731386,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Elementy napędu paska osprzętu/Napinacze paska klinowego",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731407,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Czujniki położenia wału korbowego",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731424,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Recyrkulacja spalin EGR/Pozostałe",
+        "confidence": "high"
+      }
+    ],
+    "334": [
+      {
+        "baselinker_id": 1730870,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Przekładnie kierownicze",
+        "confidence": "high"
+      }
+    ],
+    "336": [
+      {
+        "baselinker_id": 1731058,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Kolumny kierownicze",
+        "confidence": "high"
+      }
+    ],
+    "339": [
+      {
+        "baselinker_id": 1730878,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Pompy wspomagania",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731189,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Przewody układu wspomagania",
+        "confidence": "high"
+      }
+    ],
+    "341": [
+      {
+        "baselinker_id": 1731147,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Zbiorniki płynu wspomagania",
+        "confidence": "high"
+      }
+    ],
+    "343": [
+      {
+        "baselinker_id": 1730976,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Czujniki kąta skrętu",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730986,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Pozostałe",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731112,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Osłony przekładni kierowniczych",
+        "confidence": "high"
+      }
+    ],
+    "354": [
+      {
+        "baselinker_id": 1730818,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Sprężyny zawieszenia",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730820,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Amortyzatory i elementy/Amortyzatory",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730990,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Zawieszenie hydrauliczne i pneumatyczne/Sterowniki",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730993,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Pozostałe",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731014,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Zawieszenie hydrauliczne i pneumatyczne/Poduszki i miechy",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731500,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Wahacze i elementy/Wahacze",
+        "confidence": "high"
+      }
+    ],
+    "364": [
+      {
+        "baselinker_id": 1731201,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Stabilizatory i elementy/Drążki stabilizatora",
+        "confidence": "high"
+      }
+    ],
+    "391": [
+      {
+        "baselinker_id": 1731137,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Belki zawieszenia/Belki przednie",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731220,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Belki zawieszenia/Belki tylne",
+        "confidence": "high"
+      }
+    ],
+    "471": [
+      {
+        "baselinker_id": 1730928,
+        "baselinker_name": "Motoryzacja/Opony i felgi/Felgi/Do samochodów/Aluminiowe",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731003,
+        "baselinker_name": "Motoryzacja/Opony i felgi/Osprzęt i akcesoria/Śruby",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731199,
+        "baselinker_name": "Motoryzacja/Opony i felgi/Koła (felgi z oponami)/Do samochodów",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731200,
+        "baselinker_name": "Motoryzacja/Opony i felgi/Koła (felgi z oponami)/Koła dojazdowe",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731204,
+        "baselinker_name": "Motoryzacja/Opony i felgi/Felgi/Do samochodów/Stalowe",
+        "confidence": "high"
+      }
+    ],
+    "556": [
+      {
+        "baselinker_id": 1730823,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Klapy bagażnika",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730842,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Zawiasy",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730859,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Zamki",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730863,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Siłowniki",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731019,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Klamki",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731069,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Uszczelki",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731144,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Pozostałe",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731491,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Rygle",
+        "confidence": "high"
+      }
+    ],
+    "754": [
+      {
+        "baselinker_id": 1730815,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Drzwi",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730826,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Listwy",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730892,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Zamki",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730893,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Klamki zewnętrzne",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730974,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Boczki drzwi",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731045,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Uszczelki",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731097,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Moduły drzwi",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731356,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Rygle",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731483,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Wygłuszenie",
+        "confidence": "high"
+      }
+    ],
+    "775": [
+      {
+        "baselinker_id": 1731202,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Szyby/Boczne (drzwi)",
+        "confidence": "high"
+      }
+    ],
+    "823": [
+      {
+        "baselinker_id": 1731710,
+        "baselinker_name": "Gniazda zapalniczki",
+        "confidence": "medium"
+      }
+    ],
+    "898": [
+      {
+        "baselinker_id": 1730872,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Pasy bezpieczeństwa",
+        "confidence": "high"
+      }
+    ],
+    "899": [
+      {
+        "baselinker_id": 1730857,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Pasy przednie",
+        "confidence": "high"
+      }
+    ],
+    "998": [
+      {
+        "baselinker_id": 1730812,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Fotele, kanapy",
+        "confidence": "high"
+      }
+    ],
+    "1006": [
+      {
+        "baselinker_id": 1730860,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Liczniki, zegary",
+        "confidence": "medium"
+      }
+    ],
+    "1097": [
+      {
+        "baselinker_id": 1730875,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Dachy/Dachy",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1730889,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Szyby/Szyberdachy",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1730975,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Dachy/Pozostałe",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1731109,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Dachy/Listwy, zaślepki",
+        "confidence": "medium"
+      }
+    ],
+    "1106": [
+      {
+        "baselinker_id": 1730998,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Silniczki szyberdachu",
+        "confidence": "high"
+      }
+    ],
+    "1201": [
+      {
+        "baselinker_id": 1730829,
+        "baselinker_name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Czujniki i kamery cofania/Czujniki cofania",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1730869,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Pozostałe",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1730908,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Czujniki/Poziomowania",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1731004,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki przyspieszenia",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1731009,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki prędkości",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1731053,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki zasysanego powietrza",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1731161,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki temperatury wewnętrznej",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1731168,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki uderzenia",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1731395,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki temperatury zewnętrznej",
+        "confidence": "medium"
+      }
+    ],
+    "1210": [
+      {
+        "baselinker_id": 1730814,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Progi/Listwy progowe, nakładki",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1730973,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Progi/Progi",
+        "confidence": "medium"
+      },
+      {
+        "baselinker_id": 1731167,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Progi/Pozostałe",
+        "confidence": "medium"
+      }
+    ],
+    "1237": [
+      {
+        "baselinker_id": 1731093,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Skrzynki bezpieczników",
+        "confidence": "medium"
+      }
+    ],
+    "1242": [
+      {
+        "baselinker_id": 1731114,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Obudowy akumulatorów",
+        "confidence": "medium"
+      }
+    ],
+    "1289": [
+      {
+        "baselinker_id": 1730906,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Klaksony",
+        "confidence": "medium"
+      }
+    ],
+    "1329": [
+      {
+        "baselinker_id": 1730852,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Sondy lambda",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1730984,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Wieszaki",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731012,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Kolektory wydechowe",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731038,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Czujniki temperatury spalin",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731041,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Katalizatory",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731066,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Czujniki ciśnienia spalin",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731077,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Osłony",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731083,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Obejmy",
+        "confidence": "high"
+      },
+      {
+        "baselinker_id": 1731122,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Rury wydechowe",
+        "confidence": "high"
+      }
+    ],
+    "1383": [
+      {
+        "baselinker_id": 1730800,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki parkowania",
+        "confidence": "high"
+      }
+    ],
+    "1465": [
+      {
+        "baselinker_id": 1731098,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Przewody zapłonowe",
+        "confidence": "medium"
+      }
+    ],
+    "1504": [
+      {
+        "baselinker_id": 1730802,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Nawigacje GPS fabryczne",
+        "confidence": "high"
+      }
+    ],
+    "1509": [
+      {
+        "baselinker_id": 1730827,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Dachy/Relingi dachowe",
+        "confidence": "high"
+      }
+    ],
+    "1917": [
+      {
+        "baselinker_id": 1731174,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Termostaty/Obudowy termostatów",
+        "confidence": "medium"
+      }
+    ],
+    "2112": [
+      {
+        "baselinker_id": 1731105,
+        "baselinker_name": "Motoryzacja/Części samochodowe/Układ paliwowy/AdBlue/Czujniki",
+        "confidence": "high"
+      }
+    ]
+  },
+  "statistics": {
+    "high_confidence": 156,
+    "medium_confidence": 48,
+    "unmapped": 151
+  },
+  "unmapped_categories_list": []
+}

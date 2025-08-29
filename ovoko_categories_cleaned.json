@@ -1,0 +1,6977 @@
+{
+  "source": "Ovoko",
+  "timestamp": "2025-08-28T07:39:25.724Z",
+  "status": "success",
+  "data": {
+    "list": [
+      {
+        "id": "42",
+        "pl": "Pompa ABS"
+      },
+      {
+        "id": "43",
+        "pl": "Uchwyt / Mocowanie pompy ABS"
+      },
+      {
+        "id": "45",
+        "pl": "Czujnik prędkości obrotowej koła ABS"
+      },
+      {
+        "id": "46",
+        "pl": "Przewód hamulcowy podciśnieniowy"
+      },
+      {
+        "id": "48",
+        "pl": "Korek wlewu płynu hamulcowego z czujnikiem poziomu"
+      },
+      {
+        "id": "49",
+        "pl": "Zbiornik płynu hamulcowego"
+      },
+      {
+        "id": "50",
+        "pl": "Główny cylinder hamulca"
+      },
+      {
+        "id": "51",
+        "pl": "Wspomaganie hamulca"
+      },
+      {
+        "id": "52",
+        "pl": "Przewód / Wąż wspomagania hamulca"
+      },
+      {
+        "id": "54",
+        "pl": "Regulator siły hamowania"
+      },
+      {
+        "id": "55",
+        "pl": "Czujnik prędkości obrotowej koła ABS"
+      },
+      {
+        "id": "56",
+        "pl": "Hamulec bębnowy tylny"
+      },
+      {
+        "id": "62",
+        "pl": "Osłona przedniej tarczy hamulcowej"
+      },
+      {
+        "id": "65",
+        "pl": "Wiązka przewodów hamulcowych"
+      },
+      {
+        "id": "66",
+        "pl": "Klocki hamulcowe przednie"
+      },
+      {
+        "id": "69",
+        "pl": "Mocowanie przedniego zacisku hamulca"
+      },
+      {
+        "id": "72",
+        "pl": "Inne części układu hamulcowego"
+      },
+      {
+        "id": "75",
+        "pl": "Zacisk hamulcowy przedni"
+      },
+      {
+        "id": "80",
+        "pl": "Przewód / Wąż przewodu hamulcowego"
+      },
+      {
+        "id": "552",
+        "pl": "Tarcza hamulca przedniego"
+      },
+      {
+        "id": "553",
+        "pl": "Tylny zacisk hamulcowy"
+      },
+      {
+        "id": "554",
+        "pl": "Tarcza hamulca tylnego"
+      },
+      {
+        "id": "1186",
+        "pl": "Osłona tylnej tarczy hamulcowej"
+      },
+      {
+        "id": "1187",
+        "pl": "Klocki hamulcowe tylne"
+      },
+      {
+        "id": "1188",
+        "pl": "Mocowanie / Zacisk hamulca tylnego"
+      },
+      {
+        "id": "1441",
+        "pl": "Czujnik ABS hamulca tylnego"
+      },
+      {
+        "id": "1442",
+        "pl": "Hamulec bębnowy przedni"
+      },
+      {
+        "id": "1584",
+        "pl": "Sprężyna przedniego zacisku klocków"
+      },
+      {
+        "id": "1585",
+        "pl": "Sprężyna tylnego zacisku klocków"
+      },
+      {
+        "id": "1654",
+        "pl": "Zawór centralny hamulca"
+      },
+      {
+        "id": "1999",
+        "pl": "Zestaw tarcz i zacisków hamulcowych"
+      },
+      {
+        "id": "2017",
+        "pl": "Tylny cylinder hamulcowy"
+      },
+      {
+        "id": "83",
+        "pl": "Osłona dźwigni hamulca ręcznego skóra / tkanina"
+      },
+      {
+        "id": "84",
+        "pl": "Osłona dźwigni hamulca ręcznego"
+      },
+      {
+        "id": "85",
+        "pl": "Wiązka przewodów hamulca ręcznego"
+      },
+      {
+        "id": "88",
+        "pl": "Klocki hamulcowe hamulca ręcznego / postojowego"
+      },
+      {
+        "id": "89",
+        "pl": "Inne części hamulca ręcznego / postojowego"
+      },
+      {
+        "id": "90",
+        "pl": "Dźwignia hamulca ręcznego"
+      },
+      {
+        "id": "91",
+        "pl": "Linki hamulca ręcznego / postojowego"
+      },
+      {
+        "id": "92",
+        "pl": "Silniczek hamulca ręcznego / postojowego"
+      },
+      {
+        "id": "1670",
+        "pl": "Rączka / Dźwignia hamulca ręcznego"
+      },
+      {
+        "id": "1671",
+        "pl": "Linka zwalniająca dźwignie hamulca ręcznego"
+      },
+      {
+        "id": "1822",
+        "pl": "Mocowanie hamulca ręcznego"
+      },
+      {
+        "id": "100",
+        "pl": "Dysza spryskiwacza szyby przedniej / czołowej"
+      },
+      {
+        "id": "101",
+        "pl": "Wycieraczka szyby przedniej / czołowej"
+      },
+      {
+        "id": "106",
+        "pl": "Ramię wycieraczki szyby przedniej / czołowej"
+      },
+      {
+        "id": "111",
+        "pl": "Mechanizm i silniczek wycieraczek szyby przedniej / czołowej"
+      },
+      {
+        "id": "112",
+        "pl": "Mechanizm wycieraczek szyby przedniej / czołowej"
+      },
+      {
+        "id": "113",
+        "pl": "Silniczek wycieraczek szyby przedniej / czołowej"
+      },
+      {
+        "id": "114",
+        "pl": "Wąż płynu do spryskiwacza szyby przedniej / czołowej"
+      },
+      {
+        "id": "116",
+        "pl": "Dysza spryskiwacza szyby tylnej"
+      },
+      {
+        "id": "117",
+        "pl": "Wycieraczka szyby tylnej"
+      },
+      {
+        "id": "118",
+        "pl": "Ramię wycieraczki szyby tylnej"
+      },
+      {
+        "id": "119",
+        "pl": "Silniczek wycieraczki szyby tylnej"
+      },
+      {
+        "id": "120",
+        "pl": "Przewód do spryskiwacza szyby tylnej"
+      },
+      {
+        "id": "1913",
+        "pl": "Mechanizm wycieraczki szyby tylnej"
+      },
+      {
+        "id": "122",
+        "pl": "Dysza spryskiwacza lampy przedniej"
+      },
+      {
+        "id": "123",
+        "pl": "Wycieraczka lampy przedniej"
+      },
+      {
+        "id": "124",
+        "pl": "Wycieraczki lamp przednich / Komplet"
+      },
+      {
+        "id": "125",
+        "pl": "Ramię wycieraczki lampy przedniej"
+      },
+      {
+        "id": "126",
+        "pl": "Ramię wycieraczki lampy przedniej / Komplet"
+      },
+      {
+        "id": "127",
+        "pl": "Silniczek wycieraczki lampy przedniej"
+      },
+      {
+        "id": "128",
+        "pl": "Wąż / Przewód spryskiwacza lampy przedniej"
+      },
+      {
+        "id": "1864",
+        "pl": "Zbiornik płynu spryskiwaczy lamp"
+      },
+      {
+        "id": "2011",
+        "pl": "Uchwyt dyszy spryskiwacza reflektorów"
+      },
+      {
+        "id": "130",
+        "pl": "Zbiornik płynu do spryskiwaczy szyby przedniej / czołowej"
+      },
+      {
+        "id": "131",
+        "pl": "Czujnik poziomu płynu do spryskiwaczy szyby przedniej / czołowej"
+      },
+      {
+        "id": "132",
+        "pl": "Pompa spryskiwacza szyby przedniej / czołowej"
+      },
+      {
+        "id": "133",
+        "pl": "Pompa spryskiwacza lampy przedniej"
+      },
+      {
+        "id": "1849",
+        "pl": "Rurka wlewu płynu do spryskiwaczy szyb"
+      },
+      {
+        "id": "136",
+        "pl": "Lampa przednia"
+      },
+      {
+        "id": "139",
+        "pl": "Lampy przednie / Komplet"
+      },
+      {
+        "id": "143",
+        "pl": "Element lampy przedniej"
+      },
+      {
+        "id": "146",
+        "pl": "Uchwyt / Mocowanie lampy przedniej"
+      },
+      {
+        "id": "149",
+        "pl": "Żarówka do lampy przedniej"
+      },
+      {
+        "id": "196",
+        "pl": "Silniczek regulacji świateł"
+      },
+      {
+        "id": "1235",
+        "pl": "Listwa pod lampę przednią"
+      },
+      {
+        "id": "1474",
+        "pl": "Moduł poziomowanie świateł Xenon"
+      },
+      {
+        "id": "1505",
+        "pl": "Odblask przedni"
+      },
+      {
+        "id": "1574",
+        "pl": "Osłona żarówki lampy przedniej"
+      },
+      {
+        "id": "1747",
+        "pl": "Żarówka ksenonowa / Xenon"
+      },
+      {
+        "id": "1776",
+        "pl": "Klosze lamp przednich"
+      },
+      {
+        "id": "1931",
+        "pl": "Lampa LED do jazdy dziennej"
+      },
+      {
+        "id": "1991",
+        "pl": "Moduł sterujący statecznikiem LED"
+      },
+      {
+        "id": "151",
+        "pl": "Lampy tylne / Komplet"
+      },
+      {
+        "id": "152",
+        "pl": "Lampa tylna"
+      },
+      {
+        "id": "155",
+        "pl": "Lampy tylnej klapy bagażnika"
+      },
+      {
+        "id": "158",
+        "pl": "Listwa pod lampę tylną"
+      },
+      {
+        "id": "161",
+        "pl": "Element lampy tylnej"
+      },
+      {
+        "id": "164",
+        "pl": "Światło cofania"
+      },
+      {
+        "id": "165",
+        "pl": "Trzecie światło stop"
+      },
+      {
+        "id": "166",
+        "pl": "Odblask lampy tylnej"
+      },
+      {
+        "id": "169",
+        "pl": "Żarówka lampy tylnej"
+      },
+      {
+        "id": "170",
+        "pl": "Lampa oświetlenia tylnej tablicy rejestracyjnej"
+      },
+      {
+        "id": "1777",
+        "pl": "Klosze lamp tylnej klapy bagażnika"
+      },
+      {
+        "id": "1778",
+        "pl": "Klosze lamp tylnych"
+      },
+      {
+        "id": "1786",
+        "pl": "Lampa zderzaka tylnego"
+      },
+      {
+        "id": "1957",
+        "pl": "Wkład lampy tylnej"
+      },
+      {
+        "id": "2081",
+        "pl": "Tylne światło narożne (parkingowe)"
+      },
+      {
+        "id": "172",
+        "pl": "Światła przeciwmgielne / Komplet"
+      },
+      {
+        "id": "173",
+        "pl": "Światło przeciwmgłowe przednie"
+      },
+      {
+        "id": "176",
+        "pl": "Światło przeciwmgielne tylne"
+      },
+      {
+        "id": "177",
+        "pl": "Żarówka do lampy przeciwmgielnej"
+      },
+      {
+        "id": "178",
+        "pl": "Niefabryczne światło przeciwmgielne"
+      },
+      {
+        "id": "179",
+        "pl": "Części świateł przeciwmgielnych"
+      },
+      {
+        "id": "181",
+        "pl": "Kierunkowskaz przedni"
+      },
+      {
+        "id": "184",
+        "pl": "Kierunkowskaz błotnika przedniego"
+      },
+      {
+        "id": "187",
+        "pl": "Kierunkowskaz na lusterko boczne"
+      },
+      {
+        "id": "191",
+        "pl": "Lampka schowka"
+      },
+      {
+        "id": "192",
+        "pl": "Lampka zewnętrzna przedniej klamki"
+      },
+      {
+        "id": "193",
+        "pl": "Lampka podsufitki tylna"
+      },
+      {
+        "id": "194",
+        "pl": "Światło fotela przedniego"
+      },
+      {
+        "id": "195",
+        "pl": "Wewnętrzna lampka bagażnika"
+      },
+      {
+        "id": "1484",
+        "pl": "Lampka drzwi przednich"
+      },
+      {
+        "id": "1485",
+        "pl": "Lampka wewnętrzne drzwi tylnych"
+      },
+      {
+        "id": "1486",
+        "pl": "Podświetlenie klamek zewnętrznych drzwi tylnych"
+      },
+      {
+        "id": "1523",
+        "pl": "Inne oświetlenie wnętrza kabiny"
+      },
+      {
+        "id": "1873",
+        "pl": "Lampa"
+      },
+      {
+        "id": "199",
+        "pl": "Inne elementy układu klimatyzacji A/C"
+      },
+      {
+        "id": "200",
+        "pl": "Zawór rozprężny klimatyzacji A/C"
+      },
+      {
+        "id": "201",
+        "pl": "Uchwyt / Mocowanie sprężarki klimatyzacji"
+      },
+      {
+        "id": "202",
+        "pl": "Kompresor / Sprężarka klimatyzacji A/C"
+      },
+      {
+        "id": "203",
+        "pl": "Silniczek nagrzewnicy nawiewu klimatyzacji A/C"
+      },
+      {
+        "id": "204",
+        "pl": "Chłodnica nagrzewnicy klimatyzacji A/C"
+      },
+      {
+        "id": "205",
+        "pl": "Skraplacz / Chłodnica klimatyzacji"
+      },
+      {
+        "id": "206",
+        "pl": "Klimatyzacja A/C / Komplet"
+      },
+      {
+        "id": "207",
+        "pl": "Wąż / Przewód klimatyzacji A/C"
+      },
+      {
+        "id": "249",
+        "pl": "Osuszacz powietrza klimatyzacji A/C"
+      },
+      {
+        "id": "1232",
+        "pl": "Łącznik elastyczny układu klimatyzacji A/C"
+      },
+      {
+        "id": "1385",
+        "pl": "Czujnik ciśnienia klimatyzacji A/C"
+      },
+      {
+        "id": "2053",
+        "pl": "Koło pasowe sprężarki klimatyzacji"
+      },
+      {
+        "id": "209",
+        "pl": "Ogrzewanie postojowe Webasto"
+      },
+      {
+        "id": "211",
+        "pl": "Układu podgrzewania wstępnego silnika"
+      },
+      {
+        "id": "218",
+        "pl": "Termostat / Obudowa termostatu"
+      },
+      {
+        "id": "219",
+        "pl": "Przewód / Wąż chłodnicy"
+      },
+      {
+        "id": "220",
+        "pl": "Pompa wody"
+      },
+      {
+        "id": "636",
+        "pl": "Pompa cyrkulacji / obiegu wody"
+      },
+      {
+        "id": "1343",
+        "pl": "Zawór sterujący płynu chłodzącego"
+      },
+      {
+        "id": "1413",
+        "pl": "Podgrzewacz płynu chłodzącego"
+      },
+      {
+        "id": "1464",
+        "pl": "Koło pasowe pompy wody"
+      },
+      {
+        "id": "1583",
+        "pl": "Uchwyt / Mocowanie Webasto"
+      },
+      {
+        "id": "1737",
+        "pl": "Tłumik ogrzewania postojowego Webasto"
+      },
+      {
+        "id": "1855",
+        "pl": "Pompa obiegowa Webasto"
+      },
+      {
+        "id": "1917",
+        "pl": "Termostat"
+      },
+      {
+        "id": "1918",
+        "pl": "Obudowa termostatu"
+      },
+      {
+        "id": "2107",
+        "pl": "Węże/rury chłodzące silnik samochodu elektrycznego"
+      },
+      {
+        "id": "2109",
+        "pl": "Nagrzewnica postojowa Webasto inne części"
+      },
+      {
+        "id": "210",
+        "pl": "Grzałka nagrzewnicy"
+      },
+      {
+        "id": "212",
+        "pl": "Silniczek nagrzewnicy"
+      },
+      {
+        "id": "213",
+        "pl": "Rezystor / Opornik dmuchawy nawiewu"
+      },
+      {
+        "id": "214",
+        "pl": "Chłodnica nagrzewnicy"
+      },
+      {
+        "id": "215",
+        "pl": "Wentylator nawiewu / Dmuchawa"
+      },
+      {
+        "id": "216",
+        "pl": "Nagrzewnica / Komplet"
+      },
+      {
+        "id": "217",
+        "pl": "Obudowa nagrzewnicy"
+      },
+      {
+        "id": "222",
+        "pl": "Mikrofiltr kabinowy / Komplet"
+      },
+      {
+        "id": "223",
+        "pl": "Mikrofiltr kabinowy"
+      },
+      {
+        "id": "224",
+        "pl": "Pokrywa mikrofiltra kabiny"
+      },
+      {
+        "id": "225",
+        "pl": "Obudowa / Osłona mikrofiltra kabinowego"
+      },
+      {
+        "id": "226",
+        "pl": "Kanał powietrzny kabiny"
+      },
+      {
+        "id": "1342",
+        "pl": "Element kanału powietrznego mikrofiltra powietrza"
+      },
+      {
+        "id": "1544",
+        "pl": "Linka nawiewu"
+      },
+      {
+        "id": "1553",
+        "pl": "Wąż / Przewód nagrzewnicy chłodnicy"
+      },
+      {
+        "id": "1762",
+        "pl": "Linka nagrzewnicy"
+      },
+      {
+        "id": "1818",
+        "pl": "Nagrzewnica samochodowa"
+      },
+      {
+        "id": "228",
+        "pl": "Czujnik poziomu chłodziwa"
+      },
+      {
+        "id": "229",
+        "pl": "Korek zbiornika wyrównawczego chłodziwa"
+      },
+      {
+        "id": "230",
+        "pl": "Zbiornik wyrównawczy chłodziwa"
+      },
+      {
+        "id": "231",
+        "pl": "Chłodnica"
+      },
+      {
+        "id": "232",
+        "pl": "Osłona wentylatora chłodnicy"
+      },
+      {
+        "id": "233",
+        "pl": "Elektryczny wentylator chłodnicy"
+      },
+      {
+        "id": "234",
+        "pl": "Chłodnica oleju skrzyni"
+      },
+      {
+        "id": "235",
+        "pl": "Chłodnica powietrza doładowującego / Intercooler"
+      },
+      {
+        "id": "237",
+        "pl": "Wentylator ze sprzęgłem wiskotycznym / Visco"
+      },
+      {
+        "id": "238",
+        "pl": "Wentylator chłodnicy klimatyzacji A/C"
+      },
+      {
+        "id": "241",
+        "pl": "Chłodnica dodatkowa"
+      },
+      {
+        "id": "243",
+        "pl": "Sprzęgło wiskotyczne wentylatora / Visco"
+      },
+      {
+        "id": "244",
+        "pl": "Chłodnica oleju skrzynia biegów"
+      },
+      {
+        "id": "245",
+        "pl": "Przewód / Wąż chłodnicy oleju skrzyni biegów"
+      },
+      {
+        "id": "246",
+        "pl": "Chłodnica oleju"
+      },
+      {
+        "id": "247",
+        "pl": "Wirnik wentylatora"
+      },
+      {
+        "id": "248",
+        "pl": "Wentylator / Komplet"
+      },
+      {
+        "id": "1002",
+        "pl": "Czujnik temperatury płynu chłodzącego"
+      },
+      {
+        "id": "1307",
+        "pl": "Chłodnica oleju wspomagania kierownicy"
+      },
+      {
+        "id": "1376",
+        "pl": "Chłodnica paliwa"
+      },
+      {
+        "id": "1559",
+        "pl": "Prowadnica powietrza intercoolera"
+      },
+      {
+        "id": "1586",
+        "pl": "Uchwyt / Mocowanie chłodnicy"
+      },
+      {
+        "id": "1916",
+        "pl": "Chłodnica / Komplet"
+      },
+      {
+        "id": "2105",
+        "pl": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych"
+      },
+      {
+        "id": "2106",
+        "pl": "Chłodnica silnika elektrycznego samochodu"
+      },
+      {
+        "id": "252",
+        "pl": "Alternator"
+      },
+      {
+        "id": "253",
+        "pl": "Część alternatora"
+      },
+      {
+        "id": "254",
+        "pl": "Napinacz paska alternatora"
+      },
+      {
+        "id": "255",
+        "pl": "Wiązka alternatora"
+      },
+      {
+        "id": "324",
+        "pl": "Mocowanie alternatora"
+      },
+      {
+        "id": "1284",
+        "pl": "Koło pasowe alternatora"
+      },
+      {
+        "id": "1558",
+        "pl": "Koło pasowe napinacza taśmy"
+      },
+      {
+        "id": "1628",
+        "pl": "Pasek klinowy alternatora"
+      },
+      {
+        "id": "1633",
+        "pl": "Koło pasowe napinacza paska alternatora"
+      },
+      {
+        "id": "1636",
+        "pl": "Napinacz paska wielorowkowego / Alternatora"
+      },
+      {
+        "id": "257",
+        "pl": "Wiązka rozrusznika"
+      },
+      {
+        "id": "258",
+        "pl": "Włącznik elektromagnetyczny rozrusznika / Solenoid"
+      },
+      {
+        "id": "259",
+        "pl": "Rozrusznik"
+      },
+      {
+        "id": "260",
+        "pl": "Części rozrusznika"
+      },
+      {
+        "id": "1233",
+        "pl": "Podkładka / Dystans rozrusznika"
+      },
+      {
+        "id": "262",
+        "pl": "Wał korbowy"
+      },
+      {
+        "id": "263",
+        "pl": "Blok silnika"
+      },
+      {
+        "id": "264",
+        "pl": "Głowica silnika"
+      },
+      {
+        "id": "265",
+        "pl": "Pokrywa zaworów"
+      },
+      {
+        "id": "266",
+        "pl": "Miska olejowa"
+      },
+      {
+        "id": "267",
+        "pl": "Tłok"
+      },
+      {
+        "id": "268",
+        "pl": "Wałek rozrządu"
+      },
+      {
+        "id": "269",
+        "pl": "Zawór"
+      },
+      {
+        "id": "1345",
+        "pl": "Części silnika inne"
+      },
+      {
+        "id": "1351",
+        "pl": "Koło pasowe wałka rozrządu / VANOS"
+      },
+      {
+        "id": "1352",
+        "pl": "Pompa olejowa"
+      },
+      {
+        "id": "1353",
+        "pl": "Rura filtra miski olejowej"
+      },
+      {
+        "id": "1459",
+        "pl": "Korbowód"
+      },
+      {
+        "id": "1460",
+        "pl": "Tłok z korbowodem"
+      },
+      {
+        "id": "1467",
+        "pl": "Pierścień tłokowy"
+      },
+      {
+        "id": "1571",
+        "pl": "Wahacz zaworu"
+      },
+      {
+        "id": "1572",
+        "pl": "Inna część głowicy cylindra"
+      },
+      {
+        "id": "1631",
+        "pl": "Pasek rozrządu"
+      },
+      {
+        "id": "1634",
+        "pl": "Koło pasowe napinacza paska rozrządu"
+      },
+      {
+        "id": "1635",
+        "pl": "Napinacz paska rozrządu"
+      },
+      {
+        "id": "1639",
+        "pl": "Rura wlewu oleju"
+      },
+      {
+        "id": "1663",
+        "pl": "Wałek wyrównoważający"
+      },
+      {
+        "id": "1664",
+        "pl": "Śruby głowicy cylindrów"
+      },
+      {
+        "id": "1665",
+        "pl": "Szyna ślizgowa łańcucha rozrządu"
+      },
+      {
+        "id": "1666",
+        "pl": "Wałek balansowy pompy oleju"
+      },
+      {
+        "id": "1667",
+        "pl": "Podnośnik popychacza"
+      },
+      {
+        "id": "1668",
+        "pl": "Czujnik położenia wału korbowego"
+      },
+      {
+        "id": "1669",
+        "pl": "Koło zębate wału korbowego"
+      },
+      {
+        "id": "1722",
+        "pl": "Łańcuch napędu pompy oleju"
+      },
+      {
+        "id": "1773",
+        "pl": "Łańcuch rozrządu"
+      },
+      {
+        "id": "1774",
+        "pl": "Osłona łańcucha rozrządu"
+      },
+      {
+        "id": "1779",
+        "pl": "Koło zębate łańcucha rozrządu"
+      },
+      {
+        "id": "1905",
+        "pl": "Uchwyt wału korbowego"
+      },
+      {
+        "id": "1906",
+        "pl": "Uchwyt wałka rozrządu"
+      },
+      {
+        "id": "2019",
+        "pl": "Sprężyna zaworu"
+      },
+      {
+        "id": "2078",
+        "pl": "Rura chłodzenia oleju"
+      },
+      {
+        "id": "2091",
+        "pl": "Wkładka/uchwyt ustalający zaworu głowicy"
+      },
+      {
+        "id": "271",
+        "pl": "Koło pasowe wału korbowego"
+      },
+      {
+        "id": "272",
+        "pl": "Bagnet poziomu oleju"
+      },
+      {
+        "id": "273",
+        "pl": "Osłona górna silnika"
+      },
+      {
+        "id": "322",
+        "pl": "Silnik"
+      },
+      {
+        "id": "323",
+        "pl": "Kompletne silniki"
+      },
+      {
+        "id": "325",
+        "pl": "Wspornik / Mocowanie silnika"
+      },
+      {
+        "id": "327",
+        "pl": "Osłona paska / łańcucha rozrządu"
+      },
+      {
+        "id": "328",
+        "pl": "Łapa / Mocowanie silnika"
+      },
+      {
+        "id": "329",
+        "pl": "Poduszka silnika"
+      },
+      {
+        "id": "635",
+        "pl": "Mocowanie / uchwyt filtra oleju"
+      },
+      {
+        "id": "644",
+        "pl": "Pompa podciśnienia / Vacum"
+      },
+      {
+        "id": "645",
+        "pl": "Generator impulsów wałka rozrządu"
+      },
+      {
+        "id": "646",
+        "pl": "Generator impulsów wału korbowego"
+      },
+      {
+        "id": "1296",
+        "pl": "Wąż / Rurka odpowietrznika"
+      },
+      {
+        "id": "1350",
+        "pl": "Odpowietrznik / Separator oleju"
+      },
+      {
+        "id": "1374",
+        "pl": "Czujnik położenia wału korbowego"
+      },
+      {
+        "id": "1455",
+        "pl": "Napinacz paska / łańcucha rozrządu"
+      },
+      {
+        "id": "1456",
+        "pl": "Inna część silnika"
+      },
+      {
+        "id": "1457",
+        "pl": "Czujnik pozycji wału rozrządu"
+      },
+      {
+        "id": "1466",
+        "pl": "Czujnik poziomu oleju"
+      },
+      {
+        "id": "1468",
+        "pl": "Korek wlewu oleju"
+      },
+      {
+        "id": "1471",
+        "pl": "Czujnik spalania stukowego"
+      },
+      {
+        "id": "1551",
+        "pl": "Zawór ciśnienia oleju"
+      },
+      {
+        "id": "1576",
+        "pl": "Nakrętka filtra oleju"
+      },
+      {
+        "id": "1622",
+        "pl": "Osłona termiczna komory silnika"
+      },
+      {
+        "id": "1649",
+        "pl": "Zawór odpowietrzający"
+      },
+      {
+        "id": "1656",
+        "pl": "Zawór sterujący / Ustawienia wałka rozrządu"
+      },
+      {
+        "id": "1675",
+        "pl": "Element grzewczy odpowietrznika"
+      },
+      {
+        "id": "1721",
+        "pl": "Napinacz paska klimatyzacji"
+      },
+      {
+        "id": "2048",
+        "pl": "Silnik elektryczny samochodu"
+      },
+      {
+        "id": "2072",
+        "pl": "Ochrona pasa"
+      },
+      {
+        "id": "275",
+        "pl": "Przewód chłodzenia turbiny"
+      },
+      {
+        "id": "276",
+        "pl": "Zawór podciśnienia / Elektrozawór turbiny"
+      },
+      {
+        "id": "277",
+        "pl": "Przewód olejowy smarowania turbiny"
+      },
+      {
+        "id": "278",
+        "pl": "Turbina"
+      },
+      {
+        "id": "279",
+        "pl": "Sprężarka"
+      },
+      {
+        "id": "280",
+        "pl": "Cześć układu próżniowego turbosprężarki"
+      },
+      {
+        "id": "1821",
+        "pl": "Siłownik / Nastawnik turbiny"
+      },
+      {
+        "id": "1836",
+        "pl": "Sterownik / Nastawnik turbiny"
+      },
+      {
+        "id": "283",
+        "pl": "Gaźnik"
+      },
+      {
+        "id": "284",
+        "pl": "Monowtrysk"
+      },
+      {
+        "id": "1771",
+        "pl": "Podstawa gaźnika / Monowtrysku"
+      },
+      {
+        "id": "1784",
+        "pl": "Inna część gaźnika"
+      },
+      {
+        "id": "236",
+        "pl": "Wąż / Rura intercoolera"
+      },
+      {
+        "id": "286",
+        "pl": "Przepustnica"
+      },
+      {
+        "id": "287",
+        "pl": "Przepustnica elektryczna"
+      },
+      {
+        "id": "288",
+        "pl": "Kolektor ssący"
+      },
+      {
+        "id": "289",
+        "pl": "Zawór regulacji biegu jałowego / Regulator"
+      },
+      {
+        "id": "290",
+        "pl": "Filtr powietrza"
+      },
+      {
+        "id": "291",
+        "pl": "Obudowa filtra powietrza"
+      },
+      {
+        "id": "292",
+        "pl": "Osłona / Obudowa filtra powietrza"
+      },
+      {
+        "id": "293",
+        "pl": "Część rury dolotu powietrza"
+      },
+      {
+        "id": "294",
+        "pl": "Czujnik położenia przepustnicy"
+      },
+      {
+        "id": "295",
+        "pl": "Czujnik ciśnienia powietrza"
+      },
+      {
+        "id": "296",
+        "pl": "Przepływomierz masowy powietrza MAF"
+      },
+      {
+        "id": "297",
+        "pl": "Rura / Wąż dolotowy powietrza turbiny"
+      },
+      {
+        "id": "298",
+        "pl": "Zawór kolektora ssącego"
+      },
+      {
+        "id": "299",
+        "pl": "Rura / Wąż dolotowy powietrza"
+      },
+      {
+        "id": "300",
+        "pl": "Przewód / Odma odpowietrzenia"
+      },
+      {
+        "id": "326",
+        "pl": "Zawór ciśnienia"
+      },
+      {
+        "id": "1182",
+        "pl": "Zawór przepustnicy"
+      },
+      {
+        "id": "1472",
+        "pl": "Rezonator / Dolot powietrza"
+      },
+      {
+        "id": "1545",
+        "pl": "Czujnik temperatury powietrza dolotowego"
+      },
+      {
+        "id": "1577",
+        "pl": "Zawór odcinający silnika"
+      },
+      {
+        "id": "1614",
+        "pl": "Mocowanie / Wspornik rury intercoolera"
+      },
+      {
+        "id": "1736",
+        "pl": "Wspornik / Mocowanie obudowy filtra powietrza"
+      },
+      {
+        "id": "1781",
+        "pl": "Czujnik jakości powietrza"
+      },
+      {
+        "id": "302",
+        "pl": "Zbiornik paliwa"
+      },
+      {
+        "id": "303",
+        "pl": "Siłownik klapki wlewu paliwa"
+      },
+      {
+        "id": "304",
+        "pl": "Osłona dolna zbiornika paliwa"
+      },
+      {
+        "id": "305",
+        "pl": "Uchwyt / Mocowanie zbiornika paliwa"
+      },
+      {
+        "id": "306",
+        "pl": "Rura wlewu paliwa"
+      },
+      {
+        "id": "307",
+        "pl": "Korek wlewu paliwa"
+      },
+      {
+        "id": "308",
+        "pl": "Filtr paliwa"
+      },
+      {
+        "id": "309",
+        "pl": "Podgrzewacz filtra paliwa"
+      },
+      {
+        "id": "310",
+        "pl": "Czujnik poziomu paliwa"
+      },
+      {
+        "id": "311",
+        "pl": "Pompa paliwa w zbiorniku"
+      },
+      {
+        "id": "312",
+        "pl": "Przewód paliwa"
+      },
+      {
+        "id": "803",
+        "pl": "Klapka wlewu paliwa"
+      },
+      {
+        "id": "1262",
+        "pl": "Szyjka / Wkład wlewu paliwa"
+      },
+      {
+        "id": "1292",
+        "pl": "Mocowanie filtra paliwa"
+      },
+      {
+        "id": "1298",
+        "pl": "Przewód paliwowy"
+      },
+      {
+        "id": "1397",
+        "pl": "Uchwyt / Linka korka wlewu paliwa"
+      },
+      {
+        "id": "1546",
+        "pl": "Zawór odpowietrzania zbiornika paliwa"
+      },
+      {
+        "id": "1581",
+        "pl": "Przewód paliwowy Webasto"
+      },
+      {
+        "id": "1582",
+        "pl": "Pompka paliwa Webasto"
+      },
+      {
+        "id": "1590",
+        "pl": "Filtr węglowy"
+      },
+      {
+        "id": "1591",
+        "pl": "Nakrętka pompy paliwa"
+      },
+      {
+        "id": "1612",
+        "pl": "Linka otwierania klapy wlewu paliwa"
+      },
+      {
+        "id": "1770",
+        "pl": "Mechaniczna pompa paliwa"
+      },
+      {
+        "id": "1847",
+        "pl": "Obudowa filtra paliwa"
+      },
+      {
+        "id": "1877",
+        "pl": "Siłowniki klapki wlewu paliwa"
+      },
+      {
+        "id": "1887",
+        "pl": "Podgrzewacz paliwa"
+      },
+      {
+        "id": "2094",
+        "pl": "Zbiornik wyrównawczy paliwa"
+      },
+      {
+        "id": "314",
+        "pl": "Inne elementy układu wtrysku paliwa"
+      },
+      {
+        "id": "315",
+        "pl": "Listwa wtryskowa"
+      },
+      {
+        "id": "316",
+        "pl": "Pompa wtryskowa wysokiego ciśnienia"
+      },
+      {
+        "id": "317",
+        "pl": "Czujnik ciśnienia paliwa"
+      },
+      {
+        "id": "318",
+        "pl": "Regulator ciśnienia paliwa"
+      },
+      {
+        "id": "319",
+        "pl": "Przewód paliwowy wtryskiwacza"
+      },
+      {
+        "id": "320",
+        "pl": "Wtryskiwacz paliwa"
+      },
+      {
+        "id": "321",
+        "pl": "Wtryskiwacze / Komplet"
+      },
+      {
+        "id": "1326",
+        "pl": "Uchwyt / Mocowanie pompy paliwa"
+      },
+      {
+        "id": "1398",
+        "pl": "Zawór elektromagnetyczny"
+      },
+      {
+        "id": "1462",
+        "pl": "Uchwyt / Mocowania wtryskiwacza"
+      },
+      {
+        "id": "1463",
+        "pl": "Koło zębate pompy wtryskowej"
+      },
+      {
+        "id": "1570",
+        "pl": "Czujnik temperatury paliwa"
+      },
+      {
+        "id": "1613",
+        "pl": "Przewód / Wąż przelewowy paliwa"
+      },
+      {
+        "id": "1895",
+        "pl": "Rozdzielacz paliwa"
+      },
+      {
+        "id": "2000",
+        "pl": "Zestaw układu wtrysku paliwa"
+      },
+      {
+        "id": "332",
+        "pl": "Osłona drążka kierowniczego"
+      },
+      {
+        "id": "333",
+        "pl": "Przekładnia kierownicza / Maglownica"
+      },
+      {
+        "id": "334",
+        "pl": "Część elektroniczna układu kierowniczego"
+      },
+      {
+        "id": "335",
+        "pl": "Część mechaniczna układu kierowniczego"
+      },
+      {
+        "id": "336",
+        "pl": "Przegub wału kolumny kierowniczej"
+      },
+      {
+        "id": "337",
+        "pl": "Kolumna kierownicza"
+      },
+      {
+        "id": "339",
+        "pl": "Mocowanie pompy wspomagania układu kierowniczego"
+      },
+      {
+        "id": "340",
+        "pl": "Pompa wspomagania"
+      },
+      {
+        "id": "341",
+        "pl": "Zbiornik płynu wspomagania układu kierowniczego"
+      },
+      {
+        "id": "342",
+        "pl": "Przewód wspomagania kierownicy"
+      },
+      {
+        "id": "343",
+        "pl": "Drążek kierowniczy"
+      },
+      {
+        "id": "346",
+        "pl": "Końcówka drążka kierowniczego"
+      },
+      {
+        "id": "1327",
+        "pl": "Koło pasowe pompy wspomagania"
+      },
+      {
+        "id": "1488",
+        "pl": "Kolumna kierownicza / Komplet"
+      },
+      {
+        "id": "1629",
+        "pl": "Pasek pompy wspomagania układu kierowniczego"
+      },
+      {
+        "id": "1630",
+        "pl": "Napinacz paska wspomagania układu kierowniczego"
+      },
+      {
+        "id": "1699",
+        "pl": "Amortyzator kolumny kierowniczej"
+      },
+      {
+        "id": "1755",
+        "pl": "Pompa wspomaganie układu kierowniczego"
+      },
+      {
+        "id": "1767",
+        "pl": "Wspornik / Mocowanie drążka kierowniczego"
+      },
+      {
+        "id": "1967",
+        "pl": "Zawór / Czujnik Servotronic"
+      },
+      {
+        "id": "2076",
+        "pl": "Korek zbiornika wspomagania kierownicy"
+      },
+      {
+        "id": "348",
+        "pl": "Rama pomocnicza przednia"
+      },
+      {
+        "id": "349",
+        "pl": "Czujnik przyspieszenia"
+      },
+      {
+        "id": "350",
+        "pl": "Amortyzator przedni"
+      },
+      {
+        "id": "353",
+        "pl": "Górne mocowanie amortyzatora przedniego"
+      },
+      {
+        "id": "354",
+        "pl": "Czujnik poziomowania zawieszenia osi przedniej"
+      },
+      {
+        "id": "355",
+        "pl": "Czujnik poziomowania świateł osi przedniej"
+      },
+      {
+        "id": "356",
+        "pl": "Piasta z łożyskiem koła przedniego"
+      },
+      {
+        "id": "359",
+        "pl": "Zwrotnica koła przedniego"
+      },
+      {
+        "id": "362",
+        "pl": "Tuleja wahacza przedniego"
+      },
+      {
+        "id": "363",
+        "pl": "Sprężyna przednia"
+      },
+      {
+        "id": "364",
+        "pl": "Łącznik stabilizatora przedniego"
+      },
+      {
+        "id": "367",
+        "pl": "Stabilizator przedni / drążek"
+      },
+      {
+        "id": "368",
+        "pl": "Piasta koła przedniego"
+      },
+      {
+        "id": "369",
+        "pl": "Wahacz przedni"
+      },
+      {
+        "id": "370",
+        "pl": "Dolny wahacz przedni"
+      },
+      {
+        "id": "377",
+        "pl": "Przegub kulowy przedni"
+      },
+      {
+        "id": "378",
+        "pl": "Górny wahacz przedni"
+      },
+      {
+        "id": "381",
+        "pl": "Podkładka / Gniazdo sprężyny przedniej"
+      },
+      {
+        "id": "1366",
+        "pl": "Mocowanie sprężyny amortyzatora"
+      },
+      {
+        "id": "1433",
+        "pl": "Osłona amortyzatora przedniego"
+      },
+      {
+        "id": "1434",
+        "pl": "Odbój amortyzatora przedniego"
+      },
+      {
+        "id": "1552",
+        "pl": "Inny element zawieszenia przedniego"
+      },
+      {
+        "id": "1588",
+        "pl": "Mocowanie stabilizatora osi przedniej"
+      },
+      {
+        "id": "1637",
+        "pl": "Śruba zbieżności zawieszenia osi przedniej"
+      },
+      {
+        "id": "1718",
+        "pl": "Blokada piasty"
+      },
+      {
+        "id": "1720",
+        "pl": "Resor przedni"
+      },
+      {
+        "id": "1723",
+        "pl": "Sworzeń osi przedniej"
+      },
+      {
+        "id": "1800",
+        "pl": "Amortyzator osi przedniej ze sprężyną"
+      },
+      {
+        "id": "1851",
+        "pl": "Stabilizator aktywny osi przedniej"
+      },
+      {
+        "id": "1852",
+        "pl": "Stabilizator aktywny osi przedniej / Zestaw"
+      },
+      {
+        "id": "1853",
+        "pl": "Przewód drążka stabilizatora aktywnego osi przedniej"
+      },
+      {
+        "id": "1854",
+        "pl": "Mocowanie stabilizatora aktywnego osi przedniej / Zestaw"
+      },
+      {
+        "id": "1899",
+        "pl": "Łożysko kulkowe koła osi przedniej"
+      },
+      {
+        "id": "1923",
+        "pl": "Czujnik położenia przepustnicy"
+      },
+      {
+        "id": "1945",
+        "pl": "Mocowanie / Wspornik dolny amortyzatora osi przedniej"
+      },
+      {
+        "id": "1979",
+        "pl": "Zawieszenie przednie / Komplet"
+      },
+      {
+        "id": "2044",
+        "pl": "Rozpórka przednia"
+      },
+      {
+        "id": "2095",
+        "pl": "Komplet sprężyn i amortyzatorów (przód i tył)"
+      },
+      {
+        "id": "384",
+        "pl": "Amortyzator tylny"
+      },
+      {
+        "id": "385",
+        "pl": "Czujnik poziomowania zawieszenia tylny"
+      },
+      {
+        "id": "386",
+        "pl": "Czujnik poziomowania świateł osi tylnej"
+      },
+      {
+        "id": "387",
+        "pl": "Rama pomocnicza tylna"
+      },
+      {
+        "id": "388",
+        "pl": "Belka osi tylnej"
+      },
+      {
+        "id": "389",
+        "pl": "Piasta z łożyskiem koła tylnego"
+      },
+      {
+        "id": "390",
+        "pl": "Zwrotnica koła tylnego"
+      },
+      {
+        "id": "391",
+        "pl": "Poduszka / Łapa zawieszenia belki osi tylnej"
+      },
+      {
+        "id": "392",
+        "pl": "Resor tylny"
+      },
+      {
+        "id": "393",
+        "pl": "Sprężyna tylna"
+      },
+      {
+        "id": "394",
+        "pl": "Podkładka / Gniazdo sprężyny tylnej"
+      },
+      {
+        "id": "395",
+        "pl": "Tylny łącznik stabilizatora"
+      },
+      {
+        "id": "396",
+        "pl": "Tylny stabilizator / drążek"
+      },
+      {
+        "id": "397",
+        "pl": "Piasta koła tylnego"
+      },
+      {
+        "id": "398",
+        "pl": "Wahacz tylny"
+      },
+      {
+        "id": "403",
+        "pl": "Górny wahacz tylny"
+      },
+      {
+        "id": "1497",
+        "pl": "Osłona przeciwpyłowa amortyzatora tylnego"
+      },
+      {
+        "id": "1498",
+        "pl": "Odbój amortyzatora tylnego"
+      },
+      {
+        "id": "1589",
+        "pl": "Mocowanie stabilizatora osi tylnej"
+      },
+      {
+        "id": "1606",
+        "pl": "Inna część zawieszenia tylnego"
+      },
+      {
+        "id": "1638",
+        "pl": "Śruba zbieżności zawieszenia osi tylnej"
+      },
+      {
+        "id": "1645",
+        "pl": "Mocowanie sprężyny amortyzatora osi tylnej"
+      },
+      {
+        "id": "1653",
+        "pl": "Wahacz osi tylnej"
+      },
+      {
+        "id": "1661",
+        "pl": "Mocowanie amortyzatora przedniego osi tylnej"
+      },
+      {
+        "id": "1765",
+        "pl": "Zwrotnica / Piasta koła tylnego"
+      },
+      {
+        "id": "1769",
+        "pl": "Wahacz prowadzący osi tylnej"
+      },
+      {
+        "id": "1831",
+        "pl": "Amortyzator osi tylnej ze sprężyną"
+      },
+      {
+        "id": "1882",
+        "pl": "Belka tylna"
+      },
+      {
+        "id": "1897",
+        "pl": "Łożysko kulkowe koła osi tylnej"
+      },
+      {
+        "id": "1980",
+        "pl": "Zawieszenie tylne / Komplet"
+      },
+      {
+        "id": "2043",
+        "pl": "Rozpórka tylna"
+      },
+      {
+        "id": "2086",
+        "pl": "Tylna kolumna kierownicy"
+      },
+      {
+        "id": "2101",
+        "pl": "Tylny aktywny stabilizator"
+      },
+      {
+        "id": "407",
+        "pl": "Kompresor zawieszenia tylnego pneumatycznego"
+      },
+      {
+        "id": "408",
+        "pl": "Poduszka / Miech tylnego zawieszenia pneumatycznego"
+      },
+      {
+        "id": "409",
+        "pl": "Zbiornik powietrza tylnego zawieszenia pneumatycznego"
+      },
+      {
+        "id": "410",
+        "pl": "Regulator tylnego zawieszenia pneumatycznego"
+      },
+      {
+        "id": "411",
+        "pl": "Czujnik poziomowania tylnego zawieszenia pneumatycznego"
+      },
+      {
+        "id": "414",
+        "pl": "Przewód zawieszenia pneumatycznego osi tylnej"
+      },
+      {
+        "id": "1705",
+        "pl": "Zawór elektromagnetyczny amortyzatora osi tylnej"
+      },
+      {
+        "id": "1706",
+        "pl": "Amortyzator zawieszenie pneumatycznego osi tylnej"
+      },
+      {
+        "id": "1707",
+        "pl": "Tylny amortyzator zawieszenia pneumatycznego"
+      },
+      {
+        "id": "1708",
+        "pl": "Rozdzielacz / Blok zaworowy zawieszenia pneumatycznego osi tylnej"
+      },
+      {
+        "id": "1959",
+        "pl": "Mocowanie kompresora zawieszenia pneumatycznego osi tylnej"
+      },
+      {
+        "id": "1960",
+        "pl": "Filtr wlotowy powietrza kompresora zawieszenia pneumatycznego osi tylnej"
+      },
+      {
+        "id": "1961",
+        "pl": "Przewód powietrza kompresora zawieszenia pneumatycznego osi tylnej"
+      },
+      {
+        "id": "418",
+        "pl": "Manualna 4-biegowa skrzynia biegów"
+      },
+      {
+        "id": "419",
+        "pl": "Manualna 5-biegowa skrzynia biegów"
+      },
+      {
+        "id": "420",
+        "pl": "Manualna 6-biegowa skrzynia biegów"
+      },
+      {
+        "id": "421",
+        "pl": "Automatyczna skrzynia biegów"
+      },
+      {
+        "id": "422",
+        "pl": "Łapa / Mocowanie skrzyni biegów"
+      },
+      {
+        "id": "423",
+        "pl": "Linka zmiany biegów"
+      },
+      {
+        "id": "424",
+        "pl": "Lewarek zmiany biegów / dolny"
+      },
+      {
+        "id": "425",
+        "pl": "Lewarek zmiany biegów / górny"
+      },
+      {
+        "id": "462",
+        "pl": "Manualna 7-biegowa skrzynia biegów"
+      },
+      {
+        "id": "551",
+        "pl": "Mocowanie / Uchwyt skrzyni biegów"
+      },
+      {
+        "id": "1380",
+        "pl": "Drążek zmiany biegów"
+      },
+      {
+        "id": "1672",
+        "pl": "Mocowanie / Wspornik linki zmiany biegów"
+      },
+      {
+        "id": "1734",
+        "pl": "Uszczelka skrzyni biegów"
+      },
+      {
+        "id": "1772",
+        "pl": "Wybierak biegów"
+      },
+      {
+        "id": "2050",
+        "pl": "Skrzynia biegów samochodu elektrycznego"
+      },
+      {
+        "id": "2073",
+        "pl": "Dźwignia retardera skrzyni biegów"
+      },
+      {
+        "id": "2074",
+        "pl": "Kabel retardera skrzyni biegów"
+      },
+      {
+        "id": "2075",
+        "pl": "Mechanizm zwalniacza skrzyni biegów"
+      },
+      {
+        "id": "427",
+        "pl": "Przekładnia hydrokinetyczna"
+      },
+      {
+        "id": "428",
+        "pl": "Siłownik sprzęgła / Wysprzęglik"
+      },
+      {
+        "id": "429",
+        "pl": "Płyta dociskowa sprzęgła"
+      },
+      {
+        "id": "430",
+        "pl": "Dźwignia / Łapa wysprzęglika sprzęgła"
+      },
+      {
+        "id": "431",
+        "pl": "Główny cylinder sprzęgła"
+      },
+      {
+        "id": "432",
+        "pl": "Tarcza sprzęgła"
+      },
+      {
+        "id": "433",
+        "pl": "Sprzęgło / Komplet"
+      },
+      {
+        "id": "436",
+        "pl": "Przewód / Linka sprzęgła"
+      },
+      {
+        "id": "437",
+        "pl": "Koło zamachowe"
+      },
+      {
+        "id": "438",
+        "pl": "Przewód hydrauliczny sprzęgła"
+      },
+      {
+        "id": "1221",
+        "pl": "Koło dwumasowe"
+      },
+      {
+        "id": "1615",
+        "pl": "Zbiornik płynu pompy sprzęgła"
+      },
+      {
+        "id": "1640",
+        "pl": "Łożysko oporowe sprzęgła / Wyciskowe"
+      },
+      {
+        "id": "1641",
+        "pl": "Pomocniczy cylinder łożyska wciskowego sprzęgła"
+      },
+      {
+        "id": "1642",
+        "pl": "Łapa / Widełki wyciskowe sprzęgła"
+      },
+      {
+        "id": "1646",
+        "pl": "Czujnik poziomu płynu sprzęgła"
+      },
+      {
+        "id": "2063",
+        "pl": "Śruby koła zamachowego"
+      },
+      {
+        "id": "440",
+        "pl": "Miska olejowa skrzyni biegów"
+      },
+      {
+        "id": "441",
+        "pl": "Sterownik hydrauliczny skrzyni biegów"
+      },
+      {
+        "id": "1673",
+        "pl": "Koło zębate piątego biegu"
+      },
+      {
+        "id": "1674",
+        "pl": "Wybierak skrzyni biegów"
+      },
+      {
+        "id": "1884",
+        "pl": "Inna część skrzyni biegów"
+      },
+      {
+        "id": "443",
+        "pl": "Wał napędowy tylny"
+      },
+      {
+        "id": "444",
+        "pl": "Półoś tylna"
+      },
+      {
+        "id": "447",
+        "pl": "Przegub / Łącznik elastyczny wału napędowego"
+      },
+      {
+        "id": "448",
+        "pl": "Przegub uniwersalny wału napędowego / Krzyżak"
+      },
+      {
+        "id": "449",
+        "pl": "Łożysko środkowe podpory wału napędowego"
+      },
+      {
+        "id": "450",
+        "pl": "Wał napędowy przedni"
+      },
+      {
+        "id": "451",
+        "pl": "Półoś przednia"
+      },
+      {
+        "id": "454",
+        "pl": "Środkowy wał napędowy"
+      },
+      {
+        "id": "1339",
+        "pl": "Wał napędowy / Komplet"
+      },
+      {
+        "id": "1354",
+        "pl": "Łożysko podpory wału napędowego"
+      },
+      {
+        "id": "1355",
+        "pl": "Wspornik / Mocowanie łożyska podpory wału napędowego"
+      },
+      {
+        "id": "1357",
+        "pl": "Przegub zewnętrzny"
+      },
+      {
+        "id": "1358",
+        "pl": "Przegub wewnętrzny"
+      },
+      {
+        "id": "1643",
+        "pl": "Zewnętrzny przegub homokinetyczny wału napędowego"
+      },
+      {
+        "id": "1644",
+        "pl": "Wewnętrzny przegub homokinetyczny wału napędowego"
+      },
+      {
+        "id": "1648",
+        "pl": "Półsprzęgło wału"
+      },
+      {
+        "id": "457",
+        "pl": "Skrzynia rozdzielcza / Reduktor"
+      },
+      {
+        "id": "458",
+        "pl": "Mechanizm różnicowy przedni / Dyferencjał"
+      },
+      {
+        "id": "459",
+        "pl": "Tylny mechanizm różnicowy"
+      },
+      {
+        "id": "460",
+        "pl": "Belka osi przedniej"
+      },
+      {
+        "id": "461",
+        "pl": "Belka osi tylnej z reduktorem"
+      },
+      {
+        "id": "1260",
+        "pl": "Wspornik / Mocowanie grodzi środkowej"
+      },
+      {
+        "id": "1554",
+        "pl": "Wspornik przedni mechanizmu różnicowego"
+      },
+      {
+        "id": "1695",
+        "pl": "Podpora / Wspornik tylnego mechanizmu różnicowego"
+      },
+      {
+        "id": "1696",
+        "pl": "Podpora / Wspornik przedniego mechanizmu różnicowego osi tylnej"
+      },
+      {
+        "id": "1868",
+        "pl": "Silniczek reduktora skrzyni biegów / tylny"
+      },
+      {
+        "id": "1869",
+        "pl": "Silniczek reduktora skrzyni biegów / przedni"
+      },
+      {
+        "id": "1891",
+        "pl": "Silniczek reduktora skrzyni biegów"
+      },
+      {
+        "id": "1894",
+        "pl": "Reduktor skrzyni biegów / Pompa hydrauliczna Haldex"
+      },
+      {
+        "id": "647",
+        "pl": "Felgi z włókna węglowego R12"
+      },
+      {
+        "id": "648",
+        "pl": "Felgi z włókna węglowego R13"
+      },
+      {
+        "id": "649",
+        "pl": "Felgi z włókna węglowego R14"
+      },
+      {
+        "id": "650",
+        "pl": "Felgi z włókna węglowego R15"
+      },
+      {
+        "id": "651",
+        "pl": "Felgi z włókna węglowego R16"
+      },
+      {
+        "id": "652",
+        "pl": "Felgi z włókna węglowego R17"
+      },
+      {
+        "id": "653",
+        "pl": "Felgi z włókna węglowego R18"
+      },
+      {
+        "id": "654",
+        "pl": "Felgi z włókna węglowego R19"
+      },
+      {
+        "id": "655",
+        "pl": "Felgi z włókna węglowego R20"
+      },
+      {
+        "id": "656",
+        "pl": "Felgi z włókna węglowego R21"
+      },
+      {
+        "id": "657",
+        "pl": "Kołpaki oryginalne R22"
+      },
+      {
+        "id": "471",
+        "pl": "Opony letnie R13"
+      },
+      {
+        "id": "472",
+        "pl": "Opony letnie R14"
+      },
+      {
+        "id": "494",
+        "pl": "Opony letnie R15"
+      },
+      {
+        "id": "495",
+        "pl": "Opony letnie R16"
+      },
+      {
+        "id": "690",
+        "pl": "Opony letnie R12"
+      },
+      {
+        "id": "691",
+        "pl": "Opony letnie R17"
+      },
+      {
+        "id": "692",
+        "pl": "Opony letnie R18"
+      },
+      {
+        "id": "693",
+        "pl": "Opony letnie R19"
+      },
+      {
+        "id": "694",
+        "pl": "Opony letnie R20"
+      },
+      {
+        "id": "695",
+        "pl": "Opony letnie R21"
+      },
+      {
+        "id": "696",
+        "pl": "Opony letnie R22"
+      },
+      {
+        "id": "711",
+        "pl": "Opony zimowe R12"
+      },
+      {
+        "id": "712",
+        "pl": "Opony zimowe R13"
+      },
+      {
+        "id": "713",
+        "pl": "Opony zimowe R14"
+      },
+      {
+        "id": "714",
+        "pl": "Opony zimowe R15"
+      },
+      {
+        "id": "715",
+        "pl": "Opony zimowe R16"
+      },
+      {
+        "id": "716",
+        "pl": "Opony zimowe R17"
+      },
+      {
+        "id": "717",
+        "pl": "Opony zimowe R18"
+      },
+      {
+        "id": "718",
+        "pl": "Opony zimowe R19"
+      },
+      {
+        "id": "719",
+        "pl": "Opony zimowe R20"
+      },
+      {
+        "id": "720",
+        "pl": "Opony zimowe R21"
+      },
+      {
+        "id": "721",
+        "pl": "Opony zimowe R22"
+      },
+      {
+        "id": "722",
+        "pl": "Opony zimowe z kolcami R12"
+      },
+      {
+        "id": "723",
+        "pl": "Opony zimowe z kolcami R13"
+      },
+      {
+        "id": "724",
+        "pl": "Opony zimowe z kolcami R14"
+      },
+      {
+        "id": "725",
+        "pl": "Opony zimowe z kolcami R15"
+      },
+      {
+        "id": "726",
+        "pl": "Opony zimowe z kolcami R16"
+      },
+      {
+        "id": "727",
+        "pl": "Opony zimowe z kolcami R17"
+      },
+      {
+        "id": "728",
+        "pl": "Opony zimowe z kolcami R18"
+      },
+      {
+        "id": "729",
+        "pl": "Opony zimowe z kolcami R19"
+      },
+      {
+        "id": "730",
+        "pl": "Opony zimowe z kolcami R20"
+      },
+      {
+        "id": "731",
+        "pl": "Opony zimowe z kolcami R21"
+      },
+      {
+        "id": "732",
+        "pl": "Opony zimowe z kolcami R22"
+      },
+      {
+        "id": "697",
+        "pl": "Opony zimowe C R12"
+      },
+      {
+        "id": "698",
+        "pl": "Opony zimowe C R13"
+      },
+      {
+        "id": "699",
+        "pl": "Opony zimowe C R14"
+      },
+      {
+        "id": "700",
+        "pl": "Opony zimowe C R15"
+      },
+      {
+        "id": "701",
+        "pl": "Opony zimowe C R16"
+      },
+      {
+        "id": "702",
+        "pl": "Opony zimowe C R17"
+      },
+      {
+        "id": "703",
+        "pl": "Opony zimowe C R18"
+      },
+      {
+        "id": "704",
+        "pl": "Opony zimowe z kolcami C R12"
+      },
+      {
+        "id": "705",
+        "pl": "Opony zimowe z kolcami C R13"
+      },
+      {
+        "id": "706",
+        "pl": "Opony zimowe z kolcami C R14"
+      },
+      {
+        "id": "707",
+        "pl": "Opony zimowe z kolcami C R15"
+      },
+      {
+        "id": "708",
+        "pl": "Opony zimowe z kolcami C R16"
+      },
+      {
+        "id": "709",
+        "pl": "Opony zimowe z kolcami C R17"
+      },
+      {
+        "id": "710",
+        "pl": "Opony zimowe z kolcami C R18"
+      },
+      {
+        "id": "671",
+        "pl": "Felgi kute R12"
+      },
+      {
+        "id": "672",
+        "pl": "Felgi kute R13"
+      },
+      {
+        "id": "673",
+        "pl": "Felgi kute R14"
+      },
+      {
+        "id": "674",
+        "pl": "Felgi kute R15"
+      },
+      {
+        "id": "675",
+        "pl": "Felgi kute R16"
+      },
+      {
+        "id": "676",
+        "pl": "Felgi kute R17"
+      },
+      {
+        "id": "677",
+        "pl": "Felgi kute R18"
+      },
+      {
+        "id": "678",
+        "pl": "Felgi kute R19"
+      },
+      {
+        "id": "679",
+        "pl": "Felgi kute R20"
+      },
+      {
+        "id": "680",
+        "pl": "Felgi kute R21"
+      },
+      {
+        "id": "681",
+        "pl": "Felgi kute R22"
+      },
+      {
+        "id": "468",
+        "pl": "Felgi aluminiowe R12"
+      },
+      {
+        "id": "491",
+        "pl": "Felgi aluminiowe R13"
+      },
+      {
+        "id": "492",
+        "pl": "Felgi aluminiowe R14"
+      },
+      {
+        "id": "493",
+        "pl": "Felgi aluminiowe R15"
+      },
+      {
+        "id": "682",
+        "pl": "Felgi aluminiowe R16"
+      },
+      {
+        "id": "683",
+        "pl": "Felgi aluminiowe R17"
+      },
+      {
+        "id": "684",
+        "pl": "Felgi aluminiowe R18"
+      },
+      {
+        "id": "685",
+        "pl": "Felgi aluminiowe R19"
+      },
+      {
+        "id": "686",
+        "pl": "Felgi aluminiowe R20"
+      },
+      {
+        "id": "687",
+        "pl": "Felgi aluminiowe R21"
+      },
+      {
+        "id": "688",
+        "pl": "Felgi aluminiowe R22"
+      },
+      {
+        "id": "1885",
+        "pl": "Felgi aluminiowe R23"
+      },
+      {
+        "id": "1886",
+        "pl": "Felgi aluminiowe R24"
+      },
+      {
+        "id": "637",
+        "pl": "Felgi stalowe R12"
+      },
+      {
+        "id": "638",
+        "pl": "Felgi stalowe R13"
+      },
+      {
+        "id": "639",
+        "pl": "Felgi stalowe R14"
+      },
+      {
+        "id": "641",
+        "pl": "Felgi stalowe R15"
+      },
+      {
+        "id": "642",
+        "pl": "Felgi stalowe R16"
+      },
+      {
+        "id": "643",
+        "pl": "Felgi stalowe R17"
+      },
+      {
+        "id": "664",
+        "pl": "Kołpaki oryginalne R12"
+      },
+      {
+        "id": "665",
+        "pl": "Kołpaki oryginalne R13"
+      },
+      {
+        "id": "666",
+        "pl": "Kołpaki oryginalne R14"
+      },
+      {
+        "id": "667",
+        "pl": "Kołpaki oryginalne R15"
+      },
+      {
+        "id": "668",
+        "pl": "Kołpaki oryginalne R16"
+      },
+      {
+        "id": "669",
+        "pl": "Kołpaki oryginalne R17"
+      },
+      {
+        "id": "2119",
+        "pl": "Kołpaki oryginalne R18"
+      },
+      {
+        "id": "2120",
+        "pl": "Kołpaki oryginalne R19"
+      },
+      {
+        "id": "2121",
+        "pl": "Kołpaki oryginalne R20"
+      },
+      {
+        "id": "658",
+        "pl": "Kołpaki nieoryginalne R12"
+      },
+      {
+        "id": "659",
+        "pl": "Kołpaki nieoryginalne R13"
+      },
+      {
+        "id": "660",
+        "pl": "Kołpaki nieoryginalne R14"
+      },
+      {
+        "id": "661",
+        "pl": "Kołpaki nieoryginalne R15"
+      },
+      {
+        "id": "662",
+        "pl": "Kołpaki nieoryginalne R16"
+      },
+      {
+        "id": "663",
+        "pl": "Kołpaki nieoryginalne R17"
+      },
+      {
+        "id": "2116",
+        "pl": "Kołpaki nieoryginalne R18"
+      },
+      {
+        "id": "2117",
+        "pl": "Kołpaki nieoryginalne R19"
+      },
+      {
+        "id": "2118",
+        "pl": "Kołpaki nieoryginalne R20"
+      },
+      {
+        "id": "504",
+        "pl": "Zderzak przedni"
+      },
+      {
+        "id": "505",
+        "pl": "Maskownica czujnika ACC Distronic radar"
+      },
+      {
+        "id": "506",
+        "pl": "Poprzeczka zderzaka przedniego"
+      },
+      {
+        "id": "507",
+        "pl": "Absorber zderzaka przedniego"
+      },
+      {
+        "id": "508",
+        "pl": "Uchwyt / Mocowanie zderzaka przedniego"
+      },
+      {
+        "id": "509",
+        "pl": "Kratka dolna zderzaka przedniego"
+      },
+      {
+        "id": "510",
+        "pl": "Zaślepka spryskiwacza lampy przedniej"
+      },
+      {
+        "id": "511",
+        "pl": "Zaślepka / Osłona haka holowniczego przednia"
+      },
+      {
+        "id": "512",
+        "pl": "Listwa zderzaka przedniego"
+      },
+      {
+        "id": "513",
+        "pl": "Spojler zderzaka przedniego"
+      },
+      {
+        "id": "514",
+        "pl": "Maskownica / Grill / Atrapa górna chłodnicy"
+      },
+      {
+        "id": "515",
+        "pl": "Emblemat / Znaczek"
+      },
+      {
+        "id": "516",
+        "pl": "Krata halogenu"
+      },
+      {
+        "id": "517",
+        "pl": "Kanał powietrza hamulca"
+      },
+      {
+        "id": "1341",
+        "pl": "Odbój / Amortyzator zderzaka przedniego"
+      },
+      {
+        "id": "1435",
+        "pl": "Belka zderzaka przedniego"
+      },
+      {
+        "id": "1506",
+        "pl": "Ramka przedniej tablicy rejestracyjnej"
+      },
+      {
+        "id": "1717",
+        "pl": "Narożnik zderzaka przedniego"
+      },
+      {
+        "id": "1738",
+        "pl": "Uchwyt przedniego czujnika parkowania PDC"
+      },
+      {
+        "id": "1829",
+        "pl": "Kamera zderzaka przedniego"
+      },
+      {
+        "id": "1919",
+        "pl": "Wspornik / Mocowanie świateł przeciwmgielnych"
+      },
+      {
+        "id": "2007",
+        "pl": "Kierunkowskaz przedniego zderzaka"
+      },
+      {
+        "id": "519",
+        "pl": "Pokrywa przednia / Maska silnika"
+      },
+      {
+        "id": "520",
+        "pl": "Zawiasy pokrywy / maski silnika"
+      },
+      {
+        "id": "521",
+        "pl": "Izolacja termiczna / wygłuszenie pokrywy / maski silnika"
+      },
+      {
+        "id": "522",
+        "pl": "Zamek pokrywy przedniej / maski silnika"
+      },
+      {
+        "id": "523",
+        "pl": "Linka zamka pokrywy przedniej / maski silnika"
+      },
+      {
+        "id": "524",
+        "pl": "Rygiel / Zaczep zamka pokrywy przedniej / maski silnika"
+      },
+      {
+        "id": "525",
+        "pl": "Siłownik maski przedniej"
+      },
+      {
+        "id": "526",
+        "pl": "Podszybie przednie"
+      },
+      {
+        "id": "527",
+        "pl": "Podpora pokrywy / maski silnika"
+      },
+      {
+        "id": "528",
+        "pl": "Osłona pasa przedniego"
+      },
+      {
+        "id": "529",
+        "pl": "Uszczelka pokrywy silnika / maski przedniej"
+      },
+      {
+        "id": "1214",
+        "pl": "Atrapa chłodnicy / Grill"
+      },
+      {
+        "id": "1215",
+        "pl": "Kratka wlotu powietrza na maskę"
+      },
+      {
+        "id": "1623",
+        "pl": "Czujnik otwarcia maski przedniej"
+      },
+      {
+        "id": "1753",
+        "pl": "Owiewka maski / Klapy przedniej"
+      },
+      {
+        "id": "2004",
+        "pl": "Siłownik poduszek powietrznych dla pieszych"
+      },
+      {
+        "id": "2062",
+        "pl": "Przegroda komory silnika"
+      },
+      {
+        "id": "2071",
+        "pl": "Wsporniki do okapu"
+      },
+      {
+        "id": "2092",
+        "pl": "Osłona maski silnika"
+      },
+      {
+        "id": "531",
+        "pl": "Błotnik przedni"
+      },
+      {
+        "id": "532",
+        "pl": "Uchwyt / Mocowanie błotnika przedniego"
+      },
+      {
+        "id": "533",
+        "pl": "Wygłuszenie / Pianka błotnika przedniego"
+      },
+      {
+        "id": "534",
+        "pl": "Grill / Wlot powietrza błotnika przedniego"
+      },
+      {
+        "id": "535",
+        "pl": "Listwa błotnika przedniego"
+      },
+      {
+        "id": "536",
+        "pl": "Nadkole przednie"
+      },
+      {
+        "id": "1496",
+        "pl": "Listwa / Nakładka na błotnik przedni"
+      },
+      {
+        "id": "1703",
+        "pl": "Litery / Emblematy na błotnik przedni"
+      },
+      {
+        "id": "1735",
+        "pl": "Panel wykończeniowy błotnika"
+      },
+      {
+        "id": "1740",
+        "pl": "Wspornik chlapaczy przednich"
+      },
+      {
+        "id": "538",
+        "pl": "Osłona pod zderzak przedni / Absorber"
+      },
+      {
+        "id": "539",
+        "pl": "Osłona dolna silnika"
+      },
+      {
+        "id": "540",
+        "pl": "Osłona środkowa podwozia"
+      },
+      {
+        "id": "1258",
+        "pl": "Obudowa Webasto"
+      },
+      {
+        "id": "1367",
+        "pl": "Osłona podwozia przednia"
+      },
+      {
+        "id": "1975",
+        "pl": "Osłona dolna skrzyni biegów"
+      },
+      {
+        "id": "1976",
+        "pl": "Osłona boczna podwozia"
+      },
+      {
+        "id": "543",
+        "pl": "Zderzak tylny"
+      },
+      {
+        "id": "544",
+        "pl": "Poprzeczka zderzaka tylnego"
+      },
+      {
+        "id": "545",
+        "pl": "Odbój zderzaka tylnego"
+      },
+      {
+        "id": "546",
+        "pl": "Uchwyt / Mocowanie zderzaka tylnego"
+      },
+      {
+        "id": "547",
+        "pl": "Zaślepka haka holowniczego zderzaka tylnego"
+      },
+      {
+        "id": "548",
+        "pl": "Kratka wentylacyjna pod zderzakiem tylnym"
+      },
+      {
+        "id": "549",
+        "pl": "Listwa dolna zderzaka tylnego"
+      },
+      {
+        "id": "550",
+        "pl": "Absorber zderzaka tylnego"
+      },
+      {
+        "id": "1166",
+        "pl": "Odbój / Amortyzator zderzaka tylnego"
+      },
+      {
+        "id": "1230",
+        "pl": "Narożnik zderzaka tylnego"
+      },
+      {
+        "id": "1231",
+        "pl": "Mocowanie narożnika zderzaka tylnego"
+      },
+      {
+        "id": "1436",
+        "pl": "Belka zderzaka tylnego"
+      },
+      {
+        "id": "1437",
+        "pl": "Listwa zderzaka tylnego"
+      },
+      {
+        "id": "1438",
+        "pl": "Ramka tylnej tablicy rejestracyjnej"
+      },
+      {
+        "id": "1739",
+        "pl": "Uchwyt tylnego czujnika parkowania PDC"
+      },
+      {
+        "id": "1788",
+        "pl": "Zaślepka / Osłona haka holowniczego tylna"
+      },
+      {
+        "id": "1830",
+        "pl": "Kamera zderzaka tylnego"
+      },
+      {
+        "id": "1902",
+        "pl": "Element tłumika"
+      },
+      {
+        "id": "2006",
+        "pl": "Sygnał skrętu tylnego zderzaka"
+      },
+      {
+        "id": "2124",
+        "pl": "Wspornik radaru martwego pola"
+      },
+      {
+        "id": "556",
+        "pl": "Tylna klapa bagażnika"
+      },
+      {
+        "id": "557",
+        "pl": "Zawias klapy tylnej bagażnika"
+      },
+      {
+        "id": "558",
+        "pl": "Sprężyna do klapy tylnej bagażnika"
+      },
+      {
+        "id": "559",
+        "pl": "Odbój klapy tylnej bagażnika"
+      },
+      {
+        "id": "560",
+        "pl": "Gumowa uszczelka bagażnika tylnego / Na karoserii"
+      },
+      {
+        "id": "561",
+        "pl": "Siłownika klapy tylnej bagażnika"
+      },
+      {
+        "id": "562",
+        "pl": "Amortyzator klapy tylnej bagażnika"
+      },
+      {
+        "id": "563",
+        "pl": "Spoiler tylnej szyby klapy bagażnika"
+      },
+      {
+        "id": "564",
+        "pl": "Zamek klapy tylnej / bagażnika"
+      },
+      {
+        "id": "565",
+        "pl": "Rygiel zamka klapy tylnej / bagażnika"
+      },
+      {
+        "id": "566",
+        "pl": "Siłownik elektryczny podnoszenia klapy tylnej / bagażnika"
+      },
+      {
+        "id": "567",
+        "pl": "Zamek / Zatrzask szyby klapy tylnej bagażnika"
+      },
+      {
+        "id": "568",
+        "pl": "Zamek / Zatrzask szyby bagażnika"
+      },
+      {
+        "id": "569",
+        "pl": "Uchwyt / Rączka zewnętrzna otwierania klapy tylnej / bagażnika"
+      },
+      {
+        "id": "577",
+        "pl": "Kamera cofania"
+      },
+      {
+        "id": "578",
+        "pl": "Uchwyt / Rączka klapy tylnej / bagażnika z kamerą"
+      },
+      {
+        "id": "1453",
+        "pl": "Uszczelka tylnej klapy bagażnika"
+      },
+      {
+        "id": "1454",
+        "pl": "Uszczelka tylnej szyby klapy bagażnika"
+      },
+      {
+        "id": "1480",
+        "pl": "Emblemat / Znaczek tylny / Litery modelu"
+      },
+      {
+        "id": "1481",
+        "pl": "Poszycie / Tapicerka tylnej klapy bagażnika"
+      },
+      {
+        "id": "1482",
+        "pl": "Zamek tylnej klapy bagażnika"
+      },
+      {
+        "id": "1557",
+        "pl": "Siłownik zamka tylnej klapy bagażnika"
+      },
+      {
+        "id": "1626",
+        "pl": "Raczka otwierania klapy tylnej bagażnika od wewnątrz"
+      },
+      {
+        "id": "1627",
+        "pl": "Amortyzator / Siłownik szyby klapy tylnej / bagażnika"
+      },
+      {
+        "id": "1686",
+        "pl": "Uchwyt otwierania okna bagażnika"
+      },
+      {
+        "id": "1799",
+        "pl": "Spojler klapy tylnej / bagażnika"
+      },
+      {
+        "id": "1801",
+        "pl": "Amortyzator / Siłownik tylnej klapy bagażnika"
+      },
+      {
+        "id": "1808",
+        "pl": "Zasłona przeciwsłoneczna szyby pokrywy tylnej bagażnika / Zasłona szyby"
+      },
+      {
+        "id": "1843",
+        "pl": "Listwa oświetlenie tylnej tablicy rejestracyjnej"
+      },
+      {
+        "id": "2104",
+        "pl": "Pętla blokady tylnej pokrywy"
+      },
+      {
+        "id": "754",
+        "pl": "Drzwi"
+      },
+      {
+        "id": "755",
+        "pl": "Zawias górny drzwi"
+      },
+      {
+        "id": "756",
+        "pl": "Zawias dolny drzwi"
+      },
+      {
+        "id": "757",
+        "pl": "Zawiasy drzwi / Komplet"
+      },
+      {
+        "id": "758",
+        "pl": "Ogranicznik drzwi"
+      },
+      {
+        "id": "759",
+        "pl": "Wiązka przewodów drzwi"
+      },
+      {
+        "id": "760",
+        "pl": "Wkładka do zamka drzwi"
+      },
+      {
+        "id": "761",
+        "pl": "Zaślepka klamki z otworem na kluczyk"
+      },
+      {
+        "id": "762",
+        "pl": "Klamka zewnętrzna drzwi"
+      },
+      {
+        "id": "763",
+        "pl": "Klamka wewnętrzna drzwi"
+      },
+      {
+        "id": "764",
+        "pl": "Linka zamka drzwi"
+      },
+      {
+        "id": "765",
+        "pl": "Zamek drzwi przednich"
+      },
+      {
+        "id": "766",
+        "pl": "Rygiel zamka drzwi"
+      },
+      {
+        "id": "767",
+        "pl": "Gumowa uszczelka drzwi"
+      },
+      {
+        "id": "768",
+        "pl": "Podnośnik szyby drzwi z silniczkiem"
+      },
+      {
+        "id": "769",
+        "pl": "Elektryczny podnośnik szyby drzwi"
+      },
+      {
+        "id": "770",
+        "pl": "Silniczek podnośnika szyby drzwi"
+      },
+      {
+        "id": "771",
+        "pl": "Manualny podnośnik szyby drzwi"
+      },
+      {
+        "id": "772",
+        "pl": "Elektryczne lusterko boczne drzwi"
+      },
+      {
+        "id": "773",
+        "pl": "Manualne lusterko boczne drzwi"
+      },
+      {
+        "id": "774",
+        "pl": "Element lusterka bocznego drzwi"
+      },
+      {
+        "id": "1218",
+        "pl": "Listwa drzwi"
+      },
+      {
+        "id": "1228",
+        "pl": "Obudowa lusterka zewnętrznego drzwi"
+      },
+      {
+        "id": "1447",
+        "pl": "Uszczelka drzwi"
+      },
+      {
+        "id": "1448",
+        "pl": "Uszczelka szyby drzwi"
+      },
+      {
+        "id": "1567",
+        "pl": "Klamka zewnętrzna/wspornik drzwi"
+      },
+      {
+        "id": "1617",
+        "pl": "Czujnik otwarcia drzwi"
+      },
+      {
+        "id": "1679",
+        "pl": "Owiewka szyby drzwi"
+      },
+      {
+        "id": "1690",
+        "pl": "Wkład lusterka drzwi"
+      },
+      {
+        "id": "1743",
+        "pl": "Ramka szyby drzwi"
+      },
+      {
+        "id": "1797",
+        "pl": "Silniczek dmuchawy drzwi"
+      },
+      {
+        "id": "1827",
+        "pl": "Kamera lustra bocznego drzwi"
+      },
+      {
+        "id": "1838",
+        "pl": "Listwa / Uszczelka szyby drzwi"
+      },
+      {
+        "id": "1933",
+        "pl": "Silniczek zamka drzwi"
+      },
+      {
+        "id": "1984",
+        "pl": "Silniczek dociągania drzwi"
+      },
+      {
+        "id": "606",
+        "pl": "Drzwi tylne"
+      },
+      {
+        "id": "607",
+        "pl": "Zawias górny drzwi tylnych"
+      },
+      {
+        "id": "608",
+        "pl": "Zawias dolny drzwi tylnych"
+      },
+      {
+        "id": "609",
+        "pl": "Zawiasy drzwi tylnych / Komplet"
+      },
+      {
+        "id": "610",
+        "pl": "Ogranicznik drzwi tylnych"
+      },
+      {
+        "id": "611",
+        "pl": "Wiązka przewodów drzwi tylnych / Przelotka"
+      },
+      {
+        "id": "613",
+        "pl": "Osłona klamki drzwi tylnych"
+      },
+      {
+        "id": "614",
+        "pl": "Klamka zewnętrzna drzwi tylnych"
+      },
+      {
+        "id": "615",
+        "pl": "Klamka wewnętrzna drzwi tylnych"
+      },
+      {
+        "id": "616",
+        "pl": "Linka zamka drzwi tylnych"
+      },
+      {
+        "id": "617",
+        "pl": "Zamek drzwi tylnych"
+      },
+      {
+        "id": "618",
+        "pl": "Rygiel zamka drzwi tylnych"
+      },
+      {
+        "id": "619",
+        "pl": "Gumowa uszczelka drzwi tylnych / na karoserii"
+      },
+      {
+        "id": "620",
+        "pl": "Mechanizm podnoszenia szyby tylnej bez silnika"
+      },
+      {
+        "id": "621",
+        "pl": "Elektryczny podnośnik szyby drzwi tylnych"
+      },
+      {
+        "id": "622",
+        "pl": "Silniczek podnoszenia szyby drzwi tylnych"
+      },
+      {
+        "id": "623",
+        "pl": "Ręczny podnośnik szyby drzwi tylnych"
+      },
+      {
+        "id": "1216",
+        "pl": "Listwa drzwi tylnych"
+      },
+      {
+        "id": "1405",
+        "pl": "Emblemat / Logo / Litery drzwi tylnych"
+      },
+      {
+        "id": "1443",
+        "pl": "Gumowa uszczelka drzwi tylnych"
+      },
+      {
+        "id": "1444",
+        "pl": "Gumowa uszczelka szyby drzwi tylnych"
+      },
+      {
+        "id": "1569",
+        "pl": "Klamka/wspornik zewnętrzny drzwi tylnych"
+      },
+      {
+        "id": "1616",
+        "pl": "Czujnik otwarcia drzwi tylnych"
+      },
+      {
+        "id": "1678",
+        "pl": "Owiewka szyby drzwi tylnych"
+      },
+      {
+        "id": "1742",
+        "pl": "Ramka szyby drzwi tylnych"
+      },
+      {
+        "id": "1803",
+        "pl": "Zasłona przeciwsłoneczna / Zasłona szyby drzwi tylnych"
+      },
+      {
+        "id": "1839",
+        "pl": "Listwa / Uszczelka szyby drzwi tylnych"
+      },
+      {
+        "id": "1908",
+        "pl": "Listwa szyby drzwi tylnych"
+      },
+      {
+        "id": "1934",
+        "pl": "Silniczek zamka drzwi tylnych"
+      },
+      {
+        "id": "1986",
+        "pl": "Silniczek dociągania drzwi tylnych"
+      },
+      {
+        "id": "2099",
+        "pl": "Silnik kurtyny tylnych drzwi."
+      },
+      {
+        "id": "791",
+        "pl": "Drzwi tylne do samochodów dostawczych"
+      },
+      {
+        "id": "792",
+        "pl": "Zawias górny drzwi tylnych samochodów dostawczych"
+      },
+      {
+        "id": "793",
+        "pl": "Zawias dolny drzwi tylnych samochodów dostawczych"
+      },
+      {
+        "id": "794",
+        "pl": "Zawiasy drzwi tylnych samochodów dostawczych / Komplet"
+      },
+      {
+        "id": "795",
+        "pl": "Ogranicznik drzwi tylnych samochodów dostawczych"
+      },
+      {
+        "id": "796",
+        "pl": "Osłona drzwi tylnych samochodów dostawczych"
+      },
+      {
+        "id": "797",
+        "pl": "Klamka zewnętrzna drzwi tylnych samochodów dostawczych"
+      },
+      {
+        "id": "798",
+        "pl": "Linka zamka drzwi tylnych samochodów dostawczych"
+      },
+      {
+        "id": "799",
+        "pl": "Zamek drzwi tylnych samochodów dostawczych"
+      },
+      {
+        "id": "800",
+        "pl": "Rygiel zamka drzwi tylnych samochodów dostawczych"
+      },
+      {
+        "id": "801",
+        "pl": "Gumowa uszczelka drzwi tylnych samochodów dostawczych / Na karoserii"
+      },
+      {
+        "id": "1219",
+        "pl": "Listwa drzwi tylnych samochodów dostawczych"
+      },
+      {
+        "id": "1403",
+        "pl": "Krata ochronna szyby drzwi tylnych samochodów dostawczych"
+      },
+      {
+        "id": "1404",
+        "pl": "Litery na drzwi tylne samochodów dostawczych"
+      },
+      {
+        "id": "1445",
+        "pl": "Gumowa uszczelka drzwi tylnych samochodów dostawczych / na drzwiach"
+      },
+      {
+        "id": "1446",
+        "pl": "Gumowa uszczelka szyby drzwi tylnych samochodów dostawczych"
+      },
+      {
+        "id": "1568",
+        "pl": "Wspornik/klamka zewnętrzna drzwi załadunkowych"
+      },
+      {
+        "id": "1620",
+        "pl": "Czujnik otwarcia drzwi tylnych samochodów dostawczych"
+      },
+      {
+        "id": "1730",
+        "pl": "Rączka wewnętrzna drzwi tylnych samochodów dostawczych"
+      },
+      {
+        "id": "1804",
+        "pl": "Zasłona przeciwsłoneczna drzwi tylnych samochodów dostawczych"
+      },
+      {
+        "id": "1840",
+        "pl": "Listwa / Uszczelka szyby drzwi tylnych samochodów dostawczych"
+      },
+      {
+        "id": "775",
+        "pl": "Drzwi boczne / przesuwne"
+      },
+      {
+        "id": "776",
+        "pl": "Prowadnica rolkowa drzwi bocznych / przesuwanych / Zawias górny"
+      },
+      {
+        "id": "777",
+        "pl": "Prowadnica rolkowa drzwi bocznych / przesuwanych / Zawias dolny"
+      },
+      {
+        "id": "778",
+        "pl": "Zestaw prowadnica rolkowa/zawias"
+      },
+      {
+        "id": "779",
+        "pl": "Ogranicznik drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "780",
+        "pl": "Zaślepka szyny drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "781",
+        "pl": "Klamka zewnętrzna drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "782",
+        "pl": "Klamka wewnętrzna drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "783",
+        "pl": "Linka zamka drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "784",
+        "pl": "Zamek drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "785",
+        "pl": "Rygiel zamka drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "786",
+        "pl": "Gumowa uszczelka drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "788",
+        "pl": "Szyna górna prowadnicy drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "789",
+        "pl": "Mechanizm drzwi bocznych / przesuwnych z silniczkiem"
+      },
+      {
+        "id": "1220",
+        "pl": "Listwa drzwi bocznych / przesuwanych"
+      },
+      {
+        "id": "1286",
+        "pl": "Szyna dolna drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "1287",
+        "pl": "Maskownica szyny drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "1401",
+        "pl": "Styk drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "1402",
+        "pl": "Krata ochronna szyby drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "1451",
+        "pl": "Uszczelka drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "1452",
+        "pl": "Uszczelka szyby drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "1566",
+        "pl": "Klamka zewnętrzna / wspornik drzwi bocznych przesuwnych"
+      },
+      {
+        "id": "1619",
+        "pl": "Czujnik otwarcia drzwi bocznych / przesuwanych"
+      },
+      {
+        "id": "1650",
+        "pl": "Manualny podnośnik szyby drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "1651",
+        "pl": "Elektryczny podnośnik szyby drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "1652",
+        "pl": "Korbka podnoszenia szyby drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "1681",
+        "pl": "Owiewka szyby drzwi bocznych / przesuwanych"
+      },
+      {
+        "id": "1789",
+        "pl": "Prowadnica rolkowa drzwi bocznych / przesuwanych / Zawias środkowy"
+      },
+      {
+        "id": "1795",
+        "pl": "Siłownik zamka drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "1796",
+        "pl": "Silniczek drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "1842",
+        "pl": "Listwa / Uszczelka szyby drzwi przesuwanych"
+      },
+      {
+        "id": "1910",
+        "pl": "Listwa szyby drzwi"
+      },
+      {
+        "id": "2093",
+        "pl": "Szyna środkowa drzwi przesuwnych"
+      },
+      {
+        "id": "586",
+        "pl": "Drzwi przednie"
+      },
+      {
+        "id": "587",
+        "pl": "Zawias górny drzwi przednich"
+      },
+      {
+        "id": "588",
+        "pl": "Zawias dolny drzwi przednich"
+      },
+      {
+        "id": "589",
+        "pl": "Zawiasy drzwi przednich"
+      },
+      {
+        "id": "590",
+        "pl": "Ogranicznik drzwi przednich"
+      },
+      {
+        "id": "591",
+        "pl": "Wiązka przewodów drzwi przednich"
+      },
+      {
+        "id": "592",
+        "pl": "Wkładka zamka drzwi przednich"
+      },
+      {
+        "id": "593",
+        "pl": "Osłona klamki drzwi przednich"
+      },
+      {
+        "id": "594",
+        "pl": "Klamka zewnętrzna drzwi przednich"
+      },
+      {
+        "id": "595",
+        "pl": "Klamka wewnętrzna drzwi przednich"
+      },
+      {
+        "id": "596",
+        "pl": "Linka zamka drzwi przednich"
+      },
+      {
+        "id": "597",
+        "pl": "Zamek drzwi przednich"
+      },
+      {
+        "id": "598",
+        "pl": "Rygiel zamka drzwi przednich"
+      },
+      {
+        "id": "599",
+        "pl": "Gumowa uszczelka drzwi przednich"
+      },
+      {
+        "id": "600",
+        "pl": "Mechanizm podnoszenia szyby przedniej bez silnika"
+      },
+      {
+        "id": "601",
+        "pl": "Elektryczny podnośnik szyby drzwi przednich"
+      },
+      {
+        "id": "602",
+        "pl": "Silnik regulatora szyby drzwi przednich"
+      },
+      {
+        "id": "603",
+        "pl": "Manualny podnośnik szyby drzwi przednich"
+      },
+      {
+        "id": "604",
+        "pl": "Elektryczne lusterko boczne drzwi przednich"
+      },
+      {
+        "id": "605",
+        "pl": "Element lusterka bocznego drzwi przednich"
+      },
+      {
+        "id": "753",
+        "pl": "Manualne lusterko boczne drzwi przednich"
+      },
+      {
+        "id": "1217",
+        "pl": "Listwa drzwi przednich"
+      },
+      {
+        "id": "1229",
+        "pl": "Obudowa lusterka zewnętrznego drzwi przednich"
+      },
+      {
+        "id": "1449",
+        "pl": "Uszczelka drzwi przednich"
+      },
+      {
+        "id": "1450",
+        "pl": "Uszczelka szyby drzwi przednich"
+      },
+      {
+        "id": "1565",
+        "pl": "Klamka/wspornik zewnętrzny drzwi przednich"
+      },
+      {
+        "id": "1618",
+        "pl": "Czujnik otwarcia drzwi przednich"
+      },
+      {
+        "id": "1680",
+        "pl": "Owiewka szyby drzwi przednich"
+      },
+      {
+        "id": "1691",
+        "pl": "Wkład lusterka drzwi przednich"
+      },
+      {
+        "id": "1744",
+        "pl": "Ramka szyby drzwi przednich"
+      },
+      {
+        "id": "1798",
+        "pl": "Silniczek dmuchawy drzwi przednich"
+      },
+      {
+        "id": "1828",
+        "pl": "Kamera lustra bocznego drzwi przednich"
+      },
+      {
+        "id": "1841",
+        "pl": "Listwa / Uszczelka szyby drzwi przednich"
+      },
+      {
+        "id": "1909",
+        "pl": "Listwa szyby drzwi przednich"
+      },
+      {
+        "id": "1932",
+        "pl": "Silniczek zamka drzwi przednich"
+      },
+      {
+        "id": "1985",
+        "pl": "Silniczek dociągania drzwi przednich"
+      },
+      {
+        "id": "2022",
+        "pl": "Zestaw zamków"
+      },
+      {
+        "id": "2096",
+        "pl": "Emblemat na przednich drzwiach/litery modelu"
+      },
+      {
+        "id": "626",
+        "pl": "Hak holowniczy / Komplet"
+      },
+      {
+        "id": "627",
+        "pl": "Hak odpinany"
+      },
+      {
+        "id": "628",
+        "pl": "Hak holowniczy"
+      },
+      {
+        "id": "629",
+        "pl": "Wiązka wtyczki haka holowniczego"
+      },
+      {
+        "id": "631",
+        "pl": "Gniazdo haka holowniczego"
+      },
+      {
+        "id": "632",
+        "pl": "Przycisk chowanego haka holowniczego"
+      },
+      {
+        "id": "633",
+        "pl": "Osłona na kulę haka holowniczego"
+      },
+      {
+        "id": "2111",
+        "pl": "Akcesoria do montażu na haku holowniczym"
+      },
+      {
+        "id": "733",
+        "pl": "Opony letnie C R12"
+      },
+      {
+        "id": "734",
+        "pl": "Opony letnie C R13"
+      },
+      {
+        "id": "735",
+        "pl": "Opony letnie C R14"
+      },
+      {
+        "id": "736",
+        "pl": "Opony letnie C R15"
+      },
+      {
+        "id": "737",
+        "pl": "Opony letnie C R16"
+      },
+      {
+        "id": "738",
+        "pl": "Opony letnie C R17"
+      },
+      {
+        "id": "739",
+        "pl": "Opony letnie C R18"
+      },
+      {
+        "id": "741",
+        "pl": "Koło zapasowe R12"
+      },
+      {
+        "id": "742",
+        "pl": "Koło zapasowe R13"
+      },
+      {
+        "id": "743",
+        "pl": "Koło zapasowe R14"
+      },
+      {
+        "id": "744",
+        "pl": "Koło zapasowe R15"
+      },
+      {
+        "id": "745",
+        "pl": "Koło zapasowe R16"
+      },
+      {
+        "id": "746",
+        "pl": "Koło zapasowe R17"
+      },
+      {
+        "id": "1592",
+        "pl": "Koło zapasowe R18"
+      },
+      {
+        "id": "1858",
+        "pl": "Koło zapasowe R19"
+      },
+      {
+        "id": "1859",
+        "pl": "Koło zapasowe R20"
+      },
+      {
+        "id": "749",
+        "pl": "Dekielki / Kapsle oryginalne"
+      },
+      {
+        "id": "750",
+        "pl": "Dekielki / Kapsle nieoryginalne"
+      },
+      {
+        "id": "751",
+        "pl": "Nakrętki i śruby"
+      },
+      {
+        "id": "752",
+        "pl": "Nakrętki kół zabezpieczające przed kradzieżą"
+      },
+      {
+        "id": "1751",
+        "pl": "Osłona nakrętki koła"
+      },
+      {
+        "id": "805",
+        "pl": "Nadkole tylne"
+      },
+      {
+        "id": "1359",
+        "pl": "Osłona tylna podwozia"
+      },
+      {
+        "id": "1360",
+        "pl": "Osłona tylna podwozia pod zderzak"
+      },
+      {
+        "id": "1361",
+        "pl": "Osłona tylna podwozia pod bagażnik"
+      },
+      {
+        "id": "808",
+        "pl": "Stelaż / Belka deski rozdzielczej"
+      },
+      {
+        "id": "809",
+        "pl": "Dysze / Kratki środkowego nawiewu deski rozdzielczej"
+      },
+      {
+        "id": "810",
+        "pl": "Maskownica centralnego głośnika deski rozdzielczej"
+      },
+      {
+        "id": "811",
+        "pl": "Ramka centralnego głośnika deski rozdzielczej"
+      },
+      {
+        "id": "812",
+        "pl": "Schowek deski rozdzielczej"
+      },
+      {
+        "id": "813",
+        "pl": "Ramka schowka deski rozdzielczej"
+      },
+      {
+        "id": "814",
+        "pl": "Ramka wyświetlacza Head Up deski rozdzielczej"
+      },
+      {
+        "id": "815",
+        "pl": "Dysze / Kratki nawiewu deski rozdzielczej"
+      },
+      {
+        "id": "816",
+        "pl": "Deska rozdzielcza"
+      },
+      {
+        "id": "817",
+        "pl": "Element deski rozdzielczej / dół"
+      },
+      {
+        "id": "818",
+        "pl": "Element deski rozdzielczej / środek"
+      },
+      {
+        "id": "819",
+        "pl": "Boczny element deski rozdzielczej"
+      },
+      {
+        "id": "820",
+        "pl": "Popielniczka deski rozdzielczej"
+      },
+      {
+        "id": "821",
+        "pl": "Panel popielniczki deski rozdzielczej"
+      },
+      {
+        "id": "822",
+        "pl": "Zapalniczka deski rozdzielczej"
+      },
+      {
+        "id": "823",
+        "pl": "Panel gniazda zapalniczki deski rozdzielczej"
+      },
+      {
+        "id": "824",
+        "pl": "Element deski rozdzielczej"
+      },
+      {
+        "id": "825",
+        "pl": "Uchwyt na kubek deski rozdzielczej"
+      },
+      {
+        "id": "826",
+        "pl": "Półka"
+      },
+      {
+        "id": "827",
+        "pl": "Pólka deski rozdzielczej"
+      },
+      {
+        "id": "828",
+        "pl": "Boczna kratka nawiewu deski rozdzielczej"
+      },
+      {
+        "id": "829",
+        "pl": "Maskownica głośnika bocznego deski rozdzielczej"
+      },
+      {
+        "id": "830",
+        "pl": "Ramka głośnika bocznego deski rozdzielczej"
+      },
+      {
+        "id": "831",
+        "pl": "Rama schowka deski rozdzielczej"
+      },
+      {
+        "id": "832",
+        "pl": "Pokrywa schowka deski rozdzielczej"
+      },
+      {
+        "id": "833",
+        "pl": "Uchwyt / Rączka schowka deski rozdzielczej"
+      },
+      {
+        "id": "834",
+        "pl": "Zamek schowka deski rozdzielczej"
+      },
+      {
+        "id": "835",
+        "pl": "Schowek deski rozdzielczej / Komplet"
+      },
+      {
+        "id": "1309",
+        "pl": "Inny element deski rozdzielczej"
+      },
+      {
+        "id": "1409",
+        "pl": "Konsola środkowa / Radio / GPS"
+      },
+      {
+        "id": "1410",
+        "pl": "Panel klimatyzacji / Ogrzewania"
+      },
+      {
+        "id": "1857",
+        "pl": "Ramka deski rozdzielczej"
+      },
+      {
+        "id": "2028",
+        "pl": "Przycisk otwierania schowka na rękawiczki"
+      },
+      {
+        "id": "2056",
+        "pl": "Amortyzator schowka na rękawiczki"
+      },
+      {
+        "id": "838",
+        "pl": "Ramka drążka zmiany biegów"
+      },
+      {
+        "id": "840",
+        "pl": "Tunel środkowy"
+      },
+      {
+        "id": "841",
+        "pl": "Główny schowek tunelu środkowego"
+      },
+      {
+        "id": "842",
+        "pl": "Wkładka schowka tunelu środkowego"
+      },
+      {
+        "id": "843",
+        "pl": "Ozdoba tunelu środkowego"
+      },
+      {
+        "id": "844",
+        "pl": "Wkładka tylnego schowka tunelu środkowego"
+      },
+      {
+        "id": "845",
+        "pl": "Kratka nawiewu tylna tunelu środkowego"
+      },
+      {
+        "id": "846",
+        "pl": "Popielniczka przednia tunelu środkowego"
+      },
+      {
+        "id": "847",
+        "pl": "Popielniczka tylna tunelu środkowego"
+      },
+      {
+        "id": "848",
+        "pl": "Panel popielniczki tylnej tunelu środkowego"
+      },
+      {
+        "id": "849",
+        "pl": "Panel popielniczki przedniej tunelu środkowego"
+      },
+      {
+        "id": "850",
+        "pl": "Zamek podłokietnika tunelu środkowego"
+      },
+      {
+        "id": "851",
+        "pl": "Podłokietnik tunelu środkowego"
+      },
+      {
+        "id": "852",
+        "pl": "Gniazdo zapalniczki przedniej tunelu środkowego"
+      },
+      {
+        "id": "853",
+        "pl": "Gniazdo zapalniczki tylnej tunelu środkowego"
+      },
+      {
+        "id": "854",
+        "pl": "Panel gniazda zapalniczki tylnej tunelu środkowego"
+      },
+      {
+        "id": "855",
+        "pl": "Panel gniazda zapalniczki przedniej tunelu środkowego"
+      },
+      {
+        "id": "856",
+        "pl": "Wkładka uchwytu na kubek tunelu środkowego"
+      },
+      {
+        "id": "857",
+        "pl": "Przedni uchwyt na kubek tunelu środkowego"
+      },
+      {
+        "id": "858",
+        "pl": "Tylny uchwyt na kubek tunelu środkowego"
+      },
+      {
+        "id": "859",
+        "pl": "Schowek tunelu środkowego"
+      },
+      {
+        "id": "860",
+        "pl": "Osłona tylna tunelu środkowego"
+      },
+      {
+        "id": "861",
+        "pl": "Osłona boczna tunelu środkowego"
+      },
+      {
+        "id": "1487",
+        "pl": "Drążek / Pokrętło zmiany biegów"
+      },
+      {
+        "id": "1541",
+        "pl": "Inny elementy tunelu środkowego"
+      },
+      {
+        "id": "1935",
+        "pl": "Chłodnica"
+      },
+      {
+        "id": "863",
+        "pl": "Boczki / Poszycie drzwi przednich"
+      },
+      {
+        "id": "864",
+        "pl": "Kieszeń / Schowek drzwi przednich"
+      },
+      {
+        "id": "865",
+        "pl": "Maskownica głośnika drzwi przednich"
+      },
+      {
+        "id": "866",
+        "pl": "Listwa tapicerki drzwi przednich"
+      },
+      {
+        "id": "867",
+        "pl": "Inne elementy wykończeniowe drzwi przednich"
+      },
+      {
+        "id": "868",
+        "pl": "Ramka przycisków otwierania szyby drzwi przednich"
+      },
+      {
+        "id": "870",
+        "pl": "Klamka wewnętrzna drzwi przednich"
+      },
+      {
+        "id": "871",
+        "pl": "Korbka szyby drzwi przednich"
+      },
+      {
+        "id": "872",
+        "pl": "Obudowa klamki wewnętrznej drzwi przednich"
+      },
+      {
+        "id": "873",
+        "pl": "Osłona / Obudowa fotela przedniego pasażera"
+      },
+      {
+        "id": "874",
+        "pl": "Obudowa panelu regulacji lusterek bocznych"
+      },
+      {
+        "id": "878",
+        "pl": "Boczki / Poszycie drzwi tylnych"
+      },
+      {
+        "id": "879",
+        "pl": "Kieszeń / Schowek drzwi tylnych"
+      },
+      {
+        "id": "880",
+        "pl": "Maskownica głośnika drzwi tylnych"
+      },
+      {
+        "id": "881",
+        "pl": "Inne elementy wykończeniowe drzwi tylnych"
+      },
+      {
+        "id": "882",
+        "pl": "Ramka przycisku otwierania szyby drzwi tylnych"
+      },
+      {
+        "id": "883",
+        "pl": "Popielniczka drzwi tylnych"
+      },
+      {
+        "id": "884",
+        "pl": "Klamka wewnętrzna drzwi tylnych"
+      },
+      {
+        "id": "885",
+        "pl": "Korbka szyby drzwi tylnych"
+      },
+      {
+        "id": "887",
+        "pl": "Klamka drzwi tylnych"
+      },
+      {
+        "id": "888",
+        "pl": "Zasłona / Roleta okna drzwi tylnych"
+      },
+      {
+        "id": "1716",
+        "pl": "Poszycie drzwi tylnych"
+      },
+      {
+        "id": "1972",
+        "pl": "Boczek / Tapicerka drzwi tylnych"
+      },
+      {
+        "id": "891",
+        "pl": "Poduszka powietrzna Airbag kierownicy"
+      },
+      {
+        "id": "892",
+        "pl": "Poduszka powietrzna Airbag drzwi tylnych"
+      },
+      {
+        "id": "893",
+        "pl": "Poduszka powietrzna Airbag pasażera"
+      },
+      {
+        "id": "894",
+        "pl": "Poduszka powietrzna Airbag chroniąca kolana"
+      },
+      {
+        "id": "895",
+        "pl": "Kurtyna airbag"
+      },
+      {
+        "id": "896",
+        "pl": "Poduszka powietrzna Airbag dla pieszych"
+      },
+      {
+        "id": "897",
+        "pl": "Poduszka powietrzna Airbag drzwi przednich"
+      },
+      {
+        "id": "898",
+        "pl": "Klamra tylnego pasa bezpieczeństwa"
+      },
+      {
+        "id": "899",
+        "pl": "Klamra przedniego pasa bezpieczeństwa"
+      },
+      {
+        "id": "900",
+        "pl": "Klamra środkowego pasa bezpieczeństwa fotela tylnego"
+      },
+      {
+        "id": "901",
+        "pl": "Pas bezpieczeństwa fotela tylnego"
+      },
+      {
+        "id": "902",
+        "pl": "Pas bezpieczeństwa fotela przedniego"
+      },
+      {
+        "id": "903",
+        "pl": "Pas bezpieczeństwa fotela tylnego środkowego"
+      },
+      {
+        "id": "904",
+        "pl": "Poduszka powietrzna Airbag fotela"
+      },
+      {
+        "id": "905",
+        "pl": "Poduszka powietrzna Airbag boczna"
+      },
+      {
+        "id": "1604",
+        "pl": "Pas bezpieczeństwa trzeciego rzędu"
+      },
+      {
+        "id": "1731",
+        "pl": "Osłona poduszki powietrznej Airbag"
+      },
+      {
+        "id": "1806",
+        "pl": "Sufit / Pas bezpieczeństwa"
+      },
+      {
+        "id": "1846",
+        "pl": "Zaślepka Airbag kierownicy"
+      },
+      {
+        "id": "1879",
+        "pl": "Silniczek regulacji pasów bezpieczeństwa"
+      },
+      {
+        "id": "1892",
+        "pl": "Poduszki powietrzne Airbag / Komplet"
+      },
+      {
+        "id": "2003",
+        "pl": "Regulacja wysokości pasów bezpieczeństwa"
+      },
+      {
+        "id": "2013",
+        "pl": "Szyna regulacji pasa bezpieczeństwa"
+      },
+      {
+        "id": "2016",
+        "pl": "Zestaw poduszek powietrznych z panelem"
+      },
+      {
+        "id": "2103",
+        "pl": "Zestaw pasów bezpieczeństwa"
+      },
+      {
+        "id": "907",
+        "pl": "Osłona dolna słupka / D"
+      },
+      {
+        "id": "908",
+        "pl": "Dolny panel schowka koła zapasowego"
+      },
+      {
+        "id": "909",
+        "pl": "Wkład koła zapasowego"
+      },
+      {
+        "id": "910",
+        "pl": "Wykładzina bagażnika"
+      },
+      {
+        "id": "911",
+        "pl": "Zaślepka schowka bagażnika"
+      },
+      {
+        "id": "912",
+        "pl": "Poszycia / Boczki bagażnika"
+      },
+      {
+        "id": "913",
+        "pl": "Inne elementy wykończenia bagażnika"
+      },
+      {
+        "id": "914",
+        "pl": "Zaczep / Uchwyt bagażnika"
+      },
+      {
+        "id": "915",
+        "pl": "Zaczep bagażnika"
+      },
+      {
+        "id": "916",
+        "pl": "Osłona pasa bagażnika"
+      },
+      {
+        "id": "917",
+        "pl": "Boczek / Tapicerka / bagażnika"
+      },
+      {
+        "id": "918",
+        "pl": "Siatka bagażnika"
+      },
+      {
+        "id": "919",
+        "pl": "Osłona / Listwa podsufitki bagażnika"
+      },
+      {
+        "id": "920",
+        "pl": "Roleta bagażnika"
+      },
+      {
+        "id": "921",
+        "pl": "Mocowanie półki/rolety bagażnika"
+      },
+      {
+        "id": "1261",
+        "pl": "Schowek bagażnika"
+      },
+      {
+        "id": "1422",
+        "pl": "Rączka / Dźwignia regulacji fotela tylnego"
+      },
+      {
+        "id": "1602",
+        "pl": "Panel osłony bagażnika"
+      },
+      {
+        "id": "1733",
+        "pl": "Mocowanie trójkąta ostrzegawczego"
+      },
+      {
+        "id": "1816",
+        "pl": "Zasłona przeciwsłoneczna okna tylnego"
+      },
+      {
+        "id": "1834",
+        "pl": "Przegroda bagażnika"
+      },
+      {
+        "id": "1835",
+        "pl": "Kratka bagażnika"
+      },
+      {
+        "id": "1872",
+        "pl": "Silniczek kurtyny szyby tylnej"
+      },
+      {
+        "id": "1963",
+        "pl": "Pokrowiec na narty"
+      },
+      {
+        "id": "1971",
+        "pl": "Uchwyt na parasol do bagażnika"
+      },
+      {
+        "id": "924",
+        "pl": "Osłona tylnej klapy"
+      },
+      {
+        "id": "925",
+        "pl": "Tapicerka bagażnika / Komplet"
+      },
+      {
+        "id": "926",
+        "pl": "Panel awaryjnego otwierania zamka bagażnika"
+      },
+      {
+        "id": "927",
+        "pl": "Poszycie klapy tylnej bagażnika i inne elementy"
+      },
+      {
+        "id": "928",
+        "pl": "Osłona rygla zamka klapy tylnej"
+      },
+      {
+        "id": "929",
+        "pl": "Boczek / Tapicerka boczna bagażnika"
+      },
+      {
+        "id": "930",
+        "pl": "Tapicerka klapy tylnej / bagażnika"
+      },
+      {
+        "id": "931",
+        "pl": "Lampka klapy bagażnika"
+      },
+      {
+        "id": "1483",
+        "pl": "Rączka / Uchwyt klapy tylnej / bagażnika"
+      },
+      {
+        "id": "2085",
+        "pl": "Listwa światła tylnego/osłona tablicy rejestracyjnej"
+      },
+      {
+        "id": "934",
+        "pl": "Podsufitka"
+      },
+      {
+        "id": "935",
+        "pl": "Panel oświetlenia wnętrza kabiny"
+      },
+      {
+        "id": "936",
+        "pl": "Schowek podsufitki"
+      },
+      {
+        "id": "937",
+        "pl": "Plastikowe elementy podsufitki"
+      },
+      {
+        "id": "938",
+        "pl": "Maskownica mikrofonu zestawu głośnomówiącego"
+      },
+      {
+        "id": "939",
+        "pl": "Uchwyt / Rączka sufitowa tylna"
+      },
+      {
+        "id": "940",
+        "pl": "Uchwyt / Rączka sufitowa przednia"
+      },
+      {
+        "id": "941",
+        "pl": "Uchwyt osłony przeciwsłonecznej szyberdachu"
+      },
+      {
+        "id": "942",
+        "pl": "Osłona przeciwsłoneczna"
+      },
+      {
+        "id": "943",
+        "pl": "Mocowanie / Zaczep siatki bagażowej"
+      },
+      {
+        "id": "1524",
+        "pl": "Lusterko wsteczne"
+      },
+      {
+        "id": "1700",
+        "pl": "Schowek na okulary"
+      },
+      {
+        "id": "1973",
+        "pl": "Kratka nawiewu sufitowego"
+      },
+      {
+        "id": "2051",
+        "pl": "Wykończenie lusterka wstecznego"
+      },
+      {
+        "id": "2066",
+        "pl": "Hak"
+      },
+      {
+        "id": "2088",
+        "pl": "Komplet uchwytów do sufitu"
+      },
+      {
+        "id": "945",
+        "pl": "Osłona ramy okna tylnego"
+      },
+      {
+        "id": "946",
+        "pl": "Maskownica głośnika półki tylnej bagażnika"
+      },
+      {
+        "id": "947",
+        "pl": "Kratka półki tylnej bagażnika"
+      },
+      {
+        "id": "948",
+        "pl": "Inny element półki bagażowej"
+      },
+      {
+        "id": "949",
+        "pl": "Półka tylna bagażnika"
+      },
+      {
+        "id": "950",
+        "pl": "Ramka tylna"
+      },
+      {
+        "id": "951",
+        "pl": "Prowadnica pasa bezpieczeństwa"
+      },
+      {
+        "id": "952",
+        "pl": "Roleta elektryczna przeciwsłoneczna tylnej szyby"
+      },
+      {
+        "id": "953",
+        "pl": "Roleta manualna przeciwsłoneczna tylnej szyby"
+      },
+      {
+        "id": "955",
+        "pl": "Boczki / Tapicerka drzwi / Komplet"
+      },
+      {
+        "id": "956",
+        "pl": "Podsufitka / Komplet"
+      },
+      {
+        "id": "957",
+        "pl": "Tapicerka / Komplet"
+      },
+      {
+        "id": "958",
+        "pl": "Fotele / Kanapa / Komplet"
+      },
+      {
+        "id": "959",
+        "pl": "Fotele / Kanapa / Boczki / Komplet"
+      },
+      {
+        "id": "1593",
+        "pl": "Zestaw dywaników samochodowych"
+      },
+      {
+        "id": "2114",
+        "pl": "Zestaw ozdobnych elementów wyposażenia wnętrz"
+      },
+      {
+        "id": "961",
+        "pl": "Dywanik podłogowy drugiego rzędu"
+      },
+      {
+        "id": "962",
+        "pl": "Wykładzina podłogowa bagażnika"
+      },
+      {
+        "id": "963",
+        "pl": "Gumowa mata bagażnika"
+      },
+      {
+        "id": "964",
+        "pl": "Dywanik samochodowy tylny"
+      },
+      {
+        "id": "965",
+        "pl": "Wykładzina podłogowa tylna"
+      },
+      {
+        "id": "966",
+        "pl": "Dywanik samochodowy przedni"
+      },
+      {
+        "id": "967",
+        "pl": "Wykładzina podłogowa przednia"
+      },
+      {
+        "id": "968",
+        "pl": "Dywanik podłogowy trzeciego rzędu"
+      },
+      {
+        "id": "1766",
+        "pl": "Podnóżek"
+      },
+      {
+        "id": "1783",
+        "pl": "Zacisk mocujący / Klips do maty podłogowej"
+      },
+      {
+        "id": "2027",
+        "pl": "Dywan wewnętrzny"
+      },
+      {
+        "id": "970",
+        "pl": "Wygłuszenie bagażnika"
+      },
+      {
+        "id": "971",
+        "pl": "Wygłuszenie tylnej części pojazdu"
+      },
+      {
+        "id": "972",
+        "pl": "Wygłuszenie drzwi tylnych"
+      },
+      {
+        "id": "973",
+        "pl": "Wygłuszanie pod deską rozdzielczą"
+      },
+      {
+        "id": "974",
+        "pl": "Wygłuszanie przedniej części pojazdu"
+      },
+      {
+        "id": "975",
+        "pl": "Wygłuszanie drzwi przednich"
+      },
+      {
+        "id": "976",
+        "pl": "Wygłuszanie dachu"
+      },
+      {
+        "id": "977",
+        "pl": "Wygłuszanie drzwi bocznych"
+      },
+      {
+        "id": "979",
+        "pl": "Osłona słupka szyby przedniej / A"
+      },
+      {
+        "id": "980",
+        "pl": "Osłona dolna słupka / B"
+      },
+      {
+        "id": "981",
+        "pl": "Osłona górna słupka / B"
+      },
+      {
+        "id": "982",
+        "pl": "Osłona środkowa słupka / C"
+      },
+      {
+        "id": "983",
+        "pl": "Osłona górna słupka / D"
+      },
+      {
+        "id": "984",
+        "pl": "Listwa boczna"
+      },
+      {
+        "id": "985",
+        "pl": "Listwa progowa tylna"
+      },
+      {
+        "id": "986",
+        "pl": "Rączka / Uchwyt otwierania pokrywy przedniej / maski silnika"
+      },
+      {
+        "id": "987",
+        "pl": "Listwa progowa"
+      },
+      {
+        "id": "988",
+        "pl": "Listwa progowa boczna"
+      },
+      {
+        "id": "989",
+        "pl": "Listwa progowa przednia"
+      },
+      {
+        "id": "990",
+        "pl": "Osłona boczna fotela tylnego"
+      },
+      {
+        "id": "991",
+        "pl": "Osłona górna fotela tylnego"
+      },
+      {
+        "id": "1538",
+        "pl": "Inny części progu i słupka"
+      },
+      {
+        "id": "2025",
+        "pl": "Zestaw listew progowych (wewnętrznych)"
+      },
+      {
+        "id": "2058",
+        "pl": "(B) Poszycie słupka (zewnętrzne)"
+      },
+      {
+        "id": "993",
+        "pl": "Kanapa tylna / Fotel drugiego rzędu"
+      },
+      {
+        "id": "994",
+        "pl": "Fotel tylny"
+      },
+      {
+        "id": "995",
+        "pl": "Fotel przedni podwójny / Kanapa"
+      },
+      {
+        "id": "996",
+        "pl": "Fotel przedni pasażera"
+      },
+      {
+        "id": "997",
+        "pl": "Fotel przedni kierowcy"
+      },
+      {
+        "id": "998",
+        "pl": "Fotele tylne trzeciego rzędu"
+      },
+      {
+        "id": "1362",
+        "pl": "Szyna przedniego fotela pasażera"
+      },
+      {
+        "id": "1363",
+        "pl": "Szyna przedniego fotela kierowcy"
+      },
+      {
+        "id": "1364",
+        "pl": "Osłona szyn przedniego fotela pasażera"
+      },
+      {
+        "id": "1365",
+        "pl": "Osłona szyn przedniego fotela kierowcy"
+      },
+      {
+        "id": "1421",
+        "pl": "Zatrzask blokady oparcia fotela"
+      },
+      {
+        "id": "1529",
+        "pl": "Inne fotele"
+      },
+      {
+        "id": "1632",
+        "pl": "Silniczek regulacji fotela"
+      },
+      {
+        "id": "1647",
+        "pl": "Osłona szyny fotela tylnego"
+      },
+      {
+        "id": "1793",
+        "pl": "Podstawa / Konsola fotela przedniego kierowcy"
+      },
+      {
+        "id": "1794",
+        "pl": "Podstawa / Konsola fotela przedniego pasażera"
+      },
+      {
+        "id": "1825",
+        "pl": "Zagłówek fotela przedniego"
+      },
+      {
+        "id": "1826",
+        "pl": "Zagłówek fotela tylnego"
+      },
+      {
+        "id": "1837",
+        "pl": "Zagłówek tylnego fotela trzeciego rzędu"
+      },
+      {
+        "id": "1866",
+        "pl": "Wentylator / Dmuchawa fotela"
+      },
+      {
+        "id": "1903",
+        "pl": "Osłona / zaślepka ISOFIX"
+      },
+      {
+        "id": "1942",
+        "pl": "Pokrętło regulacyjne fotela"
+      },
+      {
+        "id": "1943",
+        "pl": "Poszycie fotela"
+      },
+      {
+        "id": "1944",
+        "pl": "Mechanizm regulacji fotela"
+      },
+      {
+        "id": "1982",
+        "pl": "Podłokietnik tylnej kanapy"
+      },
+      {
+        "id": "1983",
+        "pl": "Uchwyt do regulacji siedziska"
+      },
+      {
+        "id": "1990",
+        "pl": "Uchwyt ISOFIX"
+      },
+      {
+        "id": "2012",
+        "pl": "Rama siedziska"
+      },
+      {
+        "id": "2014",
+        "pl": "Element grzewczy siedzenia"
+      },
+      {
+        "id": "2059",
+        "pl": "Kabel / uchwyt tylnego siedzenia"
+      },
+      {
+        "id": "2064",
+        "pl": "Taca składana"
+      },
+      {
+        "id": "2113",
+        "pl": "Szyna prowadząca tylnego siedzenia"
+      },
+      {
+        "id": "1001",
+        "pl": "Woltomierz"
+      },
+      {
+        "id": "1003",
+        "pl": "Czujnik temperatury paliwa"
+      },
+      {
+        "id": "1004",
+        "pl": "Monitor / wyświetlacz / ekran"
+      },
+      {
+        "id": "1005",
+        "pl": "Inne wyposażenie elektryczne"
+      },
+      {
+        "id": "1006",
+        "pl": "Zegar"
+      },
+      {
+        "id": "1007",
+        "pl": "Czujnik temperatury zewnętrznej"
+      },
+      {
+        "id": "1008",
+        "pl": "Sygnalizator zmiany biegów"
+      },
+      {
+        "id": "1009",
+        "pl": "Licznik / Prędkościomierz"
+      },
+      {
+        "id": "1010",
+        "pl": "Tachometr"
+      },
+      {
+        "id": "1011",
+        "pl": "Taksometr"
+      },
+      {
+        "id": "1012",
+        "pl": "Czujnik temperatury oleju"
+      },
+      {
+        "id": "1013",
+        "pl": "Czujnik ciśnienia doładowania turbosprężarki"
+      },
+      {
+        "id": "1688",
+        "pl": "Wyświetlacz Head Up"
+      },
+      {
+        "id": "1692",
+        "pl": "Falownik / Przetwornica napięcia"
+      },
+      {
+        "id": "1745",
+        "pl": "Wyświetlacz parkowania PDC"
+      },
+      {
+        "id": "1752",
+        "pl": "Radar / Czujnik Distronic"
+      },
+      {
+        "id": "1775",
+        "pl": "Telefon"
+      },
+      {
+        "id": "1790",
+        "pl": "Kamera szyby przedniej / czołowej"
+      },
+      {
+        "id": "1912",
+        "pl": "Inny element deski rozdzielczej"
+      },
+      {
+        "id": "2026",
+        "pl": "Kamera noktowizyjna"
+      },
+      {
+        "id": "2067",
+        "pl": "Kamera na błotniku bocznym"
+      },
+      {
+        "id": "1015",
+        "pl": "Przełącznik antenowy"
+      },
+      {
+        "id": "1016",
+        "pl": "Przycisk kontroli trakcji ASR"
+      },
+      {
+        "id": "1017",
+        "pl": "Przycisk dziecko w samochodzie"
+      },
+      {
+        "id": "1018",
+        "pl": "Przycisk hamulca ręcznego"
+      },
+      {
+        "id": "1019",
+        "pl": "Programator ogrzewania postojowego Webasto"
+      },
+      {
+        "id": "1020",
+        "pl": "Przycisk zapłonu Start / Stop"
+      },
+      {
+        "id": "1021",
+        "pl": "Przycisk świateł awaryjnych"
+      },
+      {
+        "id": "1022",
+        "pl": "Przycisk otwierania klapy bagażnika"
+      },
+      {
+        "id": "1023",
+        "pl": "Przełącznik komputera pokładowego"
+      },
+      {
+        "id": "1024",
+        "pl": "Przycisk centralnego zamka"
+      },
+      {
+        "id": "1025",
+        "pl": "Przełącznik instalacji gazowej"
+      },
+      {
+        "id": "1026",
+        "pl": "Przełącznik blokady mostu"
+      },
+      {
+        "id": "1027",
+        "pl": "Przyciski szyb"
+      },
+      {
+        "id": "1028",
+        "pl": "Przyciski / Przełącznik regulacji głośności"
+      },
+      {
+        "id": "1029",
+        "pl": "Przycisk / Włącznik oświetlenia wnętrza kabiny"
+      },
+      {
+        "id": "1030",
+        "pl": "Wyłącznik poduszki powietrznej Airbag pasażera"
+      },
+      {
+        "id": "1031",
+        "pl": "Inne przełączniki i przyciski"
+      },
+      {
+        "id": "1032",
+        "pl": "Przycisk otwierania wlewu paliwa"
+      },
+      {
+        "id": "1033",
+        "pl": "Przyciski multifunkcyjne"
+      },
+      {
+        "id": "1034",
+        "pl": "Przełącznik obiegu powietrza"
+      },
+      {
+        "id": "1035",
+        "pl": "Przycisk / Pokrętło regulacji oświetlenia deski rozdzielczej"
+      },
+      {
+        "id": "1036",
+        "pl": "Przełącznik / Manetka tempomatu"
+      },
+      {
+        "id": "1037",
+        "pl": "Manetki / Pokrętła / Łopatki zmiany biegów"
+      },
+      {
+        "id": "1038",
+        "pl": "Włącznik świateł przeciwmgielnych"
+      },
+      {
+        "id": "1039",
+        "pl": "Przełącznik / Włącznik nawiewu dmuchawy"
+      },
+      {
+        "id": "1040",
+        "pl": "Przyciski pamięci fotela"
+      },
+      {
+        "id": "1041",
+        "pl": "Przyciski sterowania fotela"
+      },
+      {
+        "id": "1042",
+        "pl": "Przełączniki podgrzewania foteli"
+      },
+      {
+        "id": "1043",
+        "pl": "Przycisk alarmu"
+      },
+      {
+        "id": "1044",
+        "pl": "Przycisk szyberdachu"
+      },
+      {
+        "id": "1045",
+        "pl": "Przełącznik świateł"
+      },
+      {
+        "id": "1046",
+        "pl": "Manetka / Przełącznik prędkości wycieraczek"
+      },
+      {
+        "id": "1047",
+        "pl": "Manetka / Przełącznik wycieraczek"
+      },
+      {
+        "id": "1048",
+        "pl": "Przycisk / Przełącznik zawieszenia"
+      },
+      {
+        "id": "1049",
+        "pl": "Przycisk regulacji lusterek bocznych"
+      },
+      {
+        "id": "1050",
+        "pl": "Przycisk / Pokrętło regulacji świateł"
+      },
+      {
+        "id": "1051",
+        "pl": "Manetka / Włącznik wycieraczek świateł"
+      },
+      {
+        "id": "1324",
+        "pl": "Przycisk / Przełącznik ogrzewania szyby przedniej / czołowej"
+      },
+      {
+        "id": "1526",
+        "pl": "Przycisk / Włącznik hamulca ręcznego"
+      },
+      {
+        "id": "1527",
+        "pl": "Przycisk / Włącznik podgrzewania lusterek"
+      },
+      {
+        "id": "1532",
+        "pl": "Przycisk / Włącznik DTC"
+      },
+      {
+        "id": "1535",
+        "pl": "Przycisk / Włącznik czujnika parkowania PDC"
+      },
+      {
+        "id": "1536",
+        "pl": "Przycisk / Włącznik ABS"
+      },
+      {
+        "id": "1539",
+        "pl": "Przycisk / Włącznik klimatyzacji A/C"
+      },
+      {
+        "id": "1540",
+        "pl": "Przycisk / Włącznik ESP"
+      },
+      {
+        "id": "1746",
+        "pl": "Włącznik bramy garażowej"
+      },
+      {
+        "id": "1748",
+        "pl": "Przełącznik regulacji kierownicy"
+      },
+      {
+        "id": "1756",
+        "pl": "Przełącznik / Przycisk otwierania drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "1757",
+        "pl": "Przełącznik / Przycisk otwierania szyb"
+      },
+      {
+        "id": "1761",
+        "pl": "Przełącznik / Przycisk otwierania klapy bagażnika"
+      },
+      {
+        "id": "1848",
+        "pl": "Przełącznik / Przycisk kierownicy"
+      },
+      {
+        "id": "1883",
+        "pl": "Włącznik spryskiwaczy świateł"
+      },
+      {
+        "id": "1890",
+        "pl": "Zestaw przełączników i przycisków"
+      },
+      {
+        "id": "2001",
+        "pl": "Przycisk resetowania ciśnienia w oponach"
+      },
+      {
+        "id": "2108",
+        "pl": "Przycisk Sos"
+      },
+      {
+        "id": "1054",
+        "pl": "Przekaźnik ABS"
+      },
+      {
+        "id": "1055",
+        "pl": "Przekaźnik poziomu płynu chłodzącego"
+      },
+      {
+        "id": "1056",
+        "pl": "Sterownik / Moduł wentylatorów"
+      },
+      {
+        "id": "1057",
+        "pl": "Sterownik świateł awaryjnych"
+      },
+      {
+        "id": "1058",
+        "pl": "Przekaźnik / Moduł cenyralengo zamka"
+      },
+      {
+        "id": "1059",
+        "pl": "Przekaźnik zapłonu"
+      },
+      {
+        "id": "1060",
+        "pl": "Przekaźnik świateł dziennych"
+      },
+      {
+        "id": "1061",
+        "pl": "Przekaźnik / Sterownik podnośnika szyb"
+      },
+      {
+        "id": "1062",
+        "pl": "Przekaźnik / Moduł świateł tylnych"
+      },
+      {
+        "id": "1063",
+        "pl": "Przekaźnik klaksonu"
+      },
+      {
+        "id": "1064",
+        "pl": "Przekaźnik ładowania"
+      },
+      {
+        "id": "1065",
+        "pl": "Przekaźnik wskaźnika"
+      },
+      {
+        "id": "1066",
+        "pl": "Inne przekaźniki"
+      },
+      {
+        "id": "1067",
+        "pl": "Przekaźnik czujnika poziomu paliwa"
+      },
+      {
+        "id": "1068",
+        "pl": "Przekaźnik pompy paliwa"
+      },
+      {
+        "id": "1069",
+        "pl": "Przekaźnik spryskiwaczy"
+      },
+      {
+        "id": "1070",
+        "pl": "Przekaźnik sterowania szyb"
+      },
+      {
+        "id": "1071",
+        "pl": "Przekaźnik czasowy wycieraczek"
+      },
+      {
+        "id": "1072",
+        "pl": "Moduł / Przekaźnik wycieraczek"
+      },
+      {
+        "id": "1073",
+        "pl": "Moduł / Przekaźnik tempomatu"
+      },
+      {
+        "id": "1074",
+        "pl": "Przekaźnik wskaźnika zmiany biegów"
+      },
+      {
+        "id": "1075",
+        "pl": "Moduł / Przekaźnik haka holowniczego"
+      },
+      {
+        "id": "1076",
+        "pl": "Skrzynka przekaźników"
+      },
+      {
+        "id": "1077",
+        "pl": "Moduł / Przekaźnik oświetlenia wnętrza kabiny"
+      },
+      {
+        "id": "1078",
+        "pl": "Przekaźnik dmuchawy"
+      },
+      {
+        "id": "1079",
+        "pl": "Przekaźnik ostrzeżenia pasa bezpieczeństwa"
+      },
+      {
+        "id": "1080",
+        "pl": "Moduł / Przekaźnik podgrzewania foteli"
+      },
+      {
+        "id": "1081",
+        "pl": "Przekaźnik alarmu"
+      },
+      {
+        "id": "1083",
+        "pl": "Przekaźnik sterujący prądem"
+      },
+      {
+        "id": "1084",
+        "pl": "Przekaźnik świateł"
+      },
+      {
+        "id": "1085",
+        "pl": "Przekaźnik czujnika ciśnienia oleju"
+      },
+      {
+        "id": "1086",
+        "pl": "Przekaźnik stanu bezczynności"
+      },
+      {
+        "id": "1087",
+        "pl": "Przekaźnik blokady zapłonu"
+      },
+      {
+        "id": "1088",
+        "pl": "Przekaźnik rozrusznika"
+      },
+      {
+        "id": "1089",
+        "pl": "Przekaźnik spryskiwaczy lamp"
+      },
+      {
+        "id": "1090",
+        "pl": "Przekaźnik / Modul układu ogrzewania wstępnego"
+      },
+      {
+        "id": "1092",
+        "pl": "Nadwozie"
+      },
+      {
+        "id": "1093",
+        "pl": "Podłużnica przednia"
+      },
+      {
+        "id": "1094",
+        "pl": "Ćwiartka przednia"
+      },
+      {
+        "id": "1095",
+        "pl": "Ćwiartka tylna"
+      },
+      {
+        "id": "1096",
+        "pl": "Słupek środkowy"
+      },
+      {
+        "id": "1097",
+        "pl": "Dach"
+      },
+      {
+        "id": "1098",
+        "pl": "Podłoga bagażnika"
+      },
+      {
+        "id": "1099",
+        "pl": "Rama"
+      },
+      {
+        "id": "1400",
+        "pl": "Inna część podwozia"
+      },
+      {
+        "id": "1439",
+        "pl": "Listwa progowa przednia / nakładka"
+      },
+      {
+        "id": "1440",
+        "pl": "Listwa progowa tylna / nakładka"
+      },
+      {
+        "id": "1763",
+        "pl": "Nadkole tylne"
+      },
+      {
+        "id": "1764",
+        "pl": "Nadkole przednie"
+      },
+      {
+        "id": "1888",
+        "pl": "Elementy przedniej części nadwozia"
+      },
+      {
+        "id": "1889",
+        "pl": "Elementy tylnej części nadwozia"
+      },
+      {
+        "id": "2077",
+        "pl": "Izolacja akustyczna zapory"
+      },
+      {
+        "id": "2080",
+        "pl": "Bok karoserii"
+      },
+      {
+        "id": "2115",
+        "pl": "Przegroda kabiny"
+      },
+      {
+        "id": "1101",
+        "pl": "Szyberdach komplet"
+      },
+      {
+        "id": "1102",
+        "pl": "Stelaż szyberdachu"
+      },
+      {
+        "id": "1103",
+        "pl": "Rynna szyberdachu"
+      },
+      {
+        "id": "1104",
+        "pl": "Silniczek szyberdachu"
+      },
+      {
+        "id": "1105",
+        "pl": "Odpływ szyberdachu"
+      },
+      {
+        "id": "1106",
+        "pl": "Instalacja szyberdachu elektrycznego"
+      },
+      {
+        "id": "1107",
+        "pl": "Owiewka / Deflektor powietrza szyberdachu"
+      },
+      {
+        "id": "2029",
+        "pl": "Szklany szyberdach"
+      },
+      {
+        "id": "2055",
+        "pl": "Guma uszczelniająca szyberdachu"
+      },
+      {
+        "id": "1109",
+        "pl": "Ślizg listwy progowej"
+      },
+      {
+        "id": "1110",
+        "pl": "Osłona listwy przedniej"
+      },
+      {
+        "id": "1112",
+        "pl": "Listwa błotnika tylnego"
+      },
+      {
+        "id": "1167",
+        "pl": "Osłona / Nakładka progu"
+      },
+      {
+        "id": "1208",
+        "pl": "Chlapacze przednie"
+      },
+      {
+        "id": "1209",
+        "pl": "Chlapacze tylne"
+      },
+      {
+        "id": "1210",
+        "pl": "Próg"
+      },
+      {
+        "id": "1605",
+        "pl": "Listwa progowa"
+      },
+      {
+        "id": "1768",
+        "pl": "Listwa tylnego błotnika"
+      },
+      {
+        "id": "2042",
+        "pl": "Komplet chlapaczy"
+      },
+      {
+        "id": "1114",
+        "pl": "Elementy bagażnika do nadwozia Pickup"
+      },
+      {
+        "id": "1115",
+        "pl": "Klapa tylna bagażnika do nadwozia Pickup"
+      },
+      {
+        "id": "1116",
+        "pl": "Klapa boczna bagażnika do nadwozia Pickup"
+      },
+      {
+        "id": "1117",
+        "pl": "Pokrywa paki"
+      },
+      {
+        "id": "1118",
+        "pl": "Górna pokrywa bagażnika"
+      },
+      {
+        "id": "1119",
+        "pl": "Mata bagażnika do nadwozia Pickup"
+      },
+      {
+        "id": "413",
+        "pl": "Sterownik / Moduł tylnego zawieszenia pneumatycznego"
+      },
+      {
+        "id": "1122",
+        "pl": "Panel klimatyzacji"
+      },
+      {
+        "id": "1133",
+        "pl": "Sterownik / moduł ABS"
+      },
+      {
+        "id": "1134",
+        "pl": "Sterownik / Moduł Airbag"
+      },
+      {
+        "id": "1135",
+        "pl": "Sterownik / Moduł APC"
+      },
+      {
+        "id": "1136",
+        "pl": "Sterownik / Moduł ASC"
+      },
+      {
+        "id": "1137",
+        "pl": "Sterownik / Moduł elektrycznej klapy tylnej / bagażnika"
+      },
+      {
+        "id": "1138",
+        "pl": "Sterownik / moduł podziału momentu obrotowego"
+      },
+      {
+        "id": "1139",
+        "pl": "Sterownik / Moduł Webasto"
+      },
+      {
+        "id": "1140",
+        "pl": "Sterownik / Moduł pompy wtryskowej"
+      },
+      {
+        "id": "1141",
+        "pl": "Sterownik / moduł gaźnika"
+      },
+      {
+        "id": "1142",
+        "pl": "Sterownik / Moduł centralnego zamka"
+      },
+      {
+        "id": "1143",
+        "pl": "Sterownik / Moduł alarmu"
+      },
+      {
+        "id": "1144",
+        "pl": "Sterownik / Moduł licznika / prędkościomierza"
+      },
+      {
+        "id": "1145",
+        "pl": "Sterownik / Moduł zawieszenia pneumatycznego"
+      },
+      {
+        "id": "1146",
+        "pl": "Sterownik / moduł świateł Xenon"
+      },
+      {
+        "id": "1147",
+        "pl": "Sterownik / moduł tempomatu"
+      },
+      {
+        "id": "1148",
+        "pl": "Sterownik / Moduł haka holowniczego"
+      },
+      {
+        "id": "1149",
+        "pl": "Sterownik / Moduł drzwi"
+      },
+      {
+        "id": "1150",
+        "pl": "Sterownik / Moduł spalin"
+      },
+      {
+        "id": "1151",
+        "pl": "Sterownik / Moduł napędu"
+      },
+      {
+        "id": "1152",
+        "pl": "Sterownik / Moduł skrzyni biegów"
+      },
+      {
+        "id": "1153",
+        "pl": "Sterownik / Moduł zapłonu"
+      },
+      {
+        "id": "1154",
+        "pl": "Sterownik / moduł wtrysku"
+      },
+      {
+        "id": "1155",
+        "pl": "Sterownik / Moduł ECU"
+      },
+      {
+        "id": "1156",
+        "pl": "Sterownik / Moduł komfortu"
+      },
+      {
+        "id": "1157",
+        "pl": "Inne komputery / moduły / sterowniki"
+      },
+      {
+        "id": "1158",
+        "pl": "Sterownik / Moduł parkowania PDC"
+      },
+      {
+        "id": "1159",
+        "pl": "Moduł / Sterownik wspomagania kierownicy"
+      },
+      {
+        "id": "1160",
+        "pl": "Moduł / Sterownik telefonu"
+      },
+      {
+        "id": "1161",
+        "pl": "Moduł / Sterownik hamulca postojowego EMF"
+      },
+      {
+        "id": "1162",
+        "pl": "Moduł / Sterownik szyberdachu"
+      },
+      {
+        "id": "1163",
+        "pl": "Moduł / Sterownik haka przyczepy AHM"
+      },
+      {
+        "id": "1211",
+        "pl": "Moduł / Sterownik hamulca"
+      },
+      {
+        "id": "1259",
+        "pl": "Moduł / Sterownik komfortu"
+      },
+      {
+        "id": "1268",
+        "pl": "Moduł / Sterownik gazu LPG"
+      },
+      {
+        "id": "1378",
+        "pl": "Moduł / Sterownik immobilizera"
+      },
+      {
+        "id": "1412",
+        "pl": "Sterownik / Moduł świateł LCM"
+      },
+      {
+        "id": "1491",
+        "pl": "Moduł / Sterownik Bluetooth"
+      },
+      {
+        "id": "1504",
+        "pl": "Moduł / Sterownik GPS"
+      },
+      {
+        "id": "1563",
+        "pl": "Moduł / Sterownik CAS"
+      },
+      {
+        "id": "1578",
+        "pl": "Sterownik / Moduł wtrysków"
+      },
+      {
+        "id": "1657",
+        "pl": "Moduł / Sterownik lusterek bocznych"
+      },
+      {
+        "id": "1682",
+        "pl": "Moduł / Sterownik MPM"
+      },
+      {
+        "id": "1698",
+        "pl": "Moduł / Sterownik wentylatora dmuchawy"
+      },
+      {
+        "id": "1724",
+        "pl": "Moduł / Sterownik zarządzania energią MPM"
+      },
+      {
+        "id": "1725",
+        "pl": "Moduł / Sterownik Video"
+      },
+      {
+        "id": "1726",
+        "pl": "Sterownik / Moduł sterujący telefonem"
+      },
+      {
+        "id": "1741",
+        "pl": "Moduł / Sterownik hamulca ręcznego"
+      },
+      {
+        "id": "1758",
+        "pl": "Komputer / Sterownik ECU silnika"
+      },
+      {
+        "id": "1759",
+        "pl": "Moduł / Sterownik jednostki centralnej"
+      },
+      {
+        "id": "1760",
+        "pl": "Moduł / Sterownik kierownicy"
+      },
+      {
+        "id": "1782",
+        "pl": "Moduł martwego pola"
+      },
+      {
+        "id": "1785",
+        "pl": "Moduł / Sterownik fotela"
+      },
+      {
+        "id": "1787",
+        "pl": "Moduł / Sterownik systemu uruchamiania bezkluczykowego"
+      },
+      {
+        "id": "1802",
+        "pl": "Moduł / Sterownik drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "1845",
+        "pl": "Konsola środkowa / Panel sterowania"
+      },
+      {
+        "id": "1850",
+        "pl": "Moduł / Sterownik stabilizatora aktywnego"
+      },
+      {
+        "id": "1867",
+        "pl": "Sterownik / Moduł kontroli ciśnienia w oponach"
+      },
+      {
+        "id": "1871",
+        "pl": "Moduł / Sterownik anteny"
+      },
+      {
+        "id": "1874",
+        "pl": "Sterowania klimatyzacji / Ogrzewania"
+      },
+      {
+        "id": "1875",
+        "pl": "Przetwornica napięcia / Moduł przetwornicy"
+      },
+      {
+        "id": "1878",
+        "pl": "Moduł / Sterownik ESP"
+      },
+      {
+        "id": "1896",
+        "pl": "Moduł ładowania bezprzewodowego"
+      },
+      {
+        "id": "1900",
+        "pl": "Moduł / Sterownik USB"
+      },
+      {
+        "id": "1901",
+        "pl": "Moduł / Sterownik dziku audio HiFi"
+      },
+      {
+        "id": "1914",
+        "pl": "Moduł / Sterownik BSM"
+      },
+      {
+        "id": "1936",
+        "pl": "Moduł sterowania Gateway"
+      },
+      {
+        "id": "1937",
+        "pl": "Jednostka sterowania SAM"
+      },
+      {
+        "id": "1938",
+        "pl": "Moduł sterowania ładowania akumulatora"
+      },
+      {
+        "id": "1940",
+        "pl": "Jednostka MMI"
+      },
+      {
+        "id": "1977",
+        "pl": "Moduł / Sterownik kamery"
+      },
+      {
+        "id": "1978",
+        "pl": "Moduł / Sterownik klimatyzacji"
+      },
+      {
+        "id": "2021",
+        "pl": "Moduł sterowania SOS"
+      },
+      {
+        "id": "2023",
+        "pl": "Jednostka sterująca bramą"
+      },
+      {
+        "id": "2024",
+        "pl": "Jednostka sterująca dachem kabrioletu"
+      },
+      {
+        "id": "2061",
+        "pl": "Uchwyt jednostki sterującej Bluetooth"
+      },
+      {
+        "id": "2068",
+        "pl": "Jednostka sterująca otwieraniem pokrywy bagażnika"
+      },
+      {
+        "id": "2070",
+        "pl": "Uchwyt jednostki sterującej silnika"
+      },
+      {
+        "id": "2084",
+        "pl": "Skrzynka jednostki sterującej silnika"
+      },
+      {
+        "id": "2097",
+        "pl": "Moduł sterujący Start/Stop"
+      },
+      {
+        "id": "2098",
+        "pl": "Zestaw systemu Start/Stop"
+      },
+      {
+        "id": "1165",
+        "pl": "Manetka / Przełącznik kierunkowskazów wycieraczek"
+      },
+      {
+        "id": "1183",
+        "pl": "Kierownica"
+      },
+      {
+        "id": "1184",
+        "pl": "Stacyjka"
+      },
+      {
+        "id": "1185",
+        "pl": "Taśma / Pierścień ślizgowy Airbag / SRS"
+      },
+      {
+        "id": "1207",
+        "pl": "Elementy poszycia kolumny kierowniczej"
+      },
+      {
+        "id": "1212",
+        "pl": "Silniczek regulacji kolumny kierowniczej"
+      },
+      {
+        "id": "1415",
+        "pl": "Blokada kolumny kierownicy"
+      },
+      {
+        "id": "1417",
+        "pl": "Manetka / Przełącznik kierunkowskazów"
+      },
+      {
+        "id": "1419",
+        "pl": "Przekaźnik blokady zapłonu"
+      },
+      {
+        "id": "1477",
+        "pl": "Klucz / Karta zapłonu"
+      },
+      {
+        "id": "1489",
+        "pl": "Manetka / Przełącznik wycieraczek"
+      },
+      {
+        "id": "1490",
+        "pl": "Manetka / Przełącznik tempomatu"
+      },
+      {
+        "id": "1533",
+        "pl": "Uchwyt / Rączka regulacji kierownicy"
+      },
+      {
+        "id": "1542",
+        "pl": "Czytnik karty"
+      },
+      {
+        "id": "1543",
+        "pl": "Antena / Czytnik / Pętla immobilizera"
+      },
+      {
+        "id": "1911",
+        "pl": "Element kierownicy"
+      },
+      {
+        "id": "2079",
+        "pl": "Kabel stacyjki"
+      },
+      {
+        "id": "2125",
+        "pl": "Przełącznik ogrzewania kierownicy"
+      },
+      {
+        "id": "1175",
+        "pl": "Chłodnica spalin EGR"
+      },
+      {
+        "id": "1176",
+        "pl": "Uchwyt / Mocowanie chłodnicy spalin EGR"
+      },
+      {
+        "id": "1177",
+        "pl": "Termostat EGR"
+      },
+      {
+        "id": "1178",
+        "pl": "Przewód / Rura chłodnicy spalin EGR"
+      },
+      {
+        "id": "1197",
+        "pl": "Zawór EGR"
+      },
+      {
+        "id": "1406",
+        "pl": "Sonda lambda"
+      },
+      {
+        "id": "1407",
+        "pl": "Filtr cząstek stałych Katalizator / FAP / DPF"
+      },
+      {
+        "id": "1420",
+        "pl": "Czujnik ciśnienia spalin"
+      },
+      {
+        "id": "1473",
+        "pl": "Pompa powietrza wtórnego"
+      },
+      {
+        "id": "1475",
+        "pl": "Czujnik temperatury spalin"
+      },
+      {
+        "id": "1780",
+        "pl": "Zbiornik płynu AdBlue"
+      },
+      {
+        "id": "1880",
+        "pl": "Mocowanie zbiornika płynu AdBlue"
+      },
+      {
+        "id": "1881",
+        "pl": "Wąż / Przwód płynu AdBlue"
+      },
+      {
+        "id": "1941",
+        "pl": "Wtrysk AdBlue"
+      },
+      {
+        "id": "1962",
+        "pl": "Przewód zasilający AdBlue"
+      },
+      {
+        "id": "2008",
+        "pl": "Czujnik poziomu płynu Adblue"
+      },
+      {
+        "id": "2009",
+        "pl": "Pompa Adblue"
+      },
+      {
+        "id": "2010",
+        "pl": "Jednostka sterująca Adblue"
+      },
+      {
+        "id": "2031",
+        "pl": "Pompa FAP"
+      },
+      {
+        "id": "2032",
+        "pl": "Wtryskiwacz FAP"
+      },
+      {
+        "id": "2033",
+        "pl": "Uchwyt zbiornika płynu FAP"
+      },
+      {
+        "id": "2034",
+        "pl": "Zbiornik płynu FAP"
+      },
+      {
+        "id": "2035",
+        "pl": "Czujnik poziomu płynu FAP"
+      },
+      {
+        "id": "2036",
+        "pl": "Jednostka sterująca pompy płynu FAP"
+      },
+      {
+        "id": "2037",
+        "pl": "Rura doprowadzająca płyn FAP"
+      },
+      {
+        "id": "2038",
+        "pl": "Rura do napełniania cieczą FAP"
+      },
+      {
+        "id": "2057",
+        "pl": "Korek zbiornika Adblue"
+      },
+      {
+        "id": "2060",
+        "pl": "Uchwyt pompy powietrza wtórnego"
+      },
+      {
+        "id": "2112",
+        "pl": "Inne części układu AdBlue"
+      },
+      {
+        "id": "1181",
+        "pl": "Pompa podciśnienia"
+      },
+      {
+        "id": "1198",
+        "pl": "Zawór podciśnieniowy"
+      },
+      {
+        "id": "1297",
+        "pl": "Przewód / Wąż podciśnienia"
+      },
+      {
+        "id": "1356",
+        "pl": "Podciśnieniowy zbiornik powietrza"
+      },
+      {
+        "id": "1416",
+        "pl": "Pompa podciśnienia tempomatu"
+      },
+      {
+        "id": "1655",
+        "pl": "Zawór podciśnienia"
+      },
+      {
+        "id": "2018",
+        "pl": "Pompa tandemowa"
+      },
+      {
+        "id": "1193",
+        "pl": "Szyba drzwi tylnych"
+      },
+      {
+        "id": "1194",
+        "pl": "Szyba karoseryjna drzwi tylnych"
+      },
+      {
+        "id": "1315",
+        "pl": "Szyba karoseryjna drzwi"
+      },
+      {
+        "id": "1317",
+        "pl": "Szyba drzwi"
+      },
+      {
+        "id": "1195",
+        "pl": "Szyba drzwi przednich"
+      },
+      {
+        "id": "1196",
+        "pl": "Szyba karoseryjna drzwi przednich"
+      },
+      {
+        "id": "81",
+        "pl": "Czujnik pedału hamulca / stopu"
+      },
+      {
+        "id": "1200",
+        "pl": "Czujniki ciśnienia spalin"
+      },
+      {
+        "id": "1201",
+        "pl": "Czujnik"
+      },
+      {
+        "id": "1325",
+        "pl": "Czujnik uderzenia Airbag"
+      },
+      {
+        "id": "1337",
+        "pl": "Czujnik AUC"
+      },
+      {
+        "id": "1344",
+        "pl": "Czujnik przyspieszenia ESP"
+      },
+      {
+        "id": "1377",
+        "pl": "Czujnik położenia pedału sprzęgła"
+      },
+      {
+        "id": "1379",
+        "pl": "Czujnik hamulca ręcznego / Postojowego"
+      },
+      {
+        "id": "1381",
+        "pl": "Czujnik deszczu"
+      },
+      {
+        "id": "1383",
+        "pl": "Czujnik parkowania PDC"
+      },
+      {
+        "id": "1386",
+        "pl": "Czujnik prędkości obrotowej"
+      },
+      {
+        "id": "1500",
+        "pl": "Włącznik / Czujnik świateł cofania"
+      },
+      {
+        "id": "1501",
+        "pl": "Wyłącznik wstrząsowy / uderzeniowy odcinający dopływ paliwa"
+      },
+      {
+        "id": "1502",
+        "pl": "Czujnik kąta skrętu"
+      },
+      {
+        "id": "1503",
+        "pl": "Czujnik prędkości"
+      },
+      {
+        "id": "1525",
+        "pl": "Czujnik temperatury wewnętrznej"
+      },
+      {
+        "id": "1537",
+        "pl": "Czujnik ciśnienia opon"
+      },
+      {
+        "id": "1560",
+        "pl": "Czujnik ciśnienia oleju"
+      },
+      {
+        "id": "1624",
+        "pl": "Czujnik temperatury zewnętrznej"
+      },
+      {
+        "id": "1660",
+        "pl": "Czujnik zużycia klocków hamulcowych"
+      },
+      {
+        "id": "1662",
+        "pl": "Czujnik nasłonecznienia"
+      },
+      {
+        "id": "1727",
+        "pl": "Czujnik ultradźwiękowy"
+      },
+      {
+        "id": "1732",
+        "pl": "Czujnik otwarcia klapy bagażnika"
+      },
+      {
+        "id": "1819",
+        "pl": "Czujnik ruchu"
+      },
+      {
+        "id": "1844",
+        "pl": "Czujnik przewodu odpowietrzającego / odmy"
+      },
+      {
+        "id": "1865",
+        "pl": "Czujnik zajęcia fotela"
+      },
+      {
+        "id": "1981",
+        "pl": "Kabel licznika / prędkościomierza"
+      },
+      {
+        "id": "2069",
+        "pl": "Czujnik otwarcia pokrywy bagażnika"
+      },
+      {
+        "id": "1203",
+        "pl": "Minus / Klema / Przewód akumulatora"
+      },
+      {
+        "id": "1204",
+        "pl": "Plus / Klema / Przewód akumulatora"
+      },
+      {
+        "id": "1205",
+        "pl": "Wiązka przewodów drzwi przednich"
+      },
+      {
+        "id": "1206",
+        "pl": "Wiązka przewodów drzwi tylnych"
+      },
+      {
+        "id": "1213",
+        "pl": "Wiązka przewodów dodatnich"
+      },
+      {
+        "id": "1291",
+        "pl": "Wiązka przewodów lamp przednich"
+      },
+      {
+        "id": "1303",
+        "pl": "Przewód świec żarowych"
+      },
+      {
+        "id": "1304",
+        "pl": "Wiązka świec"
+      },
+      {
+        "id": "1305",
+        "pl": "Wiązka wtryskiwaczy"
+      },
+      {
+        "id": "1306",
+        "pl": "Wiązka przewodów silnika"
+      },
+      {
+        "id": "1528",
+        "pl": "Kabel do zmieniarki CD"
+      },
+      {
+        "id": "1530",
+        "pl": "Wiązka przewodów klapy tylnej / bagażnika"
+      },
+      {
+        "id": "1531",
+        "pl": "Wiązka przewodów lamp tylnych"
+      },
+      {
+        "id": "1534",
+        "pl": "Wiązka przewodów czujnika parkowania PDC"
+      },
+      {
+        "id": "1555",
+        "pl": "Wiązka przewodów drzwi tylnych samochodów dostawczych"
+      },
+      {
+        "id": "1556",
+        "pl": "Wiązka przewodów drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "1561",
+        "pl": "Wiązka przewodów skrzyni biegów / przekładni"
+      },
+      {
+        "id": "1562",
+        "pl": "Inna wiązka przewodów / kabli"
+      },
+      {
+        "id": "1658",
+        "pl": "Przewód przedniego czujnika ABS"
+      },
+      {
+        "id": "1659",
+        "pl": "Przewód tylnego czujnika ABS"
+      },
+      {
+        "id": "1687",
+        "pl": "Złącze ISO"
+      },
+      {
+        "id": "1749",
+        "pl": "Gniazdo 12V przednie"
+      },
+      {
+        "id": "1750",
+        "pl": "Gniazdo 12V tylne"
+      },
+      {
+        "id": "1904",
+        "pl": "Okablowanie deski rozdzielczej"
+      },
+      {
+        "id": "1954",
+        "pl": "Kabel do ładowania samochodu elektrycznego"
+      },
+      {
+        "id": "1968",
+        "pl": "Wiązka wentylatora dmuchawy"
+      },
+      {
+        "id": "1969",
+        "pl": "Taśma / Pierścień ślizgowy Airbag"
+      },
+      {
+        "id": "1992",
+        "pl": "Wiązka przewodów siedzenia"
+      },
+      {
+        "id": "1993",
+        "pl": "Wiązka przewodów systemu dźwiękowego"
+      },
+      {
+        "id": "1994",
+        "pl": "Okablowanie kamery"
+      },
+      {
+        "id": "1995",
+        "pl": "Wtyczka złącza modułu ABS"
+      },
+      {
+        "id": "1997",
+        "pl": "Gniazdo ładowania samochodu elektrycznego"
+      },
+      {
+        "id": "1998",
+        "pl": "Osłona gniazda ładowania samochodu elektrycznego"
+      },
+      {
+        "id": "2045",
+        "pl": "Kabel wysokiego napięcia"
+      },
+      {
+        "id": "2089",
+        "pl": "Prawa wewnętrzna wiązka przewodów"
+      },
+      {
+        "id": "2090",
+        "pl": "Lewa wiązka przewodów wewnętrznych"
+      },
+      {
+        "id": "2126",
+        "pl": "Wiązka przewodów"
+      },
+      {
+        "id": "73",
+        "pl": "Pedał hamulca"
+      },
+      {
+        "id": "74",
+        "pl": "Stelaż pedału hamulca"
+      },
+      {
+        "id": "434",
+        "pl": "Pedał sprzęgła"
+      },
+      {
+        "id": "435",
+        "pl": "Mocowanie pedału sprzęgła"
+      },
+      {
+        "id": "1225",
+        "pl": "Pedał gazu / przyspieszenia"
+      },
+      {
+        "id": "1226",
+        "pl": "Mocowanie pedału gazu / przyspieszenia"
+      },
+      {
+        "id": "1227",
+        "pl": "Czujnik położenia pedału gazu / przyspieszenia"
+      },
+      {
+        "id": "1573",
+        "pl": "Linka gazu / przepustnicy"
+      },
+      {
+        "id": "1587",
+        "pl": "Pedały / Komplet"
+      },
+      {
+        "id": "1237",
+        "pl": "Bezpiecznik"
+      },
+      {
+        "id": "1238",
+        "pl": "Skrzynka bezpieczników / Komplet"
+      },
+      {
+        "id": "1239",
+        "pl": "Pokrywa skrzynki bezpieczników"
+      },
+      {
+        "id": "1240",
+        "pl": "Ramka / Moduł bezpieczników"
+      },
+      {
+        "id": "1950",
+        "pl": "Bezpiecznik / Przekaźnika akumulatora"
+      },
+      {
+        "id": "2047",
+        "pl": "Skrzynka przyłączeniowa wysokiego napięcia"
+      },
+      {
+        "id": "1242",
+        "pl": "Akumulator"
+      },
+      {
+        "id": "1243",
+        "pl": "Podstawa / Obudowa akumulatora"
+      },
+      {
+        "id": "1244",
+        "pl": "Półka akumulatora"
+      },
+      {
+        "id": "1245",
+        "pl": "Mocowanie akumulatora"
+      },
+      {
+        "id": "1246",
+        "pl": "Pokrywa skrzynki akumulatora"
+      },
+      {
+        "id": "1247",
+        "pl": "Ładowarka do akumulatora"
+      },
+      {
+        "id": "1248",
+        "pl": "Osłona termiczna akumulatora"
+      },
+      {
+        "id": "1689",
+        "pl": "Bateria do samochodu elektrycznego / hybrydowego"
+      },
+      {
+        "id": "1693",
+        "pl": "Taca na baterię pojazdu hybrydowego / elektrycznego"
+      },
+      {
+        "id": "1694",
+        "pl": "Mocowanie baterii pojazdu hybrydowego / elektrycznego"
+      },
+      {
+        "id": "1754",
+        "pl": "Wentylator baterii pojazdu hybrydowego / elektrycznego"
+      },
+      {
+        "id": "2049",
+        "pl": "Elektryczny podgrzewacz akumulatora"
+      },
+      {
+        "id": "2054",
+        "pl": "Ogniwo akumulatora do samochodów hybrydowych / elektrycznych"
+      },
+      {
+        "id": "1251",
+        "pl": "Inne części wnętrza samochodu"
+      },
+      {
+        "id": "1253",
+        "pl": "Inne części karoserii"
+      },
+      {
+        "id": "1255",
+        "pl": "Inne części komory silnika"
+      },
+      {
+        "id": "1257",
+        "pl": "Inne części podwozia"
+      },
+      {
+        "id": "1264",
+        "pl": "Instalacja LPG / Komplet"
+      },
+      {
+        "id": "1265",
+        "pl": "Zbiornik LPG"
+      },
+      {
+        "id": "1266",
+        "pl": "Reduktor LPG"
+      },
+      {
+        "id": "1267",
+        "pl": "Czujnik temperatury reduktora LPG"
+      },
+      {
+        "id": "1269",
+        "pl": "Przewód / Rura gazu LPG"
+      },
+      {
+        "id": "1270",
+        "pl": "Szyna montażowa wtryskiwaczy gazu LPG"
+      },
+      {
+        "id": "1271",
+        "pl": "Wtryskiwacz gazu LPG"
+      },
+      {
+        "id": "1272",
+        "pl": "Wtryskiwacze LPG / Komplet"
+      },
+      {
+        "id": "1273",
+        "pl": "Elektrozawór gazu LPG"
+      },
+      {
+        "id": "1274",
+        "pl": "Filtr gazu LPG"
+      },
+      {
+        "id": "1275",
+        "pl": "Wielozawór zbiornika gazu LPG"
+      },
+      {
+        "id": "2046",
+        "pl": "Zestaw osprzętu gazowego bez butli"
+      },
+      {
+        "id": "1277",
+        "pl": "Panel / Radioodtwarzacz CD/DVD/GPS"
+      },
+      {
+        "id": "1278",
+        "pl": "Wzmacniacz audio"
+      },
+      {
+        "id": "1279",
+        "pl": "Wzmacniacz anteny"
+      },
+      {
+        "id": "1280",
+        "pl": "Głośnik drzwi przednich"
+      },
+      {
+        "id": "1281",
+        "pl": "Głośnik niskotonowy"
+      },
+      {
+        "id": "1283",
+        "pl": "Głośnik deski rozdzielczej"
+      },
+      {
+        "id": "1335",
+        "pl": "Głośnik drzwi tylnych"
+      },
+      {
+        "id": "1336",
+        "pl": "Głośnik półki bagażnika"
+      },
+      {
+        "id": "1338",
+        "pl": "Zmieniarka płyt CD/DVD"
+      },
+      {
+        "id": "1375",
+        "pl": "Filtr anteny"
+      },
+      {
+        "id": "1411",
+        "pl": "Głośnik wysokotonowy drzwi przednich"
+      },
+      {
+        "id": "1548",
+        "pl": "Stacja multimedialna GPS / CD / DVD"
+      },
+      {
+        "id": "1564",
+        "pl": "Maskownica głośnika niskotonowego"
+      },
+      {
+        "id": "1609",
+        "pl": "Gniazdo / Złącze AUX"
+      },
+      {
+        "id": "1610",
+        "pl": "Gniazdo / Złącze USB"
+      },
+      {
+        "id": "1676",
+        "pl": "Głośnik / Buzzer czujnika parkowania PDC"
+      },
+      {
+        "id": "1684",
+        "pl": "Panel radia"
+      },
+      {
+        "id": "1685",
+        "pl": "Mapy do nawigacji CD/DVD"
+      },
+      {
+        "id": "1697",
+        "pl": "Gniazdo iPod"
+      },
+      {
+        "id": "1791",
+        "pl": "Mikrofon Bluetooth / Telefon"
+      },
+      {
+        "id": "1870",
+        "pl": "Głośnik wysokotonowy drzwi tylnych"
+      },
+      {
+        "id": "1893",
+        "pl": "Zestaw audio"
+      },
+      {
+        "id": "1953",
+        "pl": "Zestaw głośnomówiący"
+      },
+      {
+        "id": "1965",
+        "pl": "Uchwyt / Mocowanie wzmacniacza dźwięku"
+      },
+      {
+        "id": "1966",
+        "pl": "Uchwyt / Mocowanie nawigacji GPS"
+      },
+      {
+        "id": "2100",
+        "pl": "Głośnik sufitowy"
+      },
+      {
+        "id": "1290",
+        "pl": "Uszczelka wlewu paliwa"
+      },
+      {
+        "id": "1476",
+        "pl": "Inny emblemat / znaczek"
+      },
+      {
+        "id": "1508",
+        "pl": "Antena GPS"
+      },
+      {
+        "id": "1509",
+        "pl": "Relingi dachowe"
+      },
+      {
+        "id": "1510",
+        "pl": "Listwa dachowa"
+      },
+      {
+        "id": "1729",
+        "pl": "Listwa szyby czołowej / przedniej"
+      },
+      {
+        "id": "1792",
+        "pl": "Drabina"
+      },
+      {
+        "id": "1856",
+        "pl": "Antena radiowa"
+      },
+      {
+        "id": "1876",
+        "pl": "Osłona anteny dachowej GPS"
+      },
+      {
+        "id": "1915",
+        "pl": "Poprzeczki dachowe"
+      },
+      {
+        "id": "1949",
+        "pl": "Gniazdo lewarka zmiany biegów"
+      },
+      {
+        "id": "1964",
+        "pl": "Elektryczna wciągarka"
+      },
+      {
+        "id": "1974",
+        "pl": "Lodówka samochodu dostawczego"
+      },
+      {
+        "id": "1996",
+        "pl": "Kompletny zestaw"
+      },
+      {
+        "id": "2039",
+        "pl": "Osłona relingu dachowego"
+      },
+      {
+        "id": "2082",
+        "pl": "Wykończenie tylnej szyby"
+      },
+      {
+        "id": "2087",
+        "pl": "Wspornik czujnika Distronic"
+      },
+      {
+        "id": "2110",
+        "pl": "Uchwyty mocujące do szkła"
+      },
+      {
+        "id": "1289",
+        "pl": "Klakson"
+      },
+      {
+        "id": "1295",
+        "pl": "Syrena alarmu"
+      },
+      {
+        "id": "1308",
+        "pl": "Antena wewnętrzna"
+      },
+      {
+        "id": "1547",
+        "pl": "Komputer / Sterownik ECU i komplet kluczy"
+      },
+      {
+        "id": "1549",
+        "pl": "Pompka centralnego zamka"
+      },
+      {
+        "id": "1550",
+        "pl": "Silniczek / Siłownik zamka centralnego"
+      },
+      {
+        "id": "1579",
+        "pl": "Zdalne sterowanie Webasto"
+      },
+      {
+        "id": "1580",
+        "pl": "Zdalne włączanie Webasto / Komplet"
+      },
+      {
+        "id": "1603",
+        "pl": "Wentylator komutera"
+      },
+      {
+        "id": "1683",
+        "pl": "Antena Bluetooth"
+      },
+      {
+        "id": "1704",
+        "pl": "Klawiatura telefonu"
+      },
+      {
+        "id": "1956",
+        "pl": "Wspornik / Uchwyt klaksonu"
+      },
+      {
+        "id": "2052",
+        "pl": "Antena systemu bezkluczykowego"
+      },
+      {
+        "id": "1300",
+        "pl": "Cewka zapłonowa wysokiego napięcia"
+      },
+      {
+        "id": "1301",
+        "pl": "Świeca żarowa"
+      },
+      {
+        "id": "1302",
+        "pl": "Świeca zapłonowa"
+      },
+      {
+        "id": "1458",
+        "pl": "Aparat zapłonowy"
+      },
+      {
+        "id": "1465",
+        "pl": "Przewody zapłonowe"
+      },
+      {
+        "id": "1469",
+        "pl": "Kopułka rozdzielacza zapłonu"
+      },
+      {
+        "id": "1470",
+        "pl": "Aparat / Rozdzielacz zapłonu"
+      },
+      {
+        "id": "1507",
+        "pl": "Wzmacniacz / Moduł zapłonu"
+      },
+      {
+        "id": "1311",
+        "pl": "Szyba przednia / czołowa"
+      },
+      {
+        "id": "1312",
+        "pl": "Szyba tylna"
+      },
+      {
+        "id": "1313",
+        "pl": "Szyba klapy tylnej / bagażnika"
+      },
+      {
+        "id": "1314",
+        "pl": "Szyba drzwi tylnych samochodów dostawczych"
+      },
+      {
+        "id": "1321",
+        "pl": "Szyba przednia karoseryjna trójkątna"
+      },
+      {
+        "id": "1322",
+        "pl": "Szyba karoseryjna tylna"
+      },
+      {
+        "id": "1323",
+        "pl": "Szyba boczna karoseryjna środkowa"
+      },
+      {
+        "id": "1478",
+        "pl": "Silnik szyby / okna karoseryjnego"
+      },
+      {
+        "id": "1702",
+        "pl": "Szyba szyberdachu"
+      },
+      {
+        "id": "1958",
+        "pl": "Listwa szyby tylnej"
+      },
+      {
+        "id": "2102",
+        "pl": "Mechanizm wentylacyjny/szklany"
+      },
+      {
+        "id": "1320",
+        "pl": "Szyba drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "1329",
+        "pl": "Kolektor wydechowy"
+      },
+      {
+        "id": "1330",
+        "pl": "Tłumik przedni"
+      },
+      {
+        "id": "1331",
+        "pl": "Tłumik środkowy"
+      },
+      {
+        "id": "1332",
+        "pl": "Tłumik tylny / Końcowy / Wydech"
+      },
+      {
+        "id": "1333",
+        "pl": "Tłumik kompletny"
+      },
+      {
+        "id": "1334",
+        "pl": "Łącznik elastyczny wydechu"
+      },
+      {
+        "id": "1382",
+        "pl": "Inne części kolektora wydechowego / wylotowego"
+      },
+      {
+        "id": "1414",
+        "pl": "Mocowanie / Uchwyt tłumika"
+      },
+      {
+        "id": "1621",
+        "pl": "Osłona termiczna rury wydechowej"
+      },
+      {
+        "id": "1719",
+        "pl": "Zacisk obejmy rury tłumika"
+      },
+      {
+        "id": "1907",
+        "pl": "Końcówka tłumika"
+      },
+      {
+        "id": "1955",
+        "pl": "Rura wydechowa"
+      },
+      {
+        "id": "2065",
+        "pl": "Podwójny tłumik"
+      },
+      {
+        "id": "1347",
+        "pl": "Uchwyt / Wspornik"
+      },
+      {
+        "id": "1349",
+        "pl": "Wspornik montażowy koła zapasowego"
+      },
+      {
+        "id": "1611",
+        "pl": "Śruba koła zapasowego"
+      },
+      {
+        "id": "1340",
+        "pl": "Ucha holownicze / Zaczep"
+      },
+      {
+        "id": "1388",
+        "pl": "Gaśnica"
+      },
+      {
+        "id": "1389",
+        "pl": "Lewarek samochodowy"
+      },
+      {
+        "id": "1390",
+        "pl": "Zestaw narzędzi"
+      },
+      {
+        "id": "1391",
+        "pl": "Skrzynka narzędziowa"
+      },
+      {
+        "id": "1392",
+        "pl": "Bagażnik dachowy"
+      },
+      {
+        "id": "1393",
+        "pl": "Bagażnik na rowery"
+      },
+      {
+        "id": "1394",
+        "pl": "Trójkąt ostrzegawczy"
+      },
+      {
+        "id": "1395",
+        "pl": "Kompresor do opon"
+      },
+      {
+        "id": "1399",
+        "pl": "Klucz do śrub / nakrętek kół"
+      },
+      {
+        "id": "1607",
+        "pl": "Instrukcja obsługi"
+      },
+      {
+        "id": "1608",
+        "pl": "Książka serwisowa"
+      },
+      {
+        "id": "1677",
+        "pl": "Apteczka pierwszej pomocy"
+      },
+      {
+        "id": "1860",
+        "pl": "Zderzak rurowy przedni"
+      },
+      {
+        "id": "1861",
+        "pl": "Orurowanie boczne progów SUV'a"
+      },
+      {
+        "id": "1862",
+        "pl": "Orurowanie zderzaka tylnego SUV'a"
+      },
+      {
+        "id": "1863",
+        "pl": "Orurowanie zderzaka przedniego SUV'a"
+      },
+      {
+        "id": "1988",
+        "pl": "Przedni schowek w bagażniku"
+      },
+      {
+        "id": "1989",
+        "pl": "Wykończenie przedniego schowka bagażnika"
+      },
+      {
+        "id": "240",
+        "pl": "Wlot / Kanał powietrza intercoolera"
+      },
+      {
+        "id": "242",
+        "pl": "Pas przedni"
+      },
+      {
+        "id": "1234",
+        "pl": "Panel mocowania chłodnicy"
+      },
+      {
+        "id": "1418",
+        "pl": "Osłona chłodnicy"
+      },
+      {
+        "id": "1493",
+        "pl": "Panel mocowania chłodnicy / góra"
+      },
+      {
+        "id": "1494",
+        "pl": "Panel mocowanie chłodnicy / dół"
+      },
+      {
+        "id": "1495",
+        "pl": "Boczny panel mocowania chłodnicy"
+      },
+      {
+        "id": "2005",
+        "pl": "Silnik deflektora powietrza chłodnicy"
+      },
+      {
+        "id": "570",
+        "pl": "Przełącznik / Przycisk otwierania klapy tylnej / bagażnika"
+      },
+      {
+        "id": "571",
+        "pl": "Pompa / Siłownik klapy tylnej bagażnika / Komplet"
+      },
+      {
+        "id": "572",
+        "pl": "Silniczek pompy hydraulicznej klapy tylnej bagażnika"
+      },
+      {
+        "id": "573",
+        "pl": "Siłownik zamka klapy tylnej bagażnika"
+      },
+      {
+        "id": "574",
+        "pl": "Obudowa pompy hydraulicznej klapy tylnej bagażnika"
+      },
+      {
+        "id": "1512",
+        "pl": "Zawór składania dachu"
+      },
+      {
+        "id": "1514",
+        "pl": "Rygiel dachu składanego"
+      },
+      {
+        "id": "1515",
+        "pl": "Pompa hydrauliczna dachu składanego"
+      },
+      {
+        "id": "1516",
+        "pl": "Przewód ciśnieniowy dachu składanego"
+      },
+      {
+        "id": "1517",
+        "pl": "Osłona wygłuszająca pompy dachu składanego"
+      },
+      {
+        "id": "1518",
+        "pl": "Zawias dachu składanego"
+      },
+      {
+        "id": "1519",
+        "pl": "Zamek dachu składanego"
+      },
+      {
+        "id": "1520",
+        "pl": "Dach składany miękki / twardy"
+      },
+      {
+        "id": "1521",
+        "pl": "Pałąk dachowy składany"
+      },
+      {
+        "id": "1522",
+        "pl": "Dach składany / Komplet"
+      },
+      {
+        "id": "2015",
+        "pl": "Silnik składanego dachu"
+      },
+      {
+        "id": "2030",
+        "pl": "Przełącznik składanego dachu"
+      },
+      {
+        "id": "2123",
+        "pl": "Owiewka do kabrioletu"
+      },
+      {
+        "id": "1701",
+        "pl": "Kompresor zawieszenia pneumatycznego osi przedniej"
+      },
+      {
+        "id": "1709",
+        "pl": "Przedni amortyzator zawieszenia pneumatycznego"
+      },
+      {
+        "id": "1710",
+        "pl": "Zawór elektromagnetyczny amortyzatora osi przedniej"
+      },
+      {
+        "id": "1711",
+        "pl": "Czujnik poziomowania osi przedniej"
+      },
+      {
+        "id": "1712",
+        "pl": "Czujnik poziomu zawieszenia pneumatycznego osi przedniej"
+      },
+      {
+        "id": "1713",
+        "pl": "Poduszka zawieszenia pneumatycznego osi przedniej"
+      },
+      {
+        "id": "1714",
+        "pl": "Amortyzator zawieszenia pneumatycznego osi przedniej"
+      },
+      {
+        "id": "1715",
+        "pl": "Przewód zawieszenia pneumatycznego osi przedniej"
+      },
+      {
+        "id": "1987",
+        "pl": "Rozdzielacz / Blok zaworowy zawieszenia pneumatycznego osi tylnej"
+      },
+      {
+        "id": "1595",
+        "pl": "Klapa tylna / bagażnika"
+      },
+      {
+        "id": "1596",
+        "pl": "Odbój / Ogranicznik klapy tylnej bagażnika"
+      },
+      {
+        "id": "1597",
+        "pl": "Zamek klapy tylnej bagażnika"
+      },
+      {
+        "id": "1598",
+        "pl": "Poszycie / Tapicerka klapy tylnej bagażnika"
+      },
+      {
+        "id": "1599",
+        "pl": "Zawias klapy tylnej bagażnika"
+      },
+      {
+        "id": "1600",
+        "pl": "Uchwyt / Rączka otwierania klapy tylnej bagażnika"
+      },
+      {
+        "id": "1601",
+        "pl": "Rygiel zamka klapy tylnej bagażnika"
+      },
+      {
+        "id": "1811",
+        "pl": "Listwa wykończeniowa drzwi przesuwanych"
+      },
+      {
+        "id": "1812",
+        "pl": "Poszycie / Boczek drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "1813",
+        "pl": "Ramka głośnika drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "1814",
+        "pl": "Element drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "1815",
+        "pl": "Klamka wewnętrzna drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "1817",
+        "pl": "Zasłona przeciwsłoneczna drzwi bocznych / przesuwnych"
+      },
+      {
+        "id": "1824",
+        "pl": "Dystanse do felg"
+      },
+      {
+        "id": "1833",
+        "pl": "Kompletny zestaw przedniej części nadwozia / karoserii"
+      },
+      {
+        "id": "2020",
+        "pl": "Zestaw zderzaków"
+      },
+      {
+        "id": "2041",
+        "pl": "Zestaw części końcowych"
+      }
+    ]
+  }
+}

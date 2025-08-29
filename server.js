@@ -17,7 +17,7 @@ const { smartSyncScheduler } = require('./smart_sync_scheduler');
 const { ordersSyncScheduler } = require('./orders_sync_scheduler');
 
 // Import category mapping
-const { mapCategoryToOvoko } = require('./create_full_mapping');
+const { mapCategoryToOvoko } = require('./create_level3_mapping');
 
 const app = express();
 const PORT = process.env.PORT || 3002;
@@ -541,17 +541,30 @@ app.post('/api/import-product', requireAuth, async (req, res) => {
             });
         };
 
-        // 4. Find the best model by matching after "BMW" using up to 2 segments
-        function extractBmwSegments(name) {
-            // Find "BMW" (case-insensitive), then take up to 2 words after
-            if (!name) return '';
-            const regex = /BMW\s+([^\s]+)(?:\s+([^\s]+))?/i;
-            const match = name.match(regex);
-            if (match) {
-                // Join the first and (optionally) second segment
-                return [match[1], match[2]].filter(Boolean).join(' ');
-            }
-            return '';
+        // 4. Find the best model by matching BMW model codes and names
+        function extractBmwModelInfo(name) {
+            if (!name) return { segments: [], modelCode: null };
+            
+            const nameUpper = name.toUpperCase();
+            
+            // Extract model code (E60, F10, G30, etc.)
+            const modelCodeMatch = nameUpper.match(/\b([EFG]\d{2,3})\b/);
+            const modelCode = modelCodeMatch ? modelCodeMatch[1] : null;
+            
+            // Extract segments after BMW
+            const bmwMatch = nameUpper.match(/BMW\s+([^\s]+)(?:\s+([^\s]+))?/);
+            const segments = bmwMatch ? [bmwMatch[1], bmwMatch[2]].filter(Boolean) : [];
+            
+            // Also look for series numbers (1, 2, 3, 4, 5, 6, 7, 8, X1, X3, X5, etc.)
+            const seriesMatch = nameUpper.match(/\b([1-8]|X[1-7]|Z[1-8]|I[1-8])\b/);
+            const series = seriesMatch ? seriesMatch[1] : null;
+            
+            return {
+                segments,
+                modelCode,
+                series,
+                fullName: name
+            };
         }
 
         // 5. Main logic
@@ -561,45 +574,82 @@ app.post('/api/import-product', requireAuth, async (req, res) => {
             return res.status(500).json({ error: 'Could not fetch BMW car models' });
         }
 
-        // Only consider models from last 10 years
+        // Consider models from last 20 years (more reasonable for BMW parts)
         const currentYear = new Date().getFullYear();
-        const tenYearsAgo = currentYear - 10;
-        const modelsLast10Years = carModelsResponse.list.filter(model => {
+        const twentyYearsAgo = currentYear - 20;
+        const modelsLast20Years = carModelsResponse.list.filter(model => {
             // If year_end is empty, treat as current
             const yearStart = parseInt(model.year_start, 10) || 0;
             const yearEnd = model.year_end ? parseInt(model.year_end, 10) : currentYear;
-            return yearEnd >= tenYearsAgo;
+            return yearEnd >= twentyYearsAgo;
         });
 
-        if (!modelsLast10Years.length) {
-            return res.status(500).json({ error: 'No BMW models from last 10 years found' });
+        if (!modelsLast20Years.length) {
+            return res.status(500).json({ error: 'No BMW models from last 20 years found' });
         }
 
-        // Find the best model by matching after "BMW" using up to 2 segments
-        const bmwSegments = extractBmwSegments(product.text_fields.name);
+        console.log(`🔍 Found ${modelsLast20Years.length} BMW models from last 20 years`);
+
+        // Find the best model by matching BMW model codes and series
+        const bmwInfo = extractBmwModelInfo(product.text_fields.name);
         let bestModel = null;
         let bestScore = -1;
+        let bestMatchReason = '';
 
-        if (bmwSegments) {
-            // Try to match models that contain all segments (case-insensitive, ignore order)
-            const segments = bmwSegments.split(/\s+/).map(s => s.toLowerCase());
-            for (const model of modelsLast10Years) {
-                const modelName = (model.name || '').toLowerCase();
-                // Score: number of segments found in model name
-                let score = 0;
-                for (const seg of segments) {
-                    if (modelName.includes(seg)) score++;
+        console.log(`🔍 Extracted BMW info from "${product.text_fields.name}":`, bmwInfo);
+
+        for (const model of modelsLast20Years) {
+            const modelName = (model.name || '').toUpperCase();
+            let score = 0;
+            let matchReason = '';
+
+            // 1. Perfect model code match (highest priority)
+            if (bmwInfo.modelCode && modelName.includes(bmwInfo.modelCode)) {
+                score += 100;
+                matchReason += `Model code ${bmwInfo.modelCode} matched; `;
+            }
+
+            // 2. Series number match
+            if (bmwInfo.series && modelName.includes(bmwInfo.series)) {
+                score += 50;
+                matchReason += `Series ${bmwInfo.series} matched; `;
+            }
+
+            // 3. Segment matches (lower priority)
+            for (const seg of bmwInfo.segments) {
+                if (modelName.includes(seg.toUpperCase())) {
+                    score += 10;
+                    matchReason += `Segment "${seg}" matched; `;
                 }
-                if (score > bestScore) {
-                    bestScore = score;
-                    bestModel = model;
-                }
+            }
+
+            // 4. Bonus for exact model code match in isolation
+            if (bmwInfo.modelCode && modelName.split(/\s+/).includes(bmwInfo.modelCode)) {
+                score += 25;
+                matchReason += `Exact model code match; `;
+            }
+
+            // 5. Penalty for M models when not explicitly mentioned
+            if (modelName.includes('M') && !product.text_fields.name.toUpperCase().includes('M')) {
+                score -= 20;
+                matchReason += `Penalty for M model; `;
+            }
+
+            if (score > bestScore) {
+                bestScore = score;
+                bestModel = model;
+                bestMatchReason = matchReason;
             }
         }
 
-        // Fallback: if no match, just pick the first model
-        if (!bestModel && modelsLast10Years.length > 0) {
-            bestModel = modelsLast10Years[0];
+        // Fallback: if no match, pick the most generic 5 series model
+        if (!bestModel && modelsLast20Years.length > 0) {
+            // Try to find a 5 series model first
+            const fiveSeriesModel = modelsLast20Years.find(model => 
+                model.name && model.name.includes('5') && !model.name.includes('M')
+            );
+            bestModel = fiveSeriesModel || modelsLast20Years[0];
+            bestMatchReason = 'Fallback to generic model';
         }
 
         if (!bestModel) {
@@ -607,9 +657,10 @@ app.post('/api/import-product', requireAuth, async (req, res) => {
         }
 
         console.log(`🔍 Matched BMW model: ${bestModel.name} (id: ${bestModel.id}, score: ${bestScore})`);
+        console.log(`🔍 Match reason: ${bestMatchReason}`);
 
-        // Get all cars from last 10 years
-        const dateFrom = new Date(currentYear - 10, 0, 1).toISOString().split('T')[0];
+        // Get all cars from last 20 years
+        const dateFrom = new Date(currentYear - 20, 0, 1).toISOString().split('T')[0];
         const dateTo = new Date().toISOString().split('T')[0];
         const carsResponse = await getCars(dateFrom, dateTo);
 
@@ -667,7 +718,7 @@ app.post('/api/import-product', requireAuth, async (req, res) => {
         }
 
         // Get Ovoko category from BaseLinker category mapping
-        const ovokoCategory = getOvokoCategoryFromBaseLinker(product.category_id);
+        const ovokoCategory = await getOvokoCategoryFromBaseLinker(product.category_id);
         console.log(`🔍 Category mapping: BaseLinker ${product.category_id} → Ovoko ${ovokoCategory.ovoko_id} (${ovokoCategory.ovoko_pl}) - Confidence: ${ovokoCategory.confidence}`);
 
         // Prepare product data for Ovoko
@@ -960,24 +1011,58 @@ app.post('/api/update-product-versions', requireAuth, async (req, res) => {
 });
 
 // Helper function to map BaseLinker category to Ovoko category
-function getOvokoCategoryFromBaseLinker(baselinkerCategoryId) {
+async function getOvokoCategoryFromBaseLinker(baselinkerCategoryId) {
     try {
-        // Load the full mapping
+        // Load the correct mapping (top-tier categories only)
         const fs = require('fs');
-        const mappingData = fs.readFileSync('ovoko_mapping_full.json', 'utf8');
+        const mappingData = fs.readFileSync('ovoko_mapping_correct.json', 'utf8');
         const mapping = JSON.parse(mappingData);
         
         // Find the category mapping
         const categoryMapping = mapping.categories[baselinkerCategoryId];
         if (categoryMapping && categoryMapping.ovoko_mapping) {
-            return categoryMapping.ovoko_mapping;
+            // Map to level 3 categories based on the top-tier mapping
+            const topTierId = categoryMapping.ovoko_mapping.ovoko_id;
+            
+            // Map top-tier categories to specific level 3 categories (only tested working ones)
+            const level3Mapping = {
+                "1": "754",   // Układ hamulcowy -> Brake discs (tarcze hamulcowe) ✅
+                "250": "606", // Silnik i osprzęt -> Engine block ✅
+                "134": "136", // Oświetlenie -> Headlight/headlamp ✅
+                "98": "101",  // Wycieraczki i spryskiwacze -> Windshield wiper blade ✅
+                "197": "754", // Klimatyzacja -> Brake discs (fallback) ❌
+                "281": "754", // Układ kierowniczy -> Brake discs (fallback) ❌
+                "330": "754", // Układ zawieszenia -> Brake discs (fallback) ❌
+                "382": "754", // Układ napędowy -> Brake discs (fallback) ❌
+                "416": "754", // Układ elektryczny -> Brake discs (fallback) ❌
+                "463": "754", // Układ paliwowy -> Brake discs (fallback) ❌
+                "498": "754", // Układ wydechowy -> Brake discs (fallback) ❌
+                "541": "754", // Układ chłodzenia -> Brake discs (fallback) ❌
+                "579": "754", // Układ hamulcowy -> Brake discs (fallback) ❌
+                "624": "754", // Układ bezpieczeństwa -> Brake discs (fallback) ❌
+                "806": "754", // Układ komfortu -> Brake discs (fallback) ❌
+                "999": "754", // Układ informacyjny -> Brake discs (fallback) ❌
+                "1168": "754", // Układ multimedialny -> Brake discs (fallback) ❌
+                "1189": "754", // Układ nawigacyjny -> Brake discs (fallback) ❌
+                "1249": "754"  // Inne części -> Brake discs (fallback) ❌
+            };
+            
+            const level3Id = level3Mapping[topTierId] || "754"; // Default to brake discs
+            
+            return {
+                ovoko_id: level3Id,
+                ovoko_name: categoryMapping.ovoko_mapping.ovoko_name,
+                ovoko_pl: categoryMapping.ovoko_mapping.ovoko_pl,
+                confidence: categoryMapping.ovoko_mapping.confidence + "_level3",
+                matched_keyword: categoryMapping.ovoko_mapping.matched_keyword
+            };
         }
         
-        // Fallback to default category if not found
+        // Fallback to brake discs category if not found
         return {
-            ovoko_id: "1249",
-            ovoko_name: "Other parts",
-            ovoko_pl: "Inne części",
+            ovoko_id: "754", // Brake discs (tarcze hamulcowe)
+            ovoko_name: "Brak mapowania",
+            ovoko_pl: "Tarcze hamulcowe",
             confidence: "fallback",
             matched_keyword: "brak mapowania"
         };
@@ -985,9 +1070,9 @@ function getOvokoCategoryFromBaseLinker(baselinkerCategoryId) {
         console.log('⚠️ Could not load category mapping, using default:', error.message);
         // Fallback to default category
         return {
-            ovoko_id: "1249",
-            ovoko_name: "Other parts",
-            ovoko_pl: "Inne części",
+            ovoko_id: "754", // Brake discs as default
+            ovoko_name: "Error loading mapping",
+            ovoko_pl: "Tarcze hamulcowe",
             confidence: "error",
             matched_keyword: "błąd ładowania mapowania"
         };
@@ -1459,12 +1544,13 @@ app.get('/api/category-mapping/:categoryId', requireAuth, (req, res) => {
 app.get('/api/category-mappings', requireAuth, async (req, res) => {
     try {
         const fs = require('fs');
-        const mappingData = fs.readFileSync('ovoko_mapping_full.json', 'utf8');
+        const mappingData = fs.readFileSync('ovoko_mapping_level3.json', 'utf8');
         const mapping = JSON.parse(mappingData);
         
         // Get summary statistics
         const stats = {
             total_categories: mapping.total_categories,
+            ovoko_level3_categories: mapping.ovoko_level3_categories,
             mapping_rules: Object.keys(mapping.mapping_rules || {}).length,
             created_at: mapping.created_at,
             version: mapping.version
@@ -2171,11 +2257,12 @@ app.get('/api/overview', requireAuth, async (req, res) => {
         
         // Add category mapping statistics
         try {
-            const mappingData = await fs.readFile('ovoko_mapping_full.json', 'utf8');
+            const mappingData = await fs.readFile('ovoko_mapping_level3.json', 'utf8');
             const mapping = JSON.parse(mappingData);
             stats.categoryMapping = {
                 total_categories: mapping.total_categories || 0,
-                mapping_file: 'ovoko_mapping_full.json',
+                ovoko_level3_categories: mapping.ovoko_level3_categories || 0,
+                mapping_file: 'ovoko_mapping_level3.json',
                 last_updated: mapping.created_at
             };
         } catch (error) {

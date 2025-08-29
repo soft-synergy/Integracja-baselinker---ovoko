@@ -1,0 +1,30 @@
+{
+  "name": "category-mapper",
+  "version": "1.0.0",
+  "description": "Aplikacja do mapowania kategorii między BaseLinker a OVOKO",
+  "main": "category_mapper_server.js",
+  "scripts": {
+    "start": "node category_mapper_server.js",
+    "dev": "node category_mapper_server.js",
+    "serve": "node category_mapper_server.js"
+  },
+  "keywords": [
+    "category-mapping",
+    "baselinker",
+    "ovoko",
+    "ecommerce",
+    "integration"
+  ],
+  "author": "Category Mapping Tool",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "local"
+  },
+  "homepage": "http://localhost:3001"
+}

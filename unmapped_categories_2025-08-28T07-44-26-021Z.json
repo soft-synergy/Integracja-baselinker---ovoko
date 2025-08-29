@@ -1,0 +1,1110 @@
+{
+  "timestamp": "2025-08-28T07:44:26.021Z",
+  "unmapped_categories": [
+    {
+      "baselinker_id": 1021337,
+      "baselinker_name": "Części BMW",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730798,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Błotniki/Listwy, nakładki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730799,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Stacyjki i kluczyki/Kluczyki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730802,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Nawigacje GPS fabryczne",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730803,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ paliwowy/Podgrzewacze",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730809,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Zderzaki/Zderzaki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730811,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Maski/Maski",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730812,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Fotele, kanapy",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730813,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Błotniki/Błotniki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730816,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Zagłówki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730817,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprzęt audio fabryczny/Głośniki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730818,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Sprężyny zawieszenia",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730819,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Panele sterowania, przełączniki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730820,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Amortyzatory i elementy/Amortyzatory",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730821,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Lampy tylne",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730822,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Materiały instalacyjne/Klemy",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730825,
+      "baselinker_name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Literatura motoryzacyjna/Samochody/Instrukcje obsługi",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730828,
+      "baselinker_name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Emblematy",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730830,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Schowki, półki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730831,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Moduły komfortu",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730832,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Osłony, zaślepki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730833,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Kratki nawiewu",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730835,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ napędowy/Mosty/Tylne",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730841,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Poduszki powietrzne",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730844,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapki wlewu paliwa/Zamki i siłowniki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730845,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Spryskiwacze reflektorów",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730846,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Dysze spryskiwaczy",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730847,
+      "baselinker_name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Elektronika samochodowa/Car audio/Anteny",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730848,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ wentylacji/Dmuchawy",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730850,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Pedały",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730851,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Spoilery",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730852,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Sondy lambda",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730853,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Pompki spryskiwaczy",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730855,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Uchwyty fabryczne",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730856,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Lusterka zewnętrzne/Kompletne",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730857,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Pasy przednie",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730858,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprzęt audio fabryczny/Wzmacniacze",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730864,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Pozostałe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730865,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Pozostałe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730866,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Zderzaki/Atrapy, zaślepki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730867,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ napędowy/Półosie, przeguby, wały/Wały napędowe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730868,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Kierownice",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730870,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Przekładnie kierownicze",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730871,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Zderzaki/Wzmocnienia zderzaków (belki)",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730872,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Pasy bezpieczeństwa",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730873,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Oświetlenie kabiny",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730876,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ paliwowy/Wtryskiwacze",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730878,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Pompy wspomagania",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730879,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Przekaźniki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730880,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Kompresory klimatyzacji/Kompresory klimatyzacji",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730882,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ wentylacji/Kanały powietrza",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730883,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Pozostałe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730884,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Moduły poduszek powietrznych",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730885,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Sterowniki świateł",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730886,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Zderzaki/Elementy mocujące",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730887,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Sterowniki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730888,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapki wlewu paliwa/Klapki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730890,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy przednie i elementy/Lampy przednie",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730891,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Mechanizmy wycieraczek",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730897,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Poszycia słupków",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730898,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Popielniczki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730903,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ paliwowy/Pompy paliwa",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730904,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprzęt audio fabryczny/Radioodtwarzacze",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730905,
+      "baselinker_name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Elektronika samochodowa/Car audio/Głośniki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730909,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Podsufitki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730910,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Elementy mocujące",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730911,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Deski rozdzielcze, konsole",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730913,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Materiały instalacyjne/Kostki, złączki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730914,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Lusterka wewnętrzne",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730915,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Wsporniki, mocowania, obudowy",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730916,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Lewarki i wybieraki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730918,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Świece/Żarowe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730920,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Przewody klimatyzacji",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730922,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Pozostałe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730923,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Wsporniki, mocowania",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730924,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Nadkola",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730926,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Pozostałe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730927,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Maski/Wygłuszenie",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730928,
+      "baselinker_name": "Motoryzacja/Opony i felgi/Felgi/Do samochodów/Aluminiowe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730950,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Osłony przeciwsłoneczne",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730963,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Wykładzina",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730966,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Stacyjki i kluczyki/Stacyjki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730967,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Szyby/Listwy",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730968,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ paliwowy/Pompy wtryskowe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730970,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Półki tylne",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730972,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Kompletne skrzynie",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730977,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Zbiorniki płynu do spryskiwaczy",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730978,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ napędowy/Półosie, przeguby, wały/Półosie",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730979,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ paliwowy/Przewody wtryskowe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730982,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ paliwowy/Przewody paliwa",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730983,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Hamulce postojowe/Dźwignie hamulca ręcznego",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730984,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Wieszaki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730986,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Pozostałe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730987,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Pozostałe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730988,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Gałki i mieszki/Gałki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730989,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ paliwowy/Pozostałe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730990,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Zawieszenie hydrauliczne i pneumatyczne/Sterowniki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730992,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Światła stop",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730993,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Pozostałe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1730997,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Układ ABS i ESP/Sterowniki ABS",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731000,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Chłodnice klimatyzacji (skraplacze)",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731001,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Maski/Cięgna",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731002,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy przednie i elementy/Pozostałe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731003,
+      "baselinker_name": "Motoryzacja/Opony i felgi/Osprzęt i akcesoria/Śruby",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731006,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprzęt audio fabryczny/Zmieniarki CD",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731010,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Gniazda zapalniczki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731011,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Maski/Zawiasy",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731012,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Kolektory wydechowe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731014,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Zawieszenie hydrauliczne i pneumatyczne/Poduszki i miechy",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731015,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Smarowanie",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731016,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ paliwowy/Listwy wtryskowe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731017,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ napędowy/Dyferencjały/Kompletne dyferencjały",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731020,
+      "baselinker_name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Holowanie/Kompletne haki holownicze (belka + kula)",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731022,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ napędowy/Sprzęgła/Koła dwumasowe i zamachowe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731023,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Ramiona wycieraczek",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731024,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Zapalniczki samochodowe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731027,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ napędowy/Półosie, przeguby, wały/Podpory wału",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731028,
+      "baselinker_name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Literatura motoryzacyjna/Samochody/Książki serwisowe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731029,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprzęt audio fabryczny/Pozostałe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731030,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Podłokietniki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731035,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Pompy hamulcowe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731039,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Listwy",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731041,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Katalizatory",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731043,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Wentylatory chłodnic klimatyzacji",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731044,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Materiały instalacyjne/Wiązki przewodów",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731046,
+      "baselinker_name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Osłony na szyby/Rolety przeciwsłoneczne",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731047,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Atrapy chłodnicy",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731051,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ wentylacji/Rezystory dmuchaw",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731054,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Szyby/Karoseryjne",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731055,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ napędowy/Sprzęgła/Pompy sprzęgła",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731056,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Podszybia",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731058,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Kolumny kierownicze",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731059,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Hamulce postojowe/Linki hamulca ręcznego",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731060,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprężyny gazowe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731063,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Maski/Zamki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731065,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ wentylacji/Nagrzewnice",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731067,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Tunele środkowe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731070,
+      "baselinker_name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Elektronika samochodowa/Pozostałe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731071,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Zabudowy",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731072,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Kierunkowskazy",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731073,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Gałki i mieszki/Mieszki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731074,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Osłony przeciwbłotne",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731075,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ paliwowy/Sterowniki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731076,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Maski/Uszczelki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731077,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Osłony",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731081,
+      "baselinker_name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Apteczki, gaśnice, kamizelki, trójkąty/Trójkąty",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731082,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Podnośniki szyb",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731083,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Obejmy",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731084,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Zderzaki/Listwy",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731086,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Pozostałe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731091,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampki tablicy rejestracyjnej",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731092,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ wentylacji/Obudowy filtrów kabinowych",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731095,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Silniczki szyb",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731099,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Maski/Siłowniki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731100,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ napędowy/Półosie, przeguby, wały/Przeguby",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731102,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Klamki wewnętrzne",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731106,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Lusterka zewnętrzne/Wkłady",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731107,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy przednie i elementy/Przetwornice",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731108,
+      "baselinker_name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Osłony na szyby/Owiewki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731111,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Pozostałe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731112,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Osłony przekładni kierowniczych",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731116,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Części montażowe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731117,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Pozostałe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731122,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ wydechowy/Rury wydechowe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731137,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Belki zawieszenia/Belki przednie",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731141,
+      "baselinker_name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Tuning wizualny/Listwy ozdobne",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731142,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Pozostałe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731145,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Filtry/Filtry paliwa",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731146,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ napędowy/Półosie, przeguby, wały/Tłumiki drgań",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731147,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Zbiorniki płynu wspomagania",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731148,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Zbiorniki płynu hamulcowego",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731149,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Filtry/Inne filtry",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731151,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ napędowy/Półosie, przeguby, wały/Pozostałe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731154,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Zderzaki/Absorbery",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731156,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ wentylacji/Przewody nagrzewnic",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731163,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Szyby/Uszczelki szyb",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731165,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Silniczki regulacji fotela",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731166,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy przednie i elementy/Lampy przeciwmgielne",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731170,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ paliwowy/Regulatory ciśnienia paliwa",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731176,
+      "baselinker_name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Uchwyty, wieszaki/Na kubki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731180,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Zestawy części blacharskich",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731183,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Filtry/Filtry kabinowe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731184,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Szyby/Przednie",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731189,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Przewody układu wspomagania",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731190,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Lusterka zewnętrzne/Obudowy",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731193,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Reduktory",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731194,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Szyby/Pozostałe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731195,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Szyby/Tylne",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731199,
+      "baselinker_name": "Motoryzacja/Opony i felgi/Koła (felgi z oponami)/Do samochodów",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731200,
+      "baselinker_name": "Motoryzacja/Opony i felgi/Koła (felgi z oponami)/Koła dojazdowe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731201,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Stabilizatory i elementy/Drążki stabilizatora",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731203,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ napędowy/Półosie, przeguby, wały/Podpory półosi",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731204,
+      "baselinker_name": "Motoryzacja/Opony i felgi/Felgi/Do samochodów/Stalowe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731220,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Belki zawieszenia/Belki tylne",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731223,
+      "baselinker_name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Dywaniki/Dywaniki gumowe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731225,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ napędowy/Pozostałe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731231,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Przewody",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731246,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Filtry/Filtry powietrza",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731279,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Części montażowe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731281,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Błotniki/Wygłuszenie",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731287,
+      "baselinker_name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Apteczki, gaśnice, kamizelki, trójkąty/Apteczki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731289,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Zderzaki/Pozostałe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731300,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Błotniki/Elementy mocujące",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731312,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Kamery",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731313,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ napędowy/Sprzęgła/Wysprzęgliki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731325,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Przewody hamulcowe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731339,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Części kabiny kierowcy",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731360,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Sterowniki i elementy elektryczne",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731373,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Łapy, podpory",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731378,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Lampy przeciwmgielne",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731381,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Zestawy montażowe i naprawcze",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731385,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Materiały instalacyjne/Pozostałe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731391,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Pozostałe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731393,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Linki zmiany biegów",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731396,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ paliwowy/Zbiorniki",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731418,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Maski/Pozostałe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731435,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Gałki i mieszki/Komplety",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731498,
+      "baselinker_name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Zabezpieczenia/Autoalarmy",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731500,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Wahacze i elementy/Wahacze",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 1731505,
+      "baselinker_name": "Motoryzacja/Części samochodowe/Części karoserii/Klapki wlewu paliwa/Pozostałe",
+      "reason": "Brak dopasowania"
+    },
+    {
+      "baselinker_id": 2386607,
+      "baselinker_name": "Motoryzacja/Chemia/Mycie i pielęgnacja/Wnętrze/Zapachy samochodowe/Zawieszki",
+      "reason": "Brak dopasowania"
+    }
+  ]
+}

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapowanie Kategorii - BaseLinker ↔ OVOKO</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .stat-label {
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+
+        .controls {
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .filter-select {
+            padding: 12px 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 16px;
+            background: white;
+            cursor: pointer;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5a6fd8;
+            transform: translateY(-2px);
+        }
+
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #218838;
+            transform: translateY(-2px);
+        }
+
+        .btn-warning {
+            background: #ffc107;
+            color: #212529;
+        }
+
+        .btn-warning:hover {
+            background: #e0a800;
+            transform: translateY(-2px);
+        }
+
+        .mapping-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            height: 600px;
+        }
+
+        .category-list {
+            border-right: 2px solid #e9ecef;
+            overflow-y: auto;
+            background: #f8f9fa;
+        }
+
+        .category-item {
+            padding: 15px 20px;
+            border-bottom: 1px solid #e9ecef;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-item:hover {
+            background: #e9ecef;
+        }
+
+        .category-item.selected {
+            background: #667eea;
+            color: white;
+        }
+
+        .category-item.mapped {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+        }
+
+        .category-item.unmapped {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+        }
+
+        .category-name {
+            flex: 1;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .category-id {
+            font-size: 12px;
+            opacity: 0.7;
+            margin-left: 10px;
+        }
+
+        .ovoko-categories {
+            overflow-y: auto;
+            background: white;
+        }
+
+        .ovoko-categories h3 {
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+            margin: 0;
+        }
+
+        .ovoko-item {
+            padding: 12px 20px;
+            border-bottom: 1px solid #f1f3f4;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .ovoko-item:hover {
+            background: #f8f9fa;
+        }
+
+        .ovoko-item.selected {
+            background: #667eea;
+            color: white;
+        }
+
+        .ovoko-name {
+            flex: 1;
+            font-size: 14px;
+        }
+
+        .ovoko-id {
+            font-size: 12px;
+            opacity: 0.7;
+            margin-left: 10px;
+        }
+
+        .mapping-actions {
+            padding: 20px;
+            background: #f8f9fa;
+            border-top: 1px solid #e9ecef;
+            text-align: center;
+        }
+
+        .mapping-info {
+            background: #e7f3ff;
+            border: 1px solid #b3d9ff;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .mapping-info h4 {
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #28a745, #20c997);
+            transition: width 0.3s ease;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .status-mapped {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-unmapped {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        @media (max-width: 768px) {
+            .mapping-container {
+                grid-template-columns: 1fr;
+                height: auto;
+            }
+            
+            .category-list {
+                border-right: none;
+                border-bottom: 2px solid #e9ecef;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🗺️ Mapowanie Kategorii</h1>
+            <p>BaseLinker ↔ OVOKO - System przypisywania kategorii</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number" id="totalBaselinker">0</div>
+                <div class="stat-label">Kategorie BaseLinker</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="totalOvoko">0</div>
+                <div class="stat-label">Kategorie OVOKO</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="mappedCount">0</div>
+                <div class="stat-label">Zmapowane</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="unmappedCount">0</div>
+                <div class="stat-label">Niezmapowane</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="🔍 Wyszukaj kategorię BaseLinker...">
+            </div>
+            <select class="filter-select" id="statusFilter">
+                <option value="all">Wszystkie kategorie</option>
+                <option value="mapped">Tylko zmapowane</option>
+                <option value="unmapped">Tylko niezmapowane</option>
+            </select>
+            <button class="btn btn-primary" onclick="saveMapping()">💾 Zapisz mapowanie</button>
+            <button class="btn btn-success" onclick="exportMapping()">📤 Eksportuj JSON</button>
+            <button class="btn btn-warning" onclick="loadMapping()">📥 Wczytaj mapowanie</button>
+        </div>
+
+        <div class="mapping-container">
+            <div class="category-list" id="baselinkerList">
+                <!-- Kategorie BaseLinker będą tutaj -->
+            </div>
+            
+            <div class="ovoko-categories">
+                <h3>📋 Kategorie OVOKO</h3>
+                <div id="ovokoList">
+                    <!-- Kategorie OVOKO będą tutaj -->
+                </div>
+            </div>
+        </div>
+
+        <div class="mapping-actions">
+            <div class="mapping-info">
+                <h4>ℹ️ Instrukcja użytkowania</h4>
+                <p>1. Wybierz kategorię BaseLinker z lewej listy</p>
+                <p>2. Wybierz odpowiednią kategorię OVOKO z prawej listy</p>
+                <p>3. Kliknij "Zapisz mapowanie" aby zapisać zmiany</p>
+                <p>4. Użyj wyszukiwania i filtrów aby łatwiej znaleźć potrzebne kategorie</p>
+            </div>
+            
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            
+            <p><strong>Postęp mapowania:</strong> <span id="progressText">0%</span></p>
+        </div>
+    </div>
+
+    <script>
+        let baselinkerCategories = [];
+        let ovokoCategories = [];
+        let currentMapping = {};
+        let selectedBaselinkerId = null;
+        let selectedOvokoId = null;
+
+        // Ładowanie danych
+        async function loadData() {
+            try {
+                const [baselinkerResponse, ovokoResponse] = await Promise.all([
+                    fetch('baselinker_categories.json'),
+                    fetch('ovoko_categories_cleaned.json')
+                ]);
+
+                const baselinkerData = await baselinkerResponse.json();
+                const ovokoData = await ovokoResponse.json();
+
+                baselinkerCategories = baselinkerData.data.categories;
+                ovokoCategories = ovokoData.data.list;
+
+                // Wczytaj istniejące mapowanie
+                loadMapping();
+                
+                // Renderuj listy
+                renderBaselinkerList();
+                renderOvokoList();
+                updateStats();
+                updateProgress();
+            } catch (error) {
+                console.error('Błąd podczas ładowania danych:', error);
+                alert('Błąd podczas ładowania danych. Sprawdź czy pliki JSON są dostępne.');
+            }
+        }
+
+        // Renderowanie listy kategorii BaseLinker
+        function renderBaselinkerList() {
+            const container = document.getElementById('baselinkerList');
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const statusFilter = document.getElementById('statusFilter').value;
+
+            let filteredCategories = baselinkerCategories.filter(cat => {
+                const matchesSearch = cat.name.toLowerCase().includes(searchTerm);
+                const matchesStatus = statusFilter === 'all' || 
+                    (statusFilter === 'mapped' && currentMapping[cat.category_id]) ||
+                    (statusFilter === 'unmapped' && !currentMapping[cat.category_id]);
+                
+                return matchesSearch && matchesStatus;
+            });
+
+            container.innerHTML = filteredCategories.map(cat => {
+                const isMapped = currentMapping[cat.category_id];
+                const isSelected = selectedBaselinkerId === cat.category_id;
+                const statusClass = isMapped ? 'mapped' : 'unmapped';
+                const selectedClass = isSelected ? 'selected' : '';
+                
+                return `
+                    <div class="category-item ${statusClass} ${selectedClass}" 
+                         onclick="selectBaselinkerCategory(${cat.category_id})">
+                        <div class="category-name">${cat.name}</div>
+                        <div class="category-id">ID: ${cat.category_id}</div>
+                        ${isMapped ? `<span class="status-badge status-mapped">✓ Zmapowane</span>` : 
+                                     `<span class="status-badge status-unmapped">✗ Brak mapowania</span>`}
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Renderowanie listy kategorii OVOKO
+        function renderOvokoList() {
+            const container = document.getElementById('ovokoList');
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+
+            let filteredCategories = ovokoCategories.filter(cat => {
+                return cat.pl.toLowerCase().includes(searchTerm);
+            });
+
+            container.innerHTML = filteredCategories.map(cat => {
+                const isSelected = selectedOvokoId === cat.id;
+                const selectedClass = isSelected ? 'selected' : '';
+                
+                return `
+                    <div class="ovoko-item ${selectedClass}" 
+                         onclick="selectOvokoCategory('${cat.id}')">
+                        <div class="ovoko-name">${cat.pl}</div>
+                        <div class="ovoko-id">ID: ${cat.id}</div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Wybór kategorii BaseLinker
+        function selectBaselinkerCategory(categoryId) {
+            selectedBaselinkerId = categoryId;
+            selectedOvokoId = currentMapping[categoryId] || null;
+            
+            renderBaselinkerList();
+            renderOvokoList();
+            
+            // Scroll do wybranej kategorii
+            const selectedElement = document.querySelector(`[onclick="selectBaselinkerCategory(${categoryId})"]`);
+            if (selectedElement) {
+                selectedElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+
+        // Wybór kategorii OVOKO
+        function selectOvokoCategory(categoryId) {
+            if (!selectedBaselinkerId) {
+                alert('Najpierw wybierz kategorię BaseLinker!');
+                return;
+            }
+            
+            selectedOvokoId = categoryId;
+            currentMapping[selectedBaselinkerId] = categoryId;
+            
+            renderBaselinkerList();
+            renderOvokoList();
+            updateStats();
+            updateProgress();
+            
+            // Scroll do wybranej kategorii OVOKO
+            const selectedElement = document.querySelector(`[onclick="selectOvokoCategory('${categoryId}')"]`);
+            if (selectedElement) {
+                selectedElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+
+        // Aktualizacja statystyk
+        function updateStats() {
+            const totalBaselinker = baselinkerCategories.length;
+            const totalOvoko = ovokoCategories.length;
+            const mappedCount = Object.keys(currentMapping).length;
+            const unmappedCount = totalBaselinker - mappedCount;
+
+            document.getElementById('totalBaselinker').textContent = totalBaselinker;
+            document.getElementById('totalOvoko').textContent = totalOvoko;
+            document.getElementById('mappedCount').textContent = mappedCount;
+            document.getElementById('unmappedCount').textContent = unmappedCount;
+        }
+
+        // Aktualizacja paska postępu
+        function updateProgress() {
+            const total = baselinkerCategories.length;
+            const mapped = Object.keys(currentMapping).length;
+            const percentage = total > 0 ? Math.round((mapped / total) * 100) : 0;
+            
+            document.getElementById('progressFill').style.width = `${percentage}%`;
+            document.getElementById('progressText').textContent = `${percentage}% (${mapped}/${total})`;
+        }
+
+        // Zapisywanie mapowania
+        function saveMapping() {
+            const mappingData = {
+                source: "Category Mapping Tool",
+                timestamp: new Date().toISOString(),
+                mapping: currentMapping,
+                statistics: {
+                    totalBaselinker: baselinkerCategories.length,
+                    totalOvoko: ovokoCategories.length,
+                    mappedCount: Object.keys(currentMapping).length,
+                    unmappedCount: baselinkerCategories.length - Object.keys(currentMapping).length
+                }
+            };
+
+            const dataStr = JSON.stringify(mappingData, null, 2);
+            const dataBlob = new Blob([dataStr], { type: 'application/json' });
+            
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(dataBlob);
+            link.download = `category_mapping_${new Date().toISOString().slice(0, 19).replace(/:/g, '-')}.json`;
+            link.click();
+            
+            alert(`Mapowanie zostało zapisane! Zmapowano ${Object.keys(currentMapping).length} kategorii.`);
+        }
+
+        // Eksport mapowania
+        function exportMapping() {
+            saveMapping();
+        }
+
+        // Wczytywanie mapowania
+        function loadMapping() {
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = '.json';
+            input.onchange = function(e) {
+                const file = e.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        try {
+                            const data = JSON.parse(e.target.result);
+                            if (data.mapping) {
+                                currentMapping = data.mapping;
+                                renderBaselinkerList();
+                                updateStats();
+                                updateProgress();
+                                alert(`Wczytano mapowanie z ${Object.keys(currentMapping).length} kategoriami.`);
+                            } else {
+                                alert('Nieprawidłowy format pliku mapowania.');
+                            }
+                        } catch (error) {
+                            alert('Błąd podczas wczytywania pliku.');
+                        }
+                    };
+                    reader.readAsText(file);
+                }
+            };
+            input.click();
+        }
+
+        // Event listeners
+        document.getElementById('searchInput').addEventListener('input', () => {
+            renderBaselinkerList();
+            renderOvokoList();
+        });
+
+        document.getElementById('statusFilter').addEventListener('change', () => {
+            renderBaselinkerList();
+        });
+
+        // Inicjalizacja
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>

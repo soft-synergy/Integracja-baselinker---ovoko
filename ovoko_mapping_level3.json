@@ -1,0 +1,3609 @@
+{
+  "mapping_description": "Mapowanie WSZYSTKICH kategorii BaseLinker na LEVEL 3 kategorie Ovoko (używane do nazw części)",
+  "created_at": "2025-08-28T04:48:49.068Z",
+  "version": "3.0",
+  "total_categories": 355,
+  "ovoko_level3_categories": 1742,
+  "categories": {
+    "1021337": {
+      "baselinker": {
+        "category_id": 1021337,
+        "name": "Części BMW",
+        "parent_id": 1021337
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "72",
+        "ovoko_name": "Other brake parts",
+        "ovoko_pl": "Inne części układu hamulcowego",
+        "confidence": "level3_match",
+        "matched_keyword": "Inne części układu hamulcowego",
+        "score": 6
+      }
+    },
+    "1730800": {
+      "baselinker": {
+        "category_id": 1730800,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki parkowania",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1738",
+        "ovoko_name": "Front parking sensor holder (PDC)",
+        "ovoko_pl": "Uchwyt przedniego czujnika parkowania PDC",
+        "confidence": "level3_match",
+        "matched_keyword": "Uchwyt przedniego czujnika parkowania PDC",
+        "score": 10
+      }
+    },
+    "1730801": {
+      "baselinker": {
+        "category_id": 1730801,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Alternatory/Alternatory kompletne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "233",
+        "ovoko_name": "Electric radiator cooling fan",
+        "ovoko_pl": "Elektryczny wentylator chłodnicy",
+        "confidence": "level3_match",
+        "matched_keyword": "Elektryczny wentylator chłodnicy",
+        "score": 11
+      }
+    },
+    "1730802": {
+      "baselinker": {
+        "category_id": 1730802,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Nawigacje GPS fabryczne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "178",
+        "ovoko_name": "Non-factory (optional) fog light",
+        "ovoko_pl": "Niefabryczne światło przeciwmgielne",
+        "confidence": "level3_match",
+        "matched_keyword": "Niefabryczne światło przeciwmgielne",
+        "score": 9
+      }
+    },
+    "1730804": {
+      "baselinker": {
+        "category_id": 1730804,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Recyrkulacja spalin EGR/Zawory EGR",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1730805": {
+      "baselinker": {
+        "category_id": 1730805,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Sterowniki silnika",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1730806": {
+      "baselinker": {
+        "category_id": 1730806,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Rozruszniki/Rozruszniki kompletne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "233",
+        "ovoko_name": "Electric radiator cooling fan",
+        "ovoko_pl": "Elektryczny wentylator chłodnicy",
+        "confidence": "level3_match",
+        "matched_keyword": "Elektryczny wentylator chłodnicy",
+        "score": 11
+      }
+    },
+    "1730807": {
+      "baselinker": {
+        "category_id": 1730807,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Wentylatory chłodnicy/Wentylatory",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2105",
+        "ovoko_name": "Hybrid/electric vehicle battery cooling hoses/tubes",
+        "ovoko_pl": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "confidence": "level3_match",
+        "matched_keyword": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "score": 10
+      }
+    },
+    "1730808": {
+      "baselinker": {
+        "category_id": 1730808,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Moduły zapłonowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "233",
+        "ovoko_name": "Electric radiator cooling fan",
+        "ovoko_pl": "Elektryczny wentylator chłodnicy",
+        "confidence": "level3_match",
+        "matched_keyword": "Elektryczny wentylator chłodnicy",
+        "score": 11
+      }
+    },
+    "1730812": {
+      "baselinker": {
+        "category_id": 1730812,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Fotele, kanapy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1982",
+        "ovoko_name": "Rear seat armrest",
+        "ovoko_pl": "Podłokietnik tylnej kanapy",
+        "confidence": "level3_match",
+        "matched_keyword": "Podłokietnik tylnej kanapy",
+        "score": 6
+      }
+    },
+    "1730815": {
+      "baselinker": {
+        "category_id": 1730815,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Drzwi",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "754",
+        "ovoko_name": "Door (2 Door Coupe)",
+        "ovoko_pl": "Drzwi",
+        "confidence": "level3_match",
+        "matched_keyword": "Drzwi",
+        "score": 10
+      }
+    },
+    "1730817": {
+      "baselinker": {
+        "category_id": 1730817,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprzęt audio fabryczny/Głośniki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1901",
+        "ovoko_name": "HiFi Audio sound control unit",
+        "ovoko_pl": "Moduł / Sterownik dziku audio HiFi",
+        "confidence": "level3_match",
+        "matched_keyword": "Moduł / Sterownik dziku audio HiFi",
+        "score": 5
+      }
+    },
+    "1730818": {
+      "baselinker": {
+        "category_id": 1730818,
+        "name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Sprężyny zawieszenia",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "354",
+        "ovoko_name": "Front height sensor lever",
+        "ovoko_pl": "Czujnik poziomowania zawieszenia osi przedniej",
+        "confidence": "level3_match",
+        "matched_keyword": "Czujnik poziomowania zawieszenia osi przedniej",
+        "score": 11
+      }
+    },
+    "1730819": {
+      "baselinker": {
+        "category_id": 1730819,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Panele sterowania, przełączniki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1031",
+        "ovoko_name": "Other switches/knobs/shifts",
+        "ovoko_pl": "Inne przełączniki i przyciski",
+        "confidence": "level3_match",
+        "matched_keyword": "Inne przełączniki i przyciski",
+        "score": 12
+      }
+    },
+    "1730821": {
+      "baselinker": {
+        "category_id": 1730821,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Lampy tylne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "554",
+        "ovoko_name": "Rear brake disc",
+        "ovoko_pl": "Tarcza hamulca tylnego",
+        "confidence": "level3_match",
+        "matched_keyword": "Tarcza hamulca tylnego",
+        "score": 10
+      }
+    },
+    "1730823": {
+      "baselinker": {
+        "category_id": 1730823,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Klapy bagażnika",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "155",
+        "ovoko_name": "Tailgate rear/tail lights",
+        "ovoko_pl": "Lampy tylnej klapy bagażnika",
+        "confidence": "level3_match",
+        "matched_keyword": "Lampy tylnej klapy bagażnika",
+        "score": 9
+      }
+    },
+    "1730824": {
+      "baselinker": {
+        "category_id": 1730824,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Silniki kompletne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1730825": {
+      "baselinker": {
+        "category_id": 1730825,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Literatura motoryzacyjna/Samochody/Instrukcje obsługi",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2111",
+        "ovoko_name": "Tow bar mounting accessories",
+        "ovoko_pl": "Akcesoria do montażu na haku holowniczym",
+        "confidence": "level3_match",
+        "matched_keyword": "Akcesoria do montażu na haku holowniczym",
+        "score": 9
+      }
+    },
+    "1730826": {
+      "baselinker": {
+        "category_id": 1730826,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Listwy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "754",
+        "ovoko_name": "Door (2 Door Coupe)",
+        "ovoko_pl": "Drzwi",
+        "confidence": "level3_match",
+        "matched_keyword": "Drzwi",
+        "score": 10
+      }
+    },
+    "1730827": {
+      "baselinker": {
+        "category_id": 1730827,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Dachy/Relingi dachowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1509",
+        "ovoko_name": "Roof bar rail",
+        "ovoko_pl": "Relingi dachowe",
+        "confidence": "level3_match",
+        "matched_keyword": "Relingi dachowe",
+        "score": 17
+      }
+    },
+    "1730828": {
+      "baselinker": {
+        "category_id": 1730828,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Emblematy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2111",
+        "ovoko_name": "Tow bar mounting accessories",
+        "ovoko_pl": "Akcesoria do montażu na haku holowniczym",
+        "confidence": "level3_match",
+        "matched_keyword": "Akcesoria do montażu na haku holowniczym",
+        "score": 9
+      }
+    },
+    "1730829": {
+      "baselinker": {
+        "category_id": 1730829,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Czujniki i kamery cofania/Czujniki cofania",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1201",
+        "ovoko_name": "Sensor",
+        "ovoko_pl": "Czujnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Czujnik",
+        "score": 10
+      }
+    },
+    "1730830": {
+      "baselinker": {
+        "category_id": 1730830,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Schowki, półki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "921",
+        "ovoko_name": "Parcel shelf load cover mount bracket",
+        "ovoko_pl": "Mocowanie półki/rolety bagażnika",
+        "confidence": "level3_match",
+        "matched_keyword": "Mocowanie półki/rolety bagażnika",
+        "score": 5
+      }
+    },
+    "1730831": {
+      "baselinker": {
+        "category_id": 1730831,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Moduły komfortu",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1156",
+        "ovoko_name": "Central body control module",
+        "ovoko_pl": "Sterownik / Moduł komfortu",
+        "confidence": "level3_match",
+        "matched_keyword": "Sterownik / Moduł komfortu",
+        "score": 8
+      }
+    },
+    "1730833": {
+      "baselinker": {
+        "category_id": 1730833,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Kratki nawiewu",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "203",
+        "ovoko_name": "A/C air flow flap actuator/motor",
+        "ovoko_pl": "Silniczek nagrzewnicy nawiewu klimatyzacji A/C",
+        "confidence": "level3_match",
+        "matched_keyword": "Silniczek nagrzewnicy nawiewu klimatyzacji A/C",
+        "score": 7
+      }
+    },
+    "1730834": {
+      "baselinker": {
+        "category_id": 1730834,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Osłony silnika/Dolne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1730840": {
+      "baselinker": {
+        "category_id": 1730840,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Rolety bagażnika",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "155",
+        "ovoko_name": "Tailgate rear/tail lights",
+        "ovoko_pl": "Lampy tylnej klapy bagażnika",
+        "confidence": "level3_match",
+        "matched_keyword": "Lampy tylnej klapy bagażnika",
+        "score": 9
+      }
+    },
+    "1730841": {
+      "baselinker": {
+        "category_id": 1730841,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Poduszki powietrzne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1342",
+        "ovoko_name": "Air micro filter air duct channel part",
+        "ovoko_pl": "Element kanału powietrznego mikrofiltra powietrza",
+        "confidence": "level3_match",
+        "matched_keyword": "Element kanału powietrznego mikrofiltra powietrza",
+        "score": 10
+      }
+    },
+    "1730844": {
+      "baselinker": {
+        "category_id": 1730844,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Klapki wlewu paliwa/Zamki i siłowniki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1877",
+        "ovoko_name": "Fuel tank cap lock motor",
+        "ovoko_pl": "Siłowniki klapki wlewu paliwa",
+        "confidence": "level3_match",
+        "matched_keyword": "Siłowniki klapki wlewu paliwa",
+        "score": 14
+      }
+    },
+    "1730845": {
+      "baselinker": {
+        "category_id": 1730845,
+        "name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Spryskiwacze reflektorów",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2011",
+        "ovoko_name": "Headlight washer nozzle holder",
+        "ovoko_pl": "Uchwyt dyszy spryskiwacza reflektorów",
+        "confidence": "level3_match",
+        "matched_keyword": "Uchwyt dyszy spryskiwacza reflektorów",
+        "score": 11
+      }
+    },
+    "1730846": {
+      "baselinker": {
+        "category_id": 1730846,
+        "name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Dysze spryskiwaczy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1864",
+        "ovoko_name": "Lamp washer fluid tank",
+        "ovoko_pl": "Zbiornik płynu spryskiwaczy lamp",
+        "confidence": "level3_match",
+        "matched_keyword": "Zbiornik płynu spryskiwaczy lamp",
+        "score": 12
+      }
+    },
+    "1730847": {
+      "baselinker": {
+        "category_id": 1730847,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Elektronika samochodowa/Car audio/Anteny",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2111",
+        "ovoko_name": "Tow bar mounting accessories",
+        "ovoko_pl": "Akcesoria do montażu na haku holowniczym",
+        "confidence": "level3_match",
+        "matched_keyword": "Akcesoria do montażu na haku holowniczym",
+        "score": 9
+      }
+    },
+    "1730849": {
+      "baselinker": {
+        "category_id": 1730849,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Przewody układów chłodzenia/Przewody chłodnic wody",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2105",
+        "ovoko_name": "Hybrid/electric vehicle battery cooling hoses/tubes",
+        "ovoko_pl": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "confidence": "level3_match",
+        "matched_keyword": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "score": 10
+      }
+    },
+    "1730852": {
+      "baselinker": {
+        "category_id": 1730852,
+        "name": "Motoryzacja/Części samochodowe/Układ wydechowy/Sondy lambda",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1406",
+        "ovoko_name": "Lambda probe sensor",
+        "ovoko_pl": "Sonda lambda",
+        "confidence": "level3_match",
+        "matched_keyword": "Sonda lambda",
+        "score": 6
+      }
+    },
+    "1730853": {
+      "baselinker": {
+        "category_id": 1730853,
+        "name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Pompki spryskiwaczy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1864",
+        "ovoko_name": "Lamp washer fluid tank",
+        "ovoko_pl": "Zbiornik płynu spryskiwaczy lamp",
+        "confidence": "level3_match",
+        "matched_keyword": "Zbiornik płynu spryskiwaczy lamp",
+        "score": 12
+      }
+    },
+    "1730854": {
+      "baselinker": {
+        "category_id": 1730854,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Zawieszenie silnika/Poduszki silnika",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1730855": {
+      "baselinker": {
+        "category_id": 1730855,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Uchwyty fabryczne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "178",
+        "ovoko_name": "Non-factory (optional) fog light",
+        "ovoko_pl": "Niefabryczne światło przeciwmgielne",
+        "confidence": "level3_match",
+        "matched_keyword": "Niefabryczne światło przeciwmgielne",
+        "score": 9
+      }
+    },
+    "1730857": {
+      "baselinker": {
+        "category_id": 1730857,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Pasy przednie",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "62",
+        "ovoko_name": "Front brake disc dust cover plate",
+        "ovoko_pl": "Osłona przedniej tarczy hamulcowej",
+        "confidence": "level3_match",
+        "matched_keyword": "Osłona przedniej tarczy hamulcowej",
+        "score": 8
+      }
+    },
+    "1730858": {
+      "baselinker": {
+        "category_id": 1730858,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprzęt audio fabryczny/Wzmacniacze",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1901",
+        "ovoko_name": "HiFi Audio sound control unit",
+        "ovoko_pl": "Moduł / Sterownik dziku audio HiFi",
+        "confidence": "level3_match",
+        "matched_keyword": "Moduł / Sterownik dziku audio HiFi",
+        "score": 5
+      }
+    },
+    "1730860": {
+      "baselinker": {
+        "category_id": 1730860,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Liczniki, zegary",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1006",
+        "ovoko_name": "Clock",
+        "ovoko_pl": "Zegar",
+        "confidence": "level3_match",
+        "matched_keyword": "Zegar",
+        "score": 10
+      }
+    },
+    "1730861": {
+      "baselinker": {
+        "category_id": 1730861,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Przewody powietrza turbosprężarki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "280",
+        "ovoko_name": "Turbo system vacuum part",
+        "ovoko_pl": "Cześć układu próżniowego turbosprężarki",
+        "confidence": "level3_match",
+        "matched_keyword": "Cześć układu próżniowego turbosprężarki",
+        "score": 14
+      }
+    },
+    "1730862": {
+      "baselinker": {
+        "category_id": 1730862,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Przewody powietrza",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1730867": {
+      "baselinker": {
+        "category_id": 1730867,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Półosie, przeguby, wały/Wały napędowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "447",
+        "ovoko_name": "Rear prop shaft donut coupling/joint",
+        "ovoko_pl": "Przegub / Łącznik elastyczny wału napędowego",
+        "confidence": "level3_match",
+        "matched_keyword": "Przegub / Łącznik elastyczny wału napędowego",
+        "score": 8
+      }
+    },
+    "1730869": {
+      "baselinker": {
+        "category_id": 1730869,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1201",
+        "ovoko_name": "Sensor",
+        "ovoko_pl": "Czujnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Czujnik",
+        "score": 10
+      }
+    },
+    "1730870": {
+      "baselinker": {
+        "category_id": 1730870,
+        "name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Przekładnie kierownicze",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "332",
+        "ovoko_name": "Steering tie rod boot",
+        "ovoko_pl": "Osłona drążka kierowniczego",
+        "confidence": "level3_match",
+        "matched_keyword": "Osłona drążka kierowniczego",
+        "score": 11
+      }
+    },
+    "1730871": {
+      "baselinker": {
+        "category_id": 1730871,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Zderzaki/Wzmocnienia zderzaków (belki)",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2020",
+        "ovoko_name": "Bumpers kit",
+        "ovoko_pl": "Zestaw zderzaków",
+        "confidence": "level3_match",
+        "matched_keyword": "Zestaw zderzaków",
+        "score": 9
+      }
+    },
+    "1730872": {
+      "baselinker": {
+        "category_id": 1730872,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Pasy bezpieczeństwa",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "898",
+        "ovoko_name": "Rear seatbelt buckle",
+        "ovoko_pl": "Klamra tylnego pasa bezpieczeństwa",
+        "confidence": "level3_match",
+        "matched_keyword": "Klamra tylnego pasa bezpieczeństwa",
+        "score": 14
+      }
+    },
+    "1730873": {
+      "baselinker": {
+        "category_id": 1730873,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Oświetlenie kabiny",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1523",
+        "ovoko_name": "Other interior light",
+        "ovoko_pl": "Inne oświetlenie wnętrza kabiny",
+        "confidence": "level3_match",
+        "matched_keyword": "Inne oświetlenie wnętrza kabiny",
+        "score": 6
+      }
+    },
+    "1730874": {
+      "baselinker": {
+        "category_id": 1730874,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Pompy podciśnieniowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1730875": {
+      "baselinker": {
+        "category_id": 1730875,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Dachy/Dachy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1097",
+        "ovoko_name": "Roof",
+        "ovoko_pl": "Dach",
+        "confidence": "level3_match",
+        "matched_keyword": "Dach",
+        "score": 10
+      }
+    },
+    "1730877": {
+      "baselinker": {
+        "category_id": 1730877,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Kierownice powietrza",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2105",
+        "ovoko_name": "Hybrid/electric vehicle battery cooling hoses/tubes",
+        "ovoko_pl": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "confidence": "level3_match",
+        "matched_keyword": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "score": 10
+      }
+    },
+    "1730878": {
+      "baselinker": {
+        "category_id": 1730878,
+        "name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Pompy wspomagania",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "52",
+        "ovoko_name": "Brake booster pipe/hose",
+        "ovoko_pl": "Przewód / Wąż wspomagania hamulca",
+        "confidence": "level3_match",
+        "matched_keyword": "Przewód / Wąż wspomagania hamulca",
+        "score": 11
+      }
+    },
+    "1730880": {
+      "baselinker": {
+        "category_id": 1730880,
+        "name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Kompresory klimatyzacji/Kompresory klimatyzacji",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "199",
+        "ovoko_name": "Other air conditioning (A/C) parts",
+        "ovoko_pl": "Inne elementy układu klimatyzacji A/C",
+        "confidence": "level3_match",
+        "matched_keyword": "Inne elementy układu klimatyzacji A/C",
+        "score": 12
+      }
+    },
+    "1730881": {
+      "baselinker": {
+        "category_id": 1730881,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1730882": {
+      "baselinker": {
+        "category_id": 1730882,
+        "name": "Motoryzacja/Części samochodowe/Układ wentylacji/Kanały powietrza",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "249",
+        "ovoko_name": "Air conditioning (A/C) air dryer",
+        "ovoko_pl": "Osuszacz powietrza klimatyzacji A/C",
+        "confidence": "level3_match",
+        "matched_keyword": "Osuszacz powietrza klimatyzacji A/C",
+        "score": 9
+      }
+    },
+    "1730884": {
+      "baselinker": {
+        "category_id": 1730884,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Moduły poduszek powietrznych",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2004",
+        "ovoko_name": "Bonnet Pedestrian Airbag Actuator",
+        "ovoko_pl": "Siłownik poduszek powietrznych dla pieszych",
+        "confidence": "level3_match",
+        "matched_keyword": "Siłownik poduszek powietrznych dla pieszych",
+        "score": 20
+      }
+    },
+    "1730885": {
+      "baselinker": {
+        "category_id": 1730885,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Sterowniki świateł",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "196",
+        "ovoko_name": "Headlight level adjustment motor",
+        "ovoko_pl": "Silniczek regulacji świateł",
+        "confidence": "level3_match",
+        "matched_keyword": "Silniczek regulacji świateł",
+        "score": 7
+      }
+    },
+    "1730886": {
+      "baselinker": {
+        "category_id": 1730886,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Zderzaki/Elementy mocujące",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2110",
+        "ovoko_name": "Glass fitting brackets",
+        "ovoko_pl": "Uchwyty mocujące do szkła",
+        "confidence": "level3_match",
+        "matched_keyword": "Uchwyty mocujące do szkła",
+        "score": 8
+      }
+    },
+    "1730888": {
+      "baselinker": {
+        "category_id": 1730888,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Klapki wlewu paliwa/Klapki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "48",
+        "ovoko_name": "Brake fluid reservoir filler cap with level sensor",
+        "ovoko_pl": "Korek wlewu płynu hamulcowego z czujnikiem poziomu",
+        "confidence": "level3_match",
+        "matched_keyword": "Korek wlewu płynu hamulcowego z czujnikiem poziomu",
+        "score": 5
+      }
+    },
+    "1730889": {
+      "baselinker": {
+        "category_id": 1730889,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Szyby/Szyberdachy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1097",
+        "ovoko_name": "Roof",
+        "ovoko_pl": "Dach",
+        "confidence": "level3_match",
+        "matched_keyword": "Dach",
+        "score": 10
+      }
+    },
+    "1730890": {
+      "baselinker": {
+        "category_id": 1730890,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy przednie i elementy/Lampy przednie",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "62",
+        "ovoko_name": "Front brake disc dust cover plate",
+        "ovoko_pl": "Osłona przedniej tarczy hamulcowej",
+        "confidence": "level3_match",
+        "matched_keyword": "Osłona przedniej tarczy hamulcowej",
+        "score": 16
+      }
+    },
+    "1730891": {
+      "baselinker": {
+        "category_id": 1730891,
+        "name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Mechanizmy wycieraczek",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "111",
+        "ovoko_name": "Front wiper linkage and motor",
+        "ovoko_pl": "Mechanizm i silniczek wycieraczek szyby przedniej / czołowej",
+        "confidence": "level3_match",
+        "matched_keyword": "Mechanizm i silniczek wycieraczek szyby przedniej / czołowej",
+        "score": 11
+      }
+    },
+    "1730892": {
+      "baselinker": {
+        "category_id": 1730892,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Zamki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "754",
+        "ovoko_name": "Door (2 Door Coupe)",
+        "ovoko_pl": "Drzwi",
+        "confidence": "level3_match",
+        "matched_keyword": "Drzwi",
+        "score": 10
+      }
+    },
+    "1730893": {
+      "baselinker": {
+        "category_id": 1730893,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Klamki zewnętrzne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "754",
+        "ovoko_name": "Door (2 Door Coupe)",
+        "ovoko_pl": "Drzwi",
+        "confidence": "level3_match",
+        "matched_keyword": "Drzwi",
+        "score": 10
+      }
+    },
+    "1730894": {
+      "baselinker": {
+        "category_id": 1730894,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Przepływomierze",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1730899": {
+      "baselinker": {
+        "category_id": 1730899,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Pompy wody/Pompy wody",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2105",
+        "ovoko_name": "Hybrid/electric vehicle battery cooling hoses/tubes",
+        "ovoko_pl": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "confidence": "level3_match",
+        "matched_keyword": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "score": 10
+      }
+    },
+    "1730900": {
+      "baselinker": {
+        "category_id": 1730900,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Kompletne turbosprężarki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "280",
+        "ovoko_name": "Turbo system vacuum part",
+        "ovoko_pl": "Cześć układu próżniowego turbosprężarki",
+        "confidence": "level3_match",
+        "matched_keyword": "Cześć układu próżniowego turbosprężarki",
+        "score": 14
+      }
+    },
+    "1730901": {
+      "baselinker": {
+        "category_id": 1730901,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Głowice cylindrów/Głowice",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1730902": {
+      "baselinker": {
+        "category_id": 1730902,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Obudowy filtrów powietrza",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1730903": {
+      "baselinker": {
+        "category_id": 1730903,
+        "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Pompy paliwa",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1376",
+        "ovoko_name": "Fuel cooler (radiator)",
+        "ovoko_pl": "Chłodnica paliwa",
+        "confidence": "level3_match",
+        "matched_keyword": "Chłodnica paliwa",
+        "score": 6
+      }
+    },
+    "1730904": {
+      "baselinker": {
+        "category_id": 1730904,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprzęt audio fabryczny/Radioodtwarzacze",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1901",
+        "ovoko_name": "HiFi Audio sound control unit",
+        "ovoko_pl": "Moduł / Sterownik dziku audio HiFi",
+        "confidence": "level3_match",
+        "matched_keyword": "Moduł / Sterownik dziku audio HiFi",
+        "score": 5
+      }
+    },
+    "1730905": {
+      "baselinker": {
+        "category_id": 1730905,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Elektronika samochodowa/Car audio/Głośniki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2111",
+        "ovoko_name": "Tow bar mounting accessories",
+        "ovoko_pl": "Akcesoria do montażu na haku holowniczym",
+        "confidence": "level3_match",
+        "matched_keyword": "Akcesoria do montażu na haku holowniczym",
+        "score": 9
+      }
+    },
+    "1730906": {
+      "baselinker": {
+        "category_id": 1730906,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Klaksony",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1289",
+        "ovoko_name": "Horn signal",
+        "ovoko_pl": "Klakson",
+        "confidence": "level3_match",
+        "matched_keyword": "Klakson",
+        "score": 10
+      }
+    },
+    "1730907": {
+      "baselinker": {
+        "category_id": 1730907,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Zbiorniki wyrównawcze",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "229",
+        "ovoko_name": "Coolant expansion tank/reservoir cap",
+        "ovoko_pl": "Korek zbiornika wyrównawczego chłodziwa",
+        "confidence": "level3_match",
+        "matched_keyword": "Korek zbiornika wyrównawczego chłodziwa",
+        "score": 11
+      }
+    },
+    "1730908": {
+      "baselinker": {
+        "category_id": 1730908,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Czujniki/Poziomowania",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1201",
+        "ovoko_name": "Sensor",
+        "ovoko_pl": "Czujnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Czujnik",
+        "score": 10
+      }
+    },
+    "1730910": {
+      "baselinker": {
+        "category_id": 1730910,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Elementy mocujące",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2110",
+        "ovoko_name": "Glass fitting brackets",
+        "ovoko_pl": "Uchwyty mocujące do szkła",
+        "confidence": "level3_match",
+        "matched_keyword": "Uchwyty mocujące do szkła",
+        "score": 8
+      }
+    },
+    "1730912": {
+      "baselinker": {
+        "category_id": 1730912,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Elementy napędu paska osprzętu/Koła pasowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1633",
+        "ovoko_name": "Alternator belt tensioner pulley",
+        "ovoko_pl": "Koło pasowe napinacza paska alternatora",
+        "confidence": "level3_match",
+        "matched_keyword": "Koło pasowe napinacza paska alternatora",
+        "score": 11
+      }
+    },
+    "1730914": {
+      "baselinker": {
+        "category_id": 1730914,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Lusterka wewnętrzne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1485",
+        "ovoko_name": "Rear door interior light",
+        "ovoko_pl": "Lampka wewnętrzne drzwi tylnych",
+        "confidence": "level3_match",
+        "matched_keyword": "Lampka wewnętrzne drzwi tylnych",
+        "score": 10
+      }
+    },
+    "1730915": {
+      "baselinker": {
+        "category_id": 1730915,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Wsporniki, mocowania, obudowy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1736",
+        "ovoko_name": "Air filter cleaner box bracket assembly",
+        "ovoko_pl": "Wspornik / Mocowanie obudowy filtra powietrza",
+        "confidence": "level3_match",
+        "matched_keyword": "Wspornik / Mocowanie obudowy filtra powietrza",
+        "score": 7
+      }
+    },
+    "1730919": {
+      "baselinker": {
+        "category_id": 1730919,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Kolektory ssące",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1730920": {
+      "baselinker": {
+        "category_id": 1730920,
+        "name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Przewody klimatyzacji",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "199",
+        "ovoko_name": "Other air conditioning (A/C) parts",
+        "ovoko_pl": "Inne elementy układu klimatyzacji A/C",
+        "confidence": "level3_match",
+        "matched_keyword": "Inne elementy układu klimatyzacji A/C",
+        "score": 12
+      }
+    },
+    "1730921": {
+      "baselinker": {
+        "category_id": 1730921,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2105",
+        "ovoko_name": "Hybrid/electric vehicle battery cooling hoses/tubes",
+        "ovoko_pl": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "confidence": "level3_match",
+        "matched_keyword": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "score": 10
+      }
+    },
+    "1730922": {
+      "baselinker": {
+        "category_id": 1730922,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "554",
+        "ovoko_name": "Rear brake disc",
+        "ovoko_pl": "Tarcza hamulca tylnego",
+        "confidence": "level3_match",
+        "matched_keyword": "Tarcza hamulca tylnego",
+        "score": 5
+      }
+    },
+    "1730923": {
+      "baselinker": {
+        "category_id": 1730923,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Wsporniki, mocowania",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1462",
+        "ovoko_name": "Fuel Injector clamp holder",
+        "ovoko_pl": "Uchwyt / Mocowania wtryskiwacza",
+        "confidence": "level3_match",
+        "matched_keyword": "Uchwyt / Mocowania wtryskiwacza",
+        "score": 9
+      }
+    },
+    "1730950": {
+      "baselinker": {
+        "category_id": 1730950,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Osłony przeciwsłoneczne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "941",
+        "ovoko_name": "Sun visor clip/hook/bracket",
+        "ovoko_pl": "Uchwyt osłony przeciwsłonecznej szyberdachu",
+        "confidence": "level3_match",
+        "matched_keyword": "Uchwyt osłony przeciwsłonecznej szyberdachu",
+        "score": 16
+      }
+    },
+    "1730959": {
+      "baselinker": {
+        "category_id": 1730959,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Boczki bagażnika",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "155",
+        "ovoko_name": "Tailgate rear/tail lights",
+        "ovoko_pl": "Lampy tylnej klapy bagażnika",
+        "confidence": "level3_match",
+        "matched_keyword": "Lampy tylnej klapy bagażnika",
+        "score": 9
+      }
+    },
+    "1730968": {
+      "baselinker": {
+        "category_id": 1730968,
+        "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Pompy wtryskowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1463",
+        "ovoko_name": "Fuel pump gear (pulley)",
+        "ovoko_pl": "Koło zębate pompy wtryskowej",
+        "confidence": "level3_match",
+        "matched_keyword": "Koło zębate pompy wtryskowej",
+        "score": 9
+      }
+    },
+    "1730969": {
+      "baselinker": {
+        "category_id": 1730969,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Recyrkulacja spalin EGR/Chłodnice spalin",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1150",
+        "ovoko_name": "Reducing agents exhaust control unit",
+        "ovoko_pl": "Sterownik / Moduł spalin",
+        "confidence": "level3_match",
+        "matched_keyword": "Sterownik / Moduł spalin",
+        "score": 12
+      }
+    },
+    "1730970": {
+      "baselinker": {
+        "category_id": 1730970,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Półki tylne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "554",
+        "ovoko_name": "Rear brake disc",
+        "ovoko_pl": "Tarcza hamulca tylnego",
+        "confidence": "level3_match",
+        "matched_keyword": "Tarcza hamulca tylnego",
+        "score": 5
+      }
+    },
+    "1730971": {
+      "baselinker": {
+        "category_id": 1730971,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Czujniki poziomu oleju",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "272",
+        "ovoko_name": "Oil level dip stick",
+        "ovoko_pl": "Bagnet poziomu oleju",
+        "confidence": "level3_match",
+        "matched_keyword": "Bagnet poziomu oleju",
+        "score": 12
+      }
+    },
+    "1730974": {
+      "baselinker": {
+        "category_id": 1730974,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Boczki drzwi",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "754",
+        "ovoko_name": "Door (2 Door Coupe)",
+        "ovoko_pl": "Drzwi",
+        "confidence": "level3_match",
+        "matched_keyword": "Drzwi",
+        "score": 15
+      }
+    },
+    "1730975": {
+      "baselinker": {
+        "category_id": 1730975,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Dachy/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1097",
+        "ovoko_name": "Roof",
+        "ovoko_pl": "Dach",
+        "confidence": "level3_match",
+        "matched_keyword": "Dach",
+        "score": 10
+      }
+    },
+    "1730976": {
+      "baselinker": {
+        "category_id": 1730976,
+        "name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Czujniki kąta skrętu",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1201",
+        "ovoko_name": "Sensor",
+        "ovoko_pl": "Czujnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Czujnik",
+        "score": 10
+      }
+    },
+    "1730977": {
+      "baselinker": {
+        "category_id": 1730977,
+        "name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Zbiorniki płynu do spryskiwaczy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1864",
+        "ovoko_name": "Lamp washer fluid tank",
+        "ovoko_pl": "Zbiornik płynu spryskiwaczy lamp",
+        "confidence": "level3_match",
+        "matched_keyword": "Zbiornik płynu spryskiwaczy lamp",
+        "score": 17
+      }
+    },
+    "1730979": {
+      "baselinker": {
+        "category_id": 1730979,
+        "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Przewody wtryskowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1463",
+        "ovoko_name": "Fuel pump gear (pulley)",
+        "ovoko_pl": "Koło zębate pompy wtryskowej",
+        "confidence": "level3_match",
+        "matched_keyword": "Koło zębate pompy wtryskowej",
+        "score": 9
+      }
+    },
+    "1730980": {
+      "baselinker": {
+        "category_id": 1730980,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Chłodnice/Chłodnice wody",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2105",
+        "ovoko_name": "Hybrid/electric vehicle battery cooling hoses/tubes",
+        "ovoko_pl": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "confidence": "level3_match",
+        "matched_keyword": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "score": 10
+      }
+    },
+    "1730981": {
+      "baselinker": {
+        "category_id": 1730981,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Przewody układów chłodzenia/Przewody chłodnic oleju",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2078",
+        "ovoko_name": "Oil cooling pipe",
+        "ovoko_pl": "Rura chłodzenia oleju",
+        "confidence": "level3_match",
+        "matched_keyword": "Rura chłodzenia oleju",
+        "score": 15
+      }
+    },
+    "1730982": {
+      "baselinker": {
+        "category_id": 1730982,
+        "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Przewody paliwa",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1376",
+        "ovoko_name": "Fuel cooler (radiator)",
+        "ovoko_pl": "Chłodnica paliwa",
+        "confidence": "level3_match",
+        "matched_keyword": "Chłodnica paliwa",
+        "score": 6
+      }
+    },
+    "1730983": {
+      "baselinker": {
+        "category_id": 1730983,
+        "name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Hamulce postojowe/Dźwignie hamulca ręcznego",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "83",
+        "ovoko_name": "Handbrake lever cover (leather/fabric)",
+        "ovoko_pl": "Osłona dźwigni hamulca ręcznego skóra / tkanina",
+        "confidence": "level3_match",
+        "matched_keyword": "Osłona dźwigni hamulca ręcznego skóra / tkanina",
+        "score": 15
+      }
+    },
+    "1730985": {
+      "baselinker": {
+        "category_id": 1730985,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Wały korbowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "263",
+        "ovoko_name": "Engine block",
+        "ovoko_pl": "Blok silnika",
+        "confidence": "level3_match",
+        "matched_keyword": "Blok silnika",
+        "score": 10
+      }
+    },
+    "1730990": {
+      "baselinker": {
+        "category_id": 1730990,
+        "name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Zawieszenie hydrauliczne i pneumatyczne/Sterowniki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "572",
+        "ovoko_name": "Tailgate hydraulic pump motor",
+        "ovoko_pl": "Silniczek pompy hydraulicznej klapy tylnej bagażnika",
+        "confidence": "level3_match",
+        "matched_keyword": "Silniczek pompy hydraulicznej klapy tylnej bagażnika",
+        "score": 12
+      }
+    },
+    "1730991": {
+      "baselinker": {
+        "category_id": 1730991,
+        "name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Czujniki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1201",
+        "ovoko_name": "Sensor",
+        "ovoko_pl": "Czujnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Czujnik",
+        "score": 10
+      }
+    },
+    "1730992": {
+      "baselinker": {
+        "category_id": 1730992,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Światła stop",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "554",
+        "ovoko_name": "Rear brake disc",
+        "ovoko_pl": "Tarcza hamulca tylnego",
+        "confidence": "level3_match",
+        "matched_keyword": "Tarcza hamulca tylnego",
+        "score": 5
+      }
+    },
+    "1730995": {
+      "baselinker": {
+        "category_id": 1730995,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Osłony silnika/Górne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1730996": {
+      "baselinker": {
+        "category_id": 1730996,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Cewki zapłonowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "233",
+        "ovoko_name": "Electric radiator cooling fan",
+        "ovoko_pl": "Elektryczny wentylator chłodnicy",
+        "confidence": "level3_match",
+        "matched_keyword": "Elektryczny wentylator chłodnicy",
+        "score": 11
+      }
+    },
+    "1730997": {
+      "baselinker": {
+        "category_id": 1730997,
+        "name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Układ ABS i ESP/Sterowniki ABS",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "42",
+        "ovoko_name": "ABS Pump",
+        "ovoko_pl": "Pompa ABS",
+        "confidence": "level3_match",
+        "matched_keyword": "Pompa ABS",
+        "score": 6
+      }
+    },
+    "1730998": {
+      "baselinker": {
+        "category_id": 1730998,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Silniczki szyberdachu",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "941",
+        "ovoko_name": "Sun visor clip/hook/bracket",
+        "ovoko_pl": "Uchwyt osłony przeciwsłonecznej szyberdachu",
+        "confidence": "level3_match",
+        "matched_keyword": "Uchwyt osłony przeciwsłonecznej szyberdachu",
+        "score": 11
+      }
+    },
+    "1730999": {
+      "baselinker": {
+        "category_id": 1730999,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Chłodnice/Chłodnice powietrza (intercoolery)",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2105",
+        "ovoko_name": "Hybrid/electric vehicle battery cooling hoses/tubes",
+        "ovoko_pl": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "confidence": "level3_match",
+        "matched_keyword": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "score": 10
+      }
+    },
+    "1731000": {
+      "baselinker": {
+        "category_id": 1731000,
+        "name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Chłodnice klimatyzacji (skraplacze)",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "199",
+        "ovoko_name": "Other air conditioning (A/C) parts",
+        "ovoko_pl": "Inne elementy układu klimatyzacji A/C",
+        "confidence": "level3_match",
+        "matched_keyword": "Inne elementy układu klimatyzacji A/C",
+        "score": 12
+      }
+    },
+    "1731002": {
+      "baselinker": {
+        "category_id": 1731002,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy przednie i elementy/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "62",
+        "ovoko_name": "Front brake disc dust cover plate",
+        "ovoko_pl": "Osłona przedniej tarczy hamulcowej",
+        "confidence": "level3_match",
+        "matched_keyword": "Osłona przedniej tarczy hamulcowej",
+        "score": 8
+      }
+    },
+    "1731004": {
+      "baselinker": {
+        "category_id": 1731004,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki przyspieszenia",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "349",
+        "ovoko_name": "Acceleration sensor",
+        "ovoko_pl": "Czujnik przyspieszenia",
+        "confidence": "level3_match",
+        "matched_keyword": "Czujnik przyspieszenia",
+        "score": 14
+      }
+    },
+    "1731005": {
+      "baselinker": {
+        "category_id": 1731005,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Pompy oleju",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1731006": {
+      "baselinker": {
+        "category_id": 1731006,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprzęt audio fabryczny/Zmieniarki CD",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1901",
+        "ovoko_name": "HiFi Audio sound control unit",
+        "ovoko_pl": "Moduł / Sterownik dziku audio HiFi",
+        "confidence": "level3_match",
+        "matched_keyword": "Moduł / Sterownik dziku audio HiFi",
+        "score": 5
+      }
+    },
+    "1731007": {
+      "baselinker": {
+        "category_id": 1731007,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Chłodnice/Chłodnice oleju",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2078",
+        "ovoko_name": "Oil cooling pipe",
+        "ovoko_pl": "Rura chłodzenia oleju",
+        "confidence": "level3_match",
+        "matched_keyword": "Rura chłodzenia oleju",
+        "score": 15
+      }
+    },
+    "1731008": {
+      "baselinker": {
+        "category_id": 1731008,
+        "name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Czujniki deszczu",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1201",
+        "ovoko_name": "Sensor",
+        "ovoko_pl": "Czujnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Czujnik",
+        "score": 10
+      }
+    },
+    "1731009": {
+      "baselinker": {
+        "category_id": 1731009,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki prędkości",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1201",
+        "ovoko_name": "Sensor",
+        "ovoko_pl": "Czujnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Czujnik",
+        "score": 10
+      }
+    },
+    "1731010": {
+      "baselinker": {
+        "category_id": 1731010,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Gniazda zapalniczki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "823",
+        "ovoko_name": "Cigarette lighter trim",
+        "ovoko_pl": "Panel gniazda zapalniczki deski rozdzielczej",
+        "confidence": "level3_match",
+        "matched_keyword": "Panel gniazda zapalniczki deski rozdzielczej",
+        "score": 11
+      }
+    },
+    "1731012": {
+      "baselinker": {
+        "category_id": 1731012,
+        "name": "Motoryzacja/Części samochodowe/Układ wydechowy/Kolektory wydechowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1382",
+        "ovoko_name": "Other exhaust manifold parts",
+        "ovoko_pl": "Inne części kolektora wydechowego / wylotowego",
+        "confidence": "level3_match",
+        "matched_keyword": "Inne części kolektora wydechowego / wylotowego",
+        "score": 9
+      }
+    },
+    "1731013": {
+      "baselinker": {
+        "category_id": 1731013,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Zawory podciśnienia",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "644",
+        "ovoko_name": "Vacuum pump",
+        "ovoko_pl": "Pompa podciśnienia / Vacum",
+        "confidence": "level3_match",
+        "matched_keyword": "Pompa podciśnienia / Vacum",
+        "score": 12
+      }
+    },
+    "1731014": {
+      "baselinker": {
+        "category_id": 1731014,
+        "name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Zawieszenie hydrauliczne i pneumatyczne/Poduszki i miechy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "572",
+        "ovoko_name": "Tailgate hydraulic pump motor",
+        "ovoko_pl": "Silniczek pompy hydraulicznej klapy tylnej bagażnika",
+        "confidence": "level3_match",
+        "matched_keyword": "Silniczek pompy hydraulicznej klapy tylnej bagażnika",
+        "score": 12
+      }
+    },
+    "1731016": {
+      "baselinker": {
+        "category_id": 1731016,
+        "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Listwy wtryskowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1463",
+        "ovoko_name": "Fuel pump gear (pulley)",
+        "ovoko_pl": "Koło zębate pompy wtryskowej",
+        "confidence": "level3_match",
+        "matched_keyword": "Koło zębate pompy wtryskowej",
+        "score": 9
+      }
+    },
+    "1731020": {
+      "baselinker": {
+        "category_id": 1731020,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Holowanie/Kompletne haki holownicze (belka + kula)",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "511",
+        "ovoko_name": "Front tow hook cap/cover",
+        "ovoko_pl": "Zaślepka / Osłona haka holowniczego przednia",
+        "confidence": "level3_match",
+        "matched_keyword": "Zaślepka / Osłona haka holowniczego przednia",
+        "score": 10
+      }
+    },
+    "1731021": {
+      "baselinker": {
+        "category_id": 1731021,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Wałki rozrządu",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1731022": {
+      "baselinker": {
+        "category_id": 1731022,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Sprzęgła/Koła dwumasowe i zamachowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "437",
+        "ovoko_name": "Flywheel",
+        "ovoko_pl": "Koło zamachowe",
+        "confidence": "level3_match",
+        "matched_keyword": "Koło zamachowe",
+        "score": 9
+      }
+    },
+    "1731023": {
+      "baselinker": {
+        "category_id": 1731023,
+        "name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Ramiona wycieraczek",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "111",
+        "ovoko_name": "Front wiper linkage and motor",
+        "ovoko_pl": "Mechanizm i silniczek wycieraczek szyby przedniej / czołowej",
+        "confidence": "level3_match",
+        "matched_keyword": "Mechanizm i silniczek wycieraczek szyby przedniej / czołowej",
+        "score": 11
+      }
+    },
+    "1731026": {
+      "baselinker": {
+        "category_id": 1731026,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Bloki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "263",
+        "ovoko_name": "Engine block",
+        "ovoko_pl": "Blok silnika",
+        "confidence": "level3_match",
+        "matched_keyword": "Blok silnika",
+        "score": 10
+      }
+    },
+    "1731027": {
+      "baselinker": {
+        "category_id": 1731027,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Półosie, przeguby, wały/Podpory wału",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1668",
+        "ovoko_name": "Crankshaft position gear",
+        "ovoko_pl": "Czujnik położenia wału korbowego",
+        "confidence": "level3_match",
+        "matched_keyword": "Czujnik położenia wału korbowego",
+        "score": 4
+      }
+    },
+    "1731028": {
+      "baselinker": {
+        "category_id": 1731028,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Literatura motoryzacyjna/Samochody/Książki serwisowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2111",
+        "ovoko_name": "Tow bar mounting accessories",
+        "ovoko_pl": "Akcesoria do montażu na haku holowniczym",
+        "confidence": "level3_match",
+        "matched_keyword": "Akcesoria do montażu na haku holowniczym",
+        "score": 9
+      }
+    },
+    "1731029": {
+      "baselinker": {
+        "category_id": 1731029,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprzęt audio fabryczny/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1901",
+        "ovoko_name": "HiFi Audio sound control unit",
+        "ovoko_pl": "Moduł / Sterownik dziku audio HiFi",
+        "confidence": "level3_match",
+        "matched_keyword": "Moduł / Sterownik dziku audio HiFi",
+        "score": 5
+      }
+    },
+    "1731031": {
+      "baselinker": {
+        "category_id": 1731031,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Głowice cylindrów/Pokrywy zaworów",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1731032": {
+      "baselinker": {
+        "category_id": 1731032,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "233",
+        "ovoko_name": "Electric radiator cooling fan",
+        "ovoko_pl": "Elektryczny wentylator chłodnicy",
+        "confidence": "level3_match",
+        "matched_keyword": "Elektryczny wentylator chłodnicy",
+        "score": 11
+      }
+    },
+    "1731033": {
+      "baselinker": {
+        "category_id": 1731033,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Tłoki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "263",
+        "ovoko_name": "Engine block",
+        "ovoko_pl": "Blok silnika",
+        "confidence": "level3_match",
+        "matched_keyword": "Blok silnika",
+        "score": 10
+      }
+    },
+    "1731034": {
+      "baselinker": {
+        "category_id": 1731034,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Bagnety",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1731035": {
+      "baselinker": {
+        "category_id": 1731035,
+        "name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Pompy hamulcowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "48",
+        "ovoko_name": "Brake fluid reservoir filler cap with level sensor",
+        "ovoko_pl": "Korek wlewu płynu hamulcowego z czujnikiem poziomu",
+        "confidence": "level3_match",
+        "matched_keyword": "Korek wlewu płynu hamulcowego z czujnikiem poziomu",
+        "score": 9
+      }
+    },
+    "1731036": {
+      "baselinker": {
+        "category_id": 1731036,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Miski olejowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1731037": {
+      "baselinker": {
+        "category_id": 1731037,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Czujniki położenia wałka rozrządu",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1351",
+        "ovoko_name": "Camshaft pulley/ VANOS",
+        "ovoko_pl": "Koło pasowe wałka rozrządu / VANOS",
+        "confidence": "level3_match",
+        "matched_keyword": "Koło pasowe wałka rozrządu / VANOS",
+        "score": 13
+      }
+    },
+    "1731038": {
+      "baselinker": {
+        "category_id": 1731038,
+        "name": "Motoryzacja/Części samochodowe/Układ wydechowy/Czujniki temperatury spalin",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1475",
+        "ovoko_name": "Exhaust gas temperature sensor",
+        "ovoko_pl": "Czujnik temperatury spalin",
+        "confidence": "level3_match",
+        "matched_keyword": "Czujnik temperatury spalin",
+        "score": 17
+      }
+    },
+    "1731042": {
+      "baselinker": {
+        "category_id": 1731042,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Wentylatory chłodnicy/Obudowy wentylatorów",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1056",
+        "ovoko_name": "Coolant fan relay",
+        "ovoko_pl": "Sterownik / Moduł wentylatorów",
+        "confidence": "level3_match",
+        "matched_keyword": "Sterownik / Moduł wentylatorów",
+        "score": 12
+      }
+    },
+    "1731043": {
+      "baselinker": {
+        "category_id": 1731043,
+        "name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Wentylatory chłodnic klimatyzacji",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "204",
+        "ovoko_name": "Air conditioning (A/C) radiator (interior)",
+        "ovoko_pl": "Chłodnica nagrzewnicy klimatyzacji A/C",
+        "confidence": "level3_match",
+        "matched_keyword": "Chłodnica nagrzewnicy klimatyzacji A/C",
+        "score": 20
+      }
+    },
+    "1731044": {
+      "baselinker": {
+        "category_id": 1731044,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Materiały instalacyjne/Wiązki przewodów",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "65",
+        "ovoko_name": "Brake wiring harness",
+        "ovoko_pl": "Wiązka przewodów hamulcowych",
+        "confidence": "level3_match",
+        "matched_keyword": "Wiązka przewodów hamulcowych",
+        "score": 9
+      }
+    },
+    "1731045": {
+      "baselinker": {
+        "category_id": 1731045,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Uszczelki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "754",
+        "ovoko_name": "Door (2 Door Coupe)",
+        "ovoko_pl": "Drzwi",
+        "confidence": "level3_match",
+        "matched_keyword": "Drzwi",
+        "score": 10
+      }
+    },
+    "1731046": {
+      "baselinker": {
+        "category_id": 1731046,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Osłony na szyby/Rolety przeciwsłoneczne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "941",
+        "ovoko_name": "Sun visor clip/hook/bracket",
+        "ovoko_pl": "Uchwyt osłony przeciwsłonecznej szyberdachu",
+        "confidence": "level3_match",
+        "matched_keyword": "Uchwyt osłony przeciwsłonecznej szyberdachu",
+        "score": 16
+      }
+    },
+    "1731047": {
+      "baselinker": {
+        "category_id": 1731047,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Atrapy chłodnicy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "219",
+        "ovoko_name": "Engine coolant pipe/hose",
+        "ovoko_pl": "Przewód / Wąż chłodnicy",
+        "confidence": "level3_match",
+        "matched_keyword": "Przewód / Wąż chłodnicy",
+        "score": 9
+      }
+    },
+    "1731051": {
+      "baselinker": {
+        "category_id": 1731051,
+        "name": "Motoryzacja/Części samochodowe/Układ wentylacji/Rezystory dmuchaw",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "213",
+        "ovoko_name": "Heater blower motor/fan resistor",
+        "ovoko_pl": "Rezystor / Opornik dmuchawy nawiewu",
+        "confidence": "level3_match",
+        "matched_keyword": "Rezystor / Opornik dmuchawy nawiewu",
+        "score": 7
+      }
+    },
+    "1731052": {
+      "baselinker": {
+        "category_id": 1731052,
+        "name": "Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Silniki wycieraczek",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "111",
+        "ovoko_name": "Front wiper linkage and motor",
+        "ovoko_pl": "Mechanizm i silniczek wycieraczek szyby przedniej / czołowej",
+        "confidence": "level3_match",
+        "matched_keyword": "Mechanizm i silniczek wycieraczek szyby przedniej / czołowej",
+        "score": 11
+      }
+    },
+    "1731053": {
+      "baselinker": {
+        "category_id": 1731053,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki zasysanego powietrza",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1201",
+        "ovoko_name": "Sensor",
+        "ovoko_pl": "Czujnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Czujnik",
+        "score": 10
+      }
+    },
+    "1731055": {
+      "baselinker": {
+        "category_id": 1731055,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Sprzęgła/Pompy sprzęgła",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "428",
+        "ovoko_name": "Clutch slave cylinder",
+        "ovoko_pl": "Siłownik sprzęgła / Wysprzęglik",
+        "confidence": "level3_match",
+        "matched_keyword": "Siłownik sprzęgła / Wysprzęglik",
+        "score": 8
+      }
+    },
+    "1731057": {
+      "baselinker": {
+        "category_id": 1731057,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Dywaniki/Maty do bagażnika",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "155",
+        "ovoko_name": "Tailgate rear/tail lights",
+        "ovoko_pl": "Lampy tylnej klapy bagażnika",
+        "confidence": "level3_match",
+        "matched_keyword": "Lampy tylnej klapy bagażnika",
+        "score": 9
+      }
+    },
+    "1731058": {
+      "baselinker": {
+        "category_id": 1731058,
+        "name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Kolumny kierownicze",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "332",
+        "ovoko_name": "Steering tie rod boot",
+        "ovoko_pl": "Osłona drążka kierowniczego",
+        "confidence": "level3_match",
+        "matched_keyword": "Osłona drążka kierowniczego",
+        "score": 11
+      }
+    },
+    "1731059": {
+      "baselinker": {
+        "category_id": 1731059,
+        "name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Hamulce postojowe/Linki hamulca ręcznego",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "83",
+        "ovoko_name": "Handbrake lever cover (leather/fabric)",
+        "ovoko_pl": "Osłona dźwigni hamulca ręcznego skóra / tkanina",
+        "confidence": "level3_match",
+        "matched_keyword": "Osłona dźwigni hamulca ręcznego skóra / tkanina",
+        "score": 15
+      }
+    },
+    "1731060": {
+      "baselinker": {
+        "category_id": 1731060,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprężyny gazowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1025",
+        "ovoko_name": "Fuel (gas) shift switch",
+        "ovoko_pl": "Przełącznik instalacji gazowej",
+        "confidence": "level3_match",
+        "matched_keyword": "Przełącznik instalacji gazowej",
+        "score": 6
+      }
+    },
+    "1731064": {
+      "baselinker": {
+        "category_id": 1731064,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Koła zębate",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1731066": {
+      "baselinker": {
+        "category_id": 1731066,
+        "name": "Motoryzacja/Części samochodowe/Układ wydechowy/Czujniki ciśnienia spalin",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1200",
+        "ovoko_name": "Exhaust pressure sensor",
+        "ovoko_pl": "Czujniki ciśnienia spalin",
+        "confidence": "level3_match",
+        "matched_keyword": "Czujniki ciśnienia spalin",
+        "score": 25
+      }
+    },
+    "1731067": {
+      "baselinker": {
+        "category_id": 1731067,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Tunele środkowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "449",
+        "ovoko_name": "Prop shaft support center bearing",
+        "ovoko_pl": "Łożysko środkowe podpory wału napędowego",
+        "confidence": "level3_match",
+        "matched_keyword": "Łożysko środkowe podpory wału napędowego",
+        "score": 8
+      }
+    },
+    "1731068": {
+      "baselinker": {
+        "category_id": 1731068,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Przewody układów chłodzenia/Przewody chłodnic powietrza",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "235",
+        "ovoko_name": "Intercooler radiator",
+        "ovoko_pl": "Chłodnica powietrza doładowującego / Intercooler",
+        "confidence": "level3_match",
+        "matched_keyword": "Chłodnica powietrza doładowującego / Intercooler",
+        "score": 17
+      }
+    },
+    "1731070": {
+      "baselinker": {
+        "category_id": 1731070,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Elektronika samochodowa/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2111",
+        "ovoko_name": "Tow bar mounting accessories",
+        "ovoko_pl": "Akcesoria do montażu na haku holowniczym",
+        "confidence": "level3_match",
+        "matched_keyword": "Akcesoria do montażu na haku holowniczym",
+        "score": 9
+      }
+    },
+    "1731080": {
+      "baselinker": {
+        "category_id": 1731080,
+        "name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Układ ABS i ESP/Czujniki ESP",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1201",
+        "ovoko_name": "Sensor",
+        "ovoko_pl": "Czujnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Czujnik",
+        "score": 10
+      }
+    },
+    "1731081": {
+      "baselinker": {
+        "category_id": 1731081,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Apteczki, gaśnice, kamizelki, trójkąty/Trójkąty",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2111",
+        "ovoko_name": "Tow bar mounting accessories",
+        "ovoko_pl": "Akcesoria do montażu na haku holowniczym",
+        "confidence": "level3_match",
+        "matched_keyword": "Akcesoria do montażu na haku holowniczym",
+        "score": 9
+      }
+    },
+    "1731082": {
+      "baselinker": {
+        "category_id": 1731082,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Podnośniki szyb",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "100",
+        "ovoko_name": "Windshield washer spray nozzle",
+        "ovoko_pl": "Dysza spryskiwacza szyby przedniej / czołowej",
+        "confidence": "level3_match",
+        "matched_keyword": "Dysza spryskiwacza szyby przedniej / czołowej",
+        "score": 4
+      }
+    },
+    "1731085": {
+      "baselinker": {
+        "category_id": 1731085,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Recyrkulacja spalin EGR/Przewody EGR",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1731091": {
+      "baselinker": {
+        "category_id": 1731091,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampki tablicy rejestracyjnej",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "170",
+        "ovoko_name": "Number plate light",
+        "ovoko_pl": "Lampa oświetlenia tylnej tablicy rejestracyjnej",
+        "confidence": "level3_match",
+        "matched_keyword": "Lampa oświetlenia tylnej tablicy rejestracyjnej",
+        "score": 21
+      }
+    },
+    "1731093": {
+      "baselinker": {
+        "category_id": 1731093,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Skrzynki bezpieczników",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1238",
+        "ovoko_name": "Fuse box set",
+        "ovoko_pl": "Skrzynka bezpieczników / Komplet",
+        "confidence": "level3_match",
+        "matched_keyword": "Skrzynka bezpieczników / Komplet",
+        "score": 13
+      }
+    },
+    "1731095": {
+      "baselinker": {
+        "category_id": 1731095,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Silniczki szyb",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "100",
+        "ovoko_name": "Windshield washer spray nozzle",
+        "ovoko_pl": "Dysza spryskiwacza szyby przedniej / czołowej",
+        "confidence": "level3_match",
+        "matched_keyword": "Dysza spryskiwacza szyby przedniej / czołowej",
+        "score": 4
+      }
+    },
+    "1731096": {
+      "baselinker": {
+        "category_id": 1731096,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Zawory",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1731097": {
+      "baselinker": {
+        "category_id": 1731097,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Moduły drzwi",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "754",
+        "ovoko_name": "Door (2 Door Coupe)",
+        "ovoko_pl": "Drzwi",
+        "confidence": "level3_match",
+        "matched_keyword": "Drzwi",
+        "score": 15
+      }
+    },
+    "1731098": {
+      "baselinker": {
+        "category_id": 1731098,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Przewody zapłonowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1465",
+        "ovoko_name": "Ignition plug leads",
+        "ovoko_pl": "Przewody zapłonowe",
+        "confidence": "level3_match",
+        "matched_keyword": "Przewody zapłonowe",
+        "score": 19
+      }
+    },
+    "1731102": {
+      "baselinker": {
+        "category_id": 1731102,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Klamki wewnętrzne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1485",
+        "ovoko_name": "Rear door interior light",
+        "ovoko_pl": "Lampka wewnętrzne drzwi tylnych",
+        "confidence": "level3_match",
+        "matched_keyword": "Lampka wewnętrzne drzwi tylnych",
+        "score": 10
+      }
+    },
+    "1731105": {
+      "baselinker": {
+        "category_id": 1731105,
+        "name": "Motoryzacja/Części samochodowe/Układ paliwowy/AdBlue/Czujniki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1201",
+        "ovoko_name": "Sensor",
+        "ovoko_pl": "Czujnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Czujnik",
+        "score": 10
+      }
+    },
+    "1731107": {
+      "baselinker": {
+        "category_id": 1731107,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy przednie i elementy/Przetwornice",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "62",
+        "ovoko_name": "Front brake disc dust cover plate",
+        "ovoko_pl": "Osłona przedniej tarczy hamulcowej",
+        "confidence": "level3_match",
+        "matched_keyword": "Osłona przedniej tarczy hamulcowej",
+        "score": 8
+      }
+    },
+    "1731108": {
+      "baselinker": {
+        "category_id": 1731108,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Osłony na szyby/Owiewki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2111",
+        "ovoko_name": "Tow bar mounting accessories",
+        "ovoko_pl": "Akcesoria do montażu na haku holowniczym",
+        "confidence": "level3_match",
+        "matched_keyword": "Akcesoria do montażu na haku holowniczym",
+        "score": 9
+      }
+    },
+    "1731109": {
+      "baselinker": {
+        "category_id": 1731109,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Dachy/Listwy, zaślepki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1097",
+        "ovoko_name": "Roof",
+        "ovoko_pl": "Dach",
+        "confidence": "level3_match",
+        "matched_keyword": "Dach",
+        "score": 10
+      }
+    },
+    "1731110": {
+      "baselinker": {
+        "category_id": 1731110,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Odma",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "263",
+        "ovoko_name": "Engine block",
+        "ovoko_pl": "Blok silnika",
+        "confidence": "level3_match",
+        "matched_keyword": "Blok silnika",
+        "score": 10
+      }
+    },
+    "1731112": {
+      "baselinker": {
+        "category_id": 1731112,
+        "name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Osłony przekładni kierowniczych",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "333",
+        "ovoko_name": "Steering rack",
+        "ovoko_pl": "Przekładnia kierownicza / Maglownica",
+        "confidence": "level3_match",
+        "matched_keyword": "Przekładnia kierownicza / Maglownica",
+        "score": 10
+      }
+    },
+    "1731114": {
+      "baselinker": {
+        "category_id": 1731114,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Obudowy akumulatorów",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2105",
+        "ovoko_name": "Hybrid/electric vehicle battery cooling hoses/tubes",
+        "ovoko_pl": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "confidence": "level3_match",
+        "matched_keyword": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "score": 12
+      }
+    },
+    "1731120": {
+      "baselinker": {
+        "category_id": 1731120,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Przepustnice",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1731122": {
+      "baselinker": {
+        "category_id": 1731122,
+        "name": "Motoryzacja/Części samochodowe/Układ wydechowy/Rury wydechowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1382",
+        "ovoko_name": "Other exhaust manifold parts",
+        "ovoko_pl": "Inne części kolektora wydechowego / wylotowego",
+        "confidence": "level3_match",
+        "matched_keyword": "Inne części kolektora wydechowego / wylotowego",
+        "score": 9
+      }
+    },
+    "1731124": {
+      "baselinker": {
+        "category_id": 1731124,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Zawieszenie silnika/Wsporniki i łapy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1731137": {
+      "baselinker": {
+        "category_id": 1731137,
+        "name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Belki zawieszenia/Belki przednie",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "62",
+        "ovoko_name": "Front brake disc dust cover plate",
+        "ovoko_pl": "Osłona przedniej tarczy hamulcowej",
+        "confidence": "level3_match",
+        "matched_keyword": "Osłona przedniej tarczy hamulcowej",
+        "score": 8
+      }
+    },
+    "1731138": {
+      "baselinker": {
+        "category_id": 1731138,
+        "name": "Motoryzacja/Części samochodowe/Układ wentylacji/Silniki dmuchaw",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1731139": {
+      "baselinker": {
+        "category_id": 1731139,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Zawory",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1731141": {
+      "baselinker": {
+        "category_id": 1731141,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Tuning wizualny/Listwy ozdobne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2111",
+        "ovoko_name": "Tow bar mounting accessories",
+        "ovoko_pl": "Akcesoria do montażu na haku holowniczym",
+        "confidence": "level3_match",
+        "matched_keyword": "Akcesoria do montażu na haku holowniczym",
+        "score": 9
+      }
+    },
+    "1731145": {
+      "baselinker": {
+        "category_id": 1731145,
+        "name": "Motoryzacja/Części samochodowe/Filtry/Filtry paliwa",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1376",
+        "ovoko_name": "Fuel cooler (radiator)",
+        "ovoko_pl": "Chłodnica paliwa",
+        "confidence": "level3_match",
+        "matched_keyword": "Chłodnica paliwa",
+        "score": 6
+      }
+    },
+    "1731147": {
+      "baselinker": {
+        "category_id": 1731147,
+        "name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Zbiorniki płynu wspomagania",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "341",
+        "ovoko_name": "Power steering fluid tank/reservoir",
+        "ovoko_pl": "Zbiornik płynu wspomagania układu kierowniczego",
+        "confidence": "level3_match",
+        "matched_keyword": "Zbiornik płynu wspomagania układu kierowniczego",
+        "score": 16
+      }
+    },
+    "1731148": {
+      "baselinker": {
+        "category_id": 1731148,
+        "name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Zbiorniki płynu hamulcowego",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "48",
+        "ovoko_name": "Brake fluid reservoir filler cap with level sensor",
+        "ovoko_pl": "Korek wlewu płynu hamulcowego z czujnikiem poziomu",
+        "confidence": "level3_match",
+        "matched_keyword": "Korek wlewu płynu hamulcowego z czujnikiem poziomu",
+        "score": 16
+      }
+    },
+    "1731153": {
+      "baselinker": {
+        "category_id": 1731153,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Chłodnice/Części montażowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2105",
+        "ovoko_name": "Hybrid/electric vehicle battery cooling hoses/tubes",
+        "ovoko_pl": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "confidence": "level3_match",
+        "matched_keyword": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "score": 10
+      }
+    },
+    "1731155": {
+      "baselinker": {
+        "category_id": 1731155,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Czujniki spalania stukowego",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1471",
+        "ovoko_name": "Detonation knock sensor",
+        "ovoko_pl": "Czujnik spalania stukowego",
+        "confidence": "level3_match",
+        "matched_keyword": "Czujnik spalania stukowego",
+        "score": 17
+      }
+    },
+    "1731156": {
+      "baselinker": {
+        "category_id": 1731156,
+        "name": "Motoryzacja/Części samochodowe/Układ wentylacji/Przewody nagrzewnic",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "203",
+        "ovoko_name": "A/C air flow flap actuator/motor",
+        "ovoko_pl": "Silniczek nagrzewnicy nawiewu klimatyzacji A/C",
+        "confidence": "level3_match",
+        "matched_keyword": "Silniczek nagrzewnicy nawiewu klimatyzacji A/C",
+        "score": 10
+      }
+    },
+    "1731157": {
+      "baselinker": {
+        "category_id": 1731157,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Czujniki ciśnienia w kolektorze (MAP)",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1731160": {
+      "baselinker": {
+        "category_id": 1731160,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Zawieszenie silnika/Wózki i belki silnika",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1731161": {
+      "baselinker": {
+        "category_id": 1731161,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki temperatury wewnętrznej",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1525",
+        "ovoko_name": "Interior temperature sensor",
+        "ovoko_pl": "Czujnik temperatury wewnętrznej",
+        "confidence": "level3_match",
+        "matched_keyword": "Czujnik temperatury wewnętrznej",
+        "score": 22
+      }
+    },
+    "1731163": {
+      "baselinker": {
+        "category_id": 1731163,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Szyby/Uszczelki szyb",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "100",
+        "ovoko_name": "Windshield washer spray nozzle",
+        "ovoko_pl": "Dysza spryskiwacza szyby przedniej / czołowej",
+        "confidence": "level3_match",
+        "matched_keyword": "Dysza spryskiwacza szyby przedniej / czołowej",
+        "score": 4
+      }
+    },
+    "1731165": {
+      "baselinker": {
+        "category_id": 1731165,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Silniczki regulacji fotela",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1422",
+        "ovoko_name": "Seat back rest control lever/handle",
+        "ovoko_pl": "Rączka / Dźwignia regulacji fotela tylnego",
+        "confidence": "level3_match",
+        "matched_keyword": "Rączka / Dźwignia regulacji fotela tylnego",
+        "score": 15
+      }
+    },
+    "1731166": {
+      "baselinker": {
+        "category_id": 1731166,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy przednie i elementy/Lampy przeciwmgielne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "172",
+        "ovoko_name": "Fog light set",
+        "ovoko_pl": "Światła przeciwmgielne / Komplet",
+        "confidence": "level3_match",
+        "matched_keyword": "Światła przeciwmgielne / Komplet",
+        "score": 14
+      }
+    },
+    "1731168": {
+      "baselinker": {
+        "category_id": 1731168,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki uderzenia",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1201",
+        "ovoko_name": "Sensor",
+        "ovoko_pl": "Czujnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Czujnik",
+        "score": 10
+      }
+    },
+    "1731170": {
+      "baselinker": {
+        "category_id": 1731170,
+        "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Regulatory ciśnienia paliwa",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "317",
+        "ovoko_name": "Fuel pressure sensor",
+        "ovoko_pl": "Czujnik ciśnienia paliwa",
+        "confidence": "level3_match",
+        "matched_keyword": "Czujnik ciśnienia paliwa",
+        "score": 15
+      }
+    },
+    "1731174": {
+      "baselinker": {
+        "category_id": 1731174,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Termostaty/Obudowy termostatów",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1917",
+        "ovoko_name": "Thermostat",
+        "ovoko_pl": "Termostat",
+        "confidence": "level3_match",
+        "matched_keyword": "Termostat",
+        "score": 10
+      }
+    },
+    "1731176": {
+      "baselinker": {
+        "category_id": 1731176,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Uchwyty, wieszaki/Na kubki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2111",
+        "ovoko_name": "Tow bar mounting accessories",
+        "ovoko_pl": "Akcesoria do montażu na haku holowniczym",
+        "confidence": "level3_match",
+        "matched_keyword": "Akcesoria do montażu na haku holowniczym",
+        "score": 9
+      }
+    },
+    "1731178": {
+      "baselinker": {
+        "category_id": 1731178,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Pompy wody/Części montażowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2105",
+        "ovoko_name": "Hybrid/electric vehicle battery cooling hoses/tubes",
+        "ovoko_pl": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "confidence": "level3_match",
+        "matched_keyword": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "score": 10
+      }
+    },
+    "1731180": {
+      "baselinker": {
+        "category_id": 1731180,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Zestawy części blacharskich",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "72",
+        "ovoko_name": "Other brake parts",
+        "ovoko_pl": "Inne części układu hamulcowego",
+        "confidence": "level3_match",
+        "matched_keyword": "Inne części układu hamulcowego",
+        "score": 6
+      }
+    },
+    "1731183": {
+      "baselinker": {
+        "category_id": 1731183,
+        "name": "Motoryzacja/Części samochodowe/Filtry/Filtry kabinowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "225",
+        "ovoko_name": "Cabin air micro filter frame (part)",
+        "ovoko_pl": "Obudowa / Osłona mikrofiltra kabinowego",
+        "confidence": "level3_match",
+        "matched_keyword": "Obudowa / Osłona mikrofiltra kabinowego",
+        "score": 8
+      }
+    },
+    "1731188": {
+      "baselinker": {
+        "category_id": 1731188,
+        "name": "Motoryzacja/Części samochodowe/Układ paliwowy/Czujniki poziomu paliwa",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "310",
+        "ovoko_name": "Fuel level sensor",
+        "ovoko_pl": "Czujnik poziomu paliwa",
+        "confidence": "level3_match",
+        "matched_keyword": "Czujnik poziomu paliwa",
+        "score": 13
+      }
+    },
+    "1731189": {
+      "baselinker": {
+        "category_id": 1731189,
+        "name": "Motoryzacja/Części samochodowe/Układ kierowniczy/Przewody układu wspomagania",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "339",
+        "ovoko_name": "Power steering pump mounting bracket",
+        "ovoko_pl": "Mocowanie pompy wspomagania układu kierowniczego",
+        "confidence": "level3_match",
+        "matched_keyword": "Mocowanie pompy wspomagania układu kierowniczego",
+        "score": 17
+      }
+    },
+    "1731191": {
+      "baselinker": {
+        "category_id": 1731191,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Obudowy filtrów oleju",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1731192": {
+      "baselinker": {
+        "category_id": 1731192,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Smarowanie",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1731199": {
+      "baselinker": {
+        "category_id": 1731199,
+        "name": "Motoryzacja/Opony i felgi/Koła (felgi z oponami)/Do samochodów",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "791",
+        "ovoko_name": "Back/rear loading door",
+        "ovoko_pl": "Drzwi tylne do samochodów dostawczych",
+        "confidence": "level3_match",
+        "matched_keyword": "Drzwi tylne do samochodów dostawczych",
+        "score": 10
+      }
+    },
+    "1731201": {
+      "baselinker": {
+        "category_id": 1731201,
+        "name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Stabilizatory i elementy/Drążki stabilizatora",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "364",
+        "ovoko_name": "Front anti-roll bar/stabilizer link",
+        "ovoko_pl": "Łącznik stabilizatora przedniego",
+        "confidence": "level3_match",
+        "matched_keyword": "Łącznik stabilizatora przedniego",
+        "score": 13
+      }
+    },
+    "1731202": {
+      "baselinker": {
+        "category_id": 1731202,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Szyby/Boczne (drzwi)",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "754",
+        "ovoko_name": "Door (2 Door Coupe)",
+        "ovoko_pl": "Drzwi",
+        "confidence": "level3_match",
+        "matched_keyword": "Drzwi",
+        "score": 10
+      }
+    },
+    "1731207": {
+      "baselinker": {
+        "category_id": 1731207,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Smoki (ssaki oleju)",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1731213": {
+      "baselinker": {
+        "category_id": 1731213,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1731220": {
+      "baselinker": {
+        "category_id": 1731220,
+        "name": "Motoryzacja/Części samochodowe/Układ zawieszenia/Belki zawieszenia/Belki tylne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "554",
+        "ovoko_name": "Rear brake disc",
+        "ovoko_pl": "Tarcza hamulca tylnego",
+        "confidence": "level3_match",
+        "matched_keyword": "Tarcza hamulca tylnego",
+        "score": 5
+      }
+    },
+    "1731223": {
+      "baselinker": {
+        "category_id": 1731223,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Dywaniki/Dywaniki gumowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2111",
+        "ovoko_name": "Tow bar mounting accessories",
+        "ovoko_pl": "Akcesoria do montażu na haku holowniczym",
+        "confidence": "level3_match",
+        "matched_keyword": "Akcesoria do montażu na haku holowniczym",
+        "score": 9
+      }
+    },
+    "1731224": {
+      "baselinker": {
+        "category_id": 1731224,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1731246": {
+      "baselinker": {
+        "category_id": 1731246,
+        "name": "Motoryzacja/Części samochodowe/Filtry/Filtry powietrza",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "249",
+        "ovoko_name": "Air conditioning (A/C) air dryer",
+        "ovoko_pl": "Osuszacz powietrza klimatyzacji A/C",
+        "confidence": "level3_match",
+        "matched_keyword": "Osuszacz powietrza klimatyzacji A/C",
+        "score": 9
+      }
+    },
+    "1731262": {
+      "baselinker": {
+        "category_id": 1731262,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Króćce głowicy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2105",
+        "ovoko_name": "Hybrid/electric vehicle battery cooling hoses/tubes",
+        "ovoko_pl": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "confidence": "level3_match",
+        "matched_keyword": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "score": 10
+      }
+    },
+    "1731285": {
+      "baselinker": {
+        "category_id": 1731285,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1731287": {
+      "baselinker": {
+        "category_id": 1731287,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Apteczki, gaśnice, kamizelki, trójkąty/Apteczki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2111",
+        "ovoko_name": "Tow bar mounting accessories",
+        "ovoko_pl": "Akcesoria do montażu na haku holowniczym",
+        "confidence": "level3_match",
+        "matched_keyword": "Akcesoria do montażu na haku holowniczym",
+        "score": 9
+      }
+    },
+    "1731293": {
+      "baselinker": {
+        "category_id": 1731293,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Napinacze paska rozrządu",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1634",
+        "ovoko_name": "Timing belt tensioner pulley",
+        "ovoko_pl": "Koło pasowe napinacza paska rozrządu",
+        "confidence": "level3_match",
+        "matched_keyword": "Koło pasowe napinacza paska rozrządu",
+        "score": 13
+      }
+    },
+    "1731300": {
+      "baselinker": {
+        "category_id": 1731300,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Błotniki/Elementy mocujące",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2110",
+        "ovoko_name": "Glass fitting brackets",
+        "ovoko_pl": "Uchwyty mocujące do szkła",
+        "confidence": "level3_match",
+        "matched_keyword": "Uchwyty mocujące do szkła",
+        "score": 8
+      }
+    },
+    "1731307": {
+      "baselinker": {
+        "category_id": 1731307,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Obudowy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1731325": {
+      "baselinker": {
+        "category_id": 1731325,
+        "name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Przewody hamulcowe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "48",
+        "ovoko_name": "Brake fluid reservoir filler cap with level sensor",
+        "ovoko_pl": "Korek wlewu płynu hamulcowego z czujnikiem poziomu",
+        "confidence": "level3_match",
+        "matched_keyword": "Korek wlewu płynu hamulcowego z czujnikiem poziomu",
+        "score": 9
+      }
+    },
+    "1731339": {
+      "baselinker": {
+        "category_id": 1731339,
+        "name": "Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Części kabiny kierowcy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "997",
+        "ovoko_name": "Front driver seat",
+        "ovoko_pl": "Fotel przedni kierowcy",
+        "confidence": "level3_match",
+        "matched_keyword": "Fotel przedni kierowcy",
+        "score": 8
+      }
+    },
+    "1731356": {
+      "baselinker": {
+        "category_id": 1731356,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Rygle",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "754",
+        "ovoko_name": "Door (2 Door Coupe)",
+        "ovoko_pl": "Drzwi",
+        "confidence": "level3_match",
+        "matched_keyword": "Drzwi",
+        "score": 10
+      }
+    },
+    "1731360": {
+      "baselinker": {
+        "category_id": 1731360,
+        "name": "Motoryzacja/Części samochodowe/Układ klimatyzacji/Sterowniki i elementy elektryczne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2107",
+        "ovoko_name": "Electric car engine cooling hoses/pipes",
+        "ovoko_pl": "Węże/rury chłodzące silnik samochodu elektrycznego",
+        "confidence": "level3_match",
+        "matched_keyword": "Węże/rury chłodzące silnik samochodu elektrycznego",
+        "score": 11
+      }
+    },
+    "1731371": {
+      "baselinker": {
+        "category_id": 1731371,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Głowice cylindrów/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1731373": {
+      "baselinker": {
+        "category_id": 1731373,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Łapy, podpory",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "449",
+        "ovoko_name": "Prop shaft support center bearing",
+        "ovoko_pl": "Łożysko środkowe podpory wału napędowego",
+        "confidence": "level3_match",
+        "matched_keyword": "Łożysko środkowe podpory wału napędowego",
+        "score": 7
+      }
+    },
+    "1731375": {
+      "baselinker": {
+        "category_id": 1731375,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Uszczelniacze wału",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "263",
+        "ovoko_name": "Engine block",
+        "ovoko_pl": "Blok silnika",
+        "confidence": "level3_match",
+        "matched_keyword": "Blok silnika",
+        "score": 10
+      }
+    },
+    "1731376": {
+      "baselinker": {
+        "category_id": 1731376,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "263",
+        "ovoko_name": "Engine block",
+        "ovoko_pl": "Blok silnika",
+        "confidence": "level3_match",
+        "matched_keyword": "Blok silnika",
+        "score": 10
+      }
+    },
+    "1731378": {
+      "baselinker": {
+        "category_id": 1731378,
+        "name": "Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Lampy przeciwmgielne",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "176",
+        "ovoko_name": "Rear fog light",
+        "ovoko_pl": "Światło przeciwmgielne tylne",
+        "confidence": "level3_match",
+        "matched_keyword": "Światło przeciwmgielne tylne",
+        "score": 19
+      }
+    },
+    "1731386": {
+      "baselinker": {
+        "category_id": 1731386,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Elementy napędu paska osprzętu/Napinacze paska klinowego",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "254",
+        "ovoko_name": "Generator/alternator belt tensioner",
+        "ovoko_pl": "Napinacz paska alternatora",
+        "confidence": "level3_match",
+        "matched_keyword": "Napinacz paska alternatora",
+        "score": 10
+      }
+    },
+    "1731390": {
+      "baselinker": {
+        "category_id": 1731390,
+        "name": "Motoryzacja/Części samochodowe/Układ hamulcowy/Układ ABS i ESP/Czujniki ABS",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1201",
+        "ovoko_name": "Sensor",
+        "ovoko_pl": "Czujnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Czujnik",
+        "score": 10
+      }
+    },
+    "1731393": {
+      "baselinker": {
+        "category_id": 1731393,
+        "name": "Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Linki zmiany biegów",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "423",
+        "ovoko_name": "Gear shift cable linkage",
+        "ovoko_pl": "Linka zmiany biegów",
+        "confidence": "level3_match",
+        "matched_keyword": "Linka zmiany biegów",
+        "score": 12
+      }
+    },
+    "1731395": {
+      "baselinker": {
+        "category_id": 1731395,
+        "name": "Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki temperatury zewnętrznej",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1007",
+        "ovoko_name": "Outside/external air temperature sensor",
+        "ovoko_pl": "Czujnik temperatury zewnętrznej",
+        "confidence": "level3_match",
+        "matched_keyword": "Czujnik temperatury zewnętrznej",
+        "score": 22
+      }
+    },
+    "1731407": {
+      "baselinker": {
+        "category_id": 1731407,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Czujniki położenia wału korbowego",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "1668",
+        "ovoko_name": "Crankshaft position gear",
+        "ovoko_pl": "Czujnik położenia wału korbowego",
+        "confidence": "level3_match",
+        "matched_keyword": "Czujnik położenia wału korbowego",
+        "score": 22
+      }
+    },
+    "1731424": {
+      "baselinker": {
+        "category_id": 1731424,
+        "name": "Motoryzacja/Części samochodowe/Silniki i osprzęt/Recyrkulacja spalin EGR/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "322",
+        "ovoko_name": "Engine",
+        "ovoko_pl": "Silnik",
+        "confidence": "level3_match",
+        "matched_keyword": "Silnik",
+        "score": 10
+      }
+    },
+    "1731483": {
+      "baselinker": {
+        "category_id": 1731483,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Wygłuszenie",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "754",
+        "ovoko_name": "Door (2 Door Coupe)",
+        "ovoko_pl": "Drzwi",
+        "confidence": "level3_match",
+        "matched_keyword": "Drzwi",
+        "score": 10
+      }
+    },
+    "1731494": {
+      "baselinker": {
+        "category_id": 1731494,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Uszczelki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2105",
+        "ovoko_name": "Hybrid/electric vehicle battery cooling hoses/tubes",
+        "ovoko_pl": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "confidence": "level3_match",
+        "matched_keyword": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "score": 10
+      }
+    },
+    "1731498": {
+      "baselinker": {
+        "category_id": 1731498,
+        "name": "Motoryzacja/Wyposażenie i akcesoria samochodowe/Zabezpieczenia/Autoalarmy",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2111",
+        "ovoko_name": "Tow bar mounting accessories",
+        "ovoko_pl": "Akcesoria do montażu na haku holowniczym",
+        "confidence": "level3_match",
+        "matched_keyword": "Akcesoria do montażu na haku holowniczym",
+        "score": 9
+      }
+    },
+    "1731501": {
+      "baselinker": {
+        "category_id": 1731501,
+        "name": "Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Wentylatory chłodnicy/Włączniki, sterowniki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "2105",
+        "ovoko_name": "Hybrid/electric vehicle battery cooling hoses/tubes",
+        "ovoko_pl": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "confidence": "level3_match",
+        "matched_keyword": "Węże/rury do chłodzenia akumulatorów pojazdów hybrydowych/elektrycznych",
+        "score": 10
+      }
+    },
+    "1731505": {
+      "baselinker": {
+        "category_id": 1731505,
+        "name": "Motoryzacja/Części samochodowe/Części karoserii/Klapki wlewu paliwa/Pozostałe",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "48",
+        "ovoko_name": "Brake fluid reservoir filler cap with level sensor",
+        "ovoko_pl": "Korek wlewu płynu hamulcowego z czujnikiem poziomu",
+        "confidence": "level3_match",
+        "matched_keyword": "Korek wlewu płynu hamulcowego z czujnikiem poziomu",
+        "score": 5
+      }
+    },
+    "1731710": {
+      "baselinker": {
+        "category_id": 1731710,
+        "name": "Gniazda zapalniczki",
+        "parent_id": 0
+      },
+      "ovoko_mapping": {
+        "ovoko_id": "823",
+        "ovoko_name": "Cigarette lighter trim",
+        "ovoko_pl": "Panel gniazda zapalniczki deski rozdzielczej",
+        "confidence": "level3_match",
+        "matched_keyword": "Panel gniazda zapalniczki deski rozdzielczej",
+        "score": 28
+      }
+    }
+  }
+}

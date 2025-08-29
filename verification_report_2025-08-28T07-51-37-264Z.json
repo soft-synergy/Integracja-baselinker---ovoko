@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-08-28T07:51:37.306Z",
+  "verification_results": {
+    "validMappings": 204,
+    "invalidMappings": 0,
+    "duplicates": [
+      "323",
+      "322",
+      "354",
+      "754",
+      "556",
+      "130",
+      "1201",
+      "303",
+      "1097",
+      "106",
+      "199",
+      "151",
+      "283",
+      "1210",
+      "302",
+      "72",
+      "1329",
+      "343",
+      "139",
+      "471",
+      "339",
+      "391",
+      "177"
+    ]
+  },
+  "summary": {
+    "total_categories": 355,
+    "mapped_categories": 204,
+    "success_rate": 57.46478873239437,
+    "confidence_distribution": {
+      "high_confidence": 156,
+      "medium_confidence": 48,
+      "unmapped": 151
+    }
+  }
+}
