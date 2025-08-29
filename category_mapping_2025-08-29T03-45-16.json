@@ -1,0 +1,15 @@
+{
+  "source": "Category Mapping Tool",
+  "timestamp": "2025-08-29T03:45:16.837Z",
+  "mapping": {
+    "1730799": "48",
+    "1730803": "52",
+    "1730805": "55"
+  },
+  "statistics": {
+    "totalBaselinker": 355,
+    "totalOvoko": 1742,
+    "mappedCount": 3,
+    "unmappedCount": 352
+  }
+}

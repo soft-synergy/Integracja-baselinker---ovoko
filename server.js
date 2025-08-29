@@ -1013,52 +1013,28 @@ app.post('/api/update-product-versions', requireAuth, async (req, res) => {
 // Helper function to map BaseLinker category to Ovoko category
 async function getOvokoCategoryFromBaseLinker(baselinkerCategoryId) {
     try {
-        // Load the correct mapping (top-tier categories only)
+        // Load the category mapping from the new format file
         const fs = require('fs');
-        const mappingData = fs.readFileSync('ovoko_mapping_correct.json', 'utf8');
+        const mappingData = fs.readFileSync('category_mapping.json', 'utf8');
         const mapping = JSON.parse(mappingData);
         
-        // Find the category mapping
-        const categoryMapping = mapping.categories[baselinkerCategoryId];
-        if (categoryMapping && categoryMapping.ovoko_mapping) {
-            // Map to level 3 categories based on the top-tier mapping
-            const topTierId = categoryMapping.ovoko_mapping.ovoko_id;
-            
-            // Map top-tier categories to specific level 3 categories (only tested working ones)
-            const level3Mapping = {
-                "1": "754",   // Układ hamulcowy -> Brake discs (tarcze hamulcowe) ✅
-                "250": "606", // Silnik i osprzęt -> Engine block ✅
-                "134": "136", // Oświetlenie -> Headlight/headlamp ✅
-                "98": "101",  // Wycieraczki i spryskiwacze -> Windshield wiper blade ✅
-                "197": "754", // Klimatyzacja -> Brake discs (fallback) ❌
-                "281": "754", // Układ kierowniczy -> Brake discs (fallback) ❌
-                "330": "754", // Układ zawieszenia -> Brake discs (fallback) ❌
-                "382": "754", // Układ napędowy -> Brake discs (fallback) ❌
-                "416": "754", // Układ elektryczny -> Brake discs (fallback) ❌
-                "463": "754", // Układ paliwowy -> Brake discs (fallback) ❌
-                "498": "754", // Układ wydechowy -> Brake discs (fallback) ❌
-                "541": "754", // Układ chłodzenia -> Brake discs (fallback) ❌
-                "579": "754", // Układ hamulcowy -> Brake discs (fallback) ❌
-                "624": "754", // Układ bezpieczeństwa -> Brake discs (fallback) ❌
-                "806": "754", // Układ komfortu -> Brake discs (fallback) ❌
-                "999": "754", // Układ informacyjny -> Brake discs (fallback) ❌
-                "1168": "754", // Układ multimedialny -> Brake discs (fallback) ❌
-                "1189": "754", // Układ nawigacyjny -> Brake discs (fallback) ❌
-                "1249": "754"  // Inne części -> Brake discs (fallback) ❌
-            };
-            
-            const level3Id = level3Mapping[topTierId] || "754"; // Default to brake discs
+        // Find the category mapping in the new format
+        const ovokoCategoryId = mapping.mapping[baselinkerCategoryId];
+        
+        if (ovokoCategoryId) {
+            console.log(`🔍 Category mapping found: BaseLinker ${baselinkerCategoryId} → Ovoko ${ovokoCategoryId}`);
             
             return {
-                ovoko_id: level3Id,
-                ovoko_name: categoryMapping.ovoko_mapping.ovoko_name,
-                ovoko_pl: categoryMapping.ovoko_mapping.ovoko_pl,
-                confidence: categoryMapping.ovoko_mapping.confidence + "_level3",
-                matched_keyword: categoryMapping.ovoko_mapping.matched_keyword
+                ovoko_id: ovokoCategoryId.toString(),
+                ovoko_name: `Category ${ovokoCategoryId}`,
+                ovoko_pl: `Kategoria ${ovokoCategoryId}`,
+                confidence: "direct_mapping",
+                matched_keyword: "direct_mapping"
             };
         }
         
         // Fallback to brake discs category if not found
+        console.log(`⚠️ No mapping found for BaseLinker category ${baselinkerCategoryId}, using fallback`);
         return {
             ovoko_id: "754", // Brake discs (tarcze hamulcowe)
             ovoko_name: "Brak mapowania",

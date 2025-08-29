@@ -1,0 +1,45 @@
+{
+  "status": "SUCCESS",
+  "warehouses": [
+    {
+      "warehouse_type": "bl",
+      "warehouse_id": 4376,
+      "name": "Bavaria Parts",
+      "description": "Bavaria Parts",
+      "stock_edition": true,
+      "is_default": true
+    },
+    {
+      "warehouse_type": "bl",
+      "warehouse_id": 13403,
+      "name": "Magazyn przyjęcia",
+      "description": "",
+      "stock_edition": false,
+      "is_default": false
+    },
+    {
+      "warehouse_type": "bl",
+      "warehouse_id": 13424,
+      "name": "Odbiór osobisty/tel",
+      "description": null,
+      "stock_edition": true,
+      "is_default": false
+    },
+    {
+      "warehouse_type": "bl",
+      "warehouse_id": 14765,
+      "name": "Synowie Bavarii",
+      "description": "Synowie Bavarii",
+      "stock_edition": true,
+      "is_default": false
+    },
+    {
+      "warehouse_type": "bl",
+      "warehouse_id": 16093,
+      "name": "Nowe części BMW",
+      "description": "Nowe części BMW",
+      "stock_edition": true,
+      "is_default": false
+    }
+  ]
+}

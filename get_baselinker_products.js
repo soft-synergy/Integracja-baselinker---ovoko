@@ -139,19 +139,11 @@ class BaseLinkerClient {
     }
 
     async getAllProducts() {
-        console.log('Starting to fetch all products...');
+        console.log('Starting to fetch products from warehouse ID: 4376 only...');
         try {
-            let inventories = {};
-            try {
-                inventories = await this.getInventories();
-                console.log('Available inventories:', Object.keys(inventories).length);
-                Object.entries(inventories).forEach(([id, name]) => {
-                    console.log(`  - Inventory ID: ${id}, Name: ${name}`);
-                });
-            } catch (error) {
-                console.log('Could not fetch inventories, trying default approach...');
-                inventories = { '': 'Default Inventory' };
-            }
+            // Only use the specific warehouse ID 4376
+            const inventories = { '4376': 'Warehouse 4376' };
+            console.log('Target warehouse: ID 4376');
 
             const allProducts = [];
 
@@ -288,65 +280,19 @@ class BaseLinkerClient {
     }
 
     async fetchAllProductsUniversal() {
-        console.log('Starting universal product fetch...');
+        console.log('Starting product fetch from warehouse ID: 4376 only...');
         let allProducts = [];
 
         try {
-            console.log('\n=== Trying Method 1: Inventory Products ===');
+            console.log('\n=== Fetching products from warehouse 4376 ===');
             const inventoryProducts = await this.getAllProducts();
             allProducts.push(...inventoryProducts);
-            console.log(`Method 1 found: ${inventoryProducts.length} products`);
+            console.log(`Warehouse 4376 products found: ${inventoryProducts.length}`);
         } catch (error) {
-            console.log('Method 1 failed:', error.message);
+            console.log('Failed to fetch from warehouse 4376:', error.message);
         }
 
-        try {
-            console.log('\n=== Trying Method 2: External Storage ===');
-            const externalProducts = await this.getExternalStorageProducts();
-            allProducts.push(...externalProducts);
-            console.log(`Method 2 found: ${externalProducts.length} products`);
-        } catch (error) {
-            console.log('Method 2 failed:', error.message);
-        }
-
-        const apiMethods = [
-            'getProducts',
-            'getProductsData',
-            'getCatalogProducts',
-            'getInventoryProductsData'
-        ];
-
-        for (const method of apiMethods) {
-            try {
-                console.log(`\n=== Trying Method: ${method} ===`);
-                const response = await this.makeApiRequest(method, {});
-                if (response && response.products) {
-                    let products = [];
-                    if (Array.isArray(response.products)) {
-                        products = response.products;
-                    } else if (typeof response.products === 'object') {
-                        products = Object.entries(response.products).map(([id, product]) => ({
-                            ...product,
-                            id: product.id || Number(id)
-                        }));
-                    }
-                    allProducts.push(...products);
-                    console.log(`${method} found: ${products.length} products`);
-                } else if (response && typeof response === 'object' && !response.status) {
-                    let products = [];
-                    if (Array.isArray(response)) {
-                        products = response;
-                    } else if (typeof response === 'object') {
-                        products = Object.values(response);
-                    }
-                    allProducts.push(...products);
-                    console.log(`${method} found: ${products.length} products (direct response)`);
-                }
-            } catch (error) {
-                console.log(`${method} failed:`, error.message);
-            }
-            await new Promise(resolve => setTimeout(resolve, 500));
-        }
+        // Only fetch from warehouse 4376, skip other methods
 
         const uniqueProducts = allProducts.filter((product, index, self) => {
             const productId = product.product_id || product.id || product.sku;
