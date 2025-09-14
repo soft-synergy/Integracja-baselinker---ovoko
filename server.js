@@ -107,14 +107,40 @@ app.get('/api/baselinker-products', requireAuth, async (req, res) => {
         const search = req.query.search || '';
         const filterStatus = req.query.filterStatus || 'all';
         const filterWarehouse = req.query.filterWarehouse || 'all';
+        const forceRefresh = req.query.forceRefresh === 'true';
         
         let products = [];
-        try {
-            const latest = await fs.readFile('baselinker_products_latest.json', 'utf8');
-            products = JSON.parse(latest);
-        } catch (_) {
-            const fallback = await fs.readFile('baselinker_products_2025-08-09T06-31-13-827Z.json', 'utf8');
-            products = JSON.parse(fallback);
+        
+        // If force refresh is requested, fetch fresh data from BaseLinker
+        if (forceRefresh) {
+            console.log('🔄 Force refresh requested, fetching fresh data from BaseLinker...');
+            try {
+                const { SmartInventorySynchronizer } = require('./smart_inventory_sync');
+                const synchronizer = new SmartInventorySynchronizer(BASELINKER_TOKEN, OVOKO_CREDENTIALS);
+                products = await synchronizer.getCurrentBaselinkerInventory();
+                console.log(`✅ Fetched ${products.length} products from BaseLinker API`);
+            } catch (error) {
+                console.error('❌ Failed to fetch fresh data:', error.message);
+                // Fall back to cached data
+            }
+        }
+        
+        // If no fresh data or force refresh failed, try to load from cache
+        if (products.length === 0) {
+            try {
+                const latest = await fs.readFile('baselinker_products_latest.json', 'utf8');
+                products = JSON.parse(latest);
+                console.log(`📦 Loaded ${products.length} products from cache`);
+            } catch (_) {
+                try {
+                    const fallback = await fs.readFile('baselinker_products_2025-08-09T06-31-13-827Z.json', 'utf8');
+                    products = JSON.parse(fallback);
+                    console.log(`📦 Loaded ${products.length} products from fallback cache`);
+                } catch (fallbackError) {
+                    console.error('❌ No cached products available');
+                    return res.status(500).json({ error: 'No products available. Try force refresh.' });
+                }
+            }
         }
         
         // Load saved sync status only (do not infer from orders)
@@ -228,6 +254,42 @@ app.post('/api/clear-sync', requireAuth, async (req, res) => {
         res.json({ success: true });
     } catch (error) {
         res.status(500).json({ success: false, error: error.message });
+    }
+});
+
+// Refresh BaseLinker products data
+app.post('/api/refresh-baselinker-products', requireAuth, async (req, res) => {
+    try {
+        console.log('🔄 Manual refresh of BaseLinker products requested...');
+        
+        const { SmartInventorySynchronizer } = require('./smart_inventory_sync');
+        const synchronizer = new SmartInventorySynchronizer(BASELINKER_TOKEN, OVOKO_CREDENTIALS);
+        
+        const products = await synchronizer.getCurrentBaselinkerInventory();
+        
+        // Save the fresh data
+        const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+        const filename = `baselinker_products_${timestamp}.json`;
+        
+        await fs.writeFile(filename, JSON.stringify(products, null, 2), 'utf8');
+        await fs.writeFile('baselinker_products_latest.json', JSON.stringify(products, null, 2), 'utf8');
+        
+        console.log(`✅ Successfully refreshed ${products.length} products from BaseLinker`);
+        console.log(`💾 Data saved to: ${filename} and baselinker_products_latest.json`);
+        
+        res.json({ 
+            success: true, 
+            productsCount: products.length,
+            filename: filename,
+            message: `Successfully refreshed ${products.length} products from BaseLinker API`
+        });
+        
+    } catch (error) {
+        console.error('💥 Error refreshing BaseLinker products:', error.message);
+        res.status(500).json({ 
+            success: false, 
+            error: error.message 
+        });
     }
 });
 
@@ -1012,47 +1074,45 @@ app.post('/api/update-product-versions', requireAuth, async (req, res) => {
 
 // Helper function to map BaseLinker category to Ovoko category
 async function getOvokoCategoryFromBaseLinker(baselinkerCategoryId) {
-    try {
-        // Load the category mapping from the new format file
-        const fs = require('fs');
-        const mappingData = fs.readFileSync('category_mapping.json', 'utf8');
-        const mapping = JSON.parse(mappingData);
-        
-        // Find the category mapping in the new format
-        const ovokoCategoryId = mapping.mapping[baselinkerCategoryId];
-        
-        if (ovokoCategoryId) {
-            console.log(`🔍 Category mapping found: BaseLinker ${baselinkerCategoryId} → Ovoko ${ovokoCategoryId}`);
-            
-            return {
-                ovoko_id: ovokoCategoryId.toString(),
-                ovoko_name: `Category ${ovokoCategoryId}`,
-                ovoko_pl: `Kategoria ${ovokoCategoryId}`,
-                confidence: "direct_mapping",
-                matched_keyword: "direct_mapping"
-            };
+    // Load mapping strictly from the prepared file: "categorie ovoko - mapowanie.json"
+    const fs = require('fs');
+    const path = require('path');
+
+    // Simple in-memory cache to avoid re-reading the file on every call
+    if (!global.__ovokoCategoryMappingCache) {
+        const mappingFilePath = path.join(__dirname, 'categorie ovoko - mapowanie.json');
+        const raw = fs.readFileSync(mappingFilePath, 'utf8');
+        const arr = JSON.parse(raw);
+
+        // Build a map from BaseLinker categoryId -> first matching entry
+        const byId = new Map();
+        for (const entry of arr) {
+            if (!entry || entry.source !== 'BaseLinker') continue;
+            const key = String(entry.categoryId);
+            if (!byId.has(key)) {
+                byId.set(key, entry);
+            }
         }
-        
-        // Fallback to brake discs category if not found
-        console.log(`⚠️ No mapping found for BaseLinker category ${baselinkerCategoryId}, using fallback`);
+
+        global.__ovokoCategoryMappingCache = byId;
+    }
+
+    const keyId = String(baselinkerCategoryId);
+    const found = global.__ovokoCategoryMappingCache.get(keyId);
+
+    if (found && found.ovokoId) {
+        console.log(`🔍 Category mapping found: BaseLinker ${keyId} → Ovoko ${found.ovokoId} (${found.ovokoName || ''})`);
         return {
-            ovoko_id: "754", // Brake discs (tarcze hamulcowe)
-            ovoko_name: "Brak mapowania",
-            ovoko_pl: "Tarcze hamulcowe",
-            confidence: "fallback",
-            matched_keyword: "brak mapowania"
-        };
-    } catch (error) {
-        console.log('⚠️ Could not load category mapping, using default:', error.message);
-        // Fallback to default category
-        return {
-            ovoko_id: "754", // Brake discs as default
-            ovoko_name: "Error loading mapping",
-            ovoko_pl: "Tarcze hamulcowe",
-            confidence: "error",
-            matched_keyword: "błąd ładowania mapowania"
+            ovoko_id: String(found.ovokoId),
+            ovoko_name: found.ovokoName || `Category ${found.ovokoId}`,
+            ovoko_pl: found.ovokoName || `Kategoria ${found.ovokoId}`,
+            confidence: "file_mapping",
+            matched_keyword: "categorie ovoko - mapowanie.json"
         };
     }
+
+    // Strict mode: no mapping → throw error (do not guess)
+    throw new Error(`No category mapping in file for BaseLinker category ${keyId}`);
 }
 
 // Helper function to load sync status
@@ -1498,10 +1558,10 @@ app.get('/api/order-sync-status/:orderId', requireAuth, async (req, res) => {
 });
 
 // New endpoint to check category mapping for a product
-app.get('/api/category-mapping/:categoryId', requireAuth, (req, res) => {
+app.get('/api/category-mapping/:categoryId', requireAuth, async (req, res) => {
     try {
         const { categoryId } = req.params;
-        const ovokoCategory = getOvokoCategoryFromBaseLinker(categoryId);
+        const ovokoCategory = await getOvokoCategoryFromBaseLinker(categoryId);
         
         res.json({
             baselinker_category_id: categoryId,

@@ -1,0 +1,356 @@
+Source,Category ID,Name,OVOKO ID,OVOKO Name,Level
+BaseLinker,1730798,"Motoryzacja/Części samochodowe/Części karoserii/Błotniki/Listwy, nakładki",530,Błotniki i inne elementy,2
+BaseLinker,1730799,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Stacyjki i kluczyki/Kluczyki",1477,Klucz / Karta zapłonu,3
+BaseLinker,1730800,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki parkowania",1383,Czujnik parkowania PDC,3
+BaseLinker,1730801,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Alternatory/Alternatory kompletne",252,Alternator,3
+BaseLinker,1730802,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Nawigacje GPS fabryczne,1409,Konsola środkowa / Radio / GPS,3
+BaseLinker,1730803,Motoryzacja/Części samochodowe/Układ paliwowy/Podgrzewacze,309,Podgrzewacz filtra paliwa,3
+BaseLinker,1730804,Motoryzacja/Części samochodowe/Silniki i osprzęt/Recyrkulacja spalin EGR/Zawory EGR,1197,Zawór EGR,3
+BaseLinker,1730805,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Sterowniki silnika",1153,Sterownik / Moduł zapłonu,3
+BaseLinker,1730806,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Rozruszniki/Rozruszniki kompletne",256,Rozruszniki i inne elementy,2
+BaseLinker,1730807,Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Wentylatory chłodnicy/Wentylatory,233,Elektryczny wentylator chłodnicy,3
+BaseLinker,1730808,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Moduły zapłonowe",1153,Sterownik / Moduł zapłonu,3
+BaseLinker,1730809,Motoryzacja/Części samochodowe/Części karoserii/Zderzaki/Zderzaki,542,Zderzaki tylne i inne elementy,2
+BaseLinker,1730811,Motoryzacja/Części samochodowe/Części karoserii/Maski/Maski,519,Pokrywa przednia / Maska silnika,3
+BaseLinker,1730812,"Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Fotele, kanapy",958,Fotele / Kanapa / Komplet,3
+BaseLinker,1730813,Motoryzacja/Części samochodowe/Części karoserii/Błotniki/Błotniki,530,Błotniki i inne elementy,2
+BaseLinker,1730814,"Motoryzacja/Części samochodowe/Części karoserii/Progi/Listwy progowe, nakładki",1605,Listwa progowa,3
+BaseLinker,1730815,Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Drzwi,1091,Części nadwozia i karoserie,2
+BaseLinker,1730816,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Zagłówki,1529,Inne fotele,3
+BaseLinker,1730817,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprzęt audio fabryczny/Głośniki,1893,Zestaw audio,3
+BaseLinker,1730818,Motoryzacja/Części samochodowe/Układ zawieszenia/Sprężyny zawieszenia,1979,Zawieszenie przednie / Komplet,3
+BaseLinker,1730819,"Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Panele sterowania, przełączniki",1031,Inne przełączniki i przyciski,3
+BaseLinker,1730820,Motoryzacja/Części samochodowe/Układ zawieszenia/Amortyzatory i elementy/Amortyzatory,2095,Komplet sprężyn i amortyzatorów (przód i tył),3
+BaseLinker,1730821,Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Lampy tylne,150,Lampy tylne i inne elementy,2
+BaseLinker,1730822,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Materiały instalacyjne/Klemy",1204,Plus / Klema / Przewód akumulatora,3
+BaseLinker,1730822,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Materiały instalacyjne/Klemy",1203,Minus / Klema / Przewód akumulatora,3
+BaseLinker,1730823,Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Klapy bagażnika,1595,Klapa tylna / bagażnika,3
+BaseLinker,1730824,Motoryzacja/Części samochodowe/Silniki i osprzęt/Silniki kompletne,250,Silnik i osprzęt,1
+BaseLinker,1730825,Motoryzacja/Wyposażenie i akcesoria samochodowe/Literatura motoryzacyjna/Samochody/Instrukcje obsługi,1607,Instrukcja obsługi,3
+BaseLinker,1730826,Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Listwy,1091,Części nadwozia i karoserie,2
+BaseLinker,1730827,Motoryzacja/Części samochodowe/Części karoserii/Dachy/Relingi dachowe,1509,Relingi dachowe,3
+BaseLinker,1730828,Motoryzacja/Wyposażenie i akcesoria samochodowe/Emblematy,515,Emblemat / Znaczek,3
+BaseLinker,1730829,Motoryzacja/Wyposażenie i akcesoria samochodowe/Czujniki i kamery cofania/Czujniki cofania,577,Kamera cofania,3
+BaseLinker,1730830,"Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Schowki, półki",1251,Inne części wnętrza samochodu,3
+BaseLinker,1730831,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Moduły komfortu",1156,Sterownik / Moduł komfortu,3
+BaseLinker,1730832,"Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Osłony, zaślepki",1251,Inne części wnętrza samochodu,3
+BaseLinker,1730833,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Kratki nawiewu,809,Dysze / Kratki środkowego nawiewu deski rozdzielczej,3
+BaseLinker,1730834,Motoryzacja/Części samochodowe/Silniki i osprzęt/Osłony silnika/Dolne,537,Osłony dolne,2
+BaseLinker,1730835,Motoryzacja/Części samochodowe/Układ napędowy/Mosty/Tylne,455,Dyferencjały / Mechanizmy różnicowe osi tylnej,2
+BaseLinker,1730840,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Rolety bagażnika,920,Roleta bagażnika,3
+BaseLinker,1730841,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Poduszki powietrzne,891,Poduszka powietrzna Airbag kierownicy,3
+BaseLinker,1730842,Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Zawiasy,1599,Zawias klapy tylnej bagażnika,3
+BaseLinker,1730844,Motoryzacja/Części samochodowe/Części karoserii/Klapki wlewu paliwa/Zamki i siłowniki,303,Siłownik klapki wlewu paliwa,3
+BaseLinker,1730845,Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Spryskiwacze reflektorów,121,Wycieraczki i spryskiwacze lamp przednich,2
+BaseLinker,1730846,Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Dysze spryskiwaczy,98,Wycieraczki i spryskiwacze szyb i świateł,1
+BaseLinker,1730847,Motoryzacja/Wyposażenie i akcesoria samochodowe/Elektronika samochodowa/Car audio/Anteny,1856,Antena radiowa,3
+BaseLinker,1730848,Motoryzacja/Części samochodowe/Układ wentylacji/Dmuchawy,215,Wentylator nawiewu / Dmuchawa,3
+BaseLinker,1730849,Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Przewody układów chłodzenia/Przewody chłodnic wody,1553,Wąż / Przewód nagrzewnicy chłodnicy,3
+BaseLinker,1730850,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Pedały,1251,Inne części wnętrza samochodu,3
+BaseLinker,1730851,Motoryzacja/Części samochodowe/Części karoserii/Spoilery,1799,Spojler klapy tylnej / bagażnika,3
+BaseLinker,1730852,Motoryzacja/Części samochodowe/Układ wydechowy/Sondy lambda,1406,Sonda lambda,3
+BaseLinker,1730853,Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Pompki spryskiwaczy,129,Elementy mechanizmów wycieraczek i spryskiwaczy,2
+BaseLinker,1730854,Motoryzacja/Części samochodowe/Silniki i osprzęt/Zawieszenie silnika/Poduszki silnika,329,Poduszka silnika,3
+BaseLinker,1730855,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Uchwyty fabryczne,1251,Inne części wnętrza samochodu,3
+BaseLinker,1730856,Motoryzacja/Części samochodowe/Części karoserii/Lusterka zewnętrzne/Kompletne,604,Elektryczne lusterko boczne drzwi przednich,3
+BaseLinker,1730857,Motoryzacja/Części samochodowe/Części karoserii/Pasy przednie,242,Pas przedni,3
+BaseLinker,1730858,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprzęt audio fabryczny/Wzmacniacze,1278,Wzmacniacz audio,3
+BaseLinker,1730859,Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Zamki,1597,Zamek klapy tylnej bagażnika,3
+BaseLinker,1730860,"Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Liczniki, zegary",1009,Licznik / Prędkościomierz,3
+BaseLinker,1730861,Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Przewody powietrza turbosprężarki,274,Turbosprężarki i inne części,2
+BaseLinker,1730862,Motoryzacja/Części samochodowe/Silniki i osprzęt/Przewody powietrza,299,Rura / Wąż dolotowy powietrza,3
+BaseLinker,1730863,Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Siłowniki,561,Siłownika klapy tylnej bagażnika,3
+BaseLinker,1730864,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Pozostałe",1299,Układ zapłonowy,2
+BaseLinker,1730865,Motoryzacja/Części samochodowe/Pozostałe,1249,Inne części,1
+BaseLinker,1730866,"Motoryzacja/Części samochodowe/Części karoserii/Zderzaki/Atrapy, zaślepki",514,Maskownica / Grill / Atrapa górna chłodnicy,3
+BaseLinker,1730867,"Motoryzacja/Części samochodowe/Układ napędowy/Półosie, przeguby, wały/Wały napędowe",1339,Wał napędowy / Komplet,3
+BaseLinker,1730868,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Kierownice,1251,Inne części wnętrza samochodu,3
+BaseLinker,1730869,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Pozostałe",1299,Układ zapłonowy,2
+BaseLinker,1730870,Motoryzacja/Części samochodowe/Układ kierowniczy/Przekładnie kierownicze,331,Układ jezdny,2
+BaseLinker,1730871,Motoryzacja/Części samochodowe/Części karoserii/Zderzaki/Wzmocnienia zderzaków (belki),1435,Belka zderzaka przedniego,3
+BaseLinker,1730872,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Pasy bezpieczeństwa,902,Pas bezpieczeństwa fotela przedniego,3
+BaseLinker,1730873,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Oświetlenie kabiny,190,Oświetlenie wnętrza kabiny,2
+BaseLinker,1730874,Motoryzacja/Części samochodowe/Silniki i osprzęt/Pompy podciśnieniowe,1456,Inna część silnika,3
+BaseLinker,1730875,Motoryzacja/Części samochodowe/Części karoserii/Dachy/Dachy,1097,Dach,3
+BaseLinker,1730876,Motoryzacja/Części samochodowe/Układ paliwowy/Wtryskiwacze,313,Wtryskiwacze i inne elementy,2
+BaseLinker,1730877,Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Kierownice powietrza,197,Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe,1
+BaseLinker,1730878,Motoryzacja/Części samochodowe/Układ kierowniczy/Pompy wspomagania,340,Pompa wspomagania,3
+BaseLinker,1730879,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Przekaźniki",1059,Przekaźnik zapłonu,3
+BaseLinker,1730880,Motoryzacja/Części samochodowe/Układ klimatyzacji/Kompresory klimatyzacji/Kompresory klimatyzacji,202,Kompresor / Sprężarka klimatyzacji A/C,3
+BaseLinker,1730881,Motoryzacja/Części samochodowe/Silniki i osprzęt/Pozostałe,1456,Inna część silnika,3
+BaseLinker,1730882,Motoryzacja/Części samochodowe/Układ wentylacji/Kanały powietrza,197,Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe,1
+BaseLinker,1730883,Motoryzacja/Części samochodowe/Układ hamulcowy/Pozostałe,1,Układ hamulcowy,1
+BaseLinker,1730884,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Moduły poduszek powietrznych",1157,Inne komputery / moduły / sterowniki,3
+BaseLinker,1730885,Motoryzacja/Części samochodowe/Oświetlenie/Sterowniki świateł,1412,Sterownik / Moduł świateł LCM,3
+BaseLinker,1730886,Motoryzacja/Części samochodowe/Części karoserii/Zderzaki/Elementy mocujące,503,Zderzaki przednie i inne elementy,2
+BaseLinker,1730887,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Sterowniki",1052,Przekaźniki i sterowniki,2
+BaseLinker,1730888,Motoryzacja/Części samochodowe/Części karoserii/Klapki wlewu paliwa/Klapki,803,Klapka wlewu paliwa,3
+BaseLinker,1730889,Motoryzacja/Części samochodowe/Części karoserii/Szyby/Szyberdachy,1101,Szyberdach komplet,3
+BaseLinker,1730890,Motoryzacja/Części samochodowe/Oświetlenie/Lampy przednie i elementy/Lampy przednie,135,Lampy przednie i inne elementy,2
+BaseLinker,1730891,Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Mechanizmy wycieraczek,111,Mechanizm i silniczek wycieraczek szyby przedniej / czołowej,3
+BaseLinker,1730892,Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Zamki,765,Zamek drzwi przednich,3
+BaseLinker,1730893,Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Klamki zewnętrzne,762,Klamka zewnętrzna drzwi,3
+BaseLinker,1730894,Motoryzacja/Części samochodowe/Silniki i osprzęt/Przepływomierze,296,Przepływomierz masowy powietrza MAF,3
+BaseLinker,1730897,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Poszycia słupków,806,Wyposażenie wnętrza samochodu,1
+BaseLinker,1730898,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Popielniczki,820,Popielniczka deski rozdzielczej,3
+BaseLinker,1730899,Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Pompy wody/Pompy wody,220,Pompa wody,3
+BaseLinker,1730900,Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Kompletne turbosprężarki,274,Turbosprężarki i inne części,2
+BaseLinker,1730901,Motoryzacja/Części samochodowe/Silniki i osprzęt/Głowice cylindrów/Głowice,264,Głowica silnika,3
+BaseLinker,1730902,Motoryzacja/Części samochodowe/Silniki i osprzęt/Obudowy filtrów powietrza,292,Osłona / Obudowa filtra powietrza,3
+BaseLinker,1730903,Motoryzacja/Części samochodowe/Układ paliwowy/Pompy paliwa,311,Pompa paliwa w zbiorniku,3
+BaseLinker,1730904,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprzęt audio fabryczny/Radioodtwarzacze,1277,Panel / Radioodtwarzacz CD/DVD/GPS,3
+BaseLinker,1730905,Motoryzacja/Wyposażenie i akcesoria samochodowe/Elektronika samochodowa/Car audio/Głośniki,1893,Zestaw audio,3
+BaseLinker,1730906,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Klaksony",1289,Klakson,3
+BaseLinker,1730907,Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Zbiorniki wyrównawcze,230,Zbiornik wyrównawczy chłodziwa,3
+BaseLinker,1730908,Motoryzacja/Części samochodowe/Oświetlenie/Czujniki/Poziomowania,355,Czujnik poziomowania świateł osi przedniej,3
+BaseLinker,1730909,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Podsufitki,934,Podsufitka,3
+BaseLinker,1730910,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Elementy mocujące,806,Wyposażenie wnętrza samochodu,1
+BaseLinker,1730911,"Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Deski rozdzielcze, konsole",816,Deska rozdzielcza,3
+BaseLinker,1730912,Motoryzacja/Części samochodowe/Silniki i osprzęt/Elementy napędu paska osprzętu/Koła pasowe,250,Silnik i osprzęt,1
+BaseLinker,1730913,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Materiały instalacyjne/Kostki, złączki",1299,Układ zapłonowy,2
+BaseLinker,1730914,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Lusterka wewnętrzne,1524,Lusterko wsteczne,3
+BaseLinker,1730915,"Motoryzacja/Części samochodowe/Oświetlenie/Wsporniki, mocowania, obudowy",134,Oświetlenie,1
+BaseLinker,1730916,Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Lewarki i wybieraki,1772,Wybierak biegów,3
+BaseLinker,1730918,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Świece/Żarowe",1301,Świeca żarowa,3
+BaseLinker,1730919,Motoryzacja/Części samochodowe/Silniki i osprzęt/Kolektory ssące,288,Kolektor ssący,3
+BaseLinker,1730920,Motoryzacja/Części samochodowe/Układ klimatyzacji/Przewody klimatyzacji,197,Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe,1
+BaseLinker,1730921,Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Pozostałe,197,Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe,1
+BaseLinker,1730922,Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Pozostałe,134,Oświetlenie,1
+BaseLinker,1730923,"Motoryzacja/Części samochodowe/Części karoserii/Wsporniki, mocowania",624,Części nadwozia i karoserii,1
+BaseLinker,1730924,Motoryzacja/Części samochodowe/Części karoserii/Nadkola,804,Nadkola i osłony przeciwbłotne,2
+BaseLinker,1730926,Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Pozostałe,98,Wycieraczki i spryskiwacze szyb i świateł,1
+BaseLinker,1730927,Motoryzacja/Części samochodowe/Części karoserii/Maski/Wygłuszenie,521,Izolacja termiczna / wygłuszenie pokrywy / maski silnika,3
+BaseLinker,1730928,Motoryzacja/Opony i felgi/Felgi/Do samochodów/Aluminiowe,487,Felgi aluminiowe,2
+BaseLinker,1730950,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Osłony przeciwsłoneczne,942,Osłona przeciwsłoneczna,3
+BaseLinker,1730959,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Boczki bagażnika,917,Boczek / Tapicerka / bagażnika,3
+BaseLinker,1730963,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Wykładzina,910,Wykładzina bagażnika,3
+BaseLinker,1730966,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Stacyjki i kluczyki/Stacyjki",1184,Stacyjka,3
+BaseLinker,1730967,Motoryzacja/Części samochodowe/Części karoserii/Szyby/Listwy,624,Części nadwozia i karoserii,1
+BaseLinker,1730968,Motoryzacja/Części samochodowe/Układ paliwowy/Pompy wtryskowe,316,Pompa wtryskowa wysokiego ciśnienia,3
+BaseLinker,1730969,Motoryzacja/Części samochodowe/Silniki i osprzęt/Recyrkulacja spalin EGR/Chłodnice spalin,1175,Chłodnica spalin EGR,3
+BaseLinker,1730970,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Półki tylne,949,Półka tylna bagażnika,3
+BaseLinker,1730971,Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Czujniki poziomu oleju,1466,Czujnik poziomu oleju,3
+BaseLinker,1730972,Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Kompletne skrzynie,416,Układ napędowy,1
+BaseLinker,1730973,Motoryzacja/Części samochodowe/Części karoserii/Progi/Progi,1210,Próg,3
+BaseLinker,1730974,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Boczki drzwi,806,Wyposażenie wnętrza samochodu,1
+BaseLinker,1730975,Motoryzacja/Części samochodowe/Części karoserii/Dachy/Pozostałe,624,Części nadwozia i karoserii,1
+BaseLinker,1730976,Motoryzacja/Części samochodowe/Układ kierowniczy/Czujniki kąta skrętu,416,Układ napędowy,1
+BaseLinker,1730977,Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Zbiorniki płynu do spryskiwaczy,130,Zbiornik płynu do spryskiwaczy szyby przedniej / czołowej,3
+BaseLinker,1730978,"Motoryzacja/Części samochodowe/Układ napędowy/Półosie, przeguby, wały/Półosie",416,Układ napędowy,1
+BaseLinker,1730979,Motoryzacja/Części samochodowe/Układ paliwowy/Przewody wtryskowe,319,Przewód paliwowy wtryskiwacza,3
+BaseLinker,1730980,Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Chłodnice/Chłodnice wody,231,Chłodnica,3
+BaseLinker,1730981,Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Przewody układów chłodzenia/Przewody chłodnic oleju,197,Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe,1
+BaseLinker,1730982,Motoryzacja/Części samochodowe/Układ paliwowy/Przewody paliwa,1298,Przewód paliwowy,3
+BaseLinker,1730983,Motoryzacja/Części samochodowe/Układ hamulcowy/Hamulce postojowe/Dźwignie hamulca ręcznego,89,Inne części hamulca ręcznego / postojowego,3
+BaseLinker,1730984,Motoryzacja/Części samochodowe/Układ wydechowy/Wieszaki,1168,Układ wydechowy i inne elementy,1
+BaseLinker,1730985,Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Wały korbowe,262,Wał korbowy,3
+BaseLinker,1730986,Motoryzacja/Części samochodowe/Układ kierowniczy/Pozostałe,416,Układ napędowy,1
+BaseLinker,1730987,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Pozostałe,806,Wyposażenie wnętrza samochodu,1
+BaseLinker,1730988,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Gałki i mieszki/Gałki,806,Wyposażenie wnętrza samochodu,1
+BaseLinker,1730989,Motoryzacja/Części samochodowe/Układ paliwowy/Pozostałe,281,Układ paliwowy,1
+BaseLinker,1730990,Motoryzacja/Części samochodowe/Układ zawieszenia/Zawieszenie hydrauliczne i pneumatyczne/Sterowniki,1052,Przekaźniki i sterowniki,2
+BaseLinker,1730991,Motoryzacja/Części samochodowe/Układ klimatyzacji/Czujniki,199,Inne elementy układu klimatyzacji A/C,3
+BaseLinker,1730992,Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Światła stop,150,Lampy tylne i inne elementy,2
+BaseLinker,1730993,Motoryzacja/Części samochodowe/Układ zawieszenia/Pozostałe,416,Układ napędowy,1
+BaseLinker,1730995,Motoryzacja/Części samochodowe/Silniki i osprzęt/Osłony silnika/Górne,273,Osłona górna silnika,3
+BaseLinker,1730996,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Cewki zapłonowe",1300,Cewka zapłonowa wysokiego napięcia,3
+BaseLinker,1730997,Motoryzacja/Części samochodowe/Układ hamulcowy/Układ ABS i ESP/Sterowniki ABS,41,Układ ABS i ESP,2
+BaseLinker,1730998,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Silniczki szyberdachu",1104,Silniczek szyberdachu,3
+BaseLinker,1730999,Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Chłodnice/Chłodnice powietrza (intercoolery),235,Chłodnica powietrza doładowującego / Intercooler,3
+BaseLinker,1731000,Motoryzacja/Części samochodowe/Układ klimatyzacji/Chłodnice klimatyzacji (skraplacze),205,Skraplacz / Chłodnica klimatyzacji,3
+BaseLinker,1731001,Motoryzacja/Części samochodowe/Części karoserii/Maski/Cięgna,523,Linka zamka pokrywy przedniej / maski silnika,3
+BaseLinker,1731002,Motoryzacja/Części samochodowe/Oświetlenie/Lampy przednie i elementy/Pozostałe,134,Oświetlenie,1
+BaseLinker,1731003,Motoryzacja/Opony i felgi/Osprzęt i akcesoria/Śruby,748,Śruby / Nakrętki do felg,2
+BaseLinker,1731004,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki przyspieszenia",349,Czujnik przyspieszenia,3
+BaseLinker,1731005,Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Pompy oleju,1352,Pompa olejowa,3
+BaseLinker,1731006,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprzęt audio fabryczny/Zmieniarki CD,1338,Zmieniarka płyt CD/DVD,3
+BaseLinker,1731007,Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Chłodnice/Chłodnice oleju,246,Chłodnica oleju,3
+BaseLinker,1731008,Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Czujniki deszczu,1381,Czujnik deszczu,3
+BaseLinker,1731009,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki prędkości",1386,Czujnik prędkości obrotowej,3
+BaseLinker,1731010,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Gniazda zapalniczki",852,Gniazdo zapalniczki przedniej tunelu środkowego,3
+BaseLinker,1731011,Motoryzacja/Części samochodowe/Części karoserii/Maski/Zawiasy,520,Zawiasy pokrywy / maski silnika,3
+BaseLinker,1731012,Motoryzacja/Części samochodowe/Układ wydechowy/Kolektory wydechowe,1329,Kolektor wydechowy,3
+BaseLinker,1731013,Motoryzacja/Części samochodowe/Silniki i osprzęt/Zawory podciśnienia,1655,Zawór podciśnienia,3
+BaseLinker,1731014,Motoryzacja/Części samochodowe/Układ zawieszenia/Zawieszenie hydrauliczne i pneumatyczne/Poduszki i miechy,1575,Zawieszenie pneumatyczne,2
+BaseLinker,1731015,Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Smarowanie,416,Układ napędowy,1
+BaseLinker,1731016,Motoryzacja/Części samochodowe/Układ paliwowy/Listwy wtryskowe,315,Listwa wtryskowa,3
+BaseLinker,1731017,Motoryzacja/Części samochodowe/Układ napędowy/Dyferencjały/Kompletne dyferencjały,458,Mechanizm różnicowy przedni / Dyferencjał,3
+BaseLinker,1731019,Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Klamki,1483,Rączka / Uchwyt klapy tylnej / bagażnika,3
+BaseLinker,1731020,Motoryzacja/Wyposażenie i akcesoria samochodowe/Holowanie/Kompletne haki holownicze (belka + kula),2066,Hak,3
+BaseLinker,1731021,Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Wałki rozrządu,268,Wałek rozrządu,3
+BaseLinker,1731022,Motoryzacja/Części samochodowe/Układ napędowy/Sprzęgła/Koła dwumasowe i zamachowe,1221,Koło dwumasowe,3
+BaseLinker,1731023,Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Ramiona wycieraczek,106,Ramię wycieraczki szyby przedniej / czołowej,3
+BaseLinker,1731024,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Zapalniczki samochodowe,822,Zapalniczka deski rozdzielczej,3
+BaseLinker,1731026,Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Bloki,263,Blok silnika,3
+BaseLinker,1731027,"Motoryzacja/Części samochodowe/Układ napędowy/Półosie, przeguby, wały/Podpory wału",416,Układ napędowy,1
+BaseLinker,1731028,Motoryzacja/Wyposażenie i akcesoria samochodowe/Literatura motoryzacyjna/Samochody/Książki serwisowe,1608,Książka serwisowa,3
+BaseLinker,1731029,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprzęt audio fabryczny/Pozostałe,1276,Sprzęt audio i GPS,2
+BaseLinker,1731030,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Podłokietniki,851,Podłokietnik tunelu środkowego,3
+BaseLinker,1731031,Motoryzacja/Części samochodowe/Silniki i osprzęt/Głowice cylindrów/Pokrywy zaworów,265,Pokrywa zaworów,3
+BaseLinker,1731032,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Pozostałe",1005,Inne wyposażenie elektryczne,3
+BaseLinker,1731033,Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Tłoki,267,Tłok,3
+BaseLinker,1731034,Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Bagnety,272,Bagnet poziomu oleju,3
+BaseLinker,1731035,Motoryzacja/Części samochodowe/Układ hamulcowy/Pompy hamulcowe,1,Układ hamulcowy,1
+BaseLinker,1731036,Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Miski olejowe,266,Miska olejowa,3
+BaseLinker,1731037,Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Czujniki położenia wałka rozrządu,1457,Czujnik pozycji wału rozrządu,3
+BaseLinker,1731038,Motoryzacja/Części samochodowe/Układ wydechowy/Czujniki temperatury spalin,1475,Czujnik temperatury spalin,3
+BaseLinker,1731039,Motoryzacja/Części samochodowe/Części karoserii/Listwy,624,Części nadwozia i karoserii,1
+BaseLinker,1731041,Motoryzacja/Części samochodowe/Układ wydechowy/Katalizatory,1407,Filtr cząstek stałych Katalizator / FAP / DPF,3
+BaseLinker,1731042,Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Wentylatory chłodnicy/Obudowy wentylatorów,197,Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe,1
+BaseLinker,1731043,Motoryzacja/Części samochodowe/Układ klimatyzacji/Wentylatory chłodnic klimatyzacji,205,Skraplacz / Chłodnica klimatyzacji,3
+BaseLinker,1731044,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Materiały instalacyjne/Wiązki przewodów",1562,Inna wiązka przewodów / kabli,3
+BaseLinker,1731045,Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Uszczelki,1447,Uszczelka drzwi,3
+BaseLinker,1731046,Motoryzacja/Wyposażenie i akcesoria samochodowe/Osłony na szyby/Rolety przeciwsłoneczne,806,Wyposażenie wnętrza samochodu,1
+BaseLinker,1731047,Motoryzacja/Części samochodowe/Części karoserii/Atrapy chłodnicy,1214,Atrapa chłodnicy / Grill,3
+BaseLinker,1731051,Motoryzacja/Części samochodowe/Układ wentylacji/Rezystory dmuchaw,213,Rezystor / Opornik dmuchawy nawiewu,3
+BaseLinker,1731052,Motoryzacja/Części samochodowe/Wycieraczki i spryskiwacze/Silniki wycieraczek,113,Silniczek wycieraczek szyby przedniej / czołowej,3
+BaseLinker,1731053,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki zasysanego powietrza",1005,Inne wyposażenie elektryczne,3
+BaseLinker,1731054,Motoryzacja/Części samochodowe/Części karoserii/Szyby/Karoseryjne,1315,Szyba karoseryjna drzwi,3
+BaseLinker,1731055,Motoryzacja/Części samochodowe/Układ napędowy/Sprzęgła/Pompy sprzęgła,426,Sprzęgła i inne elementy,2
+BaseLinker,1731056,Motoryzacja/Części samochodowe/Części karoserii/Podszybia,526,Podszybie przednie,3
+BaseLinker,1731057,Motoryzacja/Wyposażenie i akcesoria samochodowe/Dywaniki/Maty do bagażnika,913,Inne elementy wykończenia bagażnika,3
+BaseLinker,1731058,Motoryzacja/Części samochodowe/Układ kierowniczy/Kolumny kierownicze,337,Kolumna kierownicza,3
+BaseLinker,1731059,Motoryzacja/Części samochodowe/Układ hamulcowy/Hamulce postojowe/Linki hamulca ręcznego,1671,Linka zwalniająca dźwignie hamulca ręcznego,3
+BaseLinker,1731060,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Sprężyny gazowe,806,Wyposażenie wnętrza samochodu,1
+BaseLinker,1731063,Motoryzacja/Części samochodowe/Części karoserii/Maski/Zamki,522,Zamek pokrywy przedniej / maski silnika,3
+BaseLinker,1731064,Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Koła zębate,1779,Koło zębate łańcucha rozrządu,3
+BaseLinker,1731065,Motoryzacja/Części samochodowe/Układ wentylacji/Nagrzewnice,216,Nagrzewnica / Komplet,3
+BaseLinker,1731066,Motoryzacja/Części samochodowe/Układ wydechowy/Czujniki ciśnienia spalin,1420,Czujnik ciśnienia spalin,3
+BaseLinker,1731067,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Tunele środkowe,837,Tunele środkowe i inne elementy,2
+BaseLinker,1731068,Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Przewody układów chłodzenia/Przewody chłodnic powietrza,197,Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe,1
+BaseLinker,1731069,Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Uszczelki,1453,Uszczelka tylnej klapy bagażnika,3
+BaseLinker,1731070,Motoryzacja/Wyposażenie i akcesoria samochodowe/Elektronika samochodowa/Pozostałe,1005,Inne wyposażenie elektryczne,3
+BaseLinker,1731071,Motoryzacja/Części samochodowe/Części karoserii/Zabudowy,1253,Inne części karoserii,3
+BaseLinker,1731072,Motoryzacja/Części samochodowe/Oświetlenie/Kierunkowskazy,180,Kierunkowskazy,2
+BaseLinker,1731073,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Gałki i mieszki/Mieszki,806,Wyposażenie wnętrza samochodu,1
+BaseLinker,1731074,Motoryzacja/Części samochodowe/Części karoserii/Osłony przeciwbłotne,804,Nadkola i osłony przeciwbłotne,2
+BaseLinker,1731075,Motoryzacja/Części samochodowe/Układ paliwowy/Sterowniki,1052,Przekaźniki i sterowniki,2
+BaseLinker,1731076,Motoryzacja/Części samochodowe/Części karoserii/Maski/Uszczelki,529,Uszczelka pokrywy silnika / maski przedniej,3
+BaseLinker,1731077,Motoryzacja/Części samochodowe/Układ wydechowy/Osłony,1168,Układ wydechowy i inne elementy,1
+BaseLinker,1731080,Motoryzacja/Części samochodowe/Układ hamulcowy/Układ ABS i ESP/Czujniki ESP,41,Układ ABS i ESP,2
+BaseLinker,1731081,"Motoryzacja/Wyposażenie i akcesoria samochodowe/Apteczki, gaśnice, kamizelki, trójkąty/Trójkąty",1394,Trójkąt ostrzegawczy,3
+BaseLinker,1731082,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Podnośniki szyb",768,Podnośnik szyby drzwi z silniczkiem,3
+BaseLinker,1731083,Motoryzacja/Części samochodowe/Układ wydechowy/Obejmy,1168,Układ wydechowy i inne elementy,1
+BaseLinker,1731084,Motoryzacja/Części samochodowe/Części karoserii/Zderzaki/Listwy,624,Części nadwozia i karoserii,1
+BaseLinker,1731085,Motoryzacja/Części samochodowe/Silniki i osprzęt/Recyrkulacja spalin EGR/Przewody EGR,1178,Przewód / Rura chłodnicy spalin EGR,3
+BaseLinker,1731086,Motoryzacja/Części samochodowe/Części karoserii/Pozostałe,624,Części nadwozia i karoserii,1
+BaseLinker,1731091,Motoryzacja/Części samochodowe/Oświetlenie/Lampki tablicy rejestracyjnej,170,Lampa oświetlenia tylnej tablicy rejestracyjnej,3
+BaseLinker,1731092,Motoryzacja/Części samochodowe/Układ wentylacji/Obudowy filtrów kabinowych,197,Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe,1
+BaseLinker,1731093,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Skrzynki bezpieczników",1236,Skrzynka bezpieczników,2
+BaseLinker,1731095,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Silniczki szyb",1478,Silnik szyby / okna karoseryjnego,3
+BaseLinker,1731096,Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Zawory,274,Turbosprężarki i inne części,2
+BaseLinker,1731097,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Moduły drzwi",1149,Sterownik / Moduł drzwi,3
+BaseLinker,1731098,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Układ elektryczny silnika/Przewody zapłonowe",1465,Przewody zapłonowe,3
+BaseLinker,1731099,Motoryzacja/Części samochodowe/Części karoserii/Maski/Siłowniki,525,Siłownik maski przedniej,3
+BaseLinker,1731100,"Motoryzacja/Części samochodowe/Układ napędowy/Półosie, przeguby, wały/Przeguby",447,Przegub / Łącznik elastyczny wału napędowego,3
+BaseLinker,1731102,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Klamki wewnętrzne,1251,Inne części wnętrza samochodu,3
+BaseLinker,1731105,Motoryzacja/Części samochodowe/Układ paliwowy/AdBlue/Czujniki,2008,Czujnik poziomu płynu Adblue,3
+BaseLinker,1731106,Motoryzacja/Części samochodowe/Części karoserii/Lusterka zewnętrzne/Wkłady,1690,Wkład lusterka drzwi,3
+BaseLinker,1731107,Motoryzacja/Części samochodowe/Oświetlenie/Lampy przednie i elementy/Przetwornice,1875,Przetwornica napięcia / Moduł przetwornicy,3
+BaseLinker,1731108,Motoryzacja/Wyposażenie i akcesoria samochodowe/Osłony na szyby/Owiewki,1679,Owiewka szyby drzwi,3
+BaseLinker,1731109,"Motoryzacja/Części samochodowe/Części karoserii/Dachy/Listwy, zaślepki",1510,Listwa dachowa,3
+BaseLinker,1731110,Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Odma,300,Przewód / Odma odpowietrzenia,3
+BaseLinker,1731111,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Pozostałe",999,Wyposażenie elektryczne,1
+BaseLinker,1731112,Motoryzacja/Części samochodowe/Układ kierowniczy/Osłony przekładni kierowniczych,332,Osłona drążka kierowniczego,3
+BaseLinker,1731114,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Obudowy akumulatorów",1243,Podstawa / Obudowa akumulatora,3
+BaseLinker,1731116,Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Części montażowe,1884,Inna część skrzyni biegów,3
+BaseLinker,1731117,Motoryzacja/Części samochodowe/Oświetlenie/Pozostałe,134,Oświetlenie,1
+BaseLinker,1731120,Motoryzacja/Części samochodowe/Silniki i osprzęt/Przepustnice,286,Przepustnica,3
+BaseLinker,1731122,Motoryzacja/Części samochodowe/Układ wydechowy/Rury wydechowe,1955,Rura wydechowa,3
+BaseLinker,1731124,Motoryzacja/Części samochodowe/Silniki i osprzęt/Zawieszenie silnika/Wsporniki i łapy,250,Silnik i osprzęt,1
+BaseLinker,1731137,Motoryzacja/Części samochodowe/Układ zawieszenia/Belki zawieszenia/Belki przednie,460,Belka osi przedniej,3
+BaseLinker,1731138,Motoryzacja/Części samochodowe/Układ wentylacji/Silniki dmuchaw,197,Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe,1
+BaseLinker,1731139,Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Zawory,269,Zawór,3
+BaseLinker,1731141,Motoryzacja/Wyposażenie i akcesoria samochodowe/Tuning wizualny/Listwy ozdobne,1387,Inne elementy nadwozia i karoserii,2
+BaseLinker,1731142,Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Pozostałe,1884,Inna część skrzyni biegów,3
+BaseLinker,1731143,Motoryzacja/Części samochodowe/Układ klimatyzacji/Zawory rozprężne,197,Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe,1
+BaseLinker,1731144,Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Pozostałe,624,Części nadwozia i karoserii,1
+BaseLinker,1731145,Motoryzacja/Części samochodowe/Filtry/Filtry paliwa,308,Filtr paliwa,3
+BaseLinker,1731146,"Motoryzacja/Części samochodowe/Układ napędowy/Półosie, przeguby, wały/Tłumiki drgań",1902,Element tłumika,3
+BaseLinker,1731147,Motoryzacja/Części samochodowe/Układ kierowniczy/Zbiorniki płynu wspomagania,341,Zbiornik płynu wspomagania układu kierowniczego,3
+BaseLinker,1731148,Motoryzacja/Części samochodowe/Układ hamulcowy/Zbiorniki płynu hamulcowego,49,Zbiornik płynu hamulcowego,3
+BaseLinker,1731149,Motoryzacja/Części samochodowe/Filtry/Inne filtry,1249,Inne części,1
+BaseLinker,1731151,"Motoryzacja/Części samochodowe/Układ napędowy/Półosie, przeguby, wały/Pozostałe",331,Układ jezdny,2
+BaseLinker,1731153,Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Chłodnice/Części montażowe,231,Chłodnica,3
+BaseLinker,1731154,Motoryzacja/Części samochodowe/Części karoserii/Zderzaki/Absorbery,507,Absorber zderzaka przedniego,3
+BaseLinker,1731155,Motoryzacja/Części samochodowe/Silniki i osprzęt/Czujniki spalania stukowego,1471,Czujnik spalania stukowego,3
+BaseLinker,1731156,Motoryzacja/Części samochodowe/Układ wentylacji/Przewody nagrzewnic,197,Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe,1
+BaseLinker,1731157,Motoryzacja/Części samochodowe/Silniki i osprzęt/Czujniki ciśnienia w kolektorze (MAP),1420,Czujnik ciśnienia spalin,3
+BaseLinker,1731160,Motoryzacja/Części samochodowe/Silniki i osprzęt/Zawieszenie silnika/Wózki i belki silnika,250,Silnik i osprzęt,1
+BaseLinker,1731161,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki temperatury wewnętrznej",999,Wyposażenie elektryczne,1
+BaseLinker,1731163,Motoryzacja/Części samochodowe/Części karoserii/Szyby/Uszczelki szyb,1448,Uszczelka szyby drzwi,3
+BaseLinker,1731165,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Silniczki regulacji fotela",1632,Silniczek regulacji fotela,3
+BaseLinker,1731166,Motoryzacja/Części samochodowe/Oświetlenie/Lampy przednie i elementy/Lampy przeciwmgielne,1931,Lampa LED do jazdy dziennej,3
+BaseLinker,1731167,Motoryzacja/Części samochodowe/Części karoserii/Progi/Pozostałe,1108,Nadkola i progi,2
+BaseLinker,1731168,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki uderzenia",1325,Czujnik uderzenia Airbag,3
+BaseLinker,1731170,Motoryzacja/Części samochodowe/Układ paliwowy/Regulatory ciśnienia paliwa,318,Regulator ciśnienia paliwa,3
+BaseLinker,1731171,Motoryzacja/Części samochodowe/Układ paliwowy/Zawory,281,Układ paliwowy,1
+BaseLinker,1731174,Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Termostaty/Obudowy termostatów,218,Termostat / Obudowa termostatu,3
+BaseLinker,1731176,"Motoryzacja/Wyposażenie i akcesoria samochodowe/Uchwyty, wieszaki/Na kubki",1251,Inne części wnętrza samochodu,3
+BaseLinker,1731178,Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Pompy wody/Części montażowe,197,Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe,1
+BaseLinker,1731180,Motoryzacja/Części samochodowe/Części karoserii/Zestawy części blacharskich,1253,Inne części karoserii,3
+BaseLinker,1731183,Motoryzacja/Części samochodowe/Filtry/Filtry kabinowe,223,Mikrofiltr kabinowy,3
+BaseLinker,1731184,Motoryzacja/Części samochodowe/Części karoserii/Szyby/Przednie,1311,Szyba przednia / czołowa,3
+BaseLinker,1731188,Motoryzacja/Części samochodowe/Układ paliwowy/Czujniki poziomu paliwa,310,Czujnik poziomu paliwa,3
+BaseLinker,1731189,Motoryzacja/Części samochodowe/Układ kierowniczy/Przewody układu wspomagania,342,Przewód wspomagania kierownicy,3
+BaseLinker,1731190,Motoryzacja/Części samochodowe/Części karoserii/Lusterka zewnętrzne/Obudowy,774,Element lusterka bocznego drzwi,3
+BaseLinker,1731191,Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Obudowy filtrów oleju,1249,Inne części,1
+BaseLinker,1731192,Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Smarowanie,274,Turbosprężarki i inne części,2
+BaseLinker,1731193,Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Reduktory,457,Skrzynia rozdzielcza / Reduktor,3
+BaseLinker,1731194,Motoryzacja/Części samochodowe/Części karoserii/Szyby/Pozostałe,1318,Szyby karoseryjne nadwozia / Szyby szyberdachu i inne elementy,2
+BaseLinker,1731195,Motoryzacja/Części samochodowe/Części karoserii/Szyby/Tylne,1190,Szyby drzwi tylnych / Szyby karoseryjne drzwi tylnych,2
+BaseLinker,1731199,Motoryzacja/Opony i felgi/Koła (felgi z oponami)/Do samochodów,487,Felgi aluminiowe,2
+BaseLinker,1731200,Motoryzacja/Opony i felgi/Koła (felgi z oponami)/Koła dojazdowe,740,Koła zapasowe,2
+BaseLinker,1731201,Motoryzacja/Części samochodowe/Układ zawieszenia/Stabilizatory i elementy/Drążki stabilizatora,367,Stabilizator przedni / drążek,3
+BaseLinker,1731202,Motoryzacja/Części samochodowe/Części karoserii/Szyby/Boczne (drzwi),1315,Szyba karoseryjna drzwi,3
+BaseLinker,1731203,"Motoryzacja/Części samochodowe/Układ napędowy/Półosie, przeguby, wały/Podpory półosi",331,Układ jezdny,2
+BaseLinker,1731204,Motoryzacja/Opony i felgi/Felgi/Do samochodów/Stalowe,488,Felgi stalowe,2
+BaseLinker,1731207,Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Smoki (ssaki oleju),250,Silnik i osprzęt,1
+BaseLinker,1731213,Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Pozostałe,250,Silnik i osprzęt,1
+BaseLinker,1731220,Motoryzacja/Części samochodowe/Układ zawieszenia/Belki zawieszenia/Belki tylne,1882,Belka tylna,3
+BaseLinker,1731223,Motoryzacja/Wyposażenie i akcesoria samochodowe/Dywaniki/Dywaniki gumowe,1593,Zestaw dywaników samochodowych,3
+BaseLinker,1731224,Motoryzacja/Części samochodowe/Silniki i osprzęt/Turbosprężarki/Pozostałe,274,Turbosprężarki i inne części,2
+BaseLinker,1731225,Motoryzacja/Części samochodowe/Układ napędowy/Pozostałe,331,Układ jezdny,2
+BaseLinker,1731231,Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Przewody,1674,Wybierak skrzyni biegów,3
+BaseLinker,1731246,Motoryzacja/Części samochodowe/Filtry/Filtry powietrza,290,Filtr powietrza,3
+BaseLinker,1731262,Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Króćce głowicy,1572,Inna część głowicy cylindra,3
+BaseLinker,1731279,Motoryzacja/Części samochodowe/Oświetlenie/Części montażowe,134,Oświetlenie,1
+BaseLinker,1731281,Motoryzacja/Części samochodowe/Części karoserii/Błotniki/Wygłuszenie,533,Wygłuszenie / Pianka błotnika przedniego,3
+BaseLinker,1731285,Motoryzacja/Części samochodowe/Silniki i osprzęt/Smarowanie silnika/Pozostałe,250,Silnik i osprzęt,1
+BaseLinker,1731287,"Motoryzacja/Wyposażenie i akcesoria samochodowe/Apteczki, gaśnice, kamizelki, trójkąty/Apteczki",1677,Apteczka pierwszej pomocy,3
+BaseLinker,1731289,Motoryzacja/Części samochodowe/Części karoserii/Zderzaki/Pozostałe,1285,Inne części karoserii,2
+BaseLinker,1731293,Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Napinacze paska rozrządu,1635,Napinacz paska rozrządu,3
+BaseLinker,1731300,Motoryzacja/Części samochodowe/Części karoserii/Błotniki/Elementy mocujące,532,Uchwyt / Mocowanie błotnika przedniego,3
+BaseLinker,1731307,Motoryzacja/Części samochodowe/Silniki i osprzęt/Rozrząd/Obudowy,1774,Osłona łańcucha rozrządu,3
+BaseLinker,1731312,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Wyposażenie elektryczne/Kamery",999,Wyposażenie elektryczne,1
+BaseLinker,1731313,Motoryzacja/Części samochodowe/Układ napędowy/Sprzęgła/Wysprzęgliki,428,Siłownik sprzęgła / Wysprzęglik,3
+BaseLinker,1731325,Motoryzacja/Części samochodowe/Układ hamulcowy/Przewody hamulcowe,53,Części układu hamulcowego,2
+BaseLinker,1731339,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Części kabiny kierowcy,806,Wyposażenie wnętrza samochodu,1
+BaseLinker,1731356,Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Rygle,766,Rygiel zamka drzwi,3
+BaseLinker,1731360,Motoryzacja/Części samochodowe/Układ klimatyzacji/Sterowniki i elementy elektryczne,1978,Moduł / Sterownik klimatyzacji,3
+BaseLinker,1731371,Motoryzacja/Części samochodowe/Silniki i osprzęt/Głowice cylindrów/Pozostałe,250,Silnik i osprzęt,1
+BaseLinker,1731373,"Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Łapy, podpory",331,Układ jezdny,2
+BaseLinker,1731375,Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Uszczelniacze wału,270,Silniki i osprzęt,2
+BaseLinker,1731376,Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Pozostałe,250,Silnik i osprzęt,1
+BaseLinker,1731378,Motoryzacja/Części samochodowe/Oświetlenie/Lampy tylne i elementy/Lampy przeciwmgielne,152,Lampa tylna,3
+BaseLinker,1731381,Motoryzacja/Części samochodowe/Układ hamulcowy/Zestawy montażowe i naprawcze,1,Układ hamulcowy,1
+BaseLinker,1731385,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Materiały instalacyjne/Pozostałe",999,Wyposażenie elektryczne,1
+BaseLinker,1731386,Motoryzacja/Części samochodowe/Silniki i osprzęt/Elementy napędu paska osprzętu/Napinacze paska klinowego,1636,Napinacz paska wielorowkowego / Alternatora,3
+BaseLinker,1731390,Motoryzacja/Części samochodowe/Układ hamulcowy/Układ ABS i ESP/Czujniki ABS,1441,Czujnik ABS hamulca tylnego,3
+BaseLinker,1731391,Motoryzacja/Części samochodowe/Układ klimatyzacji/Pozostałe,197,Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe,1
+BaseLinker,1731393,Motoryzacja/Części samochodowe/Układ napędowy/Skrzynie biegów/Linki zmiany biegów,423,Linka zmiany biegów,3
+BaseLinker,1731395,"Motoryzacja/Części samochodowe/Układ elektryczny, zapłon/Czujniki/Czujniki temperatury zewnętrznej",999,Wyposażenie elektryczne,1
+BaseLinker,1731396,Motoryzacja/Części samochodowe/Układ paliwowy/Zbiorniki,302,Zbiornik paliwa,3
+BaseLinker,1731407,Motoryzacja/Części samochodowe/Silniki i osprzęt/Blok silnika/Czujniki położenia wału korbowego,1668,Czujnik położenia wału korbowego,3
+BaseLinker,1731418,Motoryzacja/Części samochodowe/Części karoserii/Maski/Pozostałe,1253,Inne części karoserii,3
+BaseLinker,1731424,Motoryzacja/Części samochodowe/Silniki i osprzęt/Recyrkulacja spalin EGR/Pozostałe,1175,Chłodnica spalin EGR,3
+BaseLinker,1731435,Motoryzacja/Części samochodowe/Wyposażenie wnętrza/Gałki i mieszki/Komplety,806,Wyposażenie wnętrza samochodu,1
+BaseLinker,1731483,Motoryzacja/Części samochodowe/Części karoserii/Drzwi/Wygłuszenie,977,Wygłuszanie drzwi bocznych,3
+BaseLinker,1731491,Motoryzacja/Części samochodowe/Części karoserii/Klapy bagażnika/Rygle,498,Elementy przedniej części nadwozia / karoserii,1
+BaseLinker,1731494,Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Uszczelki,197,Układ klimatyzacji / Wentylacji / Chłodzenia silnika / Ogrzewanie postojowe,1
+BaseLinker,1731498,Motoryzacja/Wyposażenie i akcesoria samochodowe/Zabezpieczenia/Autoalarmy,1295,Syrena alarmu,3
+BaseLinker,1731500,Motoryzacja/Części samochodowe/Układ zawieszenia/Wahacze i elementy/Wahacze,1606,Inna część zawieszenia tylnego,3
+BaseLinker,1731501,"Motoryzacja/Części samochodowe/Układ chłodzenia silnika/Wentylatory chłodnicy/Włączniki, sterowniki",1039,Przełącznik / Włącznik nawiewu dmuchawy,3
+BaseLinker,1731505,Motoryzacja/Części samochodowe/Części karoserii/Klapki wlewu paliwa/Pozostałe,803,Klapka wlewu paliwa,3
+BaseLinker,1731710,Gniazda zapalniczki,852,Gniazdo zapalniczki przedniej tunelu środkowego,3
+BaseLinker,2386607,Motoryzacja/Chemia/Mycie i pielęgnacja/Wnętrze/Zapachy samochodowe/Zawieszki,nie łączyć ,,

@@ -20,10 +20,24 @@ class SmartInventorySynchronizer {
         this.ovokoDeleteApiUrl = 'https://api.rrr.lt/crm/deletePart';
         this.requestDelay = 1000;
         
+        // Only use stock from this BaseLinker warehouse key
+        this.allowedStockKey = 'bl_4376';
+        
         // Files for tracking changes
         this.latestBaselinkerFile = 'baselinker_products_latest.json';
         this.changesLogFile = 'inventory_changes_log.json';
         this.syncReportFile = 'smart_sync_report.json';
+    }
+
+    // Keep only allowed stock key on product; return true if present
+    keepOnlyAllowedStock(product) {
+        const stock = product && product.stock;
+        if (stock && typeof stock === 'object' && this.allowedStockKey in stock) {
+            const val = stock[this.allowedStockKey] || 0;
+            product.stock = { [this.allowedStockKey]: val };
+            return true;
+        }
+        return false;
     }
 
     // BaseLinker API methods (copied exactly from get_baselinker_products.js)
@@ -203,23 +217,31 @@ class SmartInventorySynchronizer {
                                         if (fullProductsData.products) {
                                             const fullProducts = Object.values(fullProductsData.products);
                                             
+                                            const filteredProducts = [];
                                             fullProducts.forEach(product => {
                                                 product.inventory_id = inventory.inventory_id;
                                                 product.inventory_name = inventory.name;
+                                                if (this.keepOnlyAllowedStock(product)) {
+                                                    filteredProducts.push(product);
+                                                }
                                             });
                                             
-                                            allProducts.push(...fullProducts);
-                                            console.log(`  Page ${page}: Added ${fullProducts.length} products with full data`);
+                                            allProducts.push(...filteredProducts);
+                                            console.log(`  Page ${page}: Added ${filteredProducts.length} products with full data (only ${this.allowedStockKey})`);
                                         }
                                     } catch (error) {
                                         console.log(`  Failed to get full data for page ${page}: ${error.message}`);
                                         // Fallback to basic data (EXACT COPY)
+                                        const filteredProducts = [];
                                         products.forEach(product => {
                                             product.inventory_id = inventory.inventory_id;
                                             product.inventory_name = inventory.name;
+                                            if (this.keepOnlyAllowedStock(product)) {
+                                                filteredProducts.push(product);
+                                            }
                                         });
-                                        allProducts.push(...products);
-                                        console.log(`  Page ${page}: Added ${products.length} products with basic data`);
+                                        allProducts.push(...filteredProducts);
+                                        console.log(`  Page ${page}: Added ${filteredProducts.length} products with basic data (only ${this.allowedStockKey})`);
                                     }
                                 }
                                 
@@ -249,12 +271,16 @@ class SmartInventorySynchronizer {
 
                             if (productsResponse.products && Object.keys(productsResponse.products).length > 0) {
                                 const products = Object.values(productsResponse.products);
+                                const filteredProducts = [];
                                 products.forEach(product => {
                                     product.inventory_id = inventory.inventory_id;
                                     product.inventory_name = inventory.name;
+                                    if (this.keepOnlyAllowedStock(product)) {
+                                        filteredProducts.push(product);
+                                    }
                                 });
-                                allProducts.push(...products);
-                                console.log(`  Direct method added ${products.length} products`);
+                                allProducts.push(...filteredProducts);
+                                console.log(`  Direct method added ${filteredProducts.length} products (only ${this.allowedStockKey})`);
                             }
                         } catch (error) {
                             console.log(`  Direct method failed: ${error.message}`);
@@ -293,8 +319,9 @@ class SmartInventorySynchronizer {
                     // Extract stock from the original format
                     let stock = 0;
                     if (product.stock && typeof product.stock === 'object') {
-                        // New format: stock: { "bl_4376": 1 }
-                        stock = Object.values(product.stock).reduce((sum, val) => sum + (val || 0), 0);
+                        // Only count allowed warehouse stock
+                        const val = product.stock[this.allowedStockKey];
+                        stock = typeof val === 'number' ? val : 0;
                     } else {
                         // Old format: stock: 5
                         stock = product.stock || 0;
@@ -369,8 +396,9 @@ class SmartInventorySynchronizer {
             // Extract current stock from original format
             let currentStock = 0;
             if (currentProduct.stock && typeof currentProduct.stock === 'object') {
-                // New format: stock: { "bl_4376": 1 }
-                currentStock = Object.values(currentProduct.stock).reduce((sum, val) => sum + (val || 0), 0);
+                // Only count allowed warehouse stock
+                const val = currentProduct.stock[this.allowedStockKey];
+                currentStock = typeof val === 'number' ? val : 0;
             } else {
                 // Old format: stock: 5
                 currentStock = currentProduct.stock || 0;
