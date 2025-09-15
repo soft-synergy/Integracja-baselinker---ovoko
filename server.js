@@ -851,6 +851,14 @@ app.post('/api/import-product', requireAuth, async (req, res) => {
         if (result.status_code === 'R200') {
             console.log(`✅ Product imported successfully: ${result.part_id} to car: ${carId}`);
 
+            // After successful import to Ovoko, tag the BaseLinker product as listed on Ovoko
+            try {
+                await markBaselinkerProductAsOvokoListed(product);
+                console.log(`🏷️  BaseLinker product tagged as OVOKO_LISTED (sku: ${product.sku})`);
+            } catch (e) {
+                console.log(`⚠️  Could not tag BaseLinker product as OVOKO_LISTED: ${e.message}`);
+            }
+
             // Save sync status
             const syncStatus = await loadSyncStatus();
             syncStatus.synced_products[product.sku] = {
@@ -906,6 +914,112 @@ app.post('/api/import-product', requireAuth, async (req, res) => {
         });
     }
 });
+
+// Helper: fetch BaseLinker inventories list
+async function getBaseLinkerInventories() {
+    return new Promise((resolve) => {
+        const postData = new URLSearchParams();
+        postData.append('token', BASELINKER_TOKEN);
+        postData.append('method', 'getInventories');
+        postData.append('parameters', '[]');
+
+        const options = {
+            hostname: 'api.baselinker.com',
+            path: '/connector.php',
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'Content-Length': Buffer.byteLength(postData.toString()),
+                'X-BLToken': BASELINKER_TOKEN
+            }
+        };
+
+        const req = https.request(options, (res) => {
+            let data = '';
+            res.on('data', chunk => data += chunk);
+            res.on('end', () => {
+                try {
+                    const json = JSON.parse(data);
+                    if (json.status === 'SUCCESS') {
+                        resolve(json.inventories || []);
+                    } else {
+                        resolve([]);
+                    }
+                } catch (_) {
+                    resolve([]);
+                }
+            });
+        });
+
+        req.on('error', () => resolve([]));
+        req.write(postData.toString());
+        req.end();
+    });
+}
+
+// Helper: add OVOKO_LISTED tag to a BaseLinker catalog product
+async function markBaselinkerProductAsOvokoListed(product) {
+    return new Promise(async (resolve, reject) => {
+        try {
+            if (!product) return reject(new Error('Missing product'));
+            const productId = product.id || product.product_id;
+            if (!productId) return reject(new Error('Missing BaseLinker product_id'));
+
+            // Use provided inventory_id if present; otherwise fetch first available inventory
+            let inventoryId = product.inventory_id;
+            if (!inventoryId) {
+                const inventories = await getBaseLinkerInventories();
+                inventoryId = inventories?.[0]?.inventory_id || inventories?.[0]?.id;
+            }
+            if (!inventoryId) return reject(new Error('No BaseLinker inventory available'));
+
+            const parameters = {
+                inventory_id: inventoryId,
+                product_id: productId,
+                tags: ['OVOKO_LISTED']
+            };
+
+            const postData = new URLSearchParams();
+            postData.append('token', BASELINKER_TOKEN);
+            postData.append('method', 'addInventoryProduct');
+            postData.append('parameters', JSON.stringify(parameters));
+
+            const options = {
+                hostname: 'api.baselinker.com',
+                path: '/connector.php',
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'Content-Length': Buffer.byteLength(postData.toString()),
+                    'X-BLToken': BASELINKER_TOKEN
+                }
+            };
+
+            const req = https.request(options, (res) => {
+                let data = '';
+                res.on('data', chunk => data += chunk);
+                res.on('end', () => {
+                    try {
+                        const json = JSON.parse(data);
+                        if (json.status === 'SUCCESS') {
+                            resolve();
+                        } else {
+                            reject(new Error(json.error_message || 'addInventoryProduct failed'));
+                        }
+                    } catch (e) {
+                        reject(new Error('Invalid JSON response from BaseLinker'));
+                    }
+                });
+            });
+
+            req.on('error', (error) => reject(new Error(error.message)));
+            req.write(postData.toString());
+            req.end();
+        } catch (e) {
+            reject(e);
+        }
+    });
+}
 
 // Update product in Ovoko
 app.post('/api/update-product', requireAuth, async (req, res) => {
