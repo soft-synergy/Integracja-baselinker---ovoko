@@ -25,6 +25,7 @@ const Products = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [filterStatus, setFilterStatus] = useState('all');
   const [filterWarehouse, setFilterWarehouse] = useState('all');
+  const [sortBy, setSortBy] = useState('none');
   const [importing, setImporting] = useState({});
   const [updating, setUpdating] = useState({});
   const [checkingChanges, setCheckingChanges] = useState(false);
@@ -270,7 +271,7 @@ const Products = () => {
       }
 
       // Odśwież listę produktów aby zaktualizować statusy
-      await loadProducts(pagination.page, searchTerm, filterStatus, filterWarehouse);
+      await loadProducts(pagination.page, searchTerm, filterStatus, filterWarehouse, sortBy);
       
     } catch (error) {
       logError('Błąd podczas masowego importu', { error: error.message });
@@ -283,7 +284,7 @@ const Products = () => {
 
   useEffect(() => {
     console.log(`🔍 Initial load with filters: status="${filterStatus}", warehouse="${filterWarehouse}"`);
-    loadProducts(1, searchTerm, filterStatus, filterWarehouse);
+    loadProducts(1, searchTerm, filterStatus, filterWarehouse, sortBy);
     
     // Aktualizuj liczniki po załadowaniu
     setTimeout(() => {
@@ -292,7 +293,7 @@ const Products = () => {
     }, 500);
   }, []);
 
-  const loadProducts = async (page = 1, search = searchTerm, filter = filterStatus, warehouse = filterWarehouse) => {
+  const loadProducts = async (page = 1, search = searchTerm, filter = filterStatus, warehouse = filterWarehouse, sort = sortBy) => {
     try {
       setLoading(true);
       const params = new URLSearchParams({
@@ -300,7 +301,8 @@ const Products = () => {
         limit: '150',
         search: search,
         filterStatus: filter,
-        filterWarehouse: warehouse
+        filterWarehouse: warehouse,
+        sortBy: sort
       });
       
       console.log(`🔍 Loading products with params:`, {
@@ -308,6 +310,7 @@ const Products = () => {
         search,
         filter,
         warehouse,
+        sort,
         url: `/api/baselinker-products?${params}`
       });
       
@@ -359,7 +362,7 @@ const Products = () => {
           ovokoPartId: result.part_id 
         });
         // Refresh products to update sync status
-        await loadProducts(pagination.page, searchTerm, filterStatus, filterWarehouse);
+        await loadProducts(pagination.page, searchTerm, filterStatus, filterWarehouse, sortBy);
       } else {
         throw new Error(result.error || 'Import failed');
       }
@@ -392,7 +395,7 @@ const Products = () => {
           message: result.message
         });
         // Refresh products to update sync timestamp
-        await loadProducts(pagination.page, searchTerm, filterStatus, filterWarehouse);
+        await loadProducts(pagination.page, searchTerm, filterStatus, filterWarehouse, sortBy);
       } else {
         throw new Error(result.error || 'Update failed');
       }
@@ -427,7 +430,7 @@ const Products = () => {
         });
         
         // Refresh products to show updated data
-        await loadProducts(pagination.page, searchTerm, filterStatus, filterWarehouse);
+        await loadProducts(pagination.page, searchTerm, filterStatus, filterWarehouse, sortBy);
       } else {
         throw new Error(result.error || 'Failed to check changes');
       }
@@ -456,7 +459,7 @@ const Products = () => {
           message: result.message
         });
         // Refresh products to show updated data
-        await loadProducts(pagination.page, searchTerm, filterStatus, filterWarehouse);
+        await loadProducts(pagination.page, searchTerm, filterStatus, filterWarehouse, sortBy);
       } else {
         throw new Error(result.error || 'Failed to update versions');
       }
@@ -472,7 +475,7 @@ const Products = () => {
       const response = await fetch('/api/clear-sync', { method: 'POST' });
       if (response.ok) {
         logInfo('Sync status cleared');
-        await loadProducts(1);
+        await loadProducts(1, searchTerm, filterStatus, filterWarehouse, sortBy);
       }
     } catch (error) {
       logError('Failed to clear sync status', { error: error.message });
@@ -480,15 +483,23 @@ const Products = () => {
   };
 
   const handleSearch = () => {
-    loadProducts(1, searchTerm, filterStatus, filterWarehouse);
+    loadProducts(1, searchTerm, filterStatus, filterWarehouse, sortBy);
     // Aktualizuj liczniki po wyszukiwaniu
     setTimeout(() => updateTotalFilteredCountsWithWarehouse(filterWarehouse), 200);
   };
 
   const handleFilterChange = (newFilter) => {
     setFilterStatus(newFilter);
-    loadProducts(1, searchTerm, newFilter, filterWarehouse);
+    loadProducts(1, searchTerm, newFilter, filterWarehouse, sortBy);
     // Aktualizuj liczniki po zmianie filtra
+    setTimeout(() => updateTotalFilteredCountsWithWarehouse(filterWarehouse), 200);
+  };
+
+  const handleSortChange = (newSort) => {
+    console.log(`🔍 Sort changed from "${sortBy}" to "${newSort}"`);
+    setSortBy(newSort);
+    loadProducts(1, searchTerm, filterStatus, filterWarehouse, newSort);
+    // Aktualizuj liczniki po zmianie sortowania
     setTimeout(() => updateTotalFilteredCountsWithWarehouse(filterWarehouse), 200);
   };
 
@@ -500,14 +511,14 @@ const Products = () => {
     setFilterWarehouse(newWarehouse);
     
     // Załaduj produkty z nowym filtrem magazynu (użyj newWarehouse zamiast filterWarehouse)
-    loadProducts(1, searchTerm, filterStatus, newWarehouse);
+    loadProducts(1, searchTerm, filterStatus, newWarehouse, sortBy);
     
     // Aktualizuj liczniki po zmianie filtra z nowym magazynem
     setTimeout(() => updateTotalFilteredCountsWithWarehouse(newWarehouse), 200);
   };
 
   const handlePageChange = (newPage) => {
-    loadProducts(newPage, searchTerm, filterStatus, filterWarehouse);
+    loadProducts(newPage, searchTerm, filterStatus, filterWarehouse, sortBy);
   };
 
   const handleFirstPage = () => {
@@ -782,6 +793,22 @@ const Products = () => {
                   {warehouse.replace('bl_', 'Magazyn ')}
                 </option>
               ))}
+            </select>
+          </div>
+          
+          <div className="sm:w-48">
+            <select
+              value={sortBy}
+              onChange={(e) => handleSortChange(e.target.value)}
+              className="input-field"
+            >
+              <option value="none">Brak sortowania</option>
+              <option value="stock_asc">Stan magazynowy (rosnąco)</option>
+              <option value="stock_desc">Stan magazynowy (malejąco)</option>
+              <option value="name_asc">Nazwa (A-Z)</option>
+              <option value="name_desc">Nazwa (Z-A)</option>
+              <option value="sku_asc">SKU (A-Z)</option>
+              <option value="sku_desc">SKU (Z-A)</option>
             </select>
           </div>
           

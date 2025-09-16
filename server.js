@@ -107,6 +107,7 @@ app.get('/api/baselinker-products', requireAuth, async (req, res) => {
         const search = req.query.search || '';
         const filterStatus = req.query.filterStatus || 'all';
         const filterWarehouse = req.query.filterWarehouse || 'all';
+        const sortBy = req.query.sortBy || 'none';
         const forceRefresh = req.query.forceRefresh === 'true';
         
         let products = [];
@@ -221,6 +222,34 @@ app.get('/api/baselinker-products', requireAuth, async (req, res) => {
             });
             
             console.log(`🔍 Warehouse filter applied: "${filterWarehouse}", products after filter: ${filteredProducts.length} (was: ${beforeWarehouse})`);
+        }
+        
+        // Apply sorting
+        if (sortBy !== 'none') {
+            const beforeSort = filteredProducts.length;
+            filteredProducts.sort((a, b) => {
+                switch (sortBy) {
+                    case 'stock_asc':
+                        return a.currentStock - b.currentStock;
+                    case 'stock_desc':
+                        return b.currentStock - a.currentStock;
+                    case 'name_asc':
+                        const nameA = a.text_fields?.name || a.name || '';
+                        const nameB = b.text_fields?.name || b.name || '';
+                        return nameA.localeCompare(nameB, 'pl');
+                    case 'name_desc':
+                        const nameA_desc = a.text_fields?.name || a.name || '';
+                        const nameB_desc = b.text_fields?.name || b.name || '';
+                        return nameB_desc.localeCompare(nameA_desc, 'pl');
+                    case 'sku_asc':
+                        return (a.sku || '').localeCompare(b.sku || '', 'pl');
+                    case 'sku_desc':
+                        return (b.sku || '').localeCompare(a.sku || '', 'pl');
+                    default:
+                        return 0;
+                }
+            });
+            console.log(`🔍 Sort applied: "${sortBy}", products after sort: ${filteredProducts.length} (was: ${beforeSort})`);
         }
         
         // Calculate pagination
@@ -962,7 +991,7 @@ async function markBaselinkerProductAsOvokoListed(product) {
     return new Promise(async (resolve, reject) => {
         try {
             if (!product) return reject(new Error('Missing product'));
-            const productId = product.id || product.product_id;
+            const productId = product.id || product.baselinker_id;
             if (!productId) return reject(new Error('Missing BaseLinker product_id'));
 
             // Use provided inventory_id if present; otherwise fetch first available inventory
@@ -1783,6 +1812,342 @@ app.get('/api/baselinker-order-statuses', requireAuth, async (req, res) => {
     }
 });
 
+// New endpoint to auto-list products with stock > 1
+app.post('/api/auto-list-products', requireAuth, async (req, res) => {
+    try {
+        const { orderId } = req.body;
+        
+        if (!orderId) {
+            return res.status(400).json({ error: 'Order ID is required' });
+        }
+
+        console.log(`🔄 Auto-listing products for order ${orderId}...`);
+        
+        // Load the order to get its items
+        const orders = await getOvokoOrders();
+        const order = orders.find(o => o.order_id === orderId);
+        
+        if (!order) {
+            return res.status(404).json({ error: 'Order not found' });
+        }
+
+        // Load BaseLinker products to check stock
+        let baselinkerProducts = [];
+        try {
+            const latest = await fs.readFile('baselinker_products_latest.json', 'utf8');
+            baselinkerProducts = JSON.parse(latest);
+        } catch (error) {
+            console.error('❌ Could not load BaseLinker products:', error.message);
+            return res.status(500).json({ error: 'Could not load BaseLinker products' });
+        }
+
+        // Create a map of products by SKU for quick lookup
+        const productBySku = new Map();
+        for (const p of baselinkerProducts) {
+            if (p && p.sku) {
+                productBySku.set(p.sku.toString(), p);
+            }
+        }
+
+        const results = {
+            listedCount: 0,
+            products: [],
+            errors: []
+        };
+
+        // Check each item in the order
+        for (const item of order.item_list || []) {
+            try {
+                // Determine SKU for lookup
+                let resolvedSku = null;
+                if (item.external_id) {
+                    resolvedSku = item.external_id.toString();
+                } else if (item.id_bridge) {
+                    resolvedSku = item.id_bridge.toString();
+                }
+
+                if (!resolvedSku) {
+                    console.log(`⚠️  No SKU found for item ${item.id}, skipping...`);
+                    continue;
+                }
+
+                const blProduct = productBySku.get(resolvedSku);
+                if (!blProduct) {
+                    console.log(`⚠️  BaseLinker product not found for SKU ${resolvedSku}, skipping...`);
+                    continue;
+                }
+
+                // Check stock level
+                let stock = 0;
+                if (blProduct.stock && typeof blProduct.stock === 'object') {
+                    // New format: stock: { "bl_4376": 1 }
+                    stock = Object.values(blProduct.stock).reduce((sum, val) => sum + (val || 0), 0);
+                } else {
+                    // Old format: stock: 5
+                    stock = blProduct.stock || 0;
+                }
+
+                console.log(`🔍 Product ${resolvedSku}: stock = ${stock}`);
+
+                // If stock > 1, auto-list the product
+                if (stock > 1) {
+                    console.log(`🚀 Auto-listing product ${resolvedSku} (stock: ${stock})...`);
+                    
+                    try {
+                        const importResult = await importProductToOvoko(blProduct);
+                        
+                        if (importResult.success) {
+                            console.log(`✅ Product ${resolvedSku} auto-listed successfully`);
+                            
+                            results.listedCount++;
+                            results.products.push({
+                                sku: resolvedSku,
+                                name: blProduct.text_fields?.name || 'Unknown product',
+                                stock: stock,
+                                partId: importResult.part_id
+                            });
+
+                            // Save sync status
+                            const syncStatus = await loadSyncStatus();
+                            syncStatus.synced_products[resolvedSku] = {
+                                ovoko_part_id: importResult.part_id,
+                                ovoko_car_id: WORKING_COMBINATION.car_id,
+                                ovoko_category_id: WORKING_COMBINATION.category_id,
+                                ovoko_category_name: 'Auto-listed',
+                                baselinker_category_id: blProduct.category_id,
+                                mapping_confidence: 'auto_listed',
+                                bmw_model: 'Auto-detected',
+                                synced_at: new Date().toISOString(),
+                                product_name: blProduct.text_fields?.name || 'Unknown product',
+                                auto_listed: true,
+                                stock_at_listing: stock
+                            };
+                            await saveSyncStatus(syncStatus);
+
+                            // Add small delay to avoid overwhelming Ovoko API
+                            await new Promise(resolve => setTimeout(resolve, 500));
+                        } else {
+                            console.log(`❌ Failed to auto-list product ${resolvedSku}: ${importResult.error}`);
+                            results.errors.push({
+                                sku: resolvedSku,
+                                error: importResult.error
+                            });
+                        }
+                    } catch (importError) {
+                        console.error(`💥 Error auto-listing product ${resolvedSku}:`, importError.message);
+                        results.errors.push({
+                            sku: resolvedSku,
+                            error: importError.message
+                        });
+                    }
+                } else {
+                    console.log(`⏭️  Product ${resolvedSku} has stock ${stock} (≤1), skipping auto-listing`);
+                }
+            } catch (itemError) {
+                console.error(`💥 Error processing item ${item.id}:`, itemError.message);
+                results.errors.push({
+                    itemId: item.id,
+                    error: itemError.message
+                });
+            }
+        }
+
+        console.log(`✅ Auto-listing completed: ${results.listedCount} products listed, ${results.errors.length} errors`);
+
+        res.json({
+            success: true,
+            listedCount: results.listedCount,
+            products: results.products,
+            errors: results.errors,
+            message: `Auto-listed ${results.listedCount} products with stock > 1`
+        });
+
+    } catch (error) {
+        console.error('💥 Error in auto-list-products:', error.message);
+        res.status(500).json({ 
+            success: false, 
+            error: error.message 
+        });
+    }
+});
+
+// New endpoint to manually auto-list all products from all orders
+app.post('/api/manual-auto-list-all', requireAuth, async (req, res) => {
+    try {
+        console.log('🔄 Manual auto-listing for all orders...');
+        
+        // Load all orders
+        const orders = await getOvokoOrders();
+        
+        if (orders.length === 0) {
+            return res.json({
+                success: true,
+                listedCount: 0,
+                processedOrders: 0,
+                products: [],
+                message: 'No orders found'
+            });
+        }
+
+        // Load BaseLinker products to check stock
+        let baselinkerProducts = [];
+        try {
+            const latest = await fs.readFile('baselinker_products_latest.json', 'utf8');
+            baselinkerProducts = JSON.parse(latest);
+        } catch (error) {
+            console.error('❌ Could not load BaseLinker products:', error.message);
+            return res.status(500).json({ error: 'Could not load BaseLinker products' });
+        }
+
+        // Create a map of products by SKU for quick lookup
+        const productBySku = new Map();
+        for (const p of baselinkerProducts) {
+            if (p && p.sku) {
+                productBySku.set(p.sku.toString(), p);
+            }
+        }
+
+        const results = {
+            listedCount: 0,
+            products: [],
+            processedOrders: 0,
+            errors: []
+        };
+
+        // Process each order
+        for (const order of orders) {
+            try {
+                console.log(`🔄 Processing order ${order.order_id} for auto-listing...`);
+                
+                // Check each item in the order
+                for (const item of order.item_list || []) {
+                    try {
+                        // Determine SKU for lookup
+                        let resolvedSku = null;
+                        if (item.external_id) {
+                            resolvedSku = item.external_id.toString();
+                        } else if (item.id_bridge) {
+                            resolvedSku = item.id_bridge.toString();
+                        }
+
+                        if (!resolvedSku) {
+                            continue;
+                        }
+
+                        const blProduct = productBySku.get(resolvedSku);
+                        if (!blProduct) {
+                            continue;
+                        }
+
+                        // Check if product is already synced
+                        const syncStatus = await loadSyncStatus();
+                        if (syncStatus.synced_products[resolvedSku]) {
+                            console.log(`⏭️  Product ${resolvedSku} already synced, skipping...`);
+                            continue;
+                        }
+
+                        // Check stock level
+                        let stock = 0;
+                        if (blProduct.stock && typeof blProduct.stock === 'object') {
+                            stock = Object.values(blProduct.stock).reduce((sum, val) => sum + (val || 0), 0);
+                        } else {
+                            stock = blProduct.stock || 0;
+                        }
+
+                        // If stock > 1, auto-list the product
+                        if (stock > 1) {
+                            console.log(`🚀 Auto-listing product ${resolvedSku} (stock: ${stock})...`);
+                            
+                            try {
+                                const importResult = await importProductToOvoko(blProduct);
+                                
+                                if (importResult.success) {
+                                    console.log(`✅ Product ${resolvedSku} auto-listed successfully`);
+                                    
+                                    results.listedCount++;
+                                    results.products.push({
+                                        sku: resolvedSku,
+                                        name: blProduct.text_fields?.name || 'Unknown product',
+                                        stock: stock,
+                                        partId: importResult.part_id,
+                                        orderId: order.order_id
+                                    });
+
+                                    // Save sync status
+                                    syncStatus.synced_products[resolvedSku] = {
+                                        ovoko_part_id: importResult.part_id,
+                                        ovoko_car_id: WORKING_COMBINATION.car_id,
+                                        ovoko_category_id: WORKING_COMBINATION.category_id,
+                                        ovoko_category_name: 'Auto-listed',
+                                        baselinker_category_id: blProduct.category_id,
+                                        mapping_confidence: 'auto_listed',
+                                        bmw_model: 'Auto-detected',
+                                        synced_at: new Date().toISOString(),
+                                        product_name: blProduct.text_fields?.name || 'Unknown product',
+                                        auto_listed: true,
+                                        stock_at_listing: stock
+                                    };
+                                    await saveSyncStatus(syncStatus);
+
+                                    // Add small delay to avoid overwhelming Ovoko API
+                                    await new Promise(resolve => setTimeout(resolve, 500));
+                                } else {
+                                    console.log(`❌ Failed to auto-list product ${resolvedSku}: ${importResult.error}`);
+                                    results.errors.push({
+                                        sku: resolvedSku,
+                                        orderId: order.order_id,
+                                        error: importResult.error
+                                    });
+                                }
+                            } catch (importError) {
+                                console.error(`💥 Error auto-listing product ${resolvedSku}:`, importError.message);
+                                results.errors.push({
+                                    sku: resolvedSku,
+                                    orderId: order.order_id,
+                                    error: importError.message
+                                });
+                            }
+                        }
+                    } catch (itemError) {
+                        console.error(`💥 Error processing item ${item.id}:`, itemError.message);
+                        results.errors.push({
+                            itemId: item.id,
+                            orderId: order.order_id,
+                            error: itemError.message
+                        });
+                    }
+                }
+                
+                results.processedOrders++;
+            } catch (orderError) {
+                console.error(`💥 Error processing order ${order.order_id}:`, orderError.message);
+                results.errors.push({
+                    orderId: order.order_id,
+                    error: orderError.message
+                });
+            }
+        }
+
+        console.log(`✅ Manual auto-listing completed: ${results.listedCount} products listed, ${results.processedOrders} orders processed, ${results.errors.length} errors`);
+
+        res.json({
+            success: true,
+            listedCount: results.listedCount,
+            products: results.products,
+            processedOrders: results.processedOrders,
+            errors: results.errors,
+            message: `Manual auto-listing completed: ${results.listedCount} products listed from ${results.processedOrders} orders`
+        });
+
+    } catch (error) {
+        console.error('💥 Error in manual-auto-list-all:', error.message);
+        res.status(500).json({ 
+            success: false, 
+            error: error.message 
+        });
+    }
+});
+
 // Helper function to get BaseLinker order statuses
 async function getBaseLinkerOrderStatuses() {
     return new Promise((resolve, reject) => {
@@ -1894,6 +2259,26 @@ async function autoSyncOrdersToBaseLinker(orders) {
                 
                 await fs.writeFile('sync_status.json', JSON.stringify(syncStatus, null, 2));
                 
+                // Schedule auto-listing products with stock > 1 for this order (30 minutes delay)
+                try {
+                    console.log(`🔄 Scheduling auto-listing for order ${order.order_id} in 30 minutes...`);
+                    setTimeout(async () => {
+                        try {
+                            console.log(`🔄 Starting delayed auto-listing for order ${order.order_id}...`);
+                            const autoListResult = await autoListProductsForOrder(order);
+                            if (autoListResult.listedCount > 0) {
+                                console.log(`✅ Auto-listed ${autoListResult.listedCount} products for order ${order.order_id} (delayed)`);
+                            } else {
+                                console.log(`ℹ️  No products needed auto-listing for order ${order.order_id} (delayed)`);
+                            }
+                        } catch (autoListError) {
+                            console.error(`⚠️  Delayed auto-listing failed for order ${order.order_id}:`, autoListError.message);
+                        }
+                    }, 30 * 60 * 1000); // 30 minutes delay
+                } catch (scheduleError) {
+                    console.error(`⚠️  Failed to schedule auto-listing for order ${order.order_id}:`, scheduleError.message);
+                }
+                
                 results.synced++;
                 results.details.push({
                     orderId: order.order_id,
@@ -1926,6 +2311,141 @@ async function autoSyncOrdersToBaseLinker(orders) {
     
     console.log(`✅ Auto-sync completed: ${results.synced} synced, ${results.failed} failed`);
     return results;
+}
+
+// Helper function to auto-list products for a specific order
+async function autoListProductsForOrder(order) {
+    try {
+        console.log(`🔄 Auto-listing products for order ${order.order_id}...`);
+        
+        // Load BaseLinker products to check stock
+        let baselinkerProducts = [];
+        try {
+            const latest = await fs.readFile('baselinker_products_latest.json', 'utf8');
+            baselinkerProducts = JSON.parse(latest);
+        } catch (error) {
+            console.error('❌ Could not load BaseLinker products:', error.message);
+            return { listedCount: 0, products: [], errors: [error.message] };
+        }
+
+        // Create a map of products by SKU for quick lookup
+        const productBySku = new Map();
+        for (const p of baselinkerProducts) {
+            if (p && p.sku) {
+                productBySku.set(p.sku.toString(), p);
+            }
+        }
+
+        const results = {
+            listedCount: 0,
+            products: [],
+            errors: []
+        };
+
+        // Check each item in the order
+        for (const item of order.item_list || []) {
+            try {
+                // Determine SKU for lookup
+                let resolvedSku = null;
+                if (item.external_id) {
+                    resolvedSku = item.external_id.toString();
+                } else if (item.id_bridge) {
+                    resolvedSku = item.id_bridge.toString();
+                }
+
+                if (!resolvedSku) {
+                    console.log(`⚠️  No SKU found for item ${item.id}, skipping...`);
+                    continue;
+                }
+
+                const blProduct = productBySku.get(resolvedSku);
+                if (!blProduct) {
+                    console.log(`⚠️  BaseLinker product not found for SKU ${resolvedSku}, skipping...`);
+                    continue;
+                }
+
+                // Check stock level
+                let stock = 0;
+                if (blProduct.stock && typeof blProduct.stock === 'object') {
+                    // New format: stock: { "bl_4376": 1 }
+                    stock = Object.values(blProduct.stock).reduce((sum, val) => sum + (val || 0), 0);
+                } else {
+                    // Old format: stock: 5
+                    stock = blProduct.stock || 0;
+                }
+
+                console.log(`🔍 Product ${resolvedSku}: stock = ${stock}`);
+
+                // If stock > 1, auto-list the product
+                if (stock > 1) {
+                    console.log(`🚀 Auto-listing product ${resolvedSku} (stock: ${stock})...`);
+                    
+                    try {
+                        const importResult = await importProductToOvoko(blProduct);
+                        
+                        if (importResult.success) {
+                            console.log(`✅ Product ${resolvedSku} auto-listed successfully`);
+                            
+                            results.listedCount++;
+                            results.products.push({
+                                sku: resolvedSku,
+                                name: blProduct.text_fields?.name || 'Unknown product',
+                                stock: stock,
+                                partId: importResult.part_id
+                            });
+
+                            // Save sync status
+                            const syncStatus = await loadSyncStatus();
+                            syncStatus.synced_products[resolvedSku] = {
+                                ovoko_part_id: importResult.part_id,
+                                ovoko_car_id: WORKING_COMBINATION.car_id,
+                                ovoko_category_id: WORKING_COMBINATION.category_id,
+                                ovoko_category_name: 'Auto-listed',
+                                baselinker_category_id: blProduct.category_id,
+                                mapping_confidence: 'auto_listed',
+                                bmw_model: 'Auto-detected',
+                                synced_at: new Date().toISOString(),
+                                product_name: blProduct.text_fields?.name || 'Unknown product',
+                                auto_listed: true,
+                                stock_at_listing: stock
+                            };
+                            await saveSyncStatus(syncStatus);
+
+                            // Add small delay to avoid overwhelming Ovoko API
+                            await new Promise(resolve => setTimeout(resolve, 500));
+                        } else {
+                            console.log(`❌ Failed to auto-list product ${resolvedSku}: ${importResult.error}`);
+                            results.errors.push({
+                                sku: resolvedSku,
+                                error: importResult.error
+                            });
+                        }
+                    } catch (importError) {
+                        console.error(`💥 Error auto-listing product ${resolvedSku}:`, importError.message);
+                        results.errors.push({
+                            sku: resolvedSku,
+                            error: importError.message
+                        });
+                    }
+                } else {
+                    console.log(`⏭️  Product ${resolvedSku} has stock ${stock} (≤1), skipping auto-listing`);
+                }
+            } catch (itemError) {
+                console.error(`💥 Error processing item ${item.id}:`, itemError.message);
+                results.errors.push({
+                    itemId: item.id,
+                    error: itemError.message
+                });
+            }
+        }
+
+        console.log(`✅ Auto-listing completed for order ${order.order_id}: ${results.listedCount} products listed, ${results.errors.length} errors`);
+        return results;
+
+    } catch (error) {
+        console.error('💥 Error in autoListProductsForOrder:', error.message);
+        return { listedCount: 0, products: [], errors: [error.message] };
+    }
 }
 
 // Helper function to map Ovoko order to BaseLinker format
@@ -1993,7 +2513,7 @@ async function mapOrderToBaseLinker(order) {
         return {
             storage: 'db',
             storage_id: 0,
-            product_id: blProduct.id,
+            product_id: blProduct.baselinker_id,
             name: productName,
             sku: sku,
             price_brutto: priceBrutto,

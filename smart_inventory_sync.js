@@ -29,6 +29,12 @@ class SmartInventorySynchronizer {
         this.syncReportFile = 'smart_sync_report.json';
     }
 
+    // Extract BaseLinker product ID strictly from catalog product_id (fallback to id)
+    extractBaseLinkerId(product) {
+        const pid = product && (product.product_id || product.id || product.baselinker_id);
+        return pid || null;
+    }
+
     // Keep only allowed stock key on product; return true if present
     keepOnlyAllowedStock(product) {
         const stock = product && product.stock;
@@ -215,17 +221,16 @@ class SmartInventorySynchronizer {
                                         });
                                         
                                         if (fullProductsData.products) {
-                                            const fullProducts = Object.values(fullProductsData.products);
-                                            
                                             const filteredProducts = [];
-                                            fullProducts.forEach(product => {
+                                            Object.entries(fullProductsData.products).forEach(([productKeyId, product]) => {
                                                 product.inventory_id = inventory.inventory_id;
                                                 product.inventory_name = inventory.name;
+                                                // Per docs, product_id is the key of the map
+                                                product.baselinker_id = productKeyId;
                                                 if (this.keepOnlyAllowedStock(product)) {
                                                     filteredProducts.push(product);
                                                 }
                                             });
-                                            
                                             allProducts.push(...filteredProducts);
                                             console.log(`  Page ${page}: Added ${filteredProducts.length} products with full data (only ${this.allowedStockKey})`);
                                         }
@@ -236,6 +241,8 @@ class SmartInventorySynchronizer {
                                         products.forEach(product => {
                                             product.inventory_id = inventory.inventory_id;
                                             product.inventory_name = inventory.name;
+                                            // Ensure baselinker_id is present for saving
+                                            product.baselinker_id = this.extractBaseLinkerId(product);
                                             if (this.keepOnlyAllowedStock(product)) {
                                                 filteredProducts.push(product);
                                             }
@@ -270,11 +277,12 @@ class SmartInventorySynchronizer {
                             });
 
                             if (productsResponse.products && Object.keys(productsResponse.products).length > 0) {
-                                const products = Object.values(productsResponse.products);
                                 const filteredProducts = [];
-                                products.forEach(product => {
+                                Object.entries(productsResponse.products).forEach(([productKeyId, product]) => {
                                     product.inventory_id = inventory.inventory_id;
                                     product.inventory_name = inventory.name;
+                                    // Per docs, product_id is the key of the map
+                                    product.baselinker_id = productKeyId;
                                     if (this.keepOnlyAllowedStock(product)) {
                                         filteredProducts.push(product);
                                     }
@@ -328,7 +336,7 @@ class SmartInventorySynchronizer {
                     }
                     
                     lastInventory[product.sku] = {
-                        product_id: product.product_id || product.id,
+                        product_id: product.baselinker_id || product.product_id || product.id,
                         stock: stock,
                         inventory_id: product.inventory_id || '',
                         inventory_name: product.inventory_name || '',

@@ -115,6 +115,12 @@ const Orders = () => {
           }
           
           alert(message);
+          
+          // Auto-check and list products for successfully synced orders
+          if (synced > 0) {
+            logInfo('Starting auto-listing check for synced orders', { syncedCount: synced });
+            // Note: Auto-listing will be handled by the server-side auto-sync function
+          }
         } else {
           alert(`✅ Pobrano ${result.ordersCount} zamówień z V2 API`);
         }
@@ -165,8 +171,11 @@ const Orders = () => {
           }
         }));
         
+        // Note: Auto-listing is scheduled with 30-minute delay on server side
+        logInfo('Auto-listing scheduled with 30-minute delay', { orderId });
+        
         // Show success message
-        alert(`Zamówienie zostało zsynchronizowane z BaseLinker!\nID w BaseLinker: ${result.baselinkerOrderId}`);
+        alert(`Zamówienie zostało zsynchronizowane z BaseLinker!\nID w BaseLinker: ${result.baselinkerOrderId}\n\n📦 Auto-listing produktów zaplanowany na 30 minut!`);
       } else {
         if (result.error === 'Order already synced to BaseLinker') {
           alert(`Zamówienie już zostało zsynchronizowane z BaseLinker!\nID w BaseLinker: ${result.baselinkerOrderId}\nData synchronizacji: ${new Date(result.syncedAt).toLocaleString('pl-PL')}`);
@@ -214,6 +223,92 @@ const Orders = () => {
       }
     } catch (error) {
       logError('Failed to enqueue tasks', { orderId, error: error.message });
+    }
+  };
+
+  const checkAndAutoListProducts = async (orderId) => {
+    try {
+      logInfo('Checking products for auto-listing after order sync', { orderId });
+      
+      const response = await fetch('/api/auto-list-products', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ orderId })
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        if (result.listedCount > 0) {
+          logSuccess('Products auto-listed successfully', { 
+            orderId,
+            listedCount: result.listedCount,
+            products: result.products
+          });
+          
+          // Show success message with details
+          let message = `✅ Automatyczne wystawienie listingów:\n\n`;
+          message += `📦 Wystawiono: ${result.listedCount} produktów\n\n`;
+          
+          if (result.products && result.products.length > 0) {
+            message += `📋 Wystawione produkty:\n`;
+            result.products.forEach(product => {
+              message += `   • ${product.sku} - ${product.name}\n`;
+            });
+          }
+          
+          alert(message);
+        } else {
+          logInfo('No products needed auto-listing', { orderId });
+        }
+      } else {
+        logError('Auto-listing failed', { orderId, error: result.error });
+      }
+    } catch (error) {
+      logError('Failed to check and auto-list products', { orderId, error: error.message });
+    }
+  };
+
+  const handleManualAutoList = async () => {
+    try {
+      logInfo('Manual auto-listing triggered for all orders');
+      
+      const response = await fetch('/api/manual-auto-list-all', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' }
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        logSuccess('Manual auto-listing completed', { 
+          listedCount: result.listedCount,
+          processedOrders: result.processedOrders
+        });
+        
+        // Show success message with details
+        let message = `✅ Ręczne wystawienie listingów:\n\n`;
+        message += `📦 Wystawiono: ${result.listedCount} produktów\n`;
+        message += `📋 Przetworzono: ${result.processedOrders} zamówień\n\n`;
+        
+        if (result.products && result.products.length > 0) {
+          message += `📋 Wystawione produkty:\n`;
+          result.products.slice(0, 10).forEach(product => {
+            message += `   • ${product.sku} - ${product.name}\n`;
+          });
+          if (result.products.length > 10) {
+            message += `   ... i ${result.products.length - 10} więcej\n`;
+          }
+        }
+        
+        alert(message);
+      } else {
+        logError('Manual auto-listing failed', { error: result.error });
+        alert(`Błąd auto-listing: ${result.error}`);
+      }
+    } catch (error) {
+      logError('Failed to run manual auto-listing', { error: error.message });
+      alert(`Błąd auto-listing: ${error.message}`);
     }
   };
 
@@ -329,6 +424,13 @@ const Orders = () => {
             <RefreshCw className="h-4 w-4 mr-2" />
             Odśwież
           </button>
+          <button
+            onClick={handleManualAutoList}
+            className="btn-primary flex items-center"
+          >
+            <Database className="h-4 w-4 mr-2" />
+            Auto-listing
+          </button>
         </div>
       </div>
 
@@ -402,6 +504,7 @@ const Orders = () => {
             <li>Lepsze mapowanie przedmiotów</li>
           </ul>
           <p className="mt-2 text-blue-600 font-medium">🔄 Po pobraniu zamówień automatycznie uruchomi się synchronizacja z BaseLinker!</p>
+          <p className="mt-1 text-green-600 font-medium">📦 Automatyczne wystawianie listingów: produkty ze stanem &gt; 1 zostaną automatycznie dodane do Ovoko po 30 minutach!</p>
         </div>
       </div>
 
