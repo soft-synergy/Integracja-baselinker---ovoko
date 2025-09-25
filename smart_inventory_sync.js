@@ -1,6 +1,7 @@
 const fs = require('fs').promises;
 const https = require('https');
 const { URLSearchParams } = require('url');
+const readline = require('readline');
 
 /**
  * SMART INVENTORY SYNCHRONIZER
@@ -13,7 +14,7 @@ const { URLSearchParams } = require('url');
  */
 
 class SmartInventorySynchronizer {
-    constructor(baselinkerToken, ovokoCredentials) {
+    constructor(baselinkerToken, ovokoCredentials, options = {}) {
         this.baselinkerToken = baselinkerToken;
         this.ovokoCredentials = ovokoCredentials;
         this.baselinkerApiUrl = 'https://api.baselinker.com/connector.php';
@@ -22,6 +23,11 @@ class SmartInventorySynchronizer {
         
         // Only use stock from this BaseLinker warehouse key
         this.allowedStockKey = 'bl_4376';
+        
+        // Filter options
+        this.filterByWarehouse = options.filterByWarehouse || null;
+        this.warehouseName = options.warehouseName || null;
+        this.syncAllWarehouses = options.syncAllWarehouses || false;
         
         // Files for tracking changes
         this.latestBaselinkerFile = 'baselinker_products_latest.json';
@@ -38,7 +44,17 @@ class SmartInventorySynchronizer {
     // Keep only allowed stock key on product; return true if present
     keepOnlyAllowedStock(product) {
         const stock = product && product.stock;
-        if (stock && typeof stock === 'object' && this.allowedStockKey in stock) {
+        if (!stock || typeof stock !== 'object') {
+            return false;
+        }
+        
+        // If syncAllWarehouses is true, keep all stock entries
+        if (this.syncAllWarehouses) {
+            return true;
+        }
+        
+        // Otherwise, filter only allowed stock key
+        if (this.allowedStockKey in stock) {
             const val = stock[this.allowedStockKey] || 0;
             product.stock = { [this.allowedStockKey]: val };
             return true;
@@ -187,7 +203,17 @@ class SmartInventorySynchronizer {
             const inventories = await this.makeBaseLinkerRequest('getInventories');
             const allProducts = [];
 
-            for (const inventory of inventories.inventories || []) {
+            // Filter inventories if specific warehouse is requested
+            let inventoriesToProcess = inventories.inventories || [];
+            if (this.filterByWarehouse && this.warehouseName) {
+                inventoriesToProcess = inventoriesToProcess.filter(inv => 
+                    inv.name.toLowerCase().includes(this.warehouseName.toLowerCase()) ||
+                    inv.inventory_id.toString() === this.filterByWarehouse.toString()
+                );
+                console.log(`🎯 Filtering to specific warehouse: ${this.warehouseName} (found ${inventoriesToProcess.length} matching inventories)`);
+            }
+
+            for (const inventory of inventoriesToProcess) {
                 console.log(`🔍 Checking inventory: ${inventory.name} (ID: ${inventory.inventory_id})`);
                 
                 try {
@@ -232,7 +258,8 @@ class SmartInventorySynchronizer {
                                                 }
                                             });
                                             allProducts.push(...filteredProducts);
-                                            console.log(`  Page ${page}: Added ${filteredProducts.length} products with full data (only ${this.allowedStockKey})`);
+                                            const stockInfo = this.syncAllWarehouses ? 'all warehouses' : `only ${this.allowedStockKey}`;
+                                            console.log(`  Page ${page}: Added ${filteredProducts.length} products with full data (${stockInfo})`);
                                         }
                                     } catch (error) {
                                         console.log(`  Failed to get full data for page ${page}: ${error.message}`);
@@ -248,7 +275,8 @@ class SmartInventorySynchronizer {
                                             }
                                         });
                                         allProducts.push(...filteredProducts);
-                                        console.log(`  Page ${page}: Added ${filteredProducts.length} products with basic data (only ${this.allowedStockKey})`);
+                                        const stockInfo = this.syncAllWarehouses ? 'all warehouses' : `only ${this.allowedStockKey}`;
+                                        console.log(`  Page ${page}: Added ${filteredProducts.length} products with basic data (${stockInfo})`);
                                     }
                                 }
                                 
@@ -288,7 +316,8 @@ class SmartInventorySynchronizer {
                                     }
                                 });
                                 allProducts.push(...filteredProducts);
-                                console.log(`  Direct method added ${filteredProducts.length} products (only ${this.allowedStockKey})`);
+                                const stockInfo = this.syncAllWarehouses ? 'all warehouses' : `only ${this.allowedStockKey}`;
+                                console.log(`  Direct method added ${filteredProducts.length} products (${stockInfo})`);
                             }
                         } catch (error) {
                             console.log(`  Direct method failed: ${error.message}`);
@@ -304,10 +333,19 @@ class SmartInventorySynchronizer {
 
             console.log(`📊 Total products fetched: ${allProducts.length}`);
             
-            // Filter out products without SKU and keep original format for compatibility with frontend
-            const productsWithSku = allProducts.filter(product => product.sku && product.sku.trim() !== '');
-            console.log(`📊 Keeping original format: ${productsWithSku.length} products (filtered out ${allProducts.length - productsWithSku.length} products without SKU)`);
-            return productsWithSku;
+            // Filter products based on sync mode
+            let filteredProducts;
+            if (this.syncAllWarehouses) {
+                // When syncing all warehouses, keep all products (even without SKU)
+                filteredProducts = allProducts;
+                console.log(`📊 Sync all warehouses mode: keeping all ${filteredProducts.length} products (including those without SKU)`);
+            } else {
+                // When syncing specific warehouse, filter out products without SKU
+                filteredProducts = allProducts.filter(product => product.sku && product.sku.trim() !== '');
+                console.log(`📊 Sync specific warehouse mode: keeping ${filteredProducts.length} products (filtered out ${allProducts.length - filteredProducts.length} products without SKU)`);
+            }
+            
+            return filteredProducts;
 
         } catch (error) {
             throw new Error(`Error fetching current inventory: ${error.message}`);
@@ -323,20 +361,31 @@ class SmartInventorySynchronizer {
             // Convert to inventory format for comparison
             const lastInventory = {};
             products.forEach(product => {
-                if (product.sku) {
+                // Use SKU if available, otherwise use BaseLinker ID as key
+                const productKey = product.sku || (product.baselinker_id || product.product_id || product.id);
+                
+                if (productKey) {
                     // Extract stock from the original format
                     let stock = 0;
                     if (product.stock && typeof product.stock === 'object') {
-                        // Only count allowed warehouse stock
-                        const val = product.stock[this.allowedStockKey];
-                        stock = typeof val === 'number' ? val : 0;
+                        if (this.syncAllWarehouses) {
+                            // Sum all warehouse stocks
+                            stock = Object.values(product.stock).reduce((sum, val) => {
+                                return sum + (typeof val === 'number' ? val : 0);
+                            }, 0);
+                        } else {
+                            // Only count allowed warehouse stock
+                            const val = product.stock[this.allowedStockKey];
+                            stock = typeof val === 'number' ? val : 0;
+                        }
                     } else {
                         // Old format: stock: 5
                         stock = product.stock || 0;
                     }
                     
-                    lastInventory[product.sku] = {
+                    lastInventory[productKey] = {
                         product_id: product.baselinker_id || product.product_id || product.id,
+                        sku: product.sku || null,
                         stock: stock,
                         inventory_id: product.inventory_id || '',
                         inventory_name: product.inventory_name || '',
@@ -396,17 +445,25 @@ class SmartInventorySynchronizer {
 
         // Check for new products and stock changes
         for (const currentProduct of currentProducts) {
-            const sku = currentProduct.sku;
-            if (!sku) continue;
+            // Use SKU if available, otherwise use BaseLinker ID as key
+            const productKey = currentProduct.sku || (currentProduct.baselinker_id || currentProduct.product_id || currentProduct.id);
+            if (!productKey) continue;
             
-            const last = lastInventory[sku];
+            const last = lastInventory[productKey];
             
             // Extract current stock from original format
             let currentStock = 0;
             if (currentProduct.stock && typeof currentProduct.stock === 'object') {
-                // Only count allowed warehouse stock
-                const val = currentProduct.stock[this.allowedStockKey];
-                currentStock = typeof val === 'number' ? val : 0;
+                if (this.syncAllWarehouses) {
+                    // Sum all warehouse stocks
+                    currentStock = Object.values(currentProduct.stock).reduce((sum, val) => {
+                        return sum + (typeof val === 'number' ? val : 0);
+                    }, 0);
+                } else {
+                    // Only count allowed warehouse stock
+                    const val = currentProduct.stock[this.allowedStockKey];
+                    currentStock = typeof val === 'number' ? val : 0;
+                }
             } else {
                 // Old format: stock: 5
                 currentStock = currentProduct.stock || 0;
@@ -414,13 +471,17 @@ class SmartInventorySynchronizer {
             
             if (!last) {
                 changes.new_products.push({
-                    sku: sku,
+                    product_key: productKey,
+                    sku: currentProduct.sku || null,
+                    baselinker_id: currentProduct.baselinker_id || currentProduct.product_id || currentProduct.id,
                     current: currentProduct,
                     reason: 'New product'
                 });
             } else if (currentStock !== last.stock) {
                 changes.stock_changes.push({
-                    sku: sku,
+                    product_key: productKey,
+                    sku: currentProduct.sku || null,
+                    baselinker_id: currentProduct.baselinker_id || currentProduct.product_id || currentProduct.id,
                     previous: last.stock,
                     current: currentStock,
                     previous_inventory: last.inventory_name,
@@ -428,16 +489,21 @@ class SmartInventorySynchronizer {
                     reason: `Stock changed from ${last.stock} to ${currentStock}`
                 });
             } else {
-                changes.unchanged_products.push(sku);
+                changes.unchanged_products.push(productKey);
             }
         }
 
         // Check for removed products
-        for (const [sku, last] of Object.entries(lastInventory)) {
-            const stillExists = currentProducts.some(p => p.sku === sku);
+        for (const [productKey, last] of Object.entries(lastInventory)) {
+            const stillExists = currentProducts.some(p => {
+                const currentProductKey = p.sku || (p.baselinker_id || p.product_id || p.id);
+                return currentProductKey === productKey;
+            });
             if (!stillExists) {
                 changes.removed_products.push({
-                    sku: sku,
+                    product_key: productKey,
+                    sku: last.sku || null,
+                    baselinker_id: last.product_id,
                     last_known: last,
                     reason: 'Product removed from BaseLinker'
                 });
@@ -467,18 +533,23 @@ class SmartInventorySynchronizer {
         console.log('\n🔍 Checking removed products...');
         for (const removed of changes.removed_products) {
             const ovokoProduct = ovokoProducts.find(p => 
-                (p.sku === removed.sku) || (p.external_id === removed.sku)
+                (p.sku === removed.sku) || 
+                (p.external_id === removed.sku) ||
+                (p.external_id === removed.baselinker_id) ||
+                (p.sku === removed.baselinker_id)
             );
             
+            const displayKey = removed.sku || removed.baselinker_id || removed.product_key;
+            
             if (ovokoProduct) {
-                console.log(`  ✅ Found ${removed.sku} in Ovoko (will remove)`);
+                console.log(`  ✅ Found ${displayKey} in Ovoko (will remove)`);
                 productsToRemove.push({
                     ...ovokoProduct,
                     reason: removed.reason,
                     baselinker_info: removed.last_known
                 });
             } else {
-                console.log(`  ❌ ${removed.sku} not found in Ovoko (no need to remove)`);
+                console.log(`  ❌ ${displayKey} not found in Ovoko (no need to remove)`);
             }
         }
 
@@ -487,18 +558,23 @@ class SmartInventorySynchronizer {
         for (const stockChange of changes.stock_changes) {
             if (stockChange.current === 0) {
                 const ovokoProduct = ovokoProducts.find(p => 
-                    (p.sku === stockChange.sku) || (p.external_id === stockChange.sku)
+                    (p.sku === stockChange.sku) || 
+                    (p.external_id === stockChange.sku) ||
+                    (p.external_id === stockChange.baselinker_id) ||
+                    (p.sku === stockChange.baselinker_id)
                 );
                 
+                const displayKey = stockChange.sku || stockChange.baselinker_id || stockChange.product_key;
+                
                 if (ovokoProduct) {
-                    console.log(`  ✅ Found ${stockChange.sku} in Ovoko with stock 0 (will remove)`);
+                    console.log(`  ✅ Found ${displayKey} in Ovoko with stock 0 (will remove)`);
                     productsToRemove.push({
                         ...ovokoProduct,
                         reason: `Stock changed to 0 (was ${stockChange.previous})`,
                         baselinker_info: stockChange
                     });
                 } else {
-                    console.log(`  ❌ ${stockChange.sku} not found in Ovoko with stock 0 (no need to remove)`);
+                    console.log(`  ❌ ${displayKey} not found in Ovoko with stock 0 (no need to remove)`);
                 }
             }
         }
@@ -507,7 +583,8 @@ class SmartInventorySynchronizer {
         if (productsToRemove.length > 0) {
             console.log('Products to remove:');
             productsToRemove.forEach((p, i) => {
-                console.log(`  ${i + 1}. ${p.sku} - ${p.reason}`);
+                const displayKey = p.sku || p.external_id || p.id;
+                console.log(`  ${i + 1}. ${displayKey} - ${p.reason}`);
             });
         }
         
@@ -637,33 +714,35 @@ class SmartInventorySynchronizer {
             }
             
             // Get list of successfully removed products from Ovoko
-            const successfullyRemovedSkus = removalResults.successful.map(p => p.sku);
-            const failedRemovalSkus = removalResults.failed.map(p => p.sku);
+            const successfullyRemovedSkus = removalResults.successful.map(p => p.sku || p.external_id || p.id);
+            const failedRemovalSkus = removalResults.failed.map(p => p.sku || p.external_id || p.id);
             
             // Remove products that are out of stock (stock = 0) ONLY if they were successfully removed from Ovoko
             for (const stockChange of changes.stock_changes) {
-                if (stockChange.current === 0 && syncStatus.synced_products[stockChange.sku]) {
-                    if (successfullyRemovedSkus.includes(stockChange.sku)) {
-                        console.log(`🗑️  Removing ${stockChange.sku} from sync status (out of stock and successfully removed from Ovoko)`);
-                        delete syncStatus.synced_products[stockChange.sku];
-                    } else if (failedRemovalSkus.includes(stockChange.sku)) {
-                        console.log(`⚠️  Keeping ${stockChange.sku} in sync status (out of stock but failed to remove from Ovoko)`);
+                const productKey = stockChange.sku || stockChange.baselinker_id || stockChange.product_key;
+                if (stockChange.current === 0 && syncStatus.synced_products[productKey]) {
+                    if (successfullyRemovedSkus.includes(productKey)) {
+                        console.log(`🗑️  Removing ${productKey} from sync status (out of stock and successfully removed from Ovoko)`);
+                        delete syncStatus.synced_products[productKey];
+                    } else if (failedRemovalSkus.includes(productKey)) {
+                        console.log(`⚠️  Keeping ${productKey} in sync status (out of stock but failed to remove from Ovoko)`);
                     } else {
-                        console.log(`⚠️  Keeping ${stockChange.sku} in sync status (out of stock but not found in Ovoko removal list)`);
+                        console.log(`⚠️  Keeping ${productKey} in sync status (out of stock but not found in Ovoko removal list)`);
                     }
                 }
             }
             
             // Remove products that were completely removed from BaseLinker ONLY if they were successfully removed from Ovoko
             for (const removedProduct of changes.removed_products) {
-                if (syncStatus.synced_products[removedProduct.sku]) {
-                    if (successfullyRemovedSkus.includes(removedProduct.sku)) {
-                        console.log(`🗑️  Removing ${removedProduct.sku} from sync status (removed from BaseLinker and successfully removed from Ovoko)`);
-                        delete syncStatus.synced_products[removedProduct.sku];
-                    } else if (failedRemovalSkus.includes(removedProduct.sku)) {
-                        console.log(`⚠️  Keeping ${removedProduct.sku} in sync status (removed from BaseLinker but failed to remove from Ovoko)`);
+                const productKey = removedProduct.sku || removedProduct.baselinker_id || removedProduct.product_key;
+                if (syncStatus.synced_products[productKey]) {
+                    if (successfullyRemovedSkus.includes(productKey)) {
+                        console.log(`🗑️  Removing ${productKey} from sync status (removed from BaseLinker and successfully removed from Ovoko)`);
+                        delete syncStatus.synced_products[productKey];
+                    } else if (failedRemovalSkus.includes(productKey)) {
+                        console.log(`⚠️  Keeping ${productKey} in sync status (removed from BaseLinker but failed to remove from Ovoko)`);
                     } else {
-                        console.log(`⚠️  Keeping ${removedProduct.sku} in sync status (removed from BaseLinker but not found in Ovoko removal list)`);
+                        console.log(`⚠️  Keeping ${productKey} in sync status (removed from BaseLinker but not found in Ovoko removal list)`);
                     }
                 }
             }
@@ -688,6 +767,8 @@ class SmartInventorySynchronizer {
         try {
             console.log('🚀 Starting SMART inventory synchronization...');
             console.log('📊 BaseLinker ↔ Ovoko (Intelligent Sync)');
+            const syncMode = this.syncAllWarehouses ? 'ALL WAREHOUSES' : `ONLY ${this.allowedStockKey}`;
+            console.log(`🎯 Sync mode: ${syncMode}`);
             console.log('=' .repeat(60));
             
             // Step 1: Get current BaseLinker inventory
@@ -815,11 +896,65 @@ const CONFIG = {
     }
 };
 
+// Helper function to ask user for input
+function askQuestion(question) {
+    const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+    });
+
+    return new Promise((resolve) => {
+        rl.question(question, (answer) => {
+            rl.close();
+            resolve(answer.trim());
+        });
+    });
+}
+
 // Main execution
 async function main() {
+    console.log('🚀 SMART INVENTORY SYNCHRONIZER');
+    console.log('=====================================\n');
+    
+    // Ask user if they want to filter by specific warehouse
+    const filterChoice = await askQuestion('Czy chcesz załadować produkty z wszystkich magazynów czy tylko z jednego? (wszystkie/jeden): ');
+    
+    let options = {};
+    
+    if (filterChoice.toLowerCase() === 'jeden' || filterChoice.toLowerCase() === 'j') {
+        console.log('\n📋 Dostępne magazyny:');
+        
+        // Get list of available inventories
+        try {
+            const tempSynchronizer = new SmartInventorySynchronizer(CONFIG.baselinkerToken, CONFIG.ovoko);
+            const inventories = await tempSynchronizer.makeBaseLinkerRequest('getInventories');
+            
+            if (inventories.inventories && inventories.inventories.length > 0) {
+                inventories.inventories.forEach((inv, index) => {
+                    console.log(`  ${index + 1}. ${inv.name} (ID: ${inv.inventory_id})`);
+                });
+                
+                const warehouseInput = await askQuestion('\nPodaj nazwę magazynu lub jego ID: ');
+                options.filterByWarehouse = warehouseInput;
+                options.warehouseName = warehouseInput;
+                
+                console.log(`✅ Będę synchronizować tylko magazyn: ${warehouseInput}\n`);
+            } else {
+                console.log('⚠️  Nie znaleziono żadnych magazynów. Synchronizuję wszystkie.');
+            }
+        } catch (error) {
+            console.log('⚠️  Błąd podczas pobierania listy magazynów:', error.message);
+            console.log('Synchronizuję wszystkie magazyny...\n');
+        }
+    } else {
+        console.log('✅ Będę synchronizować wszystkie magazyny\n');
+        options.syncAllWarehouses = true;
+    }
+    
     const synchronizer = new SmartInventorySynchronizer(
         CONFIG.baselinkerToken,
-        CONFIG.ovoko
+        CONFIG.ovoko,
+        options
     );
     
     try {

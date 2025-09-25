@@ -20,6 +20,7 @@ const Sidebar = ({ isOpen, onClose, currentPath }) => {
     { name: 'Dziennik zdarzeń', href: '/dashboard/activity-log', icon: Activity },
     { name: 'Raporty Smart Sync', href: '/dashboard/smart-sync-reports', icon: Activity },
     { name: 'Auto-sync zamówień', href: '/dashboard/orders-sync', icon: Clock },
+    { name: 'Import z CSV', href: '/dashboard/csv-import', icon: Package },
   ];
 
   return (

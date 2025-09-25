@@ -11,6 +11,7 @@ import Queues from './Queues';
 import ActivityLog from './ActivityLog';
 import SmartSyncReports from './SmartSyncReports';
 import OrdersSyncControl from './OrdersSyncControl';
+import CsvImport from './CsvImport';
 
 const Dashboard = () => {
   const { user, logout } = useAuth();
@@ -53,6 +54,7 @@ const Dashboard = () => {
             <Route path="/activity-log" element={<ActivityLog />} />
             <Route path="/smart-sync-reports" element={<SmartSyncReports />} />
             <Route path="/orders-sync" element={<OrdersSyncControl />} />
+            <Route path="/csv-import" element={<CsvImport />} />
           </Routes>
         </main>
       </div>

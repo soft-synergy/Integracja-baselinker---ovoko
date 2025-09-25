@@ -1215,6 +1215,166 @@ app.post('/api/update-product-versions', requireAuth, async (req, res) => {
     }
 });
 
+// Import multiple products to Ovoko by BaseLinker product IDs
+app.post('/api/import-by-baselinker-ids', requireAuth, async (req, res) => {
+    try {
+        const { ids } = req.body; // array of BaseLinker product_id (numbers or strings)
+        if (!Array.isArray(ids) || ids.length === 0) {
+            return res.status(400).json({ success: false, error: 'Provide non-empty array "ids"' });
+        }
+
+        // Load BaseLinker products cache
+        let products = [];
+        try {
+            const latest = await fs.readFile('baselinker_products_latest.json', 'utf8');
+            products = JSON.parse(latest);
+        } catch (_) {
+            try {
+                const fallback = await fs.readFile('baselinker_products_2025-08-09T06-31-13-827Z.json', 'utf8');
+                products = JSON.parse(fallback);
+            } catch (e) {
+                return res.status(500).json({ success: false, error: 'No BaseLinker products cache available' });
+            }
+        }
+
+        // Build index by multiple identifiers (product_id, id, baselinker_id, sku)
+        const byId = new Map();
+        for (const p of products) {
+            const keys = [];
+            if (p.product_id != null) keys.push(String(p.product_id));
+            if (p.id != null) keys.push(String(p.id));
+            if (p.baselinker_id != null) keys.push(String(p.baselinker_id));
+            if (p.sku) keys.push(String(p.sku));
+            for (const k of keys) {
+                if (k) byId.set(k, p);
+            }
+        }
+
+        const results = [];
+        for (const rawId of ids) {
+            const idStr = String(rawId).trim();
+            const product = byId.get(idStr);
+            if (!product) {
+                results.push({ id: idStr, success: false, error: 'Product not found in cache (searched by product_id/id/baselinker_id/sku)' });
+                continue;
+            }
+
+            try {
+                const importResult = await importProductToOvoko(product);
+                if (importResult.success) {
+                    // Save sync status entry
+                    const syncStatus = await loadSyncStatus();
+                    syncStatus.synced_products[product.sku] = {
+                        ovoko_part_id: importResult.part_id,
+                        ovoko_car_id: WORKING_COMBINATION.car_id,
+                        ovoko_category_id: WORKING_COMBINATION.category_id,
+                        ovoko_category_name: 'Uploaded CSV',
+                        baselinker_category_id: product.category_id,
+                        mapping_confidence: 'csv_manual',
+                        bmw_model: 'N/A',
+                        synced_at: new Date().toISOString(),
+                        product_name: product.text_fields?.name || product.name || ''
+                    };
+                    await saveSyncStatus(syncStatus);
+
+                    results.push({ id: idStr, success: true, part_id: importResult.part_id });
+                } else {
+                    results.push({ id: idStr, success: false, error: importResult.error || 'Import failed' });
+                }
+                // Small delay between calls
+                await new Promise(r => setTimeout(r, 300));
+            } catch (e) {
+                results.push({ id: idStr, success: false, error: e.message });
+            }
+        }
+
+        const successCount = results.filter(r => r.success).length;
+        res.json({ success: true, imported: successCount, total: results.length, results });
+    } catch (error) {
+        console.error('CSV import endpoint error:', error);
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
+// Import products directly from CSV data to Ovoko
+app.post('/api/import-csv-products', requireAuth, async (req, res) => {
+    try {
+        const { products } = req.body; // array of products from CSV
+        if (!Array.isArray(products) || products.length === 0) {
+            return res.status(400).json({ success: false, error: 'Provide non-empty array "products"' });
+        }
+
+        const results = [];
+        for (const csvProduct of products) {
+            try {
+                // Convert CSV product to BaseLinker-like format for import
+                const productForImport = {
+                    sku: csvProduct.sku || csvProduct.id,
+                    text_fields: {
+                        name: csvProduct.name || 'Unknown product'
+                    },
+                    prices: {
+                        '2613': parseFloat(csvProduct.price) || 0
+                    },
+                    images: csvProduct.images.reduce((acc, img, idx) => {
+                        if (img) acc[idx] = img;
+                        return acc;
+                    }, {}),
+                    category_id: 1, // Default category
+                    weight: parseFloat(csvProduct.weight) || 0
+                };
+
+                const importResult = await importProductToOvoko(productForImport);
+                if (importResult.success) {
+                    // Save sync status entry
+                    const syncStatus = await loadSyncStatus();
+                    syncStatus.synced_products[productForImport.sku] = {
+                        ovoko_part_id: importResult.part_id,
+                        ovoko_car_id: WORKING_COMBINATION.car_id,
+                        ovoko_category_id: WORKING_COMBINATION.category_id,
+                        ovoko_category_name: 'CSV Import',
+                        baselinker_category_id: productForImport.category_id,
+                        mapping_confidence: 'csv_direct',
+                        bmw_model: 'N/A',
+                        synced_at: new Date().toISOString(),
+                        product_name: csvProduct.name || 'Unknown product'
+                    };
+                    await saveSyncStatus(syncStatus);
+
+                    results.push({ 
+                        id: csvProduct.id, 
+                        success: true, 
+                        part_id: importResult.part_id,
+                        name: csvProduct.name 
+                    });
+                } else {
+                    results.push({ 
+                        id: csvProduct.id, 
+                        success: false, 
+                        error: importResult.error || 'Import failed',
+                        name: csvProduct.name 
+                    });
+                }
+                // Small delay between calls
+                await new Promise(r => setTimeout(r, 500));
+            } catch (e) {
+                results.push({ 
+                    id: csvProduct.id, 
+                    success: false, 
+                    error: e.message,
+                    name: csvProduct.name 
+                });
+            }
+        }
+
+        const successCount = results.filter(r => r.success).length;
+        res.json({ success: true, imported: successCount, total: results.length, results });
+    } catch (error) {
+        console.error('CSV products import endpoint error:', error);
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
 // Helper function to map BaseLinker category to Ovoko category
 async function getOvokoCategoryFromBaseLinker(baselinkerCategoryId) {
     // Load mapping strictly from the prepared file: "categorie ovoko - mapowanie.json"
