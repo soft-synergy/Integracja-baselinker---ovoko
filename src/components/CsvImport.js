@@ -23,59 +23,53 @@ const CsvImport = () => {
       const lines = text.split(/\r?\n/).filter(Boolean);
       if (lines.length === 0) throw new Error('Plik jest pusty');
 
-      // This CSV has a weird format where each row is one long string with key:value pairs
-      // Example: "produkt_id":"1151991066","produkt_nazwa":"Koło zamachowe BMW E60 E61 3.0D 778.8746",...
-      const products = [];
-      
-      for (let i = 1; i < lines.length; i++) { // Skip header
+      // Try to detect header; accept formats with either explicit sku column or key:value blob
+      const header = lines[0];
+      const hasSkuHeader = /(^|,)(sku|SKU)(,|$)/.test(header);
+
+      const skus = [];
+      for (let i = hasSkuHeader ? 1 : 0; i < lines.length; i++) {
         const line = lines[i];
         if (!line.trim()) continue;
-        
-        // Parse the key:value format
-        const product = {};
-        const matches = line.match(/"([^"]+)":"([^"]*)"/g);
-        if (matches) {
-          matches.forEach(match => {
-            const [, key, value] = match.match(/"([^"]+)":"([^"]*)"/);
-            product[key] = value;
-          });
-        }
-        
-        if (product.produkt_id) {
-          products.push({
-            id: product.produkt_id,
-            name: product.produkt_nazwa || '',
-            price: product.cena || '0',
-            sku: product.produkt_sku || '',
-            category: product.kategoria_nazwa || '',
-            images: [
-              product.zdjecie,
-              product.zdjecie_dodatkowe_1,
-              product.zdjecie_dodatkowe_2,
-              product.zdjecie_dodatkowe_3,
-              product.zdjecie_dodatkowe_4,
-              product.zdjecie_dodatkowe_5,
-              product.zdjecie_dodatkowe_6,
-              product.zdjecie_dodatkowe_7,
-              product.zdjecie_dodatkowe_8,
-              product.zdjecie_dodatkowe_9,
-              product.zdjecie_dodatkowe_10,
-              product.zdjecie_dodatkowe_11,
-              product.zdjecie_dodatkowe_12,
-              product.zdjecie_dodatkowe_13,
-              product.zdjecie_dodatkowe_14,
-              product.zdjecie_dodatkowe_15
-            ].filter(Boolean),
-            description: product.opis || '',
-            manufacturer: product.producent_nazwa || '',
-            weight: product.waga || '0',
-            stock: product.ilosc || '0'
-          });
+
+        if (hasSkuHeader) {
+          // Simple CSV; split by comma respecting basic quotes
+          // Minimal parser: split on commas not inside quotes
+          const cols = [];
+          let cur = '';
+          let inQ = false;
+          for (let c = 0; c < line.length; c++) {
+            const ch = line[c];
+            if (ch === '"') { inQ = !inQ; cur += ch; continue; }
+            if (ch === ',' && !inQ) { cols.push(cur); cur = ''; continue; }
+            cur += ch;
+          }
+        	cols.push(cur);
+
+          const headers = header.split(',');
+          const idx = headers.findIndex(h => h.trim().toLowerCase() === 'sku');
+          if (idx >= 0) {
+            const raw = (cols[idx] || '').trim().replace(/^"|"$/g, '');
+            if (raw) skus.push(raw);
+          }
+        } else {
+          // Key:value blob line
+          const matches = line.match(/"([^"]+)":"([^"]*)"/g);
+          if (matches) {
+            const obj = {};
+            matches.forEach(m => {
+              const [, key, value] = m.match(/"([^"]+)":"([^"]*)"/);
+              obj[key] = value;
+            });
+            const skuVal = obj.produkt_sku || obj.sku || obj.SKU || '';
+            if (skuVal) skus.push(String(skuVal));
+          }
         }
       }
 
-      setProducts(products);
-      setIds(products.map(p => p.id));
+      // For backend we now just send identifiers; keep also as products for UI count
+      setProducts(skus.map(sku => ({ sku })));
+      setIds(skus);
     } catch (e) {
       setParsingError(e.message);
       setIds([]);
@@ -91,7 +85,8 @@ const CsvImport = () => {
       const resp = await fetch('/api/import-csv-products', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ products })
+        // Send only identifiers to backend; it will resolve full product by SKU
+        body: JSON.stringify({ products: ids })
       });
       const json = await resp.json();
       setResults(json);

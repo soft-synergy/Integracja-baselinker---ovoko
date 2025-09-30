@@ -1299,71 +1299,83 @@ app.post('/api/import-by-baselinker-ids', requireAuth, async (req, res) => {
 // Import products directly from CSV data to Ovoko
 app.post('/api/import-csv-products', requireAuth, async (req, res) => {
     try {
-        const { products } = req.body; // array of products from CSV
+        // Accept either array of objects with sku/id or array of raw identifiers
+        const { products } = req.body;
         if (!Array.isArray(products) || products.length === 0) {
             return res.status(400).json({ success: false, error: 'Provide non-empty array "products"' });
         }
 
-        const results = [];
-        for (const csvProduct of products) {
-            try {
-                // Convert CSV product to BaseLinker-like format for import
-                const productForImport = {
-                    sku: csvProduct.sku || csvProduct.id,
-                    text_fields: {
-                        name: csvProduct.name || 'Unknown product'
-                    },
-                    prices: {
-                        '2613': parseFloat(csvProduct.price) || 0
-                    },
-                    images: csvProduct.images.reduce((acc, img, idx) => {
-                        if (img) acc[idx] = img;
-                        return acc;
-                    }, {}),
-                    category_id: 1, // Default category
-                    weight: parseFloat(csvProduct.weight) || 0
-                };
+        // Normalize to array of identifiers (prefer sku, then id)
+        const identifiers = products.map(p => {
+            if (p == null) return '';
+            if (typeof p === 'string' || typeof p === 'number') return String(p).trim();
+            return String(p.sku || p.id || '').trim();
+        }).filter(Boolean);
 
-                const importResult = await importProductToOvoko(productForImport);
+        if (identifiers.length === 0) {
+            return res.status(400).json({ success: false, error: 'No valid identifiers (sku/id) found in payload' });
+        }
+
+        // Load BaseLinker products cache (same as /api/import-by-baselinker-ids)
+        let productsCache = [];
+        try {
+            const latest = await fs.readFile('baselinker_products_latest.json', 'utf8');
+            productsCache = JSON.parse(latest);
+        } catch (_) {
+            try {
+                const fallback = await fs.readFile('baselinker_products_2025-08-09T06-31-13-827Z.json', 'utf8');
+                productsCache = JSON.parse(fallback);
+            } catch (e) {
+                return res.status(500).json({ success: false, error: 'No BaseLinker products cache available' });
+            }
+        }
+
+        // Build index by sku, product_id, id, baselinker_id
+        const index = new Map();
+        for (const p of productsCache) {
+            const keys = [];
+            if (p.product_id != null) keys.push(String(p.product_id));
+            if (p.id != null) keys.push(String(p.id));
+            if (p.baselinker_id != null) keys.push(String(p.baselinker_id));
+            if (p.sku) keys.push(String(p.sku));
+            for (const k of keys) {
+                if (k) index.set(k, p);
+            }
+        }
+
+        const results = [];
+        for (const id of identifiers) {
+            const blProduct = index.get(String(id));
+            if (!blProduct) {
+                results.push({ id, success: false, error: 'Product not found in cache (by sku/id)' });
+                continue;
+            }
+
+            try {
+                const importResult = await importProductToOvoko(blProduct);
                 if (importResult.success) {
-                    // Save sync status entry
                     const syncStatus = await loadSyncStatus();
-                    syncStatus.synced_products[productForImport.sku] = {
+                    syncStatus.synced_products[blProduct.sku] = {
                         ovoko_part_id: importResult.part_id,
                         ovoko_car_id: WORKING_COMBINATION.car_id,
                         ovoko_category_id: WORKING_COMBINATION.category_id,
-                        ovoko_category_name: 'CSV Import',
-                        baselinker_category_id: productForImport.category_id,
-                        mapping_confidence: 'csv_direct',
+                        ovoko_category_name: 'CSV Import (by SKU)',
+                        baselinker_category_id: blProduct.category_id,
+                        mapping_confidence: 'csv_sku',
                         bmw_model: 'N/A',
                         synced_at: new Date().toISOString(),
-                        product_name: csvProduct.name || 'Unknown product'
+                        product_name: blProduct.text_fields?.name || blProduct.name || ''
                     };
                     await saveSyncStatus(syncStatus);
 
-                    results.push({ 
-                        id: csvProduct.id, 
-                        success: true, 
-                        part_id: importResult.part_id,
-                        name: csvProduct.name 
-                    });
+                    results.push({ id, success: true, part_id: importResult.part_id, name: blProduct.text_fields?.name || blProduct.name });
                 } else {
-                    results.push({ 
-                        id: csvProduct.id, 
-                        success: false, 
-                        error: importResult.error || 'Import failed',
-                        name: csvProduct.name 
-                    });
+                    results.push({ id, success: false, error: importResult.error || 'Import failed' });
                 }
-                // Small delay between calls
-                await new Promise(r => setTimeout(r, 500));
+
+                await new Promise(r => setTimeout(r, 300));
             } catch (e) {
-                results.push({ 
-                    id: csvProduct.id, 
-                    success: false, 
-                    error: e.message,
-                    name: csvProduct.name 
-                });
+                results.push({ id, success: false, error: e.message });
             }
         }
 
