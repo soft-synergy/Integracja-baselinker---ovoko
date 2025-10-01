@@ -22,10 +22,11 @@ class SmartSyncScheduler {
             userToken: 'dcf1fb235513c6d36b7a700defdee8ab'
         };
         
-        // Initialize synchronizer
+        // Initialize synchronizer - default to ALL warehouses like CLI "wszystkie"
         this.synchronizer = new SmartInventorySynchronizer(
             this.baselinkerToken,
-            this.ovokoCredentials
+            this.ovokoCredentials,
+            { syncAllWarehouses: true }
         );
     }
 
