@@ -46,6 +46,15 @@ const Products = () => {
   });
   const { logInfo, logSuccess, logError } = useActivityLog();
 
+  const getStableProductKey = (p) => {
+    if (!p) return '';
+    const candidates = [p.sku, p.product_id, p.id, p.baselinker_id];
+    for (const c of candidates) {
+      if (c !== undefined && c !== null && String(c).trim() !== '') return String(c).trim();
+    }
+    return '';
+  };
+
   // Funkcja do obliczania dokładnego stanu magazynowego
   const getExactStock = (product) => {
     if (!product || !product.stock) return 0;
@@ -345,8 +354,9 @@ const Products = () => {
 
   const handleImport = async (product) => {
     try {
-      setImporting(prev => ({ ...prev, [product.sku]: true }));
-      logInfo('Starting product import', { sku: product.sku, name: product.text_fields?.name });
+      const key = getStableProductKey(product);
+      setImporting(prev => ({ ...prev, [key]: true }));
+      logInfo('Starting product import', { sku: product.sku, key, name: product.text_fields?.name });
 
       const response = await fetch('/api/import-product', {
         method: 'POST',
@@ -367,12 +377,11 @@ const Products = () => {
         throw new Error(result.error || 'Import failed');
       }
     } catch (error) {
-      logError('Product import failed', { 
-        sku: product.sku, 
-        error: error.message 
-      });
+      const key = getStableProductKey(product);
+      logError('Product import failed', { sku: product.sku, key, error: error.message });
     } finally {
-      setImporting(prev => ({ ...prev, [product.sku]: false }));
+      const key = getStableProductKey(product);
+      setImporting(prev => ({ ...prev, [key]: false }));
     }
   };
 
@@ -932,10 +941,10 @@ const Products = () => {
                     {!product.isSynced ? (
                       <button
                         onClick={() => handleImport(product)}
-                        disabled={importing[product.sku]}
+                        disabled={importing[getStableProductKey(product)]}
                         className="btn-primary flex items-center justify-center whitespace-nowrap"
                       >
-                        {importing[product.sku] ? (
+                        {importing[getStableProductKey(product)] ? (
                           <>
                             <RefreshCw className="h-4 w-4 mr-2 animate-spin" />
                             Importuję...

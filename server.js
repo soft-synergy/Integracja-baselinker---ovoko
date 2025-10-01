@@ -949,9 +949,10 @@ app.post('/api/import-product', requireAuth, async (req, res) => {
         
         // Log category mapping error if it's related to mapping
         if (error.message.includes('category') || error.message.includes('mapping')) {
+            const reqProduct = req?.body?.product;
             console.error('🔍 Category mapping error details:', {
-                product_sku: product?.sku,
-                baselinker_category_id: product?.category_id,
+                product_sku: reqProduct?.sku,
+                baselinker_category_id: reqProduct?.category_id,
                 error: error.message
             });
         }
