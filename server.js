@@ -52,6 +52,19 @@ const WORKING_COMBINATION = {
     status: 0
 };
 
+// Helper: compute a stable key for a product to store/read sync status
+// Prefer SKU; if missing, fall back to other unique identifiers
+function getStableProductKey(product) {
+    if (!product) return null;
+    const candidates = [product.sku, product.product_id, product.id, product.baselinker_id];
+    for (const candidate of candidates) {
+        if (candidate !== undefined && candidate !== null && String(candidate).trim() !== '') {
+            return String(candidate).trim();
+        }
+    }
+    return null;
+}
+
 // Simple user database
 const users = [
     {
@@ -148,7 +161,8 @@ app.get('/api/baselinker-products', requireAuth, async (req, res) => {
         const syncStatus = await loadSyncStatus();
         
         const productsWithSyncStatus = products.map(product => {
-            const savedStatus = syncStatus.synced_products[product.sku];
+            const key = getStableProductKey(product);
+            const savedStatus = key ? syncStatus.synced_products[key] : undefined;
             
             // Extract stock information
             let stock = 0;
@@ -821,7 +835,9 @@ app.post('/api/import-product', requireAuth, async (req, res) => {
         postData.append('car_id', carId.toString());
         postData.append('quality', '1');
         postData.append('status', '0');
-        postData.append('external_id', product.sku);
+        if (product.sku && String(product.sku).trim() !== '') {
+            postData.append('external_id', product.sku);
+        }
         postData.append('price', product.prices['2613'] || '0');
         postData.append('original_currency', 'PLN');
 
@@ -883,14 +899,16 @@ app.post('/api/import-product', requireAuth, async (req, res) => {
             // After successful import to Ovoko, tag the BaseLinker product as listed on Ovoko
             try {
                 await markBaselinkerProductAsOvokoListed(product);
-                console.log(`🏷️  BaseLinker product tagged as OVOKO_LISTED (sku: ${product.sku})`);
+            console.log(`🏷️  BaseLinker product tagged as OVOKO_LISTED (key: ${getStableProductKey(product)})`);
             } catch (e) {
                 console.log(`⚠️  Could not tag BaseLinker product as OVOKO_LISTED: ${e.message}`);
             }
 
             // Save sync status
             const syncStatus = await loadSyncStatus();
-            syncStatus.synced_products[product.sku] = {
+            const syncKey = getStableProductKey(product);
+            if (syncKey) {
+            syncStatus.synced_products[syncKey] = {
                 ovoko_part_id: result.part_id,
                 ovoko_car_id: carId,
                 ovoko_category_id: ovokoCategory.ovoko_id,
@@ -902,6 +920,7 @@ app.post('/api/import-product', requireAuth, async (req, res) => {
                 product_name: product.text_fields.name
             };
             await saveSyncStatus(syncStatus);
+            }
 
             res.json({
                 success: true,
@@ -1063,7 +1082,8 @@ app.post('/api/update-product', requireAuth, async (req, res) => {
         
         // Get the part_id from sync status
         const syncStatus = await loadSyncStatus();
-        const savedStatus = syncStatus.synced_products[product.sku];
+        const syncKey = getStableProductKey(product);
+        const savedStatus = syncKey ? syncStatus.synced_products[syncKey] : undefined;
         
         if (!savedStatus || !savedStatus.ovoko_part_id) {
             return res.status(400).json({ error: 'Product not synced to Ovoko yet. Sync first.' });
@@ -1140,7 +1160,9 @@ app.post('/api/update-product', requireAuth, async (req, res) => {
             console.log(`✅ Product updated successfully: ${product.sku}`);
             
             // Update sync timestamp
-            syncStatus.synced_products[product.sku].synced_at = new Date().toISOString();
+            if (syncKey && syncStatus.synced_products[syncKey]) {
+                syncStatus.synced_products[syncKey].synced_at = new Date().toISOString();
+            }
             await saveSyncStatus(syncStatus);
             
             res.json({ 
@@ -1264,7 +1286,9 @@ app.post('/api/import-by-baselinker-ids', requireAuth, async (req, res) => {
                 if (importResult.success) {
                     // Save sync status entry
                     const syncStatus = await loadSyncStatus();
-                    syncStatus.synced_products[product.sku] = {
+                    const key = getStableProductKey(product);
+                    if (key) {
+                    syncStatus.synced_products[key] = {
                         ovoko_part_id: importResult.part_id,
                         ovoko_car_id: WORKING_COMBINATION.car_id,
                         ovoko_category_id: WORKING_COMBINATION.category_id,
@@ -1276,6 +1300,7 @@ app.post('/api/import-by-baselinker-ids', requireAuth, async (req, res) => {
                         product_name: product.text_fields?.name || product.name || ''
                     };
                     await saveSyncStatus(syncStatus);
+                    }
 
                     results.push({ id: idStr, success: true, part_id: importResult.part_id });
                 } else {
@@ -1330,16 +1355,16 @@ app.post('/api/import-csv-products', requireAuth, async (req, res) => {
             }
         }
 
-        // Build index by sku, product_id, id, baselinker_id
+        // Build index by stable key (sku, product_id, id, baselinker_id)
         const index = new Map();
         for (const p of productsCache) {
             const keys = [];
             if (p.product_id != null) keys.push(String(p.product_id));
             if (p.id != null) keys.push(String(p.id));
             if (p.baselinker_id != null) keys.push(String(p.baselinker_id));
-            if (p.sku) keys.push(String(p.sku));
+            if (p.sku && String(p.sku).trim() !== '') keys.push(String(p.sku));
             for (const k of keys) {
-                if (k) index.set(k, p);
+                if (k && !index.has(k)) index.set(k, p);
             }
         }
 
@@ -1355,7 +1380,9 @@ app.post('/api/import-csv-products', requireAuth, async (req, res) => {
                 const importResult = await importProductToOvoko(blProduct);
                 if (importResult.success) {
                     const syncStatus = await loadSyncStatus();
-                    syncStatus.synced_products[blProduct.sku] = {
+                    const key = getStableProductKey(blProduct);
+                    if (key) {
+                    syncStatus.synced_products[key] = {
                         ovoko_part_id: importResult.part_id,
                         ovoko_car_id: WORKING_COMBINATION.car_id,
                         ovoko_category_id: WORKING_COMBINATION.category_id,
@@ -1367,6 +1394,7 @@ app.post('/api/import-csv-products', requireAuth, async (req, res) => {
                         product_name: blProduct.text_fields?.name || blProduct.name || ''
                     };
                     await saveSyncStatus(syncStatus);
+                    }
 
                     results.push({ id, success: true, part_id: importResult.part_id, name: blProduct.text_fields?.name || blProduct.name });
                 } else {
@@ -1563,7 +1591,9 @@ async function importProductToOvoko(product) {
         postData.append('status', WORKING_COMBINATION.status);
         
         // Add product data
-        postData.append('optional_codes[0]', product.sku);
+        if (product.sku && String(product.sku).trim() !== '') {
+            postData.append('optional_codes[0]', product.sku);
+        }
         if (product.text_fields?.features?.['Numer katalogowy części']) {
             postData.append('optional_codes[1]', product.text_fields.features['Numer katalogowy części']);
         }
@@ -1586,7 +1616,9 @@ async function importProductToOvoko(product) {
         // Add other fields
         postData.append('original_currency', 'PLN');
         postData.append('storage_id', '1');
-        postData.append('external_id', product.sku);
+        if (product.sku && String(product.sku).trim() !== '') {
+            postData.append('external_id', product.sku);
+        }
 
         const options = {
             hostname: 'api.rrr.lt',
